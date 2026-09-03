@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حسین | اتوماسیون هوشمند با هوش مصنوعی</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#0a0a1a;color:#fff;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#0a0a1a 0%,#1a1a3e 50%,#0a0a1a 100%);position:relative}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2364ffda' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+.hero-content{position:relative;z-index:1;max-width:800px;padding:20px}
+.hero h1{font-size:3.5em;margin-bottom:20px;background:linear-gradient(135deg,#64ffda,#0a192f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:fadeInUp 1s ease}
+.hero .tagline{font-size:1.5em;color:#8892b0;margin-bottom:30px;animation:fadeInUp 1s ease 0.2s both}
+.hero .cta{display:inline-block;padding:15px 40px;background:linear-gradient(135deg,#64ffda,#0a192f);color:#0a0a1a;text-decoration:none;border-radius:50px;font-weight:bold;font-size:1.1em;transition:transform 0.3s,box-shadow 0.3s;animation:fadeInUp 1s ease 0.4s both}
+.hero .cta:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(100,255,218,0.3)}
+.section{padding:100px 20px;max-width:1200px;margin:0 auto}
+.section-title{font-size:2.5em;text-align:center;margin-bottom:60px;color:#64ffda}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+.service-card{background:rgba(255,255,255,0.05);border-radius:20px;padding:40px;text-align:center;border:1px solid rgba(100,255,218,0.1);transition:transform 0.3s,border-color 0.3s}
+.service-card:hover{transform:translateY(-10px);border-color:#64ffda}
+.service-card .icon{font-size:3em;margin-bottom:20px}
+.service-card h3{font-size:1.3em;margin-bottom:15px;color:#fff}
+.service-card p{color:#8892b0;line-height:1.8}
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.price-card{background:rgba(255,255,255,0.05);border-radius:20px;padding:40px;text-align:center;border:1px solid rgba(100,255,218,0.1);transition:transform 0.3s}
+.price-card:hover{transform:translateY(-5px)}
+.price-card.featured{border-color:#64ffda;background:rgba(100,255,218,0.05)}
+.price-card h3{font-size:1.5em;margin-bottom:20px;color:#64ffda}
+.price-card .price{font-size:2.5em;margin:20px 0;font-weight:bold}
+.price-card .price span{font-size:0.5em;color:#8892b0}
+.price-card ul{list-style:none;text-align:right;margin:30px 0}
+.price-card ul li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.05);color:#8892b0}
+.price-card ul li::before{content:'✓ ';color:#64ffda}
+.price-card .btn{display:inline-block;padding:12px 30px;background:#64ffda;color:#0a0a1a;text-decoration:none;border-radius:50px;font-weight:bold;transition:transform 0.3s}
+.price-card .btn:hover{transform:scale(1.05)}
+.about{text-align:center;max-width:800px;margin:0 auto}
+.about p{font-size:1.2em;line-height:2;color:#8892b0;margin-bottom:20px}
+.contact{text-align:center}
+.contact a{display:inline-block;padding:15px 40px;background:linear-gradient(135deg,#64ffda,#0a192f);color:#0a0a1a;text-decoration:none;border-radius:50px;font-weight:bold;font-size:1.1em;margin:10px;transition:transform 0.3s}
+.contact a:hover{transform:translateY(-3px)}
+.footer{text-align:center;padding:40px;color:#8892b0;border-top:1px solid rgba(255,255,255,0.05)}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:768px){.hero h1{font-size:2em}.hero .tagline{font-size:1.1em}.section-title{font-size:1.8em}}
+</style>
+</head>
+<body>
+<section class="hero">
+<div class="hero-content">
+<h1>اتوماسیون هوشمند با هوش مصنوعی</h1>
+<p class="tagline">سیستم‌هات رو خودکار کن، وقتت رو پس بگیر</p>
+<a href="#services" class="cta">خدمات من</a>
+</div>
+</section>
+
+<section class="section" id="services">
+<h2 class="section-title">خدمات من</h2>
+<div class="services">
+<div class="service-card">
+<div class="icon">🤖</div>
+<h3>اتوماسیون هوش مصنوعی</h3>
+<p>خودکارسازی فرآیندهای تکراری کسب‌وکارت با AI. از پاسخ خودکار تا پردازش داده.</p>
+</div>
+<div class="service-card">
+<div class="icon">🕷️</div>
+<h3>استخراج داده</h3>
+<p>جمع‌آوری و تحلیل داده از هر وب‌سایتی. مقایسه قیمت، مانیتورینگ رقبا، تحلیل بازار.</p>
+</div>
+<div class="service-card">
+<div class="icon">💬</div>
+<h3>چت‌بات هوشمند</h3>
+<p>ربات‌های تلگرام و واتساپ که ۲۴ ساعته مشتریات رو پشتیبانی میکنن.</p>
+</div>
+<div class="service-card">
+<div class="icon">📧</div>
+<h3>خودکارسازی ایمیل</h3>
+<p>ارسال خودکار ایمیل، پیگیری مشتری، و بازاریابی ایمیلی هوشمند.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="about">
+<h2 class="section-title">درباره من</h2>
+<div class="about">
+<p>من حسین هستم، متخصص اتوماسیون هوش مصنوعی. به کسب‌وکارها کمک میکنم تا با استفاده از AI و ابزارهای خودکار، زمان و هزینه‌شون رو صرفه‌جویی کنن.</p>
+<p>از ربات‌های تلگرام تا سیستم‌های پیچیده استخراج داده و پردازش خودکار — هر چی نیاز داشته باشی، میسازم.</p>
+</div>
+</section>
+
+<section class="section" id="pricing">
+<h2 class="section-title">قیمت‌ها</h2>
+<div class="pricing">
+<div class="price-card">
+<h3>پروژه کوچک</h3>
+<div class="price">۵ تا ۱۵ میلیون <span>تومان</span></div>
+<div class="price">$100 - $300 <span>USD</span></div>
+<ul>
+<li>ربات تلگرام ساده</li>
+<li>استخراج داده</li>
+<li>اسکریپت خودکار</li>
+<li>تحویل: ۳-۵ روز</li>
+</ul>
+<a href="#contact" class="btn">سفارش</a>
+</div>
+<div class="price-card featured">
+<h3>پروژه متوسط</h3>
+<div class="price">۱۵ تا ۳۰ میلیون <span>تومان</span></div>
+<div class="price">$300 - $600 <span>USD</span></div>
+<ul>
+<li>چت‌بات هوشمند</li>
+<li>اتوماسیون ایمیل</li>
+<li>مانیتورینگ رقبا</li>
+<li>داشبورد گزارش</li>
+<li>تحویل: ۵-۱۰ روز</li>
+</ul>
+<a href="#contact" class="btn">سفارش</a>
+</div>
+<div class="price-card">
+<h3>پروژه بزرگ</h3>
+<div class="price">۳۰+ میلیون <span>تومان</span></div>
+<div class="price">$600+ <span>USD</span></div>
+<ul>
+<li>سیستم جامع اتوماسیون</li>
+<li>AI پیشرفته</li>
+<li>یکپارچه‌سازی کامل</li>
+<li>پشتیبانی ۳ ماهه</li>
+<li>تحویل: ۱۰-۲۰ روز</li>
+</ul>
+<a href="#contact" class="btn">سفارش</a>
+</div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<h2 class="section-title">تماس با من</h2>
+<p style="color:#8892b0;font-size:1.2em;margin-bottom:30px">آماده شروع پروژه‌ات هستی؟ همین الان پیام بده!</p>
+<a href="https://t.me/hosseinagentcoderbot" target="_blank">📱 تلگرام</a>
+<a href="https://github.com/hossein76e1" target="_blank">💻 گیت‌هاب</a>
+</section>
+
+<footer class="footer">
+<p>ساخته شده توسط حسین | اتوماسیون هوشمند با هوش مصنوعی © ۲۰۲۶</p>
+</footer>
+</body>
+</html>
