@@ -1,0 +1,73 @@
+2026-09-03 10:45:05,208 INFO gateway.control_socket: Gateway control socket listening at /data/.hermes/gateway.sock
+2026-09-03 10:45:05,252 INFO gateway.run: Starting Hermes Gateway...
+2026-09-03 10:45:05,254 INFO gateway.run: Session storage: /data/.hermes/sessions
+2026-09-03 10:45:05,256 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-09-03 10:45:05,256 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-09-03 10:45:05,278 INFO gateway.run: Connecting to telegram...
+2026-09-03 10:45:05,316 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-03 10:45:06,100 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-09-03 10:45:06,101 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-09-03 10:45:06,200 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-03 10:45:10,561 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-03 10:45:10,628 INFO gateway.run: Turn machinery warmed in 5.3s (18 tool schema(s) materialized)
+2026-09-03 10:45:21,287 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-03 10:45:21,288 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 1)
+2026-09-03 10:45:21,293 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-09-03 10:45:21,425 INFO gateway.run: ✓ telegram connected
+2026-09-03 10:45:21,706 INFO gateway.run: Gateway running with 1 platform(s)
+2026-09-03 10:45:21,722 INFO gateway.run: Channel directory built: 0 target(s)
+2026-09-03 10:45:21,730 INFO gateway.run: Received SIGTERM — initiating shutdown
+2026-09-03 10:45:21,730 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=tini loadavg_1m=7.11 parent_cmdline='tini -- /app/scripts/entrypoint.sh'
+2026-09-03 10:45:21,731 INFO gateway.run: Stopping gateway...
+2026-09-03 10:45:21,733 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.00s
+2026-09-03 10:45:21,738 INFO gateway.run: Shutdown phase: drain done at +0.01s (drain took 0.00s, timed_out=False, active_at_start=0, active_now=0, cron_at_start=0, cron_now=0, api_at_start=0, api_now=0, deferred_at_start=0, deferred_now=0)
+2026-09-03 10:45:22,754 INFO gateway.run: Press Ctrl+C to stop
+2026-09-03 10:45:22,758 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/data/.hermes/kanban/.dispatcher.lock)
+2026-09-03 10:45:22,759 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-09-03 10:45:25,324 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Disconnected from Telegram
+2026-09-03 10:45:25,325 INFO gateway.run: ✓ telegram disconnected (3.59s)
+2026-09-03 10:45:25,325 INFO gateway.run: Shutdown phase: all adapters disconnected at +3.59s
+2026-09-03 10:45:25,326 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +3.59s
+2026-09-03 10:45:25,326 INFO gateway.run: Shutdown phase: executor quiesced at +3.59s
+2026-09-03 10:45:25,327 INFO gateway.run: Shutdown phase: SessionDB close done at +3.60s
+2026-09-03 10:45:25,328 INFO gateway.run: Gateway stopped by an unexpected signal — persisting gateway_state=running so container_boot auto-starts on the next boot (issue #42675)
+2026-09-03 10:45:25,331 INFO gateway.run: Gateway stopped (total teardown 3.60s)
+2026-09-03 10:45:27,497 INFO gateway.control_socket: Gateway control socket listening at /data/.hermes/gateway.sock
+2026-09-03 10:45:27,506 INFO gateway.run: Starting Hermes Gateway...
+2026-09-03 10:45:27,507 INFO gateway.run: Session storage: /data/.hermes/sessions
+2026-09-03 10:45:27,508 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-09-03 10:45:27,508 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-09-03 10:45:27,518 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-09-03 10:45:27,520 INFO gateway.run: Connecting to telegram...
+2026-09-03 10:45:27,530 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-03 10:45:27,668 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-09-03 10:45:27,669 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-09-03 10:45:27,678 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-03 10:45:28,114 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-03 10:45:30,523 INFO gateway.run: Turn machinery warmed in 3.0s (18 tool schema(s) materialized)
+2026-09-03 10:45:38,861 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-03 10:45:38,862 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 1)
+2026-09-03 10:45:38,868 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-09-03 10:45:38,924 INFO gateway.run: ✓ telegram connected
+2026-09-03 10:45:38,963 INFO gateway.run: Gateway running with 1 platform(s)
+2026-09-03 10:45:38,971 INFO gateway.run: Channel directory built: 0 target(s)
+2026-09-03 10:45:39,495 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-09-03 10:45:39,647 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-09-03 10:45:39,800 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-09-03 10:45:39,800 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 59 hidden (over 60 limit). Use /commands for full list.
+2026-09-03 10:45:39,980 INFO gateway.run: Press Ctrl+C to stop
+2026-09-03 10:45:39,990 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/data/.hermes/kanban/.dispatcher.lock)
+2026-09-03 10:45:39,994 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-09-03 10:45:40,007 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-09-03 10:45:44,994 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-09-03 10:56:53,508 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (2160 chars)
+2026-09-03 10:56:53,517 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='میخوام برای Hermes Agent یک سیستم بکاپ خودکار راه\u200cاندازی کنی.  هدف: هر 12 ساعت ی' reply_to_id=None reply_to_text=''
+2026-09-03 11:02:20,987 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-03 11:02:20,988 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-03 11:10:31,116 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=68 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:10:31,117 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=817.6s api_calls=17 response=68 chars
+2026-09-03 11:10:31,181 INFO gateway.platforms.base: [Telegram] Sending response (68 chars) to 1030173067
+2026-09-03 11:13:30,435 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 0 approval(s) for session agent:main:telegram:dm:1030173067 (choice=once, user='ꫝꪮડડꫀⅈꪀ')
+2026-09-03 11:13:51,005 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 0 approval(s) for session agent:main:telegram:dm:1030173067 (choice=once, user='ꫝꪮડડꫀⅈꪀ')
+2026-09-03 11:15:05,248 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (73 chars)
+2026-09-03 11:15:05,257 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='دوتا دسترسی ازم خواستی دیر زدم اکسپایر شد .اگر لازمه یبار دیگه بفرست بزنم' reply_to_id=None reply_to_text=''

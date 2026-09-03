@@ -1,0 +1,123 @@
+2026-09-03 10:45:03,534 WARNING hermes.security_audit: Security posture audit found 1 issue(s) — review your deployment:
+2026-09-03 10:45:03,534 WARNING hermes.security_audit:   [security 1/1] Running as ROOT. The agent's terminal/file tools execute with full root privileges — a single prompt-injection or exposed endpoint is a full host compromise. Run Hermes as an unprivileged user (or in a sandboxed terminal backend / container with a non-root user).
+2026-09-03 10:45:04,839 WARNING hermes_state: state.db: linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 10:45:05,316 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-03 10:45:06,200 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-03 10:45:06,555 WARNING tools.registry: check_fn _a2a_tools_available returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:07,108 WARNING tools.registry: check_fn check_browser_back_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:07,365 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:07,635 WARNING tools.registry: check_fn check_browser_click_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:07,875 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:08,143 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:08,144 WARNING tools.registry: check_fn is_browser_use_cli_mode returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:08,400 WARNING tools.registry: check_fn check_browser_navigate_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:08,676 WARNING tools.registry: check_fn check_browser_press_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:08,950 WARNING tools.registry: check_fn check_browser_scroll_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,203 WARNING tools.registry: check_fn check_browser_snapshot_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,456 WARNING tools.registry: check_fn check_browser_type_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,682 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,701 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,702 WARNING tools.registry: check_fn check_discord_tool_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,705 WARNING tools.registry: check_fn _check_feishu returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,705 WARNING tools.registry: check_fn _check_feishu returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,706 WARNING tools.registry: check_fn _check_ha_available returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,707 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,708 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,708 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,709 WARNING tools.registry: check_fn check_react_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:09,714 WARNING tools.registry: check_fn _check_spotify_available returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:10,545 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:46:10.
+2026-09-03 10:45:10,547 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-09-03 10:45:10,547 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:46:10.
+2026-09-03 10:45:10,547 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-09-03 10:45:10,548 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:46:10.
+2026-09-03 10:45:10,549 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-09-03 10:45:10,549 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:46:10.
+2026-09-03 10:45:10,549 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-09-03 10:45:10,549 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:10,551 WARNING tools.registry: check_fn check_video_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:10,564 WARNING tools.registry: check_fn check_x_search_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:10,564 WARNING tools.registry: check_fn _check_xai_video_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:10,599 WARNING tools.registry: check_fn _check_yuanbao returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:21,293 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-09-03 10:45:21,635 WARNING hermes_state: state.db (hosted_rooms): linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 10:45:21,645 WARNING hermes_state: state.db (room policy checkpoint): linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 10:45:21,730 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=tini loadavg_1m=7.11 parent_cmdline='tini -- /app/scripts/entrypoint.sh'
+2026-09-03 10:45:22,738 WARNING hermes_state: state.db (delivery_ledger): linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 10:45:26,966 WARNING hermes.security_audit: Security posture audit found 1 issue(s) — review your deployment:
+2026-09-03 10:45:26,966 WARNING hermes.security_audit:   [security 1/1] Running as ROOT. The agent's terminal/file tools execute with full root privileges — a single prompt-injection or exposed endpoint is a full host compromise. Run Hermes as an unprivileged user (or in a sandboxed terminal backend / container with a non-root user).
+2026-09-03 10:45:27,460 WARNING hermes_state: state.db: linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 10:45:27,530 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-03 10:45:27,638 WARNING tools.registry: check_fn _a2a_tools_available returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:27,678 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-03 10:45:27,894 WARNING tools.registry: check_fn check_browser_back_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:28,136 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:28,365 WARNING tools.registry: check_fn check_browser_click_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:28,611 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:28,864 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:28,864 WARNING tools.registry: check_fn is_browser_use_cli_mode returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:29,098 WARNING tools.registry: check_fn check_browser_navigate_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:29,338 WARNING tools.registry: check_fn check_browser_press_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:29,608 WARNING tools.registry: check_fn check_browser_scroll_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:29,869 WARNING tools.registry: check_fn check_browser_snapshot_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,135 WARNING tools.registry: check_fn check_browser_type_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,373 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,377 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,378 WARNING tools.registry: check_fn check_discord_tool_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,381 WARNING tools.registry: check_fn _check_feishu returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,381 WARNING tools.registry: check_fn _check_feishu returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,382 WARNING tools.registry: check_fn _check_ha_available returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,384 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,384 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,385 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,386 WARNING tools.registry: check_fn check_react_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,387 WARNING tools.registry: check_fn _check_spotify_available returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,400 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:46:30.
+2026-09-03 10:45:30,402 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-09-03 10:45:30,402 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:46:30.
+2026-09-03 10:45:30,402 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-09-03 10:45:30,403 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:46:30.
+2026-09-03 10:45:30,404 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-09-03 10:45:30,404 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:46:30.
+2026-09-03 10:45:30,404 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-09-03 10:45:30,404 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,406 WARNING tools.registry: check_fn check_video_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,418 WARNING tools.registry: check_fn check_x_search_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,419 WARNING tools.registry: check_fn _check_xai_video_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:30,424 WARNING tools.registry: check_fn _check_yuanbao returned False; dependent tools will be unavailable this turn
+2026-09-03 10:45:38,868 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-09-03 10:45:38,956 WARNING hermes_state: state.db (hosted_rooms): linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 10:45:38,959 WARNING hermes_state: state.db (room policy checkpoint): linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 10:45:39,977 WARNING hermes_state: state.db (delivery_ledger): linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 10:45:39,991 WARNING hermes_state: cron/executions.db: linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 10:45:45,007 WARNING hermes_state: kanban.db (kanban.db): linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 10:46:28,268 WARNING agent.model_metadata: Could not determine context length for model 'coder' (base_url=https://9router-production-d365.up.railway.app/v1) — falling back to 256,000 tokens. Set model.context_length in config.yaml to override.
+2026-09-03 10:56:56,778 WARNING tools.registry: check_fn check_browser_back_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:57,051 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:57,296 WARNING tools.registry: check_fn check_browser_click_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:57,543 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:57,802 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:57,803 WARNING tools.registry: check_fn is_browser_use_cli_mode returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:58,060 WARNING tools.registry: check_fn check_browser_navigate_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:58,309 WARNING tools.registry: check_fn check_browser_press_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:58,580 WARNING tools.registry: check_fn check_browser_scroll_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:58,839 WARNING tools.registry: check_fn check_browser_snapshot_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:59,130 WARNING tools.registry: check_fn check_browser_type_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:59,387 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:59,388 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:59,390 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:59,391 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-09-03 10:56:59,392 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-09-03 10:57:00,032 WARNING agent.auxiliary_client: OPENAI_BASE_URL is set (https://9router-production-d365.up.railway.app/v1) but model.provider is 'openai-api'. Auxiliary clients may route to the wrong endpoint. Run: hermes model to reconfigure, or remove OPENAI_BASE_URL from ~/.hermes/.env
+2026-09-03 10:57:14,200 WARNING [20260903_104627_5c6861f8] agent.tool_executor: Tool terminal returned error (0.64s): {"output": "total 5084\ndrwx------ 19 root root    4096 Sep  3 10:57 .\ndrwxr-xr-x  8 root root    4096 Sep  3 10:45 ..\n-rw-r--r--  1 root root     270 Sep  3 10:45 .env\n-rw-r--r--  1 root root     
+2026-09-03 10:57:28,980 WARNING [20260903_104627_5c6861f8] agent.tool_executor: Tool terminal returned error (0.08s): {"output": "terminal:\n  backend: local\n  cwd: /data/workspace\n  timeout: 180\ncompression:\n  enabled: true\n  threshold: 0.85\nmodel:\n  default: coder\n  provider: openai-api\nagent: {}\nonboardi
+2026-09-03 10:57:57,985 WARNING [20260903_104627_5c6861f8] agent.tool_executor: Tool terminal returned error (0.08s): {"output": "git version 2.47.3\n---", "exit_code": 1, "error": null}
+2026-09-03 10:59:05,871 WARNING hermes_state: verification_evidence.db: linked SQLite 3.46.1 (interpreter /opt/venv/bin/python) is vulnerable to the WAL-reset corruption bug (https://sqlite.org/wal.html#walresetbug) — using journal_mode=DELETE instead of enabling WAL. Upgrade to SQLite 3.51.3+ (or backports 3.50.7 / 3.44.6); Hermes-managed installs can repair the embedded runtime with `hermes update`. See `hermes doctor`. This warning fires once per process per database.
+2026-09-03 11:02:20,987 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-03 11:02:20,988 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-03 11:04:37,336 WARNING [20260903_104627_5c6861f8] agent.tool_executor: Tool terminal returned error (319.34s): {"output": "", "exit_code": -1, "error": "BLOCKED: Command timed out without user response. The user has NOT consented to this action. Do NOT retry this command, do NOT rephrase it, and do NOT attempt
+2026-09-03 11:10:16,528 WARNING [20260903_104627_5c6861f8] agent.tool_executor: Tool terminal returned error (332.41s): {"output": "", "exit_code": -1, "error": "BLOCKED: Command timed out without user response. The user has NOT consented to this action. Do NOT retry this command, do NOT rephrase it, and do NOT attempt
+2026-09-03 11:10:24,657 WARNING agent.lsp.servers: bash-language-server: shellcheck not found on PATH — diagnostics will be empty until shellcheck is installed (apt: shellcheck, brew: shellcheck, scoop: shellcheck).
+2026-09-03 11:10:31,116 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=68 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:11:16,983 WARNING [20260903_104627_5c6861f8] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Refusing background curator patch for bundled skill 'github'."}
+2026-09-03 11:11:31,858 WARNING [20260903_104627_5c6861f8] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Refusing background curator write_file for bundled skill 'hermes-agent'."}
