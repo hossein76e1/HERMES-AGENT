@@ -1,0 +1,70 @@
+{
+  "page_title": "صفحه اصلی | Iran International",
+  "extracted_data": [
+    {
+      "title": "برنامه‌ها",
+      "url": "/vod"
+    },
+    {
+      "title": "تلویزیون",
+      "url": "/live"
+    },
+    {
+      "title": "شنیداری",
+      "url": "/radio"
+    },
+    {
+      "title": "ایران",
+      "url": "/iran"
+    },
+    {
+      "title": "جهان",
+      "url": "/world"
+    },
+    {
+      "title": "حقوق بشر",
+      "url": "/human-rights"
+    },
+    {
+      "title": "جاویدنامان",
+      "url": "/javidnaman"
+    },
+    {
+      "title": "گزارش ویژه",
+      "url": "/special-report"
+    },
+    {
+      "title": "ورزش",
+      "url": "/sport"
+    },
+    {
+      "title": "بازار",
+      "url": "/finance"
+    },
+    {
+      "title": "العربية",
+      "url": "/ar"
+    },
+    {
+      "title": "English",
+      "url": "/en"
+    },
+    {
+      "title": "Map",
+      "url": "/map"
+    },
+    {
+      "title": "Search",
+      "url": "/search"
+    }
+  ],
+  "data_type": "other",
+  "fields": [
+    "title",
+    "url"
+  ],
+  "summary": "Homepage of Iran International news website with navigation to sections and language options.",
+  "source_url": "https://www.iranintl.com",
+  "scraped_at": "2026-09-03T17:36:56.446304",
+  "html_size": 478931
+}
