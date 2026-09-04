@@ -1,0 +1,706 @@
+2026-09-03 10:45:05,208 INFO gateway.control_socket: Gateway control socket listening at /data/.hermes/gateway.sock
+2026-09-03 10:45:05,252 INFO gateway.run: Starting Hermes Gateway...
+2026-09-03 10:45:05,254 INFO gateway.run: Session storage: /data/.hermes/sessions
+2026-09-03 10:45:05,256 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-09-03 10:45:05,256 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-09-03 10:45:05,278 INFO gateway.run: Connecting to telegram...
+2026-09-03 10:45:05,316 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-03 10:45:06,100 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-09-03 10:45:06,101 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-09-03 10:45:06,200 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-03 10:45:10,561 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-03 10:45:10,628 INFO gateway.run: Turn machinery warmed in 5.3s (18 tool schema(s) materialized)
+2026-09-03 10:45:21,287 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-03 10:45:21,288 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 1)
+2026-09-03 10:45:21,293 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-09-03 10:45:21,425 INFO gateway.run: ✓ telegram connected
+2026-09-03 10:45:21,706 INFO gateway.run: Gateway running with 1 platform(s)
+2026-09-03 10:45:21,722 INFO gateway.run: Channel directory built: 0 target(s)
+2026-09-03 10:45:21,730 INFO gateway.run: Received SIGTERM — initiating shutdown
+2026-09-03 10:45:21,730 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=tini loadavg_1m=7.11 parent_cmdline='tini -- /app/scripts/entrypoint.sh'
+2026-09-03 10:45:21,731 INFO gateway.run: Stopping gateway...
+2026-09-03 10:45:21,733 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.00s
+2026-09-03 10:45:21,738 INFO gateway.run: Shutdown phase: drain done at +0.01s (drain took 0.00s, timed_out=False, active_at_start=0, active_now=0, cron_at_start=0, cron_now=0, api_at_start=0, api_now=0, deferred_at_start=0, deferred_now=0)
+2026-09-03 10:45:22,754 INFO gateway.run: Press Ctrl+C to stop
+2026-09-03 10:45:22,758 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/data/.hermes/kanban/.dispatcher.lock)
+2026-09-03 10:45:22,759 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-09-03 10:45:25,324 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Disconnected from Telegram
+2026-09-03 10:45:25,325 INFO gateway.run: ✓ telegram disconnected (3.59s)
+2026-09-03 10:45:25,325 INFO gateway.run: Shutdown phase: all adapters disconnected at +3.59s
+2026-09-03 10:45:25,326 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +3.59s
+2026-09-03 10:45:25,326 INFO gateway.run: Shutdown phase: executor quiesced at +3.59s
+2026-09-03 10:45:25,327 INFO gateway.run: Shutdown phase: SessionDB close done at +3.60s
+2026-09-03 10:45:25,328 INFO gateway.run: Gateway stopped by an unexpected signal — persisting gateway_state=running so container_boot auto-starts on the next boot (issue #42675)
+2026-09-03 10:45:25,331 INFO gateway.run: Gateway stopped (total teardown 3.60s)
+2026-09-03 10:45:27,497 INFO gateway.control_socket: Gateway control socket listening at /data/.hermes/gateway.sock
+2026-09-03 10:45:27,506 INFO gateway.run: Starting Hermes Gateway...
+2026-09-03 10:45:27,507 INFO gateway.run: Session storage: /data/.hermes/sessions
+2026-09-03 10:45:27,508 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-09-03 10:45:27,508 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-09-03 10:45:27,518 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-09-03 10:45:27,520 INFO gateway.run: Connecting to telegram...
+2026-09-03 10:45:27,530 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-03 10:45:27,668 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-09-03 10:45:27,669 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-09-03 10:45:27,678 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-03 10:45:28,114 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-03 10:45:30,523 INFO gateway.run: Turn machinery warmed in 3.0s (18 tool schema(s) materialized)
+2026-09-03 10:45:38,861 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-03 10:45:38,862 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 1)
+2026-09-03 10:45:38,868 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-09-03 10:45:38,924 INFO gateway.run: ✓ telegram connected
+2026-09-03 10:45:38,963 INFO gateway.run: Gateway running with 1 platform(s)
+2026-09-03 10:45:38,971 INFO gateway.run: Channel directory built: 0 target(s)
+2026-09-03 10:45:39,495 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-09-03 10:45:39,647 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-09-03 10:45:39,800 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-09-03 10:45:39,800 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 59 hidden (over 60 limit). Use /commands for full list.
+2026-09-03 10:45:39,980 INFO gateway.run: Press Ctrl+C to stop
+2026-09-03 10:45:39,990 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/data/.hermes/kanban/.dispatcher.lock)
+2026-09-03 10:45:39,994 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-09-03 10:45:40,007 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-09-03 10:45:44,994 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-09-03 10:56:53,508 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (2160 chars)
+2026-09-03 10:56:53,517 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='میخوام برای Hermes Agent یک سیستم بکاپ خودکار راه\u200cاندازی کنی.  هدف: هر 12 ساعت ی' reply_to_id=None reply_to_text=''
+2026-09-03 11:02:20,987 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-03 11:02:20,988 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-03 11:10:31,116 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=68 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:10:31,117 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=817.6s api_calls=17 response=68 chars
+2026-09-03 11:10:31,181 INFO gateway.platforms.base: [Telegram] Sending response (68 chars) to 1030173067
+2026-09-03 11:13:30,435 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 0 approval(s) for session agent:main:telegram:dm:1030173067 (choice=once, user='ꫝꪮડડꫀⅈꪀ')
+2026-09-03 11:13:51,005 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 0 approval(s) for session agent:main:telegram:dm:1030173067 (choice=once, user='ꫝꪮડડꫀⅈꪀ')
+2026-09-03 11:15:05,248 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (73 chars)
+2026-09-03 11:15:05,257 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='دوتا دسترسی ازم خواستی دیر زدم اکسپایر شد .اگر لازمه یبار دیگه بفرست بزنم' reply_to_id=None reply_to_text=''
+2026-09-03 11:15:18,386 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=76 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:15:18,387 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=13.1s api_calls=2 response=76 chars
+2026-09-03 11:15:18,417 INFO gateway.platforms.base: [Telegram] Sending response (76 chars) to 1030173067
+2026-09-03 11:16:44,515 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (9 chars)
+2026-09-03 11:16:44,524 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='انجام بده' reply_to_id=25 reply_to_text='Backup تستی با موفقیت اجرا شد و Push شد! بذار ساختار و مانیفست رو تأیید کنم:'
+2026-09-03 11:17:17,075 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=1697 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:17:17,075 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=32.6s api_calls=5 response=1697 chars
+2026-09-03 11:17:17,104 INFO gateway.platforms.base: [Telegram] Sending response (1697 chars) to 1030173067
+2026-09-03 11:24:15,331 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (180 chars)
+2026-09-03 11:24:15,340 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='ببین من وی پی اس رو دائما هر چند روز یکبار عوض میکنم میخوام بکاپ داشته باشم که ه' reply_to_id=None reply_to_text=''
+2026-09-03 11:25:00,117 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=1643 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:25:00,118 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=44.8s api_calls=3 response=1643 chars
+2026-09-03 11:25:00,159 INFO gateway.platforms.base: [Telegram] Sending response (1643 chars) to 1030173067
+2026-09-03 11:27:22,007 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (32 chars)
+2026-09-03 11:27:22,015 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب الان میتونی ازم اطلاعات بگیری' reply_to_id=None reply_to_text=''
+2026-09-03 11:27:30,299 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=497 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:27:30,300 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=8.3s api_calls=1 response=497 chars
+2026-09-03 11:27:30,330 INFO gateway.platforms.base: [Telegram] Sending response (497 chars) to 1030173067
+2026-09-03 11:32:23,634 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (425 chars)
+2026-09-03 11:32:23,643 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اره اسمم حسین. از کجا فهمیدی؟ من میخوام فری لنسری شروع کنم و فعلا میخوام روی اوت' reply_to_id=None reply_to_text=''
+2026-09-03 11:32:38,655 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=1347 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:32:38,655 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=15.0s api_calls=2 response=1347 chars
+2026-09-03 11:32:38,686 INFO gateway.platforms.base: [Telegram] Sending response (1347 chars) to 1030173067
+2026-09-03 11:34:44,251 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (1 chars)
+2026-09-03 11:34:44,262 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='3' reply_to_id=None reply_to_text=''
+2026-09-03 11:36:11,680 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=138 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:36:11,680 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=87.4s api_calls=3 response=138 chars
+2026-09-03 11:36:11,712 INFO gateway.platforms.base: [Telegram] Sending response (138 chars) to 1030173067
+2026-09-03 11:40:21,237 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (90 chars)
+2026-09-03 11:40:21,244 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='داری میسازی؟ باید صبر کنم ؟ چند دقیقس چیزی نگفتی یه نشونه بهم بده که بدونم داری ' reply_to_id=None reply_to_text=''
+2026-09-03 11:41:29,705 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=42 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:41:29,705 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=68.5s api_calls=8 response=42 chars
+2026-09-03 11:41:29,734 INFO gateway.platforms.base: [Telegram] Sending response (42 chars) to 1030173067
+2026-09-03 11:48:42,466 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (4 chars)
+2026-09-03 11:48:42,473 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='چیشد' reply_to_id=None reply_to_text=''
+2026-09-03 11:52:39,087 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=147 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:52:39,088 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=236.6s api_calls=1 response=147 chars
+2026-09-03 11:52:39,159 INFO gateway.platforms.base: [Telegram] Sending response (147 chars) to 1030173067
+2026-09-03 11:57:36,365 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (105 chars)
+2026-09-03 11:57:36,377 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='بین کارهات میتونم سوال های دیگه بپرسم؟که شاید اصلا ربطی به موضوع نداشه باشه .به ' reply_to_id=None reply_to_text=''
+2026-09-03 11:59:03,538 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=448 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 11:59:03,538 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=87.2s api_calls=1 response=448 chars
+2026-09-03 11:59:03,569 INFO gateway.platforms.base: [Telegram] Sending response (448 chars) to 1030173067
+2026-09-03 12:00:42,198 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (65 chars)
+2026-09-03 12:00:42,205 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اینجا گفتی درامد تقریبی اینقدر منظورت در ماه یا به ازای هر پروژه؟' reply_to_id=38 reply_to_text='ذخیره شد. حالا بیا یه نقشه راه بهت بدم:  ---  🚀 نقشه راه شروع اوتوماسیون هوش مصن'
+2026-09-03 12:00:53,561 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=684 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:00:53,561 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=11.4s api_calls=1 response=684 chars
+2026-09-03 12:00:53,589 INFO gateway.platforms.base: [Telegram] Sending response (684 chars) to 1030173067
+2026-09-03 12:01:45,799 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (47 chars)
+2026-09-03 12:01:45,809 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='الان یعنی داری همزمان اون رباته هم طراحی میکنی؟' reply_to_id=None reply_to_text=''
+2026-09-03 12:01:57,489 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=49 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:01:57,490 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=11.7s api_calls=1 response=49 chars
+2026-09-03 12:01:57,521 INFO gateway.platforms.base: [Telegram] Sending response (49 chars) to 1030173067
+2026-09-03 12:02:26,256 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (18 chars)
+2026-09-03 12:02:26,262 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='با Ai هم تست کردی؟' reply_to_id=None reply_to_text=''
+2026-09-03 12:02:30,973 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=35 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:02:30,974 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=4.7s api_calls=1 response=35 chars
+2026-09-03 12:02:31,001 INFO gateway.platforms.base: [Telegram] Sending response (35 chars) to 1030173067
+2026-09-03 12:02:58,766 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (52 chars)
+2026-09-03 12:02:58,773 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='حس میکنم اوتومات انجام نمیدی و باید بگم که انجام بدی' reply_to_id=None reply_to_text=''
+2026-09-03 12:03:11,805 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=87 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:03:11,805 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=13.0s api_calls=1 response=87 chars
+2026-09-03 12:03:11,916 INFO gateway.platforms.base: [Telegram] Sending response (87 chars) to 1030173067
+2026-09-03 12:04:09,693 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (111 chars)
+2026-09-03 12:04:09,706 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اره همه کار هایی که بهت میسپارمو اوتومات پشت صحنه انجام بده و گهگاهی بهم بگو که ' reply_to_id=None reply_to_text=''
+2026-09-03 12:04:18,669 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=195 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:04:18,670 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=9.0s api_calls=1 response=195 chars
+2026-09-03 12:04:18,695 INFO gateway.platforms.base: [Telegram] Sending response (195 chars) to 1030173067
+2026-09-03 12:04:36,512 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (21 chars)
+2026-09-03 12:04:36,520 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='چقدر زمان میبره بنظرت' reply_to_id=None reply_to_text=''
+2026-09-03 12:04:40,667 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=33 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:04:40,667 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=4.1s api_calls=1 response=33 chars
+2026-09-03 12:04:40,693 INFO gateway.platforms.base: [Telegram] Sending response (33 chars) to 1030173067
+2026-09-03 12:04:57,076 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (7 chars)
+2026-09-03 12:04:57,085 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='شروع کن' reply_to_id=None reply_to_text=''
+2026-09-03 12:05:33,533 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (86 chars)
+2026-09-03 12:06:02,062 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=382 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:06:02,062 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=65.0s api_calls=6 response=382 chars
+2026-09-03 12:06:02,096 INFO gateway.platforms.base: [Telegram] Sending response (382 chars) to 1030173067
+2026-09-03 12:07:10,178 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (38 chars)
+2026-09-03 12:07:10,185 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اره الان نه ولی بعدا اضافه میکنیم هردو' reply_to_id=None reply_to_text=''
+2026-09-03 12:07:22,348 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=362 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:07:22,348 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=12.2s api_calls=1 response=362 chars
+2026-09-03 12:07:22,393 INFO gateway.platforms.base: [Telegram] Sending response (362 chars) to 1030173067
+2026-09-03 12:08:18,388 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (40 chars)
+2026-09-03 12:08:18,396 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='وب سایتو گفتم\u200c بعدا اضافه میکنیم نه همرو' reply_to_id=70 reply_to_text='فهمیدم! الان دارم ادامه میدم. فقط خلاصه کارها:  دارم انجام میدم: - ✅ فیکس کردن م'
+2026-09-03 12:08:26,585 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=195 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:08:26,586 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=8.2s api_calls=1 response=195 chars
+2026-09-03 12:08:26,616 INFO gateway.platforms.base: [Telegram] Sending response (195 chars) to 1030173067
+2026-09-03 12:09:01,158 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (59 chars)
+2026-09-03 12:09:01,165 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='تلگرام هم الان اگر قاطی میشه بعد که انجام دادی اضافه میکنیم' reply_to_id=72 reply_to_text='آره فهمیدم! 😄  - تلگرام\u200cبات: بعداً - وب\u200cسایت: بعداً - قیمت به تومان و دلار: ✅  ا'
+2026-09-03 12:10:39,287 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (27 chars)
+2026-09-03 12:10:49,840 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=136 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:10:49,840 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=108.7s api_calls=3 response=136 chars
+2026-09-03 12:10:49,870 INFO gateway.platforms.base: [Telegram] Sending response (136 chars) to 1030173067
+2026-09-03 12:11:25,476 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (10 chars)
+2026-09-03 12:11:25,483 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='این چی بود' reply_to_id=66 reply_to_text="↪ Redirected current run. I'll adjust using your correction.  💡 First-time tip —"
+2026-09-03 12:11:36,334 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=237 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:11:36,334 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=10.9s api_calls=1 response=237 chars
+2026-09-03 12:11:36,359 INFO gateway.platforms.base: [Telegram] Sending response (237 chars) to 1030173067
+2026-09-03 12:12:10,555 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (20 chars)
+2026-09-03 12:12:10,563 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='براچی از سر گرفته شد' reply_to_id=79 reply_to_text='یه نوتیفیکیشن سیستمی بود — یعنی کاری که داشتم انجام میدادم قطع شد و دوباره از سر'
+2026-09-03 12:12:19,818 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=188 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:12:19,818 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=9.3s api_calls=1 response=188 chars
+2026-09-03 12:12:19,844 INFO gateway.platforms.base: [Telegram] Sending response (188 chars) to 1030173067
+2026-09-03 12:13:18,848 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (51 chars)
+2026-09-03 12:13:18,860 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='مگ شروع نکرده بودی؟ که میگی الان واقعا شروع میکنم 😐' reply_to_id=None reply_to_text=''
+2026-09-03 12:14:18,218 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (61 chars)
+2026-09-03 12:14:31,157 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=497 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:14:31,158 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=72.3s api_calls=3 response=497 chars
+2026-09-03 12:14:31,203 INFO gateway.platforms.base: [Telegram] Sending response (497 chars) to 1030173067
+2026-09-03 12:15:04,679 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (7 chars)
+2026-09-03 12:15:04,691 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='این چیه' reply_to_id=85 reply_to_text="↪ Redirected current run. I'll adjust using your correction."
+2026-09-03 12:15:11,461 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=201 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:15:11,461 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=6.8s api_calls=1 response=201 chars
+2026-09-03 12:15:11,495 INFO gateway.platforms.base: [Telegram] Sending response (201 chars) to 1030173067
+2026-09-03 12:16:14,616 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (141 chars)
+2026-09-03 12:16:14,624 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب ازم سوال بپرس چیزایی که مهم و باید بدونی یا تنظیماتی که باید انجام بدیم مثل س' reply_to_id=None reply_to_text=''
+2026-09-03 12:16:42,704 INFO hermes_plugins.telegram_platform.adapter: Telegram clarify button resolved (id=4efafca3b4, choice='UTC+3:30 (تهران) (Recommended)', user='ꫝꪮડડꫀⅈꪀ')
+2026-09-03 12:17:35,461 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (87 chars)
+2026-09-03 12:17:35,464 INFO gateway.run: Gateway intercepted clarify text response (session=agent:main:telegram:dm:1030173067, id=a665319c4a)
+2026-09-03 12:17:49,905 INFO hermes_plugins.telegram_platform.adapter: Telegram clarify button resolved (id=536e3904b2, choice='فقط تلگرام فعلا', user='ꫝꪮડડꫀⅈꪀ')
+2026-09-03 12:18:00,490 INFO hermes_plugins.telegram_platform.adapter: Telegram clarify button resolved (id=352799aedd, choice='پیام بده هر وقت لازمه', user='ꫝꪮડડꫀⅈꪀ')
+2026-09-03 12:18:43,417 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:1030173067 (choice=once, user='ꫝꪮડડꫀⅈꪀ')
+2026-09-03 12:19:11,983 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=161 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:19:11,983 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=177.4s api_calls=5 response=161 chars
+2026-09-03 12:19:12,021 INFO gateway.platforms.base: [Telegram] Sending response (161 chars) to 1030173067
+2026-09-03 12:19:35,385 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (14 chars)
+2026-09-03 12:19:35,391 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='الان ساعت چنده' reply_to_id=None reply_to_text=''
+2026-09-03 12:19:46,430 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=46 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:19:46,430 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=11.0s api_calls=1 response=46 chars
+2026-09-03 12:19:46,458 INFO gateway.platforms.base: [Telegram] Sending response (46 chars) to 1030173067
+2026-09-03 12:20:20,716 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (5 chars)
+2026-09-03 12:20:20,723 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='تاریخ' reply_to_id=None reply_to_text=''
+2026-09-03 12:20:30,376 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=39 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:20:30,376 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=9.7s api_calls=1 response=39 chars
+2026-09-03 12:20:30,464 INFO gateway.platforms.base: [Telegram] Sending response (39 chars) to 1030173067
+2026-09-03 12:21:18,131 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (11 chars)
+2026-09-03 12:21:18,139 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اشتباه گفتی' reply_to_id=100 reply_to_text='سه\u200cشنبه ۱۳ شهریور ۱۴۰۵ (۳ سپتامبر ۲۰۲۶)'
+2026-09-03 12:21:35,287 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=158 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:21:35,288 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=17.1s api_calls=1 response=158 chars
+2026-09-03 12:21:35,330 INFO gateway.platforms.base: [Telegram] Sending response (158 chars) to 1030173067
+2026-09-03 12:22:11,594 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (27 chars)
+2026-09-03 12:22:11,613 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب دیگه چیارو\u200c تنظیم\u200c کنیم؟' reply_to_id=None reply_to_text=''
+2026-09-03 12:23:11,433 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=542 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:23:11,434 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=59.8s api_calls=1 response=542 chars
+2026-09-03 12:23:11,484 INFO gateway.platforms.base: [Telegram] Sending response (542 chars) to 1030173067
+2026-09-03 12:24:39,548 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (19 chars)
+2026-09-03 12:24:39,555 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='پروژرو ب کجا رسوندی' reply_to_id=None reply_to_text=''
+2026-09-03 12:24:49,614 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=441 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:24:49,615 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=10.1s api_calls=1 response=441 chars
+2026-09-03 12:24:49,649 INFO gateway.platforms.base: [Telegram] Sending response (441 chars) to 1030173067
+2026-09-03 12:29:04,409 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (35 chars)
+2026-09-03 12:29:04,415 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='شدنیه همزمان بقیه مراحلشم اجرا کنی؟' reply_to_id=None reply_to_text=''
+2026-09-03 12:30:14,281 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=180 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:30:14,282 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=69.9s api_calls=5 response=180 chars
+2026-09-03 12:30:14,309 INFO gateway.platforms.base: [Telegram] Sending response (180 chars) to 1030173067
+2026-09-03 12:30:56,629 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (10 chars)
+2026-09-03 12:30:56,635 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='ای دمت گرم' reply_to_id=None reply_to_text=''
+2026-09-03 12:31:01,107 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=31 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:31:01,108 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=4.5s api_calls=1 response=31 chars
+2026-09-03 12:31:01,141 INFO gateway.platforms.base: [Telegram] Sending response (31 chars) to 1030173067
+2026-09-03 12:35:58,299 INFO gateway.run: Watch pattern notification — injecting for telegram chat=1030173067 thread=None
+2026-09-03 12:35:58,309 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='[ASYNC DELEGATION BATCH COMPLETE — deleg_e3984ab6] A background fan-out of 3 sub' reply_to_id=None reply_to_text=''
+2026-09-03 12:38:06,828 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=224 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:38:06,828 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=128.5s api_calls=1 response=224 chars
+2026-09-03 12:38:06,848 INFO gateway.platforms.base: [Telegram] Sending response (224 chars) to 1030173067
+2026-09-03 12:39:32,312 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (104 chars)
+2026-09-03 12:39:32,320 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='الان یه سوال اینارو که ساختی چطوری میخوای تحویلم بدی  یعنی مثلا بات تلگرامو\u200c چطو' reply_to_id=None reply_to_text=''
+2026-09-03 12:39:32,743 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ReadError: 
+2026-09-03 12:39:32,743 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ReadError: 
+2026-09-03 12:39:38,766 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-09-03 12:39:47,143 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=652 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:39:47,143 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=14.8s api_calls=1 response=652 chars
+2026-09-03 12:39:47,175 INFO gateway.platforms.base: [Telegram] Sending response (652 chars) to 1030173067
+2026-09-03 12:39:47,190 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 1/2, retrying in 2.8s): send_path_degraded
+2026-09-03 12:39:49,386 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 2)
+2026-09-03 12:39:50,183 INFO gateway.platforms.base: [Telegram] Send succeeded on retry 1
+2026-09-03 12:41:46,930 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (30 chars)
+2026-09-03 12:41:46,937 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='نفهمیدم سوالتو\u200c یبار دیگه بپرس' reply_to_id=None reply_to_text=''
+2026-09-03 12:41:54,040 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=158 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:41:54,041 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=7.1s api_calls=1 response=158 chars
+2026-09-03 12:41:54,114 INFO gateway.platforms.base: [Telegram] Sending response (158 chars) to 1030173067
+2026-09-03 12:42:37,653 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (28 chars)
+2026-09-03 12:42:37,666 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اره چون میخوام تستش کنم خودم' reply_to_id=None reply_to_text=''
+2026-09-03 12:42:49,077 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=357 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:42:49,078 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=11.4s api_calls=1 response=357 chars
+2026-09-03 12:42:49,113 INFO gateway.platforms.base: [Telegram] Sending response (357 chars) to 1030173067
+2026-09-03 12:44:12,469 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (68 chars)
+2026-09-03 12:44:12,476 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='@Hosseinagentcoderbot 8965593380:***' reply_to_id=None reply_to_text=''
+2026-09-03 12:44:44,681 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=24 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:44:44,681 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=32.2s api_calls=1 response=24 chars
+2026-09-03 12:44:44,714 INFO gateway.platforms.base: [Telegram] Sending response (24 chars) to 1030173067
+2026-09-03 12:53:59,441 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (8 chars)
+2026-09-03 12:53:59,449 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='چی شد پس' reply_to_id=121 reply_to_text='عالی! الان روشنش می\u200cکنم:'
+2026-09-03 12:54:16,311 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=18 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:54:16,312 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=16.9s api_calls=1 response=18 chars
+2026-09-03 12:54:16,342 INFO gateway.platforms.base: [Telegram] Sending response (18 chars) to 1030173067
+2026-09-03 12:55:10,733 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (34 chars)
+2026-09-03 12:55:10,739 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='مراحلشو بگو چکار کردی و داری میکنی' reply_to_id=None reply_to_text=''
+2026-09-03 12:55:45,417 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=28 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:55:45,419 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=34.7s api_calls=2 response=28 chars
+2026-09-03 12:55:45,453 INFO gateway.platforms.base: [Telegram] Sending response (28 chars) to 1030173067
+2026-09-03 12:56:18,360 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (20 chars)
+2026-09-03 12:56:18,367 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='چرا اینقدر زمان بره؟' reply_to_id=None reply_to_text=''
+2026-09-03 12:56:26,308 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=44 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:56:26,309 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=7.9s api_calls=1 response=44 chars
+2026-09-03 12:56:26,339 INFO gateway.platforms.base: [Telegram] Sending response (44 chars) to 1030173067
+2026-09-03 12:57:03,562 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (91 chars)
+2026-09-03 12:57:03,572 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='منظر منو بد متوجه میشی الان دعوات نمیکنم فقط سوال پرسیدم سوالم اینه که چرا اینقد' reply_to_id=None reply_to_text=''
+2026-09-03 12:58:43,879 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-03 12:59:05,618 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
+2026-09-03 12:59:09,977 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (2/5) — previous session still held open on Telegram's servers. Waiting 30s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-03 12:59:26,948 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=101 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 12:59:26,949 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=143.4s api_calls=4 response=101 chars
+2026-09-03 12:59:26,994 INFO gateway.platforms.base: [Telegram] Sending response (101 chars) to 1030173067
+2026-09-03 12:59:27,011 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 1/2, retrying in 2.5s): send_path_degraded
+2026-09-03 12:59:29,511 WARNING gateway.platforms.base: [Telegram] Send failed (attempt 2/2, retrying in 4.8s): send_path_degraded
+2026-09-03 12:59:34,301 ERROR gateway.platforms.base: [Telegram] Failed to deliver response after 2 retries: send_path_degraded
+2026-09-03 12:59:42,026 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 2/5; health pending getUpdates progress
+2026-09-03 12:59:52,459 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 4)
+2026-09-03 13:02:19,934 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /data/.hermes/cache/images/img_22a3e5aa9c0e.jpg
+2026-09-03 13:02:20,736 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:1030173067:photo-burst with 1 image(s)
+2026-09-03 13:02:20,745 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='میخوام وارد railway بشم بعد کانتینیو ویت گیتهاب میزنم  با این صحنه مواجه میشم' reply_to_id=None reply_to_text=''
+2026-09-03 13:02:20,851 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
+2026-09-03 13:02:46,813 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=365 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:02:46,814 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=26.1s api_calls=1 response=365 chars
+2026-09-03 13:02:46,851 INFO gateway.platforms.base: [Telegram] Sending response (365 chars) to 1030173067
+2026-09-03 13:04:57,795 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (21 chars)
+2026-09-03 13:04:57,804 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب کارمو به کجا رسید؟' reply_to_id=None reply_to_text=''
+2026-09-03 13:05:15,260 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=534 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:05:15,260 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=17.5s api_calls=1 response=534 chars
+2026-09-03 13:05:15,299 INFO gateway.platforms.base: [Telegram] Sending response (534 chars) to 1030173067
+2026-09-03 13:06:05,522 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (24 chars)
+2026-09-03 13:06:05,530 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='میخوای یه توکن دیگه بدم؟' reply_to_id=None reply_to_text=''
+2026-09-03 13:06:12,814 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=92 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:06:12,815 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=7.3s api_calls=1 response=92 chars
+2026-09-03 13:06:12,846 INFO gateway.platforms.base: [Telegram] Sending response (92 chars) to 1030173067
+2026-09-03 13:06:41,305 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (13 chars)
+2026-09-03 13:06:41,314 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='وب سایت ببینم' reply_to_id=None reply_to_text=''
+2026-09-03 13:07:03,210 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=73 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:07:03,210 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=21.9s api_calls=2 response=73 chars
+2026-09-03 13:07:03,241 INFO gateway.platforms.base: [Telegram] Sending response (73 chars) to 1030173067
+2026-09-03 13:09:49,545 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (9 chars)
+2026-09-03 13:09:49,553 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='گزارش بده' reply_to_id=None reply_to_text=''
+2026-09-03 13:10:06,873 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=562 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:10:06,873 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=17.3s api_calls=2 response=562 chars
+2026-09-03 13:10:06,904 INFO gateway.platforms.base: [Telegram] Sending response (562 chars) to 1030173067
+2026-09-03 13:11:51,342 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (88 chars)
+2026-09-03 13:11:51,349 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اگر بهت بگم سریعتر باش؛ سریعتر میشی؟تاثیری داره؟یا الانشم داری با نهایت سرعت انج' reply_to_id=None reply_to_text=''
+2026-09-03 13:11:59,216 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=152 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:11:59,217 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=7.9s api_calls=1 response=152 chars
+2026-09-03 13:11:59,253 INFO gateway.platforms.base: [Telegram] Sending response (152 chars) to 1030173067
+2026-09-03 13:12:35,517 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (34 chars)
+2026-09-03 13:12:35,542 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='پس پر\u200cقدرت با دقت و سریع انجام بده' reply_to_id=None reply_to_text=''
+2026-09-03 13:14:02,371 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=149 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:14:02,371 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=86.8s api_calls=2 response=149 chars
+2026-09-03 13:14:02,414 INFO gateway.platforms.base: [Telegram] Sending response (149 chars) to 1030173067
+2026-09-03 13:18:39,433 INFO gateway.run: Watch pattern notification — injecting for telegram chat=1030173067 thread=None
+2026-09-03 13:18:39,445 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='[ASYNC DELEGATION BATCH COMPLETE — deleg_bc47e83b] A background fan-out of 2 sub' reply_to_id=None reply_to_text=''
+2026-09-03 13:20:38,395 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=219 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:20:38,395 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=119.0s api_calls=1 response=219 chars
+2026-09-03 13:20:38,418 INFO gateway.platforms.base: [Telegram] Sending response (219 chars) to 1030173067
+2026-09-03 13:28:19,237 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (13 chars)
+2026-09-03 13:28:19,245 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='چیزی نمیخوای؟' reply_to_id=None reply_to_text=''
+2026-09-03 13:29:29,343 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=24 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:29:29,343 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=70.1s api_calls=1 response=24 chars
+2026-09-03 13:29:29,376 INFO gateway.platforms.base: [Telegram] Sending response (24 chars) to 1030173067
+2026-09-03 13:30:02,743 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (63 chars)
+2026-09-03 13:30:02,753 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب سریعتر اگر کمک میخوای بگو یا جایی که گیر کردی دستی انجام بدم' reply_to_id=None reply_to_text=''
+2026-09-03 13:30:13,936 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=32 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:30:13,936 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=11.2s api_calls=1 response=32 chars
+2026-09-03 13:30:13,971 INFO gateway.platforms.base: [Telegram] Sending response (32 chars) to 1030173067
+2026-09-03 13:31:21,132 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (9 chars)
+2026-09-03 13:31:21,142 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='گزارش بده' reply_to_id=None reply_to_text=''
+2026-09-03 13:31:38,082 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=411 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:31:38,082 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=16.9s api_calls=1 response=411 chars
+2026-09-03 13:31:38,117 INFO gateway.platforms.base: [Telegram] Sending response (411 chars) to 1030173067
+2026-09-03 13:46:25,865 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (9 chars)
+2026-09-03 13:46:25,877 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='گزارش بده' reply_to_id=None reply_to_text=''
+2026-09-03 13:47:35,273 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=68 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:47:35,274 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=69.4s api_calls=1 response=68 chars
+2026-09-03 13:47:35,324 INFO gateway.platforms.base: [Telegram] Sending response (68 chars) to 1030173067
+2026-09-03 13:47:45,011 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (9 chars)
+2026-09-03 13:47:45,021 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='ادامه بده' reply_to_id=None reply_to_text=''
+2026-09-03 13:47:52,158 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=20 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:47:52,159 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=7.1s api_calls=1 response=20 chars
+2026-09-03 13:47:52,205 INFO gateway.platforms.base: [Telegram] Sending response (20 chars) to 1030173067
+2026-09-03 13:50:21,180 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (9 chars)
+2026-09-03 13:50:21,188 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='گزارش بده' reply_to_id=None reply_to_text=''
+2026-09-03 13:50:26,275 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=18 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:50:26,276 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=5.1s api_calls=1 response=18 chars
+2026-09-03 13:50:26,306 INFO gateway.platforms.base: [Telegram] Sending response (18 chars) to 1030173067
+2026-09-03 13:52:05,611 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (38 chars)
+2026-09-03 13:52:05,624 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='تلگرام به کجا رسید اجرا میشه تستش کنم؟' reply_to_id=None reply_to_text=''
+2026-09-03 13:52:27,924 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=186 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:52:27,924 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=22.3s api_calls=2 response=186 chars
+2026-09-03 13:52:27,958 INFO gateway.platforms.base: [Telegram] Sending response (186 chars) to 1030173067
+2026-09-03 13:57:23,567 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (29 chars)
+2026-09-03 13:57:23,574 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='الان دقیقا این بات چکار میکنه' reply_to_id=None reply_to_text=''
+2026-09-03 13:58:39,746 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=382 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 13:58:39,747 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=76.2s api_calls=1 response=382 chars
+2026-09-03 13:58:39,825 INFO gateway.platforms.base: [Telegram] Sending response (382 chars) to 1030173067
+2026-09-03 14:02:37,891 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (42 chars)
+2026-09-03 14:02:37,900 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='تا الان دوتا سایت بهش دادم ارور داده چک کن' reply_to_id=164 reply_to_text='یه رباته که:  1. لینک سایت بهش بدی 2. داده رو استخراج میکنه (عنوان، لینک، قیمت، '
+2026-09-03 14:04:02,873 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=173 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 14:04:02,873 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=85.0s api_calls=3 response=173 chars
+2026-09-03 14:04:02,980 INFO gateway.platforms.base: [Telegram] Sending response (173 chars) to 1030173067
+2026-09-03 14:06:21,982 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (16 chars)
+2026-09-03 14:06:21,990 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب گزارش کلی بده' reply_to_id=None reply_to_text=''
+2026-09-03 14:06:32,871 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=431 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 14:06:32,871 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=10.9s api_calls=1 response=431 chars
+2026-09-03 14:06:32,903 INFO gateway.platforms.base: [Telegram] Sending response (431 chars) to 1030173067
+2026-09-03 14:08:41,746 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (32 chars)
+2026-09-03 14:08:41,756 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='الان چه کارهایی داری انجام میدی؟' reply_to_id=None reply_to_text=''
+2026-09-03 14:09:28,405 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=32 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 14:09:28,405 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=46.6s api_calls=2 response=32 chars
+2026-09-03 14:09:28,436 INFO gateway.platforms.base: [Telegram] Sending response (32 chars) to 1030173067
+2026-09-03 14:19:18,048 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (48 chars)
+2026-09-03 14:19:18,091 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='چند تا پروژه کاربردی بگو بسازیم بذاریم برای فروش' reply_to_id=None reply_to_text=''
+2026-09-03 14:25:27,346 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=369.3s api_calls=1 response=98 chars
+2026-09-03 14:25:27,346 INFO gateway.run: Transient agent failure in session 20260903_104627_5c6861f8 — persisting user message so conversation context is preserved on retry.
+2026-09-03 14:25:27,348 INFO gateway.run: Skipping duplicate user turn (message_id=171) in session 20260903_104627_5c6861f8
+2026-09-03 14:25:27,378 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 1030173067
+2026-09-03 14:27:54,956 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (8 chars)
+2026-09-03 14:27:54,975 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اینا چین' reply_to_id=177 reply_to_text='⚠️ The model provider failed after retries. I kept raw provider details out of c'
+2026-09-03 14:29:17,645 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=1096 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 14:29:17,646 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=82.7s api_calls=1 response=1096 chars
+2026-09-03 14:29:17,676 INFO gateway.platforms.base: [Telegram] Sending response (1096 chars) to 1030173067
+2026-09-03 14:36:11,431 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (63 chars)
+2026-09-03 14:36:11,446 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='همرو بسازیم فقط بگو چند تا کد ربات بدم بهت و چ چیزایی نیاز داری' reply_to_id=None reply_to_text=''
+2026-09-03 14:42:20,777 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=369.3s api_calls=1 response=98 chars
+2026-09-03 14:42:20,777 INFO gateway.run: Transient agent failure in session 20260903_104627_5c6861f8 — persisting user message so conversation context is preserved on retry.
+2026-09-03 14:42:20,779 INFO gateway.run: Skipping duplicate user turn (message_id=180) in session 20260903_104627_5c6861f8
+2026-09-03 14:42:20,816 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 1030173067
+2026-09-03 14:42:37,101 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (1 chars)
+2026-09-03 14:42:37,110 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='؟' reply_to_id=182 reply_to_text='⚠️ The model provider failed after retries. I kept raw provider details out of c'
+2026-09-03 14:44:38,473 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=803 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 14:44:38,473 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=121.4s api_calls=1 response=803 chars
+2026-09-03 14:44:38,504 INFO gateway.platforms.base: [Telegram] Sending response (803 chars) to 1030173067
+2026-09-03 14:57:33,457 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (398 chars)
+2026-09-03 14:57:33,480 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='@ShahbotSupportbot 8823286946:***  @ShahbotSurve' reply_to_id=None reply_to_text=''
+2026-09-03 14:57:39,675 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=33 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 14:57:39,675 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=6.2s api_calls=1 response=33 chars
+2026-09-03 14:57:39,730 INFO gateway.platforms.base: [Telegram] Sending response (33 chars) to 1030173067
+2026-09-03 14:58:00,991 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (27 chars)
+2026-09-03 14:58:01,002 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='راستی زبان همشون فارسی باشه' reply_to_id=None reply_to_text=''
+2026-09-03 14:58:04,914 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=34 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 14:58:04,915 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=3.9s api_calls=1 response=34 chars
+2026-09-03 14:58:04,953 INFO gateway.platforms.base: [Telegram] Sending response (34 chars) to 1030173067
+2026-09-03 14:58:30,599 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (19 chars)
+2026-09-03 14:58:30,607 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='پس شد چند تا پروژه؟' reply_to_id=None reply_to_text=''
+2026-09-03 14:58:34,794 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=189 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 14:58:34,795 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=4.2s api_calls=1 response=189 chars
+2026-09-03 14:58:34,870 INFO gateway.platforms.base: [Telegram] Sending response (189 chars) to 1030173067
+2026-09-03 15:01:03,293 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (142 chars)
+2026-09-03 15:01:03,302 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='هرکدوم که اماده شد بگو یعنی دونه دونه اماده شدن بهم خبر بده و مراحل کلی هر پروژه' reply_to_id=None reply_to_text=''
+2026-09-03 15:01:08,341 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=86 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 15:01:08,341 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=5.0s api_calls=1 response=86 chars
+2026-09-03 15:01:08,370 INFO gateway.platforms.base: [Telegram] Sending response (86 chars) to 1030173067
+2026-09-03 15:03:10,016 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (152 chars)
+2026-09-03 15:03:10,028 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='دیدی هی مینویسم گزارش دیگه خودت برای هر پروژه هر مرحلرو شروع و تمام کردی گزارش ب' reply_to_id=None reply_to_text=''
+2026-09-03 15:03:15,079 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=135 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 15:03:15,080 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=5.1s api_calls=1 response=135 chars
+2026-09-03 15:03:15,116 INFO gateway.platforms.base: [Telegram] Sending response (135 chars) to 1030173067
+2026-09-03 15:04:54,357 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (184 chars)
+2026-09-03 15:04:54,366 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اگر در حال انجامش هستی بگو دارم روش کار میکنم نگو دارم\u200cشروع میکنم وقتی میگی دارم' reply_to_id=None reply_to_text=''
+2026-09-03 15:04:59,464 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=132 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 15:04:59,464 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=5.1s api_calls=1 response=132 chars
+2026-09-03 15:04:59,522 INFO gateway.platforms.base: [Telegram] Sending response (132 chars) to 1030173067
+2026-09-03 15:13:54,559 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (18 chars)
+2026-09-03 15:13:54,569 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='چرا پس گزارش نمیدی' reply_to_id=None reply_to_text=''
+2026-09-03 15:13:58,350 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=37 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 15:13:58,351 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=3.8s api_calls=1 response=37 chars
+2026-09-03 15:13:58,380 INFO gateway.platforms.base: [Telegram] Sending response (37 chars) to 1030173067
+2026-09-03 15:14:22,554 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (40 chars)
+2026-09-03 15:14:22,563 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='مراحلی که میریو بگو دیگه خودکار من نپرسم' reply_to_id=None reply_to_text=''
+2026-09-03 15:14:26,156 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=60 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 15:14:26,156 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=3.6s api_calls=1 response=60 chars
+2026-09-03 15:14:26,192 INFO gateway.platforms.base: [Telegram] Sending response (60 chars) to 1030173067
+2026-09-03 15:14:57,821 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (45 chars)
+2026-09-03 15:14:57,831 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اگر همرو باهم همزمان انجام بدی سرعتت کم میشه؟' reply_to_id=None reply_to_text=''
+2026-09-03 15:15:01,966 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=154 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 15:15:01,966 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=4.1s api_calls=1 response=154 chars
+2026-09-03 15:15:02,012 INFO gateway.platforms.base: [Telegram] Sending response (154 chars) to 1030173067
+2026-09-03 15:38:45,627 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-03 15:38:45,627 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-03 16:17:50,132 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:1030173067 (idle=3768s)
+2026-09-03 16:17:50,134 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-09-03 16:18:45,374 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (9 chars)
+2026-09-03 16:18:45,384 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='گزارش بده' reply_to_id=None reply_to_text=''
+2026-09-03 16:18:48,630 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=34 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 16:18:48,631 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=3.2s api_calls=1 response=34 chars
+2026-09-03 16:18:48,673 INFO gateway.platforms.base: [Telegram] Sending response (34 chars) to 1030173067
+2026-09-03 16:19:09,328 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (40 chars)
+2026-09-03 16:19:09,335 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='پس چرا هنوز ساخته نشده اینهمه تایم گذشته' reply_to_id=None reply_to_text=''
+2026-09-03 16:19:13,582 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=29 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 16:19:13,583 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=4.2s api_calls=1 response=29 chars
+2026-09-03 16:19:13,613 INFO gateway.platforms.base: [Telegram] Sending response (29 chars) to 1030173067
+2026-09-03 16:19:26,462 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (9 chars)
+2026-09-03 16:19:26,472 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='توضیح بده' reply_to_id=None reply_to_text=''
+2026-09-03 16:19:30,441 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=74 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 16:19:30,441 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=4.0s api_calls=1 response=74 chars
+2026-09-03 16:19:30,471 INFO gateway.platforms.base: [Telegram] Sending response (74 chars) to 1030173067
+2026-09-03 16:19:43,179 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (15 chars)
+2026-09-03 16:19:43,187 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='چرا کار نمیکنی؟' reply_to_id=None reply_to_text=''
+2026-09-03 16:20:00,694 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=32 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 16:20:00,694 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=17.5s api_calls=3 response=32 chars
+2026-09-03 16:20:00,724 INFO gateway.platforms.base: [Telegram] Sending response (32 chars) to 1030173067
+2026-09-03 16:20:44,166 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (12 chars)
+2026-09-03 16:20:44,174 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب نصب کردی؟' reply_to_id=None reply_to_text=''
+2026-09-03 16:21:05,074 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=44 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 16:21:05,075 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=20.9s api_calls=2 response=44 chars
+2026-09-03 16:21:05,117 INFO gateway.platforms.base: [Telegram] Sending response (44 chars) to 1030173067
+2026-09-03 16:21:20,874 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (10 chars)
+2026-09-03 16:21:20,882 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اجرا کردی؟' reply_to_id=None reply_to_text=''
+2026-09-03 16:21:31,996 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-03 16:21:41,425 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=180 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-03 16:21:41,426 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=20.5s api_calls=5 response=180 chars
+2026-09-03 16:21:41,470 INFO gateway.platforms.base: [Telegram] Sending response (180 chars) to 1030173067
+2026-09-03 16:21:54,278 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
+2026-09-03 16:21:59,010 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (2/5) — previous session still held open on Telegram's servers. Waiting 30s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-03 16:22:31,215 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 2/5; health pending getUpdates progress
+2026-09-03 16:22:35,934 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (3/5) — previous session still held open on Telegram's servers. Waiting 40s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-03 16:23:18,110 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 3/5; health pending getUpdates progress
+2026-09-03 16:23:22,829 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (4/5) — previous session still held open on Telegram's servers. Waiting 50s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-03 16:24:14,960 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 4/5; health pending getUpdates progress
+2026-09-03 16:24:19,545 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (5/5) — previous session still held open on Telegram's servers. Waiting 60s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-03 16:25:14,961 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Updater made no getUpdates progress and is not running
+2026-09-03 16:25:21,726 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 5/5; health pending getUpdates progress
+2026-09-03 16:25:26,306 ERROR hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling could not recover after 5 retries (200s total wait). The previous gateway session is still held open on Telegram's servers, or another process is using the same bot token. To recover: ensure no other Hermes or OpenClaw instance is running with this token, then restart the gateway with 'hermes gateway restart'. Original error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-09-03 16:25:27,891 ERROR gateway.run: Fatal telegram adapter error (telegram_polling_conflict): Telegram polling could not recover after 5 retries (200s total wait). The previous gateway session is still held open on Telegram's servers, or another process is using the same bot token. To recover: ensure no other Hermes or OpenClaw instance is running with this token, then restart the gateway with 'hermes gateway restart'.
+2026-09-03 16:25:27,916 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Disconnected from Telegram
+2026-09-03 16:25:27,916 ERROR gateway.run: No connected messaging platforms remain. Shutting down gateway cleanly.
+2026-09-03 16:25:27,917 INFO gateway.run: Stopping gateway...
+2026-09-03 16:25:27,918 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.00s
+2026-09-03 16:25:27,922 INFO gateway.run: Shutdown phase: drain done at +0.01s (drain took 0.00s, timed_out=False, active_at_start=0, active_now=0, cron_at_start=0, cron_now=0, api_at_start=0, api_now=0, deferred_at_start=0, deferred_now=0)
+2026-09-03 16:25:28,149 INFO gateway.run: Shutdown phase: all adapters disconnected at +0.23s
+2026-09-03 16:25:31,064 INFO gateway.run: Shutdown (final-cleanup): killed 2 tool subprocess(es)
+2026-09-03 16:25:31,067 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +3.15s
+2026-09-03 16:25:31,068 INFO gateway.run: Shutdown phase: executor quiesced at +3.15s
+2026-09-03 16:25:31,072 INFO gateway.run: Shutdown phase: SessionDB close done at +3.15s
+2026-09-03 16:25:31,081 INFO gateway.run: Gateway stopped (total teardown 3.16s)
+2026-09-03 16:25:31,081 INFO gateway.run: Gateway housekeeping stopped
+2026-09-04 01:43:56,954 INFO gateway.control_socket: Gateway control socket listening at /data/.hermes/gateway.sock
+2026-09-04 01:43:56,973 INFO gateway.run: Starting Hermes Gateway...
+2026-09-04 01:43:56,974 INFO gateway.run: Session storage: /data/.hermes/sessions
+2026-09-04 01:43:56,975 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-09-04 01:43:56,976 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-09-04 01:43:56,997 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-09-04 01:43:57,003 INFO gateway.run: Connecting to telegram...
+2026-09-04 01:43:57,015 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-09-04 01:43:57,165 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-09-04 01:43:57,165 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-09-04 01:43:57,174 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-09-04 01:43:57,613 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-04 01:44:00,977 INFO gateway.run: Turn machinery warmed in 4.0s (19 tool schema(s) materialized)
+2026-09-04 01:44:08,472 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-09-04 01:44:08,473 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling confirmed healthy: getUpdates progressing (generation 1)
+2026-09-04 01:44:08,480 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-09-04 01:44:08,625 INFO gateway.run: ✓ telegram connected
+2026-09-04 01:44:08,676 INFO gateway.run: Gateway running with 1 platform(s)
+2026-09-04 01:44:08,686 INFO gateway.run: Channel directory built: 1 target(s)
+2026-09-04 01:44:09,101 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-09-04 01:44:09,308 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-09-04 01:44:09,504 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-09-04 01:44:09,504 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 61 hidden (over 60 limit). Use /commands for full list.
+2026-09-04 01:44:10,290 INFO gateway.run: Redelivered recovered final response to telegram:1030173067 (obligation 97b9d2825b7115210151c7c3, attempt 1)
+2026-09-04 01:44:10,292 INFO gateway.run: Press Ctrl+C to stop
+2026-09-04 01:44:10,301 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/data/.hermes/kanban/.dispatcher.lock)
+2026-09-04 01:44:10,302 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-09-04 01:44:10,306 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-09-04 01:44:15,303 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-09-04 01:44:57,693 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (36 chars)
+2026-09-04 01:44:57,712 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='الان گزارش کامل بده ببینم چکارا کردی' reply_to_id=None reply_to_text=''
+2026-09-04 01:44:57,744 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:1030173067: model=coder provider=openai-api
+2026-09-04 01:45:09,575 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=833 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:45:09,576 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=11.9s api_calls=1 response=833 chars
+2026-09-04 01:45:09,647 INFO gateway.platforms.base: [Telegram] Sending response (833 chars) to 1030173067
+2026-09-04 01:46:46,424 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (144 chars)
+2026-09-04 01:46:46,446 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='این تنظیماتی که میگم انجام بده اینکه تمام مدت کارهارو\u200cانجام بدی و توقف نکنی حتی ' reply_to_id=None reply_to_text=''
+2026-09-04 01:46:54,719 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=150 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:46:54,719 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=8.3s api_calls=2 response=150 chars
+2026-09-04 01:46:54,821 INFO gateway.platforms.base: [Telegram] Sending response (150 chars) to 1030173067
+2026-09-04 01:47:14,097 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (19 chars)
+2026-09-04 01:47:14,106 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='پروژه ۲ به کجا رسید' reply_to_id=None reply_to_text=''
+2026-09-04 01:47:36,877 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=40 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:47:36,877 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=22.8s api_calls=5 response=40 chars
+2026-09-04 01:47:36,910 INFO gateway.platforms.base: [Telegram] Sending response (40 chars) to 1030173067
+2026-09-04 01:47:51,116 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (7 chars)
+2026-09-04 01:47:51,134 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب چیشد' reply_to_id=None reply_to_text=''
+2026-09-04 01:47:57,227 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=45 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:47:57,227 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=6.1s api_calls=2 response=45 chars
+2026-09-04 01:47:57,264 INFO gateway.platforms.base: [Telegram] Sending response (45 chars) to 1030173067
+2026-09-04 01:48:04,645 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (7 chars)
+2026-09-04 01:48:04,653 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب چیشد' reply_to_id=None reply_to_text=''
+2026-09-04 01:49:38,243 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=436 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:49:38,243 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=93.6s api_calls=27 response=436 chars
+2026-09-04 01:49:38,282 INFO gateway.platforms.base: [Telegram] Sending response (436 chars) to 1030173067
+2026-09-04 01:50:20,152 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (80 chars)
+2026-09-04 01:50:20,160 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='تمام پروژه ها تاییده تا تموم شد برو سراغ بعدی اجازه نمیخواد بگیری و توقف هم\u200c نکن' reply_to_id=None reply_to_text=''
+2026-09-04 01:50:28,092 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=156 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:50:28,093 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=7.9s api_calls=1 response=156 chars
+2026-09-04 01:50:28,156 INFO gateway.platforms.base: [Telegram] Sending response (156 chars) to 1030173067
+2026-09-04 01:51:03,819 INFO gateway.run: Watch pattern notification — injecting for telegram chat=1030173067 thread=None
+2026-09-04 01:51:03,832 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='[ASYNC DELEGATION BATCH COMPLETE — deleg_36d7cd33] A background fan-out of 1 sub' reply_to_id=None reply_to_text=''
+2026-09-04 01:51:08,058 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=169 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:51:08,059 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=4.2s api_calls=1 response=169 chars
+2026-09-04 01:51:08,094 INFO gateway.platforms.base: [Telegram] Sending response (169 chars) to 1030173067
+2026-09-04 01:53:17,831 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (7 chars)
+2026-09-04 01:53:17,840 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب چیشد' reply_to_id=None reply_to_text=''
+2026-09-04 01:53:32,585 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=92 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:53:32,585 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=14.7s api_calls=2 response=92 chars
+2026-09-04 01:53:32,615 INFO gateway.platforms.base: [Telegram] Sending response (92 chars) to 1030173067
+2026-09-04 01:53:41,581 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (7 chars)
+2026-09-04 01:53:41,592 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب چیشد' reply_to_id=None reply_to_text=''
+2026-09-04 01:53:45,416 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=205 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:53:45,416 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=3.8s api_calls=1 response=205 chars
+2026-09-04 01:53:45,452 INFO gateway.platforms.base: [Telegram] Sending response (205 chars) to 1030173067
+2026-09-04 01:53:53,548 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (2 chars)
+2026-09-04 01:53:53,556 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب' reply_to_id=None reply_to_text=''
+2026-09-04 01:54:06,712 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=116 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:54:06,713 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=13.2s api_calls=2 response=116 chars
+2026-09-04 01:54:06,770 INFO gateway.platforms.base: [Telegram] Sending response (116 chars) to 1030173067
+2026-09-04 01:54:17,321 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (2 chars)
+2026-09-04 01:54:17,333 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب' reply_to_id=None reply_to_text=''
+2026-09-04 01:54:39,652 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=64 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:54:39,653 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=22.3s api_calls=5 response=64 chars
+2026-09-04 01:54:39,681 INFO gateway.platforms.base: [Telegram] Sending response (64 chars) to 1030173067
+2026-09-04 01:54:45,545 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (2 chars)
+2026-09-04 01:54:45,555 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب' reply_to_id=None reply_to_text=''
+2026-09-04 01:55:29,401 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=95 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:55:29,401 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=43.8s api_calls=9 response=95 chars
+2026-09-04 01:55:29,456 INFO gateway.platforms.base: [Telegram] Sending response (95 chars) to 1030173067
+2026-09-04 01:56:15,776 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (2 chars)
+2026-09-04 01:56:15,784 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب' reply_to_id=None reply_to_text=''
+2026-09-04 01:56:40,368 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=88 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:56:40,368 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=24.6s api_calls=5 response=88 chars
+2026-09-04 01:56:40,401 INFO gateway.platforms.base: [Telegram] Sending response (88 chars) to 1030173067
+2026-09-04 01:56:57,473 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (2 chars)
+2026-09-04 01:56:57,483 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب' reply_to_id=None reply_to_text=''
+2026-09-04 01:57:22,464 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=253 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:57:22,464 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=25.0s api_calls=6 response=253 chars
+2026-09-04 01:57:22,500 INFO gateway.platforms.base: [Telegram] Sending response (253 chars) to 1030173067
+2026-09-04 01:57:46,076 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (2 chars)
+2026-09-04 01:57:46,084 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب' reply_to_id=None reply_to_text=''
+2026-09-04 01:58:13,619 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (2 chars)
+2026-09-04 01:58:17,721 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=612 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:58:17,721 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=31.6s api_calls=7 response=612 chars
+2026-09-04 01:58:17,792 INFO gateway.platforms.base: [Telegram] Sending response (612 chars) to 1030173067
+2026-09-04 01:58:34,949 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (9 chars)
+2026-09-04 01:58:34,959 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='انجام بده' reply_to_id=None reply_to_text=''
+2026-09-04 01:59:00,048 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=253 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:59:00,049 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=25.1s api_calls=7 response=253 chars
+2026-09-04 01:59:00,088 INFO gateway.platforms.base: [Telegram] Sending response (253 chars) to 1030173067
+2026-09-04 01:59:05,799 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (4 chars)
+2026-09-04 01:59:05,808 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='چیشد' reply_to_id=None reply_to_text=''
+2026-09-04 01:59:21,334 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=253 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:59:21,334 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=15.5s api_calls=5 response=253 chars
+2026-09-04 01:59:21,392 INFO gateway.platforms.base: [Telegram] Sending response (253 chars) to 1030173067
+2026-09-04 01:59:30,427 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (4 chars)
+2026-09-04 01:59:30,435 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='چیشد' reply_to_id=None reply_to_text=''
+2026-09-04 01:59:46,657 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=253 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 01:59:46,658 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=16.2s api_calls=5 response=253 chars
+2026-09-04 01:59:46,696 INFO gateway.platforms.base: [Telegram] Sending response (253 chars) to 1030173067
+2026-09-04 02:00:19,840 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (24 chars)
+2026-09-04 02:00:19,850 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='پروژه ۰ چیشد  ادامشو برو' reply_to_id=None reply_to_text=''
+2026-09-04 02:00:48,346 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (4 chars)
+2026-09-04 02:00:52,217 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=34 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:00:52,217 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=32.4s api_calls=5 response=34 chars
+2026-09-04 02:00:52,321 INFO gateway.platforms.base: [Telegram] Sending response (34 chars) to 1030173067
+2026-09-04 02:01:01,056 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (3 chars)
+2026-09-04 02:01:01,064 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='بکن' reply_to_id=None reply_to_text=''
+2026-09-04 02:01:23,136 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=253 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:01:23,136 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=22.1s api_calls=6 response=253 chars
+2026-09-04 02:01:23,197 INFO gateway.platforms.base: [Telegram] Sending response (253 chars) to 1030173067
+2026-09-04 02:01:31,891 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (7 chars)
+2026-09-04 02:01:31,898 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='این چیه' reply_to_id=277 reply_to_text='I stopped retrying terminal because it hit the tool-call guardrail (identical_ca'
+2026-09-04 02:01:37,193 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=262 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:01:37,194 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=5.3s api_calls=1 response=262 chars
+2026-09-04 02:01:37,235 INFO gateway.platforms.base: [Telegram] Sending response (262 chars) to 1030173067
+2026-09-04 02:01:57,743 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (12 chars)
+2026-09-04 02:01:57,751 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب نشونم بده' reply_to_id=None reply_to_text=''
+2026-09-04 02:02:00,856 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=56 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:02:00,857 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=3.1s api_calls=1 response=56 chars
+2026-09-04 02:02:00,904 INFO gateway.platforms.base: [Telegram] Delivering 1 non-image MEDIA attachment(s)
+2026-09-04 02:04:26,154 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (30 chars)
+2026-09-04 02:04:26,163 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب اینو چطوری روی وب اجرا کنیم' reply_to_id=None reply_to_text=''
+2026-09-04 02:04:48,497 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=253 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:04:48,497 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=22.3s api_calls=6 response=253 chars
+2026-09-04 02:04:48,538 INFO gateway.platforms.base: [Telegram] Sending response (253 chars) to 1030173067
+2026-09-04 02:05:05,771 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (8 chars)
+2026-09-04 02:05:05,780 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='اجرا شد؟' reply_to_id=None reply_to_text=''
+2026-09-04 02:05:10,188 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=382 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:05:10,188 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=4.4s api_calls=1 response=382 chars
+2026-09-04 02:05:10,247 INFO gateway.platforms.base: [Telegram] Sending response (382 chars) to 1030173067
+2026-09-04 02:05:42,078 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (38 chars)
+2026-09-04 02:05:42,086 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب چطوری بهت دسترسی بدم خودت انجام بدی' reply_to_id=None reply_to_text=''
+2026-09-04 02:07:53,091 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:1030173067 (choice=once, user='ꫝꪮડડꫀⅈꪀ')
+2026-09-04 02:08:38,696 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-04 02:08:38,696 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-04 02:08:48,513 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:1030173067 (choice=session, user='ꫝꪮડડꫀⅈꪀ')
+2026-09-04 02:10:49,681 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=368 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:10:49,681 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=307.6s api_calls=20 response=368 chars
+2026-09-04 02:10:49,730 INFO gateway.platforms.base: [Telegram] Sending response (368 chars) to 1030173067
+2026-09-04 02:13:35,568 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (10 chars)
+2026-09-04 02:13:35,576 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='pages نیست' reply_to_id=None reply_to_text=''
+2026-09-04 02:14:20,627 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=394 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:14:20,628 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=45.1s api_calls=2 response=394 chars
+2026-09-04 02:14:20,658 INFO gateway.platforms.base: [Telegram] Sending response (394 chars) to 1030173067
+2026-09-04 02:15:31,305 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (40 chars)
+2026-09-04 02:15:31,312 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='ghp_DK...Pjeh' reply_to_id=None reply_to_text=''
+2026-09-04 02:18:21,870 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=1015 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:18:21,871 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=170.6s api_calls=9 response=1015 chars
+2026-09-04 02:18:21,952 INFO gateway.platforms.base: [Telegram] Sending response (1015 chars) to 1030173067
+2026-09-04 02:26:59,552 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (575 chars)
+2026-09-04 02:26:59,561 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب حالا یه وبسایت فوق پیشرفته طراحی کنیم که طرف کامل سفارششو\u200c وارد کنه یسری سوال' reply_to_id=None reply_to_text=''
+2026-09-04 02:28:03,841 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (74 chars)
+2026-09-04 02:28:32,484 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (13 chars)
+2026-09-04 02:29:19,063 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (56 chars)
+2026-09-04 02:30:03,840 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (81 chars)
+2026-09-04 02:30:31,298 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (43 chars)
+2026-09-04 02:30:58,951 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=338 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:30:58,957 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=239.4s api_calls=1 response=338 chars
+2026-09-04 02:30:58,993 INFO gateway.platforms.base: [Telegram] Sending response (338 chars) to 1030173067
+2026-09-04 02:31:54,831 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (17 chars)
+2026-09-04 02:31:54,843 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='داری انجامش میدی؟' reply_to_id=None reply_to_text=''
+2026-09-04 02:33:10,787 WARNING gateway.run: Normal final-send NOT suppressed despite active stream consumer for session agent:main:telegram:dm:1030173067: streamed=False previewed=False content_delivered=False transformed=False final_len=50 — possible duplicate send (see wecom ack-timeout RCA).
+2026-09-04 02:33:10,788 INFO gateway.run: response ready: platform=telegram chat=1030173067 time=75.9s api_calls=1 response=50 chars
+2026-09-04 02:33:10,820 INFO gateway.platforms.base: [Telegram] Sending response (50 chars) to 1030173067
+2026-09-04 02:33:22,087 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (13 chars)
+2026-09-04 02:33:22,099 INFO gateway.run: inbound message: platform=telegram user='ꫝꪮડડꫀⅈꪀ' chat=1030173067 msg='خب انجام\u200c شد؟' reply_to_id=None reply_to_text=''
+2026-09-04 02:46:36,466 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:1030173067 (4 chars)

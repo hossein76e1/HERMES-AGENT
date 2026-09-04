@@ -1,0 +1,35 @@
+[2026-09-04 02:47:24] ═══════════════════════════════════════════════════════════════
+[2026-09-04 02:47:24]   Hermes Agent Backup — 2026-09-04_02-47-24
+[2026-09-04 02:47:24] ═══════════════════════════════════════════════════════════════
+[2026-09-04 02:47:24] Configuring git...
+[2026-09-04 02:47:24] Backing up critical files...
+[2026-09-04 02:47:24] ── Core Configuration ──
+[2026-09-04 02:47:24]   ✓ config.yaml (249 bytes)
+[2026-09-04 02:47:24]   ✓ SOUL.md (667 bytes)
+[2026-09-04 02:47:24]   ✓ .env (environment variables) (270 bytes)
+[2026-09-04 02:47:24]   ✓ auth.json (673 bytes)
+[2026-09-04 02:47:24]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 02:47:24]   ✓ gateway_state.json (556 bytes)
+[2026-09-04 02:47:24] ── Memory & User Data ──
+[2026-09-04 02:47:24]   ✓ memories/ (2010 bytes)
+[2026-09-04 02:47:24] ── Sessions ──
+[2026-09-04 02:47:24]   ✓ sessions/ (903240 bytes)
+[2026-09-04 02:47:24] ── Cron & Scheduled Jobs ──
+[2026-09-04 02:47:24]   ✓ cron/executions.db (20480 bytes)
+[2026-09-04 02:47:24]   ✓ cron/jobs.json (1921 bytes)
+[2026-09-04 02:47:24] ── Skills ──
+[2026-09-04 02:47:24]   ✓ skills/ (2849382 bytes)
+[2026-09-04 02:47:24] ── Platform Configurations ──
+[2026-09-04 02:47:24]   ✓ platforms/ (0 bytes)
+[2026-09-04 02:47:24] ── State Data ──
+[2026-09-04 02:47:24]   ✓ state.db (2392064 bytes)
+[2026-09-04 02:47:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 02:47:24]   ✓ state/ (408 bytes)
+[2026-09-04 02:47:24] ── Runtime State ──
+[2026-09-04 02:47:24]   ✓ runtime/ (15 bytes)
+[2026-09-04 02:47:24] ── Hooks ──
+[2026-09-04 02:47:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 02:47:24] ── Logs ──
+[2026-09-04 02:47:24]   ✓ hermes logs (810427 bytes)
+[2026-09-04 02:47:24] ── Cache/Config Files ──
+[2026-09-04 02:47:24]   ✗ .skills_prompt_snapshot.json — not found, skipping

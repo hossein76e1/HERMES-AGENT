@@ -1,0 +1,3 @@
+Hossein expects autonomous work: execute tasks without waiting for permission on each step. Work independently in background, give occasional status updates so he knows progress. Don't wait to be told to do obvious next steps. Respond in Persian when they write in Persian. Technical terms in English, translate unfamiliar ones in parentheses.
+§
+CSV DictWriter bug with AI extraction: when AI returns varying keys per item, collect ALL keys across all items first, then use extrasaction='ignore'. Pattern: `all_keys = set(); [all_keys.update(item.keys()) for item in items]; writer = csv.DictWriter(f, fieldnames=list(all_keys), extrasaction='ignore')`

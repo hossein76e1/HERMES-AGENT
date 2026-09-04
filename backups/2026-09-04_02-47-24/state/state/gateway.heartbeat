@@ -1,0 +1,1 @@
+{"pid": 2, "updated_at": "2026-09-03T23:17:09.575473+00:00", "monotonic": 10228771.536485717, "start_time": 1788473636.9459555, "mem": {"rss_kib": 379104, "mem_total_kib": 338368120, "mem_available_kib": 103931080, "swap_used_kib": 3613176}, "loop_tick_socket": true, "loop_tick_tcp_port": null}
