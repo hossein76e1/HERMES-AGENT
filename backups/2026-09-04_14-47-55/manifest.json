@@ -1,0 +1,192 @@
+{
+  "backup_timestamp": "2026/09/04 14-47-55",
+  "backup_id": "2026-09-04_14-47-55",
+  "hermes_version": "0.21.0",
+  "total_files": 22,
+  "total_size": "11M",
+  "backup_root": "/data/hermes-backup-repo/backups/2026-09-04_14-47-55",
+  "categories": {
+    "core_config": [
+      "config.yaml",
+      "SOUL.md",
+      ".env",
+      "auth.json",
+      "channel_directory.json",
+      "gateway_state.json"
+    ],
+    "memory": [
+      "memories/"
+    ],
+    "sessions": [
+      "sessions/"
+    ],
+    "cron_jobs": [
+      "cron/"
+    ],
+    "skills": [
+      "skills/"
+    ],
+    "platforms": [
+      "platforms/"
+    ],
+    "databases": [
+      "state.db",
+      "kanban.db"
+    ],
+    "state": [
+      "state/"
+    ],
+    "runtime": [
+      "runtime/"
+    ],
+    "hooks": [
+      "hooks/"
+    ],
+    "logs": [
+      "logs/"
+    ],
+    "cache_files": [
+      ".skills_prompt_snapshot.json",
+      "provider_models_cache.json"
+    ],
+    "metadata": [
+      ".initialized",
+      ".update_check",
+      "install_id"
+    ]
+  },
+  "files": [
+    {
+      "description": "config.yaml",
+      "source": "/data/.hermes/config.yaml",
+      "backup_path": "config/config.yaml",
+      "size_bytes": 2312
+    },
+    {
+      "description": "SOUL.md",
+      "source": "/data/.hermes/SOUL.md",
+      "backup_path": "config/SOUL.md",
+      "size_bytes": 667
+    },
+    {
+      "description": ".env (environment variables)",
+      "source": "/data/.hermes/.env",
+      "backup_path": "config/.env",
+      "size_bytes": 187
+    },
+    {
+      "description": "channel_directory.json",
+      "source": "/data/.hermes/channel_directory.json",
+      "backup_path": "config/channel_directory.json",
+      "size_bytes": 229
+    },
+    {
+      "description": "memories/",
+      "source": "/data/.hermes/memories",
+      "backup_path": "memories/memories",
+      "size_bytes": 3363
+    },
+    {
+      "description": "sessions/",
+      "source": "/data/.hermes/sessions",
+      "backup_path": "sessions/sessions",
+      "size_bytes": 903240
+    },
+    {
+      "description": "cron/executions.db",
+      "source": "/data/.hermes/cron/executions.db",
+      "backup_path": "cron/executions.db",
+      "size_bytes": 36864
+    },
+    {
+      "description": "cron/jobs.json",
+      "source": "/data/.hermes/cron/jobs.json",
+      "backup_path": "cron/jobs.json",
+      "size_bytes": 4201
+    },
+    {
+      "description": "skills/",
+      "source": "/data/.hermes/skills",
+      "backup_path": "skills/skills",
+      "size_bytes": 2925584
+    },
+    {
+      "description": "platforms/",
+      "source": "/data/.hermes/platforms",
+      "backup_path": "platforms/platforms",
+      "size_bytes": 0
+    },
+    {
+      "description": "kanban.db",
+      "source": "/data/.hermes/kanban.db",
+      "backup_path": "databases/kanban.db",
+      "size_bytes": 118784
+    },
+    {
+      "description": "state/",
+      "source": "/data/.hermes/state",
+      "backup_path": "state/state",
+      "size_bytes": 407
+    },
+    {
+      "description": "runtime/",
+      "source": "/data/.hermes/runtime",
+      "backup_path": "runtime/runtime",
+      "size_bytes": 404
+    },
+    {
+      "description": "hooks/",
+      "source": "/data/.hermes/hooks",
+      "backup_path": "hooks/hooks",
+      "size_bytes": 0
+    },
+    {
+      "description": "hermes logs",
+      "source": "/data/.hermes/logs",
+      "backup_path": "logs/hermes_logs",
+      "size_bytes": 1440026
+    },
+    {
+      "description": "provider_models_cache.json",
+      "source": "/data/.hermes/provider_models_cache.json",
+      "backup_path": "cache_files/provider_models_cache.json",
+      "size_bytes": 17993
+    },
+    {
+      "description": "ollama_cloud_models_cache.json",
+      "source": "/data/.hermes/ollama_cloud_models_cache.json",
+      "backup_path": "cache_files/ollama_cloud_models_cache.json",
+      "size_bytes": 409
+    },
+    {
+      "description": ".initialized",
+      "source": "/data/.hermes/.initialized",
+      "backup_path": "other/.initialized",
+      "size_bytes": 21
+    },
+    {
+      "description": ".update_check",
+      "source": "/data/.hermes/.update_check",
+      "backup_path": "other/.update_check",
+      "size_bytes": 70
+    },
+    {
+      "description": "install_id",
+      "source": "/data/.hermes/install_id",
+      "backup_path": "other/install_id",
+      "size_bytes": 33
+    },
+    {
+      "description": "models_dev_cache.json",
+      "source": "/data/.hermes/models_dev_cache.json",
+      "backup_path": "other/models_dev_cache.json",
+      "size_bytes": 4465006
+    },
+    {
+      "description": "gateway-starts.log",
+      "source": "/data/.hermes/gateway-starts.log",
+      "backup_path": "other/gateway-starts.log",
+      "size_bytes": 54
+    }
+  ]
+}
