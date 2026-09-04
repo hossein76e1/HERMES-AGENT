@@ -1,0 +1,64 @@
+{
+  "jobs": [
+    {
+      "id": "09bc94629578",
+      "name": "hermes-auto-backup",
+      "prompt": "Hermes automated backup every 12 hours. The script runs the backup and pushes to GitHub.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 720,
+        "display": "every 720m"
+      },
+      "schedule_display": "every 720m",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-03T11:17:05.394455+00:00",
+      "next_run_at": "2026-09-04T14:47:24.962137+03:30",
+      "last_run_at": "2026-09-04T02:47:24.962137+03:30",
+      "last_status": "error",
+      "last_error": "Script exited with code 1\nstdout:\n[2026-09-04 02:47:24] ═══════════════════════════════════════════════════════════════\n[2026-09-04 02:47:24]   Hermes Agent Backup — 2026-09-04_02-47-24\n[2026-09-04 02:47:24] ═══════════════════════════════════════════════════════════════\n[2026-09-04 02:47:24] Configuring git...\n[2026-09-04 02:47:24] Backing up critical files...\n[2026-09-04 02:47:24] ── Core Configuration ──\n[2026-09-04 02:47:24]   ✓ config.yaml (249 bytes)\n[2026-09-04 02:47:24]   ✓ SOUL.md (667 bytes)\n[2026-09-04 02:47:24]   ✓ .env (environment variables) (270 bytes)\n[2026-09-04 02:47:24]   ✓ auth.json (673 bytes)\n[2026-09-04 02:47:24]   ✓ channel_directory.json (229 bytes)\n[2026-09-04 02:47:24]   ✓ gateway_state.json (556 bytes)\n[2026-09-04 02:47:24] ── Memory & User Data ──\n[2026-09-04 02:47:24]   ✓ memories/ (2010 bytes)\n[2026-09-04 02:47:24] ── Sessions ──\n[2026-09-04 02:47:24]   ✓ sessions/ (903240 bytes)\n[2026-09-04 02:47:24] ── Cron & Scheduled Jobs ──\n[2026-09-04 02:47:24]   ✓ cron/executions.db (20480 bytes)\n[2026-09-04 02:47:24]   ✓ cron/jobs.json (1921 bytes)\n[2026-09-04 02:47:24] ── Skills ──\n[2026-09-04 02:47:24]   ✓ skills/ (2849382 bytes)\n[2026-09-04 02:47:24] ── Platform Configurations ──\n[2026-09-04 02:47:24]   ✓ platforms/ (0 bytes)\n[2026-09-04 02:47:24] ── State Data ──\n[2026-09-04 02:47:24]   ✓ state.db (2392064 bytes)\n[2026-09-04 02:47:24]   ✓ kanban.db (118784 bytes)\n[2026-09-04 02:47:24]   ✓ state/ (408 bytes)\n[2026-09-04 02:47:24] ── Runtime State ──\n[2026-09-04 02:47:24]   ✓ runtime/ (15 bytes)\n[2026-09-04 02:47:24] ── Hooks ──\n[2026-09-04 02:47:24]   ✓ hooks/ (0 bytes)\n[2026-09-04 02:47:24] ── Logs ──\n[2026-09-04 02:47:24]   ✓ hermes logs (810427 bytes)\n[2026-09-04 02:47:24] ── Cache/Config Files ──\n[2026-09-04 02:47:24]   ✗ .skills_prompt_snapshot.json — not found, skipping",
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 1,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "failure_deliver": "origin",
+      "last_dispatch": {
+        "scheduled_at": "2026-09-03T23:17:05.412690+00:00",
+        "dispatched_at": "2026-09-04T02:47:24.347995+03:30",
+        "lateness_seconds": 18.9,
+        "kind": "on_time"
+      },
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-09-04T02:47:24.962380+03:30"
+}
