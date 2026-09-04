@@ -1,0 +1,884 @@
+{
+  "page_title": "Hacker News",
+  "url": "https://news.ycombinator.com",
+  "extracted_data": {
+    "links": [
+      {
+        "text": "Pre-Release of Polars 2.0",
+        "url": "https://pola.rs/posts/announcing-polars-2/"
+      },
+      {
+        "text": "The Browser's Main Thread Is Expensive",
+        "url": "https://kciter.so/posts/the-expensive-main-thread/en/"
+      },
+      {
+        "text": "Muse Spark 1.3",
+        "url": "https://developer.meta.com/ai/models/muse-spark/"
+      },
+      {
+        "text": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+      },
+      {
+        "text": "Fish Bad, Sugar Good and Other Medieval Ideas About Food",
+        "url": "https://lithub.com/fish-bad-sugar-good-and-other-medieval-ideas-about-food/"
+      },
+      {
+        "text": "Three schoolgirls in Kinsale pulled up a pea plant covered in warts (2016)",
+        "url": "https://scienceblog.com/b-three-schoolgirls-in-kinsale-pulled-up-a-pea-plant-covered-in-warts-and-instead-of-binning-it-spent-three-years-testing-13000-seeds-in-a-spare-bedroom-the-bacteria-living-in-those-warts-made-barley/"
+      },
+      {
+        "text": "What I Learned from My Mom (1941-2026)",
+        "url": "https://experimentalliving.substack.com/p/what-i-learned-from-my-mom-1941-2026"
+      },
+      {
+        "text": "Google avoids a breakup of its ad tech business",
+        "url": "https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html"
+      },
+      {
+        "text": "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
+        "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/"
+      },
+      {
+        "text": "Invisible Companies",
+        "url": "https://colossus.com/article/invisible-companies/"
+      },
+      {
+        "text": "Holden's Lightning Flight",
+        "url": "https://en.wikipedia.org/wiki/Holden%27s_Lightning_flight"
+      },
+      {
+        "text": "The Computer Museum of America reclamation project",
+        "url": "https://computer-museum.org/wp/"
+      },
+      {
+        "text": "Can I opt out of my input or output data being used for training?",
+        "url": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training"
+      },
+      {
+        "text": "Fable 5.1 World Modeling",
+        "url": "https://github.com/PhiloLabs/fable51-worlds"
+      },
+      {
+        "text": "Reverse Engineering Unknown File Formats with ImHex",
+        "url": "https://werwolv.net/posts/file_format_reverse_engineering/"
+      },
+      {
+        "text": "Higher Multipoles of the Cow",
+        "url": "https://arxiv.org/abs/2504.00506"
+      },
+      {
+        "text": "Biggest dark matter detector spots a single weird particle",
+        "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle"
+      },
+      {
+        "text": "Aging brains blend memories together instead of just forgetting them",
+        "url": "https://studyfinds.com/aging-brains-blend-memories-together-instead-of-forgetting-them-study-finds/"
+      },
+      {
+        "text": "Wendell Berry has died",
+        "url": "https://www.nytimes.com/2026/08/31/us/wendell-berry-dead.html"
+      },
+      {
+        "text": "Qantas Airbus A380 engine failure in 2010 (2023)",
+        "url": "https://admiralcloudberg.medium.com/a-matter-of-millimeters-the-story-of-qantas-flight-32-bdaa62dc98e7"
+      },
+      {
+        "text": "Engineering of the fastest WebAssembly interpreters",
+        "url": "https://wasmi-labs.github.io/blog/posts/wasmi-v2.0/"
+      },
+      {
+        "text": "A dark horse enter China's AI race: StartLux",
+        "url": "https://chinaonchina.com/article/chen-dawei-returns-enters-the-large-model-sector"
+      },
+      {
+        "text": "Exit the Cave",
+        "url": "https://turtlespace.blog/p/exit-the-cave"
+      },
+      {
+        "text": "A Selection of Los Alamos Rolodex Business Cards",
+        "url": "https://clui.org/collections/los-alamos-business-cards/selection-cards"
+      },
+      {
+        "text": "Async Rust vs RTOS showdown (2022)",
+        "url": "https://tweedegolf.nl/en/blog/65/async-rust-vs-rtos-showdown/"
+      },
+      {
+        "text": "Altair Basic Interpreter Source Code (1975) [pdf]",
+        "url": "https://images.gatesnotes.com/12514eb8-7b51-008e-41a9-512542cf683b/34d561c8-cf5c-4e69-af47-3782ea11482e/Original-Microsoft-Source-Code.pdf"
+      },
+      {
+        "text": "We could save petabytes of cache storage with Zstandard and Pingora",
+        "url": "https://blog.cloudflare.com/cache-transcoding/"
+      },
+      {
+        "text": "Poisson Disk Sampling",
+        "url": "https://stripeacross.com/posts/poisson-disk-sampling/"
+      },
+      {
+        "text": "WebLLM: high-performance in-browser LLM inference engine",
+        "url": "https://github.com/mlc-ai/web-llm"
+      },
+      {
+        "text": "API",
+        "url": "https://github.com/HackerNews/API"
+      },
+      {
+        "text": "Legal",
+        "url": "https://www.ycombinator.com/legal/"
+      },
+      {
+        "text": "Apply to YC",
+        "url": "https://www.ycombinator.com/apply/"
+      }
+    ],
+    "tables": [
+      [
+        [
+          "Hacker Newsnew|past|comments|ask|show|jobs|submitlogin",
+          "",
+          "Hacker Newsnew|past|comments|ask|show|jobs|submit",
+          "login"
+        ],
+        [
+          "",
+          "Hacker Newsnew|past|comments|ask|show|jobs|submit",
+          "login"
+        ],
+        [
+          "1.Pre-Release of Polars 2.0(pola.rs)205 pointsbykomape4 hours ago|hide|53 comments2.The Browser's Main Thread Is Expensive(kciter.so)123 pointsbykciter4 hours ago|hide|42 comments3.Muse Spark 1.3(meta.com)608 pointsbybvaldivielso16 hours ago|hide|400 comments4.Gemini 3.8 Flash and 3.8 Flash Cyber(blog.google)1051 pointsbybratao20 hours ago|hide|585 comments5.Fish Bad, Sugar Good and Other Medieval Ideas About Food(lithub.com)23 pointsbymooreds2 hours ago|hide|7 comments6.Three schoolgirls in Kinsale pulled up a pea plant covered in warts (2016)(scienceblog.com)76 pointsbyDamonHD4 hours ago|hide|26 comments7.What I Learned from My Mom (1941-2026)(experimentalliving.substack.com)37 pointsbyNaOH3 hours ago|hide|3 comments8.Google avoids a breakup of its ad tech business(nytimes.com)410 pointsbydonohoe17 hours ago|hide|286 comments9.Three sites made 215,128 “best software” pages for AI. Perplexity cites them(trellner.com)443 pointsbyjakobgreenfeld21 hours ago|hide|214 comments10.Invisible Companies(colossus.com)3 pointsbyltononro1 hour ago|hide|discuss11.Holden's Lightning Flight(wikipedia.org)167 pointsbyColinWright13 hours ago|hide|36 comments12.The Computer Museum of America reclamation project(computer-museum.org)53 pointsbyrbanffy7 hours ago|hide|22 comments13.Can I opt out of my input or output data being used for training?(mistral.ai)458 pointsbyteekert23 hours ago|hide|208 comments14.Fable 5.1 World Modeling(github.com/philolabs)276 pointsbysurreal_15 hours ago|hide|80 comments15.Reverse Engineering Unknown File Formats with ImHex(werwolv.net)214 pointsbycarlos-menezes15 hours ago|hide|38 comments16.Higher Multipoles of the Cow(arxiv.org)87 pointsbyMrOrelliOReilly10 hours ago|hide|24 comments17.Launch HN: RonanRX (YC S26) – Personalized Peptides and GLP-1s68 pointsbylloydarmbrust13 hours ago|hide|71 comments18.Biggest dark matter detector spots a single weird particle(science.org)309 pointsbyrandycupertino21 hours ago|hide|108 comments19.Aging brains blend memories together instead of just forgetting them(studyfinds.com)299 pointsbymdp202122 hours ago|hide|119 comments20.Wendell Berry has died(nytimes.com)198 pointsbyCuriositry17 hours ago|hide|99 comments21.Qantas Airbus A380 engine failure in 2010 (2023)(admiralcloudberg.medium.com)150 pointsbygumby16 hours ago|hide|89 comments22.Engineering of the fastest WebAssembly interpreters(wasmi-labs.github.io)106 pointsbyherobird14 hours ago|hide|8 comments23.A dark horse enter China's AI race: StartLux(chinaonchina.com)4 pointsbytry-working26 minutes ago|hide|discuss24.Exit the Cave(turtlespace.blog)275 pointsbyakkartik21 hours ago|hide|95 comments25.A Selection of Los Alamos Rolodex Business Cards(clui.org)180 pointsby1970-01-0121 hours ago|hide|49 comments26.Async Rust vs RTOS showdown (2022)(tweedegolf.nl)99 pointsbykooi17 hours ago|hide|50 comments27.Altair Basic Interpreter Source Code (1975) [pdf](gatesnotes.com)65 pointsbyEridanus215 hours ago|hide|35 comments28.We could save petabytes of cache storage with Zstandard and Pingora(cloudflare.com)118 pointsbytorutofu17 hours ago|hide|53 comments29.Poisson Disk Sampling(stripeacross.com)174 pointsbyvismit200021 hours ago|hide|21 comments30.WebLLM: high-performance in-browser LLM inference engine(github.com/mlc-ai)130 pointsbysaikatsg21 hours ago|hide|21 commentsMore",
+          "1.",
+          "",
+          "Pre-Release of Polars 2.0(pola.rs)",
+          "",
+          "205 pointsbykomape4 hours ago|hide|53 comments",
+          "2.",
+          "",
+          "The Browser's Main Thread Is Expensive(kciter.so)",
+          "",
+          "123 pointsbykciter4 hours ago|hide|42 comments",
+          "3.",
+          "",
+          "Muse Spark 1.3(meta.com)",
+          "",
+          "608 pointsbybvaldivielso16 hours ago|hide|400 comments",
+          "4.",
+          "",
+          "Gemini 3.8 Flash and 3.8 Flash Cyber(blog.google)",
+          "",
+          "1051 pointsbybratao20 hours ago|hide|585 comments",
+          "5.",
+          "",
+          "Fish Bad, Sugar Good and Other Medieval Ideas About Food(lithub.com)",
+          "",
+          "23 pointsbymooreds2 hours ago|hide|7 comments",
+          "6.",
+          "",
+          "Three schoolgirls in Kinsale pulled up a pea plant covered in warts (2016)(scienceblog.com)",
+          "",
+          "76 pointsbyDamonHD4 hours ago|hide|26 comments",
+          "7.",
+          "",
+          "What I Learned from My Mom (1941-2026)(experimentalliving.substack.com)",
+          "",
+          "37 pointsbyNaOH3 hours ago|hide|3 comments",
+          "8.",
+          "",
+          "Google avoids a breakup of its ad tech business(nytimes.com)",
+          "",
+          "410 pointsbydonohoe17 hours ago|hide|286 comments",
+          "9.",
+          "",
+          "Three sites made 215,128 “best software” pages for AI. Perplexity cites them(trellner.com)",
+          "",
+          "443 pointsbyjakobgreenfeld21 hours ago|hide|214 comments",
+          "10.",
+          "",
+          "Invisible Companies(colossus.com)",
+          "",
+          "3 pointsbyltononro1 hour ago|hide|discuss",
+          "11.",
+          "",
+          "Holden's Lightning Flight(wikipedia.org)",
+          "",
+          "167 pointsbyColinWright13 hours ago|hide|36 comments",
+          "12.",
+          "",
+          "The Computer Museum of America reclamation project(computer-museum.org)",
+          "",
+          "53 pointsbyrbanffy7 hours ago|hide|22 comments",
+          "13.",
+          "",
+          "Can I opt out of my input or output data being used for training?(mistral.ai)",
+          "",
+          "458 pointsbyteekert23 hours ago|hide|208 comments",
+          "14.",
+          "",
+          "Fable 5.1 World Modeling(github.com/philolabs)",
+          "",
+          "276 pointsbysurreal_15 hours ago|hide|80 comments",
+          "15.",
+          "",
+          "Reverse Engineering Unknown File Formats with ImHex(werwolv.net)",
+          "",
+          "214 pointsbycarlos-menezes15 hours ago|hide|38 comments",
+          "16.",
+          "",
+          "Higher Multipoles of the Cow(arxiv.org)",
+          "",
+          "87 pointsbyMrOrelliOReilly10 hours ago|hide|24 comments",
+          "17.",
+          "",
+          "Launch HN: RonanRX (YC S26) – Personalized Peptides and GLP-1s",
+          "",
+          "68 pointsbylloydarmbrust13 hours ago|hide|71 comments",
+          "18.",
+          "",
+          "Biggest dark matter detector spots a single weird particle(science.org)",
+          "",
+          "309 pointsbyrandycupertino21 hours ago|hide|108 comments",
+          "19.",
+          "",
+          "Aging brains blend memories together instead of just forgetting them(studyfinds.com)",
+          "",
+          "299 pointsbymdp202122 hours ago|hide|119 comments",
+          "20.",
+          "",
+          "Wendell Berry has died(nytimes.com)",
+          "",
+          "198 pointsbyCuriositry17 hours ago|hide|99 comments",
+          "21.",
+          "",
+          "Qantas Airbus A380 engine failure in 2010 (2023)(admiralcloudberg.medium.com)",
+          "",
+          "150 pointsbygumby16 hours ago|hide|89 comments",
+          "22.",
+          "",
+          "Engineering of the fastest WebAssembly interpreters(wasmi-labs.github.io)",
+          "",
+          "106 pointsbyherobird14 hours ago|hide|8 comments",
+          "23.",
+          "",
+          "A dark horse enter China's AI race: StartLux(chinaonchina.com)",
+          "",
+          "4 pointsbytry-working26 minutes ago|hide|discuss",
+          "24.",
+          "",
+          "Exit the Cave(turtlespace.blog)",
+          "",
+          "275 pointsbyakkartik21 hours ago|hide|95 comments",
+          "25.",
+          "",
+          "A Selection of Los Alamos Rolodex Business Cards(clui.org)",
+          "",
+          "180 pointsby1970-01-0121 hours ago|hide|49 comments",
+          "26.",
+          "",
+          "Async Rust vs RTOS showdown (2022)(tweedegolf.nl)",
+          "",
+          "99 pointsbykooi17 hours ago|hide|50 comments",
+          "27.",
+          "",
+          "Altair Basic Interpreter Source Code (1975) [pdf](gatesnotes.com)",
+          "",
+          "65 pointsbyEridanus215 hours ago|hide|35 comments",
+          "28.",
+          "",
+          "We could save petabytes of cache storage with Zstandard and Pingora(cloudflare.com)",
+          "",
+          "118 pointsbytorutofu17 hours ago|hide|53 comments",
+          "29.",
+          "",
+          "Poisson Disk Sampling(stripeacross.com)",
+          "",
+          "174 pointsbyvismit200021 hours ago|hide|21 comments",
+          "30.",
+          "",
+          "WebLLM: high-performance in-browser LLM inference engine(github.com/mlc-ai)",
+          "",
+          "130 pointsbysaikatsg21 hours ago|hide|21 comments",
+          "",
+          "More"
+        ],
+        [
+          "1.",
+          "",
+          "Pre-Release of Polars 2.0(pola.rs)"
+        ],
+        [
+          "",
+          "205 pointsbykomape4 hours ago|hide|53 comments"
+        ],
+        [
+          "2.",
+          "",
+          "The Browser's Main Thread Is Expensive(kciter.so)"
+        ],
+        [
+          "",
+          "123 pointsbykciter4 hours ago|hide|42 comments"
+        ],
+        [
+          "3.",
+          "",
+          "Muse Spark 1.3(meta.com)"
+        ],
+        [
+          "",
+          "608 pointsbybvaldivielso16 hours ago|hide|400 comments"
+        ],
+        [
+          "4.",
+          "",
+          "Gemini 3.8 Flash and 3.8 Flash Cyber(blog.google)"
+        ],
+        [
+          "",
+          "1051 pointsbybratao20 hours ago|hide|585 comments"
+        ],
+        [
+          "5.",
+          "",
+          "Fish Bad, Sugar Good and Other Medieval Ideas About Food(lithub.com)"
+        ],
+        [
+          "",
+          "23 pointsbymooreds2 hours ago|hide|7 comments"
+        ],
+        [
+          "6.",
+          "",
+          "Three schoolgirls in Kinsale pulled up a pea plant covered in warts (2016)(scienceblog.com)"
+        ],
+        [
+          "",
+          "76 pointsbyDamonHD4 hours ago|hide|26 comments"
+        ],
+        [
+          "7.",
+          "",
+          "What I Learned from My Mom (1941-2026)(experimentalliving.substack.com)"
+        ],
+        [
+          "",
+          "37 pointsbyNaOH3 hours ago|hide|3 comments"
+        ],
+        [
+          "8.",
+          "",
+          "Google avoids a breakup of its ad tech business(nytimes.com)"
+        ],
+        [
+          "",
+          "410 pointsbydonohoe17 hours ago|hide|286 comments"
+        ],
+        [
+          "9.",
+          "",
+          "Three sites made 215,128 “best software” pages for AI. Perplexity cites them(trellner.com)"
+        ],
+        [
+          "",
+          "443 pointsbyjakobgreenfeld21 hours ago|hide|214 comments"
+        ],
+        [
+          "10.",
+          "",
+          "Invisible Companies(colossus.com)"
+        ],
+        [
+          "",
+          "3 pointsbyltononro1 hour ago|hide|discuss"
+        ],
+        [
+          "11.",
+          "",
+          "Holden's Lightning Flight(wikipedia.org)"
+        ],
+        [
+          "",
+          "167 pointsbyColinWright13 hours ago|hide|36 comments"
+        ],
+        [
+          "12.",
+          "",
+          "The Computer Museum of America reclamation project(computer-museum.org)"
+        ],
+        [
+          "",
+          "53 pointsbyrbanffy7 hours ago|hide|22 comments"
+        ],
+        [
+          "13.",
+          "",
+          "Can I opt out of my input or output data being used for training?(mistral.ai)"
+        ],
+        [
+          "",
+          "458 pointsbyteekert23 hours ago|hide|208 comments"
+        ],
+        [
+          "14.",
+          "",
+          "Fable 5.1 World Modeling(github.com/philolabs)"
+        ],
+        [
+          "",
+          "276 pointsbysurreal_15 hours ago|hide|80 comments"
+        ],
+        [
+          "15.",
+          "",
+          "Reverse Engineering Unknown File Formats with ImHex(werwolv.net)"
+        ],
+        [
+          "",
+          "214 pointsbycarlos-menezes15 hours ago|hide|38 comments"
+        ],
+        [
+          "16.",
+          "",
+          "Higher Multipoles of the Cow(arxiv.org)"
+        ],
+        [
+          "",
+          "87 pointsbyMrOrelliOReilly10 hours ago|hide|24 comments"
+        ],
+        [
+          "17.",
+          "",
+          "Launch HN: RonanRX (YC S26) – Personalized Peptides and GLP-1s"
+        ],
+        [
+          "",
+          "68 pointsbylloydarmbrust13 hours ago|hide|71 comments"
+        ],
+        [
+          "18.",
+          "",
+          "Biggest dark matter detector spots a single weird particle(science.org)"
+        ],
+        [
+          "",
+          "309 pointsbyrandycupertino21 hours ago|hide|108 comments"
+        ],
+        [
+          "19.",
+          "",
+          "Aging brains blend memories together instead of just forgetting them(studyfinds.com)"
+        ],
+        [
+          "",
+          "299 pointsbymdp202122 hours ago|hide|119 comments"
+        ],
+        [
+          "20.",
+          "",
+          "Wendell Berry has died(nytimes.com)"
+        ],
+        [
+          "",
+          "198 pointsbyCuriositry17 hours ago|hide|99 comments"
+        ],
+        [
+          "21.",
+          "",
+          "Qantas Airbus A380 engine failure in 2010 (2023)(admiralcloudberg.medium.com)"
+        ],
+        [
+          "",
+          "150 pointsbygumby16 hours ago|hide|89 comments"
+        ],
+        [
+          "22.",
+          "",
+          "Engineering of the fastest WebAssembly interpreters(wasmi-labs.github.io)"
+        ],
+        [
+          "",
+          "106 pointsbyherobird14 hours ago|hide|8 comments"
+        ],
+        [
+          "23.",
+          "",
+          "A dark horse enter China's AI race: StartLux(chinaonchina.com)"
+        ],
+        [
+          "",
+          "4 pointsbytry-working26 minutes ago|hide|discuss"
+        ],
+        [
+          "24.",
+          "",
+          "Exit the Cave(turtlespace.blog)"
+        ],
+        [
+          "",
+          "275 pointsbyakkartik21 hours ago|hide|95 comments"
+        ],
+        [
+          "25.",
+          "",
+          "A Selection of Los Alamos Rolodex Business Cards(clui.org)"
+        ],
+        [
+          "",
+          "180 pointsby1970-01-0121 hours ago|hide|49 comments"
+        ],
+        [
+          "26.",
+          "",
+          "Async Rust vs RTOS showdown (2022)(tweedegolf.nl)"
+        ],
+        [
+          "",
+          "99 pointsbykooi17 hours ago|hide|50 comments"
+        ],
+        [
+          "27.",
+          "",
+          "Altair Basic Interpreter Source Code (1975) [pdf](gatesnotes.com)"
+        ],
+        [
+          "",
+          "65 pointsbyEridanus215 hours ago|hide|35 comments"
+        ],
+        [
+          "28.",
+          "",
+          "We could save petabytes of cache storage with Zstandard and Pingora(cloudflare.com)"
+        ],
+        [
+          "",
+          "118 pointsbytorutofu17 hours ago|hide|53 comments"
+        ],
+        [
+          "29.",
+          "",
+          "Poisson Disk Sampling(stripeacross.com)"
+        ],
+        [
+          "",
+          "174 pointsbyvismit200021 hours ago|hide|21 comments"
+        ],
+        [
+          "30.",
+          "",
+          "WebLLM: high-performance in-browser LLM inference engine(github.com/mlc-ai)"
+        ],
+        [
+          "",
+          "130 pointsbysaikatsg21 hours ago|hide|21 comments"
+        ],
+        [
+          "",
+          "More"
+        ],
+        [
+          "Guidelines|FAQ|Lists|API|Security|Legal|Apply to YC|ContactSearch:",
+          ""
+        ],
+        [
+          ""
+        ]
+      ],
+      [
+        [
+          "",
+          "Hacker Newsnew|past|comments|ask|show|jobs|submit",
+          "login"
+        ]
+      ],
+      [
+        [
+          "1.",
+          "",
+          "Pre-Release of Polars 2.0(pola.rs)"
+        ],
+        [
+          "",
+          "205 pointsbykomape4 hours ago|hide|53 comments"
+        ],
+        [
+          "2.",
+          "",
+          "The Browser's Main Thread Is Expensive(kciter.so)"
+        ],
+        [
+          "",
+          "123 pointsbykciter4 hours ago|hide|42 comments"
+        ],
+        [
+          "3.",
+          "",
+          "Muse Spark 1.3(meta.com)"
+        ],
+        [
+          "",
+          "608 pointsbybvaldivielso16 hours ago|hide|400 comments"
+        ],
+        [
+          "4.",
+          "",
+          "Gemini 3.8 Flash and 3.8 Flash Cyber(blog.google)"
+        ],
+        [
+          "",
+          "1051 pointsbybratao20 hours ago|hide|585 comments"
+        ],
+        [
+          "5.",
+          "",
+          "Fish Bad, Sugar Good and Other Medieval Ideas About Food(lithub.com)"
+        ],
+        [
+          "",
+          "23 pointsbymooreds2 hours ago|hide|7 comments"
+        ],
+        [
+          "6.",
+          "",
+          "Three schoolgirls in Kinsale pulled up a pea plant covered in warts (2016)(scienceblog.com)"
+        ],
+        [
+          "",
+          "76 pointsbyDamonHD4 hours ago|hide|26 comments"
+        ],
+        [
+          "7.",
+          "",
+          "What I Learned from My Mom (1941-2026)(experimentalliving.substack.com)"
+        ],
+        [
+          "",
+          "37 pointsbyNaOH3 hours ago|hide|3 comments"
+        ],
+        [
+          "8.",
+          "",
+          "Google avoids a breakup of its ad tech business(nytimes.com)"
+        ],
+        [
+          "",
+          "410 pointsbydonohoe17 hours ago|hide|286 comments"
+        ],
+        [
+          "9.",
+          "",
+          "Three sites made 215,128 “best software” pages for AI. Perplexity cites them(trellner.com)"
+        ],
+        [
+          "",
+          "443 pointsbyjakobgreenfeld21 hours ago|hide|214 comments"
+        ],
+        [
+          "10.",
+          "",
+          "Invisible Companies(colossus.com)"
+        ],
+        [
+          "",
+          "3 pointsbyltononro1 hour ago|hide|discuss"
+        ],
+        [
+          "11.",
+          "",
+          "Holden's Lightning Flight(wikipedia.org)"
+        ],
+        [
+          "",
+          "167 pointsbyColinWright13 hours ago|hide|36 comments"
+        ],
+        [
+          "12.",
+          "",
+          "The Computer Museum of America reclamation project(computer-museum.org)"
+        ],
+        [
+          "",
+          "53 pointsbyrbanffy7 hours ago|hide|22 comments"
+        ],
+        [
+          "13.",
+          "",
+          "Can I opt out of my input or output data being used for training?(mistral.ai)"
+        ],
+        [
+          "",
+          "458 pointsbyteekert23 hours ago|hide|208 comments"
+        ],
+        [
+          "14.",
+          "",
+          "Fable 5.1 World Modeling(github.com/philolabs)"
+        ],
+        [
+          "",
+          "276 pointsbysurreal_15 hours ago|hide|80 comments"
+        ],
+        [
+          "15.",
+          "",
+          "Reverse Engineering Unknown File Formats with ImHex(werwolv.net)"
+        ],
+        [
+          "",
+          "214 pointsbycarlos-menezes15 hours ago|hide|38 comments"
+        ],
+        [
+          "16.",
+          "",
+          "Higher Multipoles of the Cow(arxiv.org)"
+        ],
+        [
+          "",
+          "87 pointsbyMrOrelliOReilly10 hours ago|hide|24 comments"
+        ],
+        [
+          "17.",
+          "",
+          "Launch HN: RonanRX (YC S26) – Personalized Peptides and GLP-1s"
+        ],
+        [
+          "",
+          "68 pointsbylloydarmbrust13 hours ago|hide|71 comments"
+        ],
+        [
+          "18.",
+          "",
+          "Biggest dark matter detector spots a single weird particle(science.org)"
+        ],
+        [
+          "",
+          "309 pointsbyrandycupertino21 hours ago|hide|108 comments"
+        ],
+        [
+          "19.",
+          "",
+          "Aging brains blend memories together instead of just forgetting them(studyfinds.com)"
+        ],
+        [
+          "",
+          "299 pointsbymdp202122 hours ago|hide|119 comments"
+        ],
+        [
+          "20.",
+          "",
+          "Wendell Berry has died(nytimes.com)"
+        ],
+        [
+          "",
+          "198 pointsbyCuriositry17 hours ago|hide|99 comments"
+        ],
+        [
+          "21.",
+          "",
+          "Qantas Airbus A380 engine failure in 2010 (2023)(admiralcloudberg.medium.com)"
+        ],
+        [
+          "",
+          "150 pointsbygumby16 hours ago|hide|89 comments"
+        ],
+        [
+          "22.",
+          "",
+          "Engineering of the fastest WebAssembly interpreters(wasmi-labs.github.io)"
+        ],
+        [
+          "",
+          "106 pointsbyherobird14 hours ago|hide|8 comments"
+        ],
+        [
+          "23.",
+          "",
+          "A dark horse enter China's AI race: StartLux(chinaonchina.com)"
+        ],
+        [
+          "",
+          "4 pointsbytry-working26 minutes ago|hide|discuss"
+        ],
+        [
+          "24.",
+          "",
+          "Exit the Cave(turtlespace.blog)"
+        ],
+        [
+          "",
+          "275 pointsbyakkartik21 hours ago|hide|95 comments"
+        ],
+        [
+          "25.",
+          "",
+          "A Selection of Los Alamos Rolodex Business Cards(clui.org)"
+        ],
+        [
+          "",
+          "180 pointsby1970-01-0121 hours ago|hide|49 comments"
+        ],
+        [
+          "26.",
+          "",
+          "Async Rust vs RTOS showdown (2022)(tweedegolf.nl)"
+        ],
+        [
+          "",
+          "99 pointsbykooi17 hours ago|hide|50 comments"
+        ],
+        [
+          "27.",
+          "",
+          "Altair Basic Interpreter Source Code (1975) [pdf](gatesnotes.com)"
+        ],
+        [
+          "",
+          "65 pointsbyEridanus215 hours ago|hide|35 comments"
+        ],
+        [
+          "28.",
+          "",
+          "We could save petabytes of cache storage with Zstandard and Pingora(cloudflare.com)"
+        ],
+        [
+          "",
+          "118 pointsbytorutofu17 hours ago|hide|53 comments"
+        ],
+        [
+          "29.",
+          "",
+          "Poisson Disk Sampling(stripeacross.com)"
+        ],
+        [
+          "",
+          "174 pointsbyvismit200021 hours ago|hide|21 comments"
+        ],
+        [
+          "30.",
+          "",
+          "WebLLM: high-performance in-browser LLM inference engine(github.com/mlc-ai)"
+        ],
+        [
+          "",
+          "130 pointsbysaikatsg21 hours ago|hide|21 comments"
+        ],
+        [
+          "",
+          "More"
+        ]
+      ],
+      [
+        [
+          ""
+        ]
+      ]
+    ],
+    "lists": [],
+    "headings": [],
+    "paragraphs": [],
+    "images": []
+  },
+  "data_type": "mixed",
+  "summary": "Found: 32 links, 4 tables, 0 headings, 0 paragraphs, 0 images",
+  "source_url": "https://news.ycombinator.com",
+  "scraped_at": "2026-09-03T11:41:11.407195",
+  "html_size": 34913
+}

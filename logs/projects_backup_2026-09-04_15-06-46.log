@@ -18,3 +18,63 @@ Manifest created: 3 items cataloged
 [2026-09-04 15:06:47]   Total size: 416K
 [2026-09-04 15:06:47]   Archive: 2026-09-04_15-06-46.tar.gz (68K)
 [2026-09-04 15:06:47] Pushing to GitHub...
+[main f12999d] 📦 Projects backup: 2026-09-04_15-06-46
+ 52 files changed, 7338 insertions(+), 1 deletion(-)
+ create mode 100644 logs/projects_backup_2026-09-04_14-48-07.log
+ create mode 100644 logs/projects_backup_2026-09-04_14-56-54.log
+ create mode 100644 logs/projects_backup_2026-09-04_15-06-46.log
+ create mode 100644 projects-backup/2026-09-04_15-06-46.tar.gz
+ create mode 100644 projects-backup/2026-09-04_15-06-46/manifest.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/order-system/README.md
+ create mode 100644 projects-backup/2026-09-04_15-06-46/order-system/admin/index.html
+ create mode 100644 projects-backup/2026-09-04_15-06-46/order-system/backend/api.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/order-system/backend/main.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/order-system/backend/requirements.txt
+ create mode 100644 projects-backup/2026-09-04_15-06-46/order-system/frontend/admin/index.html
+ create mode 100644 projects-backup/2026-09-04_15-06-46/order-system/frontend/index.html
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/appointment_bot.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/auto_reply_bot.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/competitor_data/news_ycombinator_com_20260904_015429.csv
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/competitor_data/news_ycombinator_com_20260904_015429.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/competitor_monitor.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/content_generator.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/dashboard.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/dashboard_data/dashboard.html
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/email_automation.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/order_bot.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/price_comparison.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/support_bot.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/survey_bot.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/survey_data/responses.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/projects/survey_data/surveys.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/README.md
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/bot.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/hackernews.csv
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/hackernews.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/hn_ai_final.csv
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/hn_ai_final.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/hn_ai_test.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/output_digikala_com_20260903_173143.csv
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/output_digikala_com_20260903_173143.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/output_digikala_com_20260903_175508.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/output_example_com_20260903_114109.csv
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/output_example_com_20260903_114109.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/output_iranintl_com_20260903_172816.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/output_iranintl_com_20260903_173656.csv
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/output_iranintl_com_20260903_173656.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/output_news_ycombinator_com_20260903_172341.csv
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/output_news_ycombinator_com_20260903_172341.json
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/portfolio/index.html
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/requirements.txt
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/restore.sh
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/scraper.py
+ create mode 100644 projects-backup/2026-09-04_15-06-46/smart-scraper/telegram_bot.py
+ create mode 120000 projects-backup/latest
+[2026-09-04 15:06:47]   Commit: f12999d
+fatal: invalid refspec ''
+[2026-09-04 15:06:47]   ✗ Push failed!
+[2026-09-04 15:06:47] ═══════════════════════════════════════════════════════════════
+[2026-09-04 15:06:47]   Projects Backup Complete: 2026-09-04_15-06-46
+[2026-09-04 15:06:47]   Push Status: failed
+[2026-09-04 15:06:47]   Commit: f12999d
+[2026-09-04 15:06:47] ═══════════════════════════════════════════════════════════════

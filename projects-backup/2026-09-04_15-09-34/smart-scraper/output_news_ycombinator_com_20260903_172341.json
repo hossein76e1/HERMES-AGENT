@@ -1,0 +1,164 @@
+{
+  "page_title": "Hacker News",
+  "extracted_data": [
+    {
+      "rank": 1,
+      "title": "Audacity 4.0",
+      "url": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0",
+      "source": "github.com/audacity",
+      "score": 373,
+      "user": "ClydeN",
+      "time": "2 hours ago",
+      "comments": 87,
+      "id": "49548395"
+    },
+    {
+      "rank": 2,
+      "title": "Elevated Errors for Multiple Models",
+      "url": "https://status.claude.com/incidents/461yvfrzpwtt",
+      "source": "claude.com",
+      "score": 36,
+      "user": "__vivek",
+      "time": "23 minutes ago",
+      "comments": 9,
+      "id": "49549676"
+    },
+    {
+      "rank": 3,
+      "title": "Pre-Release of Polars 2.0",
+      "url": "https://pola.rs/posts/announcing-polars-2/",
+      "source": "pola.rs",
+      "score": 267,
+      "user": "komape",
+      "time": "6 hours ago",
+      "comments": 78,
+      "id": "49546753"
+    },
+    {
+      "rank": 4,
+      "title": "The Browser's Main Thread Is Expensive",
+      "url": "https://kciter.so/posts/the-expensive-main-thread/en/",
+      "source": "kciter.so",
+      "score": 220,
+      "user": "kciter",
+      "time": "6 hours ago",
+      "comments": 71,
+      "id": "49522137"
+    },
+    {
+      "rank": 5,
+      "title": "Invisible Companies",
+      "url": "https://colossus.com/article/invisible-companies/",
+      "source": "colossus.com",
+      "score": 49,
+      "user": "ltononro",
+      "time": "3 hours ago",
+      "comments": 15,
+      "id": "49521264"
+    },
+    {
+      "rank": 6,
+      "title": "What I Learned from My Mom (1941-2026)",
+      "url": "https://experimentalliving.substack.com/p/what-i-learned-from-my-mom-1941-2026",
+      "source": "experimentalliving.substack.com",
+      "score": 104,
+      "user": "NaOH",
+      "time": "6 hours ago",
+      "comments": 6,
+      "id": "49492796"
+    },
+    {
+      "rank": 7,
+      "title": "Intrusive Linked Lists",
+      "url": "https://www.data-structures-in-practice.com/intrusive-linked-lists/",
+      "source": "data-structures-in-practice.com",
+      "score": 20,
+      "user": "tripdout",
+      "time": "3 hours ago",
+      "comments": 3,
+      "id": "49505257"
+    },
+    {
+      "rank": 8,
+      "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "source": "blog.google",
+      "score": 1086,
+      "user": "bratao",
+      "time": "22 hours ago",
+      "comments": 617,
+      "id": "49537553"
+    },
+    {
+      "rank": 9,
+      "title": "Muse Spark 1.3",
+      "url": "https://developer.meta.com/ai/models/muse-spark/",
+      "source": "meta.com",
+      "score": 633,
+      "user": "bvaldivielso",
+      "time": "18 hours ago",
+      "comments": 416,
+      "id": "49541256"
+    },
+    {
+      "rank": 10,
+      "title": "9 Mothers (YC P26) Is Hiring in Austin, TX",
+      "url": "https://9mothers.com/careers",
+      "source": "9mothers.com",
+      "score": null,
+      "user": null,
+      "time": "1 hour ago",
+      "comments": null,
+      "id": "49548864"
+    },
+    {
+      "rank": 11,
+      "title": "Fish Bad, Sugar Good and Other Medieval Ideas About Food",
+      "url": "https://lithub.com/fish-bad-sugar-good-and-other-medieval-ideas-about-food/",
+      "source": "lithub.com",
+      "score": 47,
+      "user": "mooreds",
+      "time": "5 hours ago",
+      "comments": 31,
+      "id": "49513721"
+    },
+    {
+      "rank": 12,
+      "title": "Nvidia to Acquire Hugging Face",
+      "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+      "source": "nvidia.com",
+      "score": 70,
+      "user": "tosh",
+      "time": "1 hour ago",
+      "comments": 20,
+      "id": "49548952"
+    },
+    {
+      "rank": 13,
+      "title": "Claude for Commerce Agents",
+      "url": "https://claude.com/blog/claude-for-commerce-agents",
+      "source": "claude.com",
+      "score": 29,
+      "user": "ashazal",
+      "time": "4 hours ago",
+      "comments": 29,
+      "id": "49547888"
+    }
+  ],
+  "data_type": "articles",
+  "fields": [
+    "rank",
+    "title",
+    "url",
+    "source",
+    "score",
+    "user",
+    "time",
+    "comments",
+    "id"
+  ],
+  "summary": "Extracted 13 articles from the Hacker News homepage with details including titles, URLs, source websites, scores, users, times, and comment counts.",
+  "source_url": "https://news.ycombinator.com",
+  "scraped_at": "2026-09-03T17:23:41.260047",
+  "html_size": 34504
+}

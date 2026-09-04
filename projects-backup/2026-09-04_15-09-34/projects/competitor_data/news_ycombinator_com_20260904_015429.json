@@ -1,0 +1,98 @@
+{
+  "name": "HackerNews",
+  "url": "https://news.ycombinator.com",
+  "scraped_at": "2026-09-04T01:54:29.808003",
+  "status": "success",
+  "products": [],
+  "prices": [],
+  "headings": [],
+  "top_links": [
+    {
+      "text": "Hacker News",
+      "url": "news"
+    },
+    {
+      "text": "comments",
+      "url": "newcomments"
+    },
+    {
+      "text": "submit",
+      "url": "submit"
+    },
+    {
+      "text": "GPT-6 Astra",
+      "url": "https://openai.com/index/gpt-6-astra/"
+    },
+    {
+      "text": "openai.com",
+      "url": "from?site=openai.com"
+    },
+    {
+      "text": "3 hours ago",
+      "url": "item?id=49554643"
+    },
+    {
+      "text": "720 comments",
+      "url": "item?id=49554643"
+    },
+    {
+      "text": "Qwen 3.8 27B available on Cerebras at 1500 tokens/s",
+      "url": "https://inference-docs.cerebras.ai/models/overview"
+    },
+    {
+      "text": "cerebras.ai",
+      "url": "from?site=cerebras.ai"
+    },
+    {
+      "text": "altertable",
+      "url": "user?id=altertable"
+    },
+    {
+      "text": "3 hours ago",
+      "url": "item?id=49554520"
+    },
+    {
+      "text": "114 comments",
+      "url": "item?id=49554520"
+    },
+    {
+      "text": ".name Termination",
+      "url": "https://neil.fraser.name/news/2026/09/03/"
+    },
+    {
+      "text": "fraser.name",
+      "url": "from?site=fraser.name"
+    },
+    {
+      "text": "pavel_lishin",
+      "url": "user?id=pavel_lishin"
+    },
+    {
+      "text": "7 hours ago",
+      "url": "item?id=49550772"
+    },
+    {
+      "text": "336 comments",
+      "url": "item?id=49550772"
+    },
+    {
+      "text": "The largest electric aircraft just flew [video]",
+      "url": "https://www.youtube.com/watch?v=nM86DBOqgPM"
+    },
+    {
+      "text": "youtube.com",
+      "url": "from?site=youtube.com"
+    },
+    {
+      "text": "3 hours ago",
+      "url": "item?id=49526453"
+    }
+  ],
+  "html_size": 34104,
+  "summary": {
+    "products_found": 0,
+    "prices_found": 0,
+    "headings_found": 0,
+    "links_found": 145
+  }
+}
