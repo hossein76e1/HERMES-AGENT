@@ -141,18 +141,95 @@ body{font-family:'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--t
 
 <script>
 const API = '';
-let state = {step:'welcome', convId:null, orderId:null, data:{}, token:null};
+let state = {step:'welcome', convId:null, orderId:null, data:{}, token:null, userId:null};
 
 async function apiCall(path, method='GET', body=null){
   const opts = {method, headers:{'Content-Type':'application/json'}};
   if(state.token) opts.headers['Authorization'] = 'Bearer ' + state.token;
   if(body) opts.body = JSON.stringify(body);
-  const res = await fetch(API+path, opts);
-  return res.json();
+  try {
+    const res = await fetch(API+path, opts);
+    if(!res.ok) throw new Error('API error');
+    return await res.json();
+  } catch(e) {
+    console.error('API Error:', e);
+    return null;
+  }
 }
 
-async function init(){
-  addBot("سلام! 👋 به سیستم سفارش پروژه خوش اومدی.\n\nمن اینجا هستم تا پروژه‌ی مد نظرت رو دقیق بفهمم.\n\n**اول بگو: چه نوع پروژه‌ای می‌خوای؟**", [
+async function ensureUser(){
+  if(state.token) return true;
+  // Register a guest user
+  const email = 'guest_' + Date.now() + '@order.site';
+  const r = await apiCall('/api/auth/register', 'POST', {email:email, password:'guest123', full_name:'مشتری'});
+  if(r && r.access_token){
+    state.token = r.access_token;
+    return true;
+  }
+  return false;
+}
+
+async function createOrder(){
+  await ensureUser();
+  
+  // Map project type to API enum
+  const typeMap = {
+    'ربات تلگрам': 'telegram_bot',
+    'ربات واتساپ': 'whatsapp_bot', 
+    'استخراج داده': 'data_scraping',
+    'وب‌سایت': 'website',
+    'اتوماسیون': 'automation',
+    'تولید محتوا': 'content_generation',
+    'ایمیل اتوماسیون': 'email_automation',
+    'مقایسه قیمت': 'price_comparison',
+    'داشبورد': 'dashboard',
+    'پروژه سفارشی': 'custom'
+  };
+  
+  const typeMapReverse = {
+    'telegram_bot': 'ربات تلگرام',
+    'whatsapp_bot': 'ربات واتساپ',
+    'data_scraping': 'استخراج داده',
+    'website': 'وب‌سایت',
+    'automation': 'اتوماسیون',
+    'content_generation': 'تولید محتوا',
+    'email_autoration': 'ایمیل اتوماسیون',
+    'price_comparison': 'مقایسه قیمت',
+    'dashboard': 'داشبورد',
+    'custom': 'پروژه سفارشی'
+  };
+
+  // Map complexity
+  const compMap = {'ساده ⭐': 'simple', 'متوسط ⭐⭐': 'medium', 'پیچیده ⭐⭐⭐': 'complex', 'بزرگ ⭐⭐⭐⭐': 'enterprise'};
+  const timeMap = {'معمولی (۷ روز)': 'normal', 'فوری (۳ روز)': 'urgent', 'بسیار فوری (۱ روز)': 'express'};
+
+  const features = (state.data.features || '').split('
+').map(f=>f.trim().replace(/^- /,'')).filter(f=>f);
+  
+  const r = await apiCall('/api/orders', 'POST', {
+    project_type: typeMap[state.data.project_type] || 'custom',
+    project_title: state.data.project_title,
+    description: state.data.description,
+    requirements: {
+      features: features,
+      complexity: compMap[state.data.complexity] || 'medium',
+      timeline: timeMap[state.data.timeline] || 'normal'
+    }
+  });
+  
+  if(r && r.order_number){
+    state.orderId = r.id;
+    return r;
+  }
+  return null;
+}
+
+function init(){
+  addBot("سلام! 👋 به سیستم سفارش پروژه خوش اومدی.
+
+من اینجا هستم تا پروژه‌ی مد نظرت رو دقیق بفهمم.
+
+**اول بگو: چه نوع پروژه‌ای می‌خوای؟**", [
     "ربات تلگرام 🤖",
     "ربات واتساپ 📱",
     "استخراج داده 🕷️",
@@ -173,9 +250,10 @@ function addBot(text, options=null){
   div.className = 'msg bot';
   let optionsHtml = '';
   if(options){
-    optionsHtml = '<div class="options">' + options.map(o=>`<button class="opt-btn" onclick="selectOption('${o.replace(/'/g,"\\'")}')">${o}</button>`).join('') + '</div>';
+    optionsHtml = '<div class="options">' + options.map(o=>'<button class="opt-btn" onclick="selectOption(\''+o.replace(/'/g,"\'")+'\')">'+o+'</button>').join('') + '</div>';
   }
-  div.innerHTML = `<div class="msg-avatar">🤖</div><div><div class="msg-bubble">${text.replace(/\n/g,'<br>')}</div>${optionsHtml}<div class="msg-time">${new Date().toLocaleTimeString('fa-IR')}</div></div>`;
+  div.innerHTML = '<div class="msg-avatar">🤖</div><div><div class="msg-bubble">'+text.replace(/
+/g,'<br>')+'</div>'+optionsHtml+'<div class="msg-time">'+new Date().toLocaleTimeString('fa-IR')+'</div></div>';
   chat.appendChild(div);
   chat.scrollTop = chat.scrollHeight;
 }
@@ -184,7 +262,7 @@ function addUser(text){
   const chat = document.getElementById('chat');
   const div = document.createElement('div');
   div.className = 'msg user';
-  div.innerHTML = `<div class="msg-avatar">👤</div><div><div class="msg-bubble">${text}</div><div class="msg-time">${new Date().toLocaleTimeString('fa-IR')}</div></div>`;
+  div.innerHTML = '<div class="msg-avatar">👤</div><div><div class="msg-bubble">'+text+'</div><div class="msg-time">'+new Date().toLocaleTimeString('fa-IR')+'</div></div>';
   chat.appendChild(div);
   chat.scrollTop = chat.scrollHeight;
 }
@@ -225,7 +303,10 @@ function processStep(text){
   switch(state.step){
     case 'project_type':
       state.step = 'project_title';
-      addBot("عالیه! 🎯\n**اسم پروژه چی باشه؟**\n(مثلاً: ربات پشتیبانی فروشگاه)");
+      addBot("عالیه! 🎯
+
+**اسم پروژه چی باشه؟**
+(مثلاً: ربات پشتیبانی فروشگاه)");
       break;
     
     case 'project_title':
@@ -235,7 +316,13 @@ function processStep(text){
     
     case 'description':
       state.step = 'features';
-      addBot("⚡ **چه ویژگی‌هایی لازم داری؟**\nهر خط یک ویژگی بنویس.\n\nمثال:\n- پاسخ خودکار ۲۴ ساعته\n- اتصال به درگاه پرداخت\n- پنل ادمین");
+      addBot("⚡ **چه ویژگی‌هایی لازم داری؟**
+هر خط یک ویژگی بنویس.
+
+مثال:
+- پاسخ خودکار ۲۴ ساعته
+- اتصال به درگاه پرداخت
+- پنل ادمین");
       break;
     
     case 'features':
@@ -266,47 +353,39 @@ function processStep(text){
   }
 }
 
-function showOrderSummary(){
+async function showOrderSummary(){
   document.getElementById('chatInput').style.display='none';
+  showTyping();
+  
+  // Actually create the order in the database
+  const order = await createOrder();
+  removeTyping();
+  
+  if(!order){
+    addBot("❌ متأسفانه مشکلی پیش اومد. لطفاً دوباره تلاش کنید.");
+    document.getElementById('chatInput').style.display='flex';
+    return;
+  }
+  
   const card = document.getElementById('orderCard');
   const details = document.getElementById('orderDetails');
   const price = document.getElementById('orderPrice');
   
-  const prices = {
-    "ربات تلگرام": 8000000,
-    "ربات واتساپ": 12000000,
-    "استخراج داده": 5000000,
-    "وب‌سایت": 20000000,
-    "اتوماسیون": 15000000,
-    "تولید محتوا": 3000000,
-    "ایمیل اتوماسیون": 8000000,
-    "مقایسه قیمت": 7000000,
-    "داشبورد": 18000000,
-    "پروژه سفارشی": 25000000
-  };
+  const features = (state.data.features||'').split('
+').filter(f=>f.trim());
   
-  const complexity = {ساده: 1, متوسط: 1.5, پیچیده: 2.5, بزرگ: 4};
-  const timeline = {معمولی: 1, فوری: 1.5, 'بسیار فوری': 2};
+  details.innerHTML = '<div class="detail"><span class="label">کد سفارش</span><span class="value" style="color:var(--accent)">'+order.order_number+'</span></div>'
+    + '<div class="detail"><span class="label">نوع پروژه</span><span class="value">'+state.data.project_type+'</span></div>'
+    + '<div class="detail"><span class="label">اسم پروژه</span><span class="value">'+state.data.project_title+'</span></div>'
+    + '<div class="detail"><span class="label">توضیحات</span><span class="value">'+state.data.description+'</span></div>'
+    + '<div class="detail"><span class="label">ویژگی‌ها</span><span class="value">'+features.length+' مورد</span></div>'
+    + '<div class="detail"><span class="label">پیچیدگی</span><span class="value">'+state.data.complexity+'</span></div>'
+    + '<div class="detail"><span class="label">زمان تحویل</span><span class="value">'+state.data.timeline+'</span></div>'
+    + '<div class="detail"><span class="label">ایمیل</span><span class="value">'+state.data.email+'</span></div>'
+    + '<div class="detail"><span class="label">تماس</span><span class="value">'+(state.data.phone || 'ندارد')+'</span></div>';
   
-  let base = prices[state.data.project_type] || 10000000;
-  let comp = complexity[state.data.complexity] || 1.5;
-  let time = timeline[state.data.timeline] || 1;
-  let features = (state.data.features||'').split('\n').filter(f=>f.trim()).length;
-  let total = Math.round(base * comp * time + features * 500000);
-  state.data.price = total;
-  
-  details.innerHTML = `
-    <div class="detail"><span class="label">نوع پروژه</span><span class="value">${state.data.project_type}</span></div>
-    <div class="detail"><span class="label">اسم پروژه</span><span class="value">${state.data.project_title}</span></div>
-    <div class="detail"><span class="label">توضیحات</span><span class="value">${state.data.description}</span></div>
-    <div class="detail"><span class="label">ویژگی‌ها</span><span class="value">${(state.data.features||'').split('\n').length} مورد</span></div>
-    <div class="detail"><span class="label">پیچیدگی</span><span class="value">${state.data.complexity}</span></div>
-    <div class="detail"><span class="label">زمان تحویل</span><span class="value">${state.data.timeline}</span></div>
-    <div class="detail"><span class="label">ایمیل</span><span class="value">${state.data.email}</span></div>
-    <div class="detail"><span class="label">تماس</span><span class="value">${state.data.phone || 'ندارد'}</span></div>
-  `;
-  
-  price.innerHTML = `${total.toLocaleString('fa-IR')} تومان`;
+  price.innerHTML = order.final_price?.toLocaleString('fa-IR') + ' تومان';
+  state.data.price = order.final_price;
   card.style.display = 'block';
   card.scrollIntoView({behavior:'smooth'});
 }
@@ -322,36 +401,22 @@ function selectPayment(method){
   event.currentTarget.classList.add('active');
   
   if(method === 'card'){
-    document.getElementById('paymentResult').innerHTML = `
-      <div style="background:rgba(100,255,218,0.1);padding:30px;border-radius:15px;margin-top:20px;text-align:right">
-        <h4 style="color:var(--accent);margin-bottom:15px">🏧 اطلاعات کارت به کارت</h4>
-        <p>بانک: ملت</p>
-        <p>شماره کارت: <span style="direction:ltr;display:inline-block">6104-3379-4410-xxxx</span></p>
-        <p>به نام: حسین xxx</p>
-        <p style="margin-top:10px;color:var(--muted)">مبلغ: <strong>${state.data.price?.toLocaleString('fa-IR')} تومان</strong></p>
-        <p style="color:var(--muted);margin-top:5px">رسید پرداخت رو به تلگرام بفرست: @hosseinagentcoderbot</p>
-      </div>`;
+    document.getElementById('paymentResult').innerHTML = '<div style="background:rgba(100,255,218,0.1);padding:30px;border-radius:15px;margin-top:20px;text-align:right"><h4 style="color:var(--accent);margin-bottom:15px">🏧 اطلاعات کارت به کارت</h4><p>بانک: ملت</p><p>شماره کارت: <span style="direction:ltr;display:inline-block">6104-3379-4410-xxxx</span></p><p>به نام: حسین xxx</p><p style="margin-top:10px;color:var(--muted)">مبلغ: <strong>'+state.data.price?.toLocaleString('fa-IR')+' تومان</strong></p><p style="color:var(--muted);margin-top:5px">رسید پرداخت رو به تلگرام بفرست: @hosseinagentcoderbot</p></div>';
   } else {
-    document.getElementById('paymentResult').innerHTML = `
-      <div style="background:rgba(100,255,218,0.1);padding:30px;border-radius:15px;margin-top:20px">
-        <h4 style="color:var(--accent);margin-bottom:15px">💳 درگاه پرداخت</h4>
-        <p style="color:var(--muted);margin-bottom:20px">برای پرداخت آنلاین روی دکمه زیر کلیک کنید:</p>
-        <button class="btn btn-primary" onclick="payOnline()" style="font-size:1.1em;padding:15px 40px">پرداخت ${state.data.price?.toLocaleString('fa-IR')} تومان 💳</button>
-      </div>`;
+    document.getElementById('paymentResult').innerHTML = '<div style="background:rgba(100,255,218,0.1);padding:30px;border-radius:15px;margin-top:20px"><h4 style="color:var(--accent);margin-bottom:15px">💳 درگاه پرداخت</h4><p style="color:var(--muted);margin-bottom:20px">برای پرداخت آنلاین روی دکمه زیر کلیک کنید:</p><button class="btn btn-primary" onclick="payOnline()" style="font-size:1.1em;padding:15px 40px">پرداخت '+state.data.price?.toLocaleString('fa-IR')+' تومان 💳</button></div>';
   }
 }
 
-function payOnline(){
+async function payOnline(){
   // TODO: Integrate with Zarinpal
-  // For now show success
   document.getElementById('paymentSection').style.display='none';
   document.getElementById('successView').style.display='block';
-  document.getElementById('orderNumber').textContent = 'ORD-' + Date.now().toString(36).toUpperCase();
+  document.getElementById('orderNumber').textContent = state.orderId ? 'ORD-'+state.orderId : 'ORD-'+Date.now().toString(36).toUpperCase();
   document.getElementById('successView').scrollIntoView({behavior:'smooth'});
 }
 
 function resetChat(){
-  state = {step:'welcome', convId:null, orderId:null, data:{}, token:null};
+  state = {step:'welcome', convId:null, orderId:null, data:{}, token:null, userId:null};
   document.getElementById('chat').innerHTML = '';
   document.getElementById('chatInput').style.display='flex';
   document.getElementById('orderCard').style.display='none';
