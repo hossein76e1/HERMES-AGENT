@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🤖 سفارش پروژه هوشمند | حسین</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a1a;--card:rgba(255,255,255,0.05);--accent:#64ffda;--accent2:#7c4dff;--text:#e6f1ff;--muted:#8892b0;--danger:#ff6b6b;--success:#64ffda;--border:rgba(100,255,218,0.15)}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.app{max-width:900px;margin:0 auto;padding:20px}
+
+/* Header */
+.header{text-align:center;padding:40px 20px;margin-bottom:40px}
+.header h1{font-size:2.5em;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:15px}
+.header p{color:var(--muted);font-size:1.15em;line-height:1.8}
+
+/* Chat Container */
+.chat-container{background:var(--card);border-radius:20px;border:1px solid var(--border);overflow:hidden;min-height:500px;display:flex;flex-direction:column}
+
+/* Messages */
+.messages{flex:1;padding:30px;overflow-y:auto;max-height:500px}
+.msg{margin-bottom:20px;display:flex;gap:12px;animation:fadeIn 0.3s ease}
+.msg.bot{flex-direction:row-reverse}
+.msg-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2em;flex-shrink:0}
+.msg.bot .msg-avatar{background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.msg.user .msg-avatar{background:var(--accent2)}
+.msg-bubble{max-width:75%;padding:15px 20px;border-radius:18px;font-size:1em;line-height:1.8}
+.msg.bot .msg-bubble{background:rgba(100,255,218,0.1);border-top-right-radius:4px}
+.msg.user .msg-bubble{background:rgba(124,77,255,0.2);border-top-left-radius:4px}
+.msg-time{font-size:0.75em;color:var(--muted);margin-top:5px}
+
+/* Options */
+.options{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+.opt-btn{padding:10px 20px;border:1px solid var(--border);border-radius:25px;background:transparent;color:var(--text);cursor:pointer;font-size:0.95em;transition:all 0.3s;font-family:inherit}
+.opt-btn:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+
+/* Input */
+.chat-input{padding:20px;border-top:1px solid var(--border);display:flex;gap:10px}
+.chat-input input,.chat-input textarea{flex:1;padding:15px 20px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,0.05);color:var(--text);font-size:1em;outline:none;transition:border-color 0.3s;font-family:inherit;resize:none}
+.chat-input input:focus,.chat-input textarea:focus{border-color:var(--accent)}
+.chat-input button{padding:15px 25px;background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;border-radius:12px;color:var(--bg);font-size:1.1em;cursor:pointer;font-weight:bold;transition:transform 0.2s;font-family:inherit}
+.chat-input button:hover{transform:scale(1.05)}
+
+/* Order Summary Card */
+.order-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px;margin-top:30px;display:none}
+.order-card h3{color:var(--accent);margin-bottom:20px;font-size:1.4em}
+.order-card .detail{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);font-size:1em}
+.order-card .detail:last-child{border:none}
+.order-card .detail .label{color:var(--muted)}
+.order-card .detail .value{color:var(--text);font-weight:600}
+.order-card .price{font-size:2em;color:var(--accent);text-align:center;padding:20px 0;font-weight:bold}
+.order-card .actions{display:flex;gap:15px;margin-top:20px}
+.btn{padding:15px 30px;border:none;border-radius:12px;font-size:1em;cursor:pointer;font-weight:bold;transition:all 0.3s;font-family:inherit}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:var(--bg)}
+.btn-secondary{background:transparent;border:1px solid var(--border);color:var(--text)}
+.btn:hover{transform:translateY(-2px)}
+.btn:disabled{opacity:0.5;cursor:not-allowed}
+
+/* Payment Section */
+.payment-section{display:none;text-align:center;padding:40px;background:var(--card);border-radius:20px;border:1px solid var(--border);margin-top:30px}
+.payment-section h3{color:var(--accent);margin-bottom:20px}
+.payment-methods{display:flex;gap:20px;justify-content:center;margin:30px 0;flex-wrap:wrap}
+.pay-method{padding:20px 30px;border:2px solid var(--border);border-radius:15px;cursor:pointer;transition:all 0.3s;text-align:center;min-width:150px}
+.pay-method:hover,.pay-method.active{border-color:var(--accent);background:rgba(100,255,218,0.1)}
+.pay-method .icon{font-size:2.5em;margin-bottom:10px}
+.pay-method .name{font-weight:600}
+
+/* Success */
+.success-view{display:none;text-align:center;padding:60px 30px}
+.success-view .icon{font-size:5em;margin-bottom:20px;animation:bounce 1s ease}
+.success-view h2{color:var(--accent);margin-bottom:15px}
+.success-view p{color:var(--muted);line-height:1.8;font-size:1.1em}
+
+/* Animations */
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+
+/* Loading */
+.typing{display:flex;gap:5px;padding:10px}
+.typing span{width:8px;height:8px;background:var(--accent);border-radius:50%;animation:typing 1.4s infinite}
+.typing span:nth-child(2){animation-delay:0.2s}
+.typing span:nth-child(3){animation-delay:0.4s}
+@keyframes typing{0%,100%{opacity:0.3;transform:scale(0.8)}50%{opacity:1;transform:scale(1.2)}}
+
+@media(max-width:600px){.header h1{font-size:1.8em}.msg-bubble{max-width:85%}.chat-input{flex-direction:column}.payment-methods{flex-direction:column;align-items:center}}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="header">
+<h1>🤖 سفارش پروژه هوشمند</h1>
+<p>پروژه‌ت رو دقیق توضیح بده، قیمت منصفانه بگیر، آنلاین پرداخت کن</p>
+</div>
+
+<div class="chat-container">
+<div class="messages" id="chat">
+<!-- Messages injected here -->
+</div>
+<div class="chat-input" id="chatInput">
+<input type="text" id="userInput" placeholder="پاسخت رو بنویس..." onkeypress="if(event.key==='Enter')send()">
+<button onclick="send()">ارسال ✉️</button>
+</div>
+</div>
+
+<div class="order-card" id="orderCard">
+<h3>📋 خلاصه سفارش</h3>
+<div id="orderDetails"></div>
+<div class="price" id="orderPrice"></div>
+<div class="actions">
+<button class="btn btn-primary" onclick="showPayment()">💳 پرداخت</button>
+<button class="btn btn-secondary" onclick="resetChat()">🔄 شروع مجدد</button>
+</div>
+</div>
+
+<div class="payment-section" id="paymentSection">
+<h3>💳 انتخاب روش پرداخت</h3>
+<div class="payment-methods">
+<div class="pay-method" onclick="selectPayment('online')">
+<div class="icon">💳</div>
+<div class="name">پرداخت آنلاین</div>
+<div style="color:var(--muted);font-size:0.85em;margin-top:5px">زرین‌پال / آیدی‌پی</div>
+</div>
+<div class="pay-method" onclick="selectPayment('card')">
+<div class="icon">🏧</div>
+<div class="name">کارت به کارت</div>
+<div style="color:var(--muted);font-size:0.85em;margin-top:5px">شماره کارت ارسال میشه</div>
+</div>
+</div>
+<div id="paymentResult"></div>
+</div>
+
+<div class="success-view" id="successView">
+<div class="icon">🎉</div>
+<h2>پرداخت موفق!</h2>
+<p>سفارش شما با موفقیت ثبت شد.</p>
+<p>تیم ما پروژه شما رو شروع می‌کنه و از طریق ایمیل یا تلگرام آپدیت میده.</p>
+<p style="color:var(--accent);margin-top:20px;font-weight:bold">کد سفارش: <span id="orderNumber"></span></p>
+</div>
+</div>
+
+<script>
+const API = '';
+let state = {step:'welcome', convId:null, orderId:null, data:{}, token:null};
+
+async function apiCall(path, method='GET', body=null){
+  const opts = {method, headers:{'Content-Type':'application/json'}};
+  if(state.token) opts.headers['Authorization'] = 'Bearer ' + state.token;
+  if(body) opts.body = JSON.stringify(body);
+  const res = await fetch(API+path, opts);
+  return res.json();
+}
+
+async function init(){
+  addBot("سلام! 👋 به سیستم سفارش پروژه خوش اومدی.\n\nمن اینجا هستم تا پروژه‌ی مد نظرت رو دقیق بفهمم.\n\n**اول بگو: چه نوع پروژه‌ای می‌خوای؟**", [
+    "ربات تلگرام 🤖",
+    "ربات واتساپ 📱",
+    "استخراج داده 🕷️",
+    "وب‌سایت 🌐",
+    "اتوماسیون ⚡",
+    "تولید محتوا 📝",
+    "ایمیل اتوماسیون 📧",
+    "مقایسه قیمت 💰",
+    "داشبورد 📊",
+    "پروژه سفارشی 🔧"
+  ]);
+  state.step = 'project_type';
+}
+
+function addBot(text, options=null){
+  const chat = document.getElementById('chat');
+  const div = document.createElement('div');
+  div.className = 'msg bot';
+  let optionsHtml = '';
+  if(options){
+    optionsHtml = '<div class="options">' + options.map(o=>`<button class="opt-btn" onclick="selectOption('${o.replace(/'/g,"\\'")}')">${o}</button>`).join('') + '</div>';
+  }
+  div.innerHTML = `<div class="msg-avatar">🤖</div><div><div class="msg-bubble">${text.replace(/\n/g,'<br>')}</div>${optionsHtml}<div class="msg-time">${new Date().toLocaleTimeString('fa-IR')}</div></div>`;
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function addUser(text){
+  const chat = document.getElementById('chat');
+  const div = document.createElement('div');
+  div.className = 'msg user';
+  div.innerHTML = `<div class="msg-avatar">👤</div><div><div class="msg-bubble">${text}</div><div class="msg-time">${new Date().toLocaleTimeString('fa-IR')}</div></div>`;
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function showTyping(){
+  const chat = document.getElementById('chat');
+  const div = document.createElement('div');
+  div.className = 'msg bot';
+  div.id = 'typing';
+  div.innerHTML = '<div class="msg-avatar">🤖</div><div class="msg-bubble"><div class="typing"><span></span><span></span><span></span></div></div>';
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function removeTyping(){document.getElementById('typing')?.remove();}
+
+function selectOption(text){
+  document.querySelectorAll('.options').forEach(e=>e.remove());
+  addUser(text);
+  showTyping();
+  setTimeout(()=>processStep(text), 1500);
+}
+
+function send(){
+  const input = document.getElementById('userInput');
+  const text = input.value.trim();
+  if(!text) return;
+  input.value = '';
+  addUser(text);
+  showTyping();
+  setTimeout(()=>processStep(text), 1500);
+}
+
+function processStep(text){
+  removeTyping();
+  state.data[state.step] = text;
+  
+  switch(state.step){
+    case 'project_type':
+      state.step = 'project_title';
+      addBot("عالیه! 🎯\n**اسم پروژه چی باشه؟**\n(مثلاً: ربات پشتیبانی فروشگاه)");
+      break;
+    
+    case 'project_title':
+      state.step = 'description';
+      addBot("📝 **توضیح بده:** این پروژه دقیقاً چه کاری باید انجام بده؟");
+      break;
+    
+    case 'description':
+      state.step = 'features';
+      addBot("⚡ **چه ویژگی‌هایی لازم داری؟**\nهر خط یک ویژگی بنویس.\n\nمثال:\n- پاسخ خودکار ۲۴ ساعته\n- اتصال به درگاه پرداخت\n- پنل ادمین");
+      break;
+    
+    case 'features':
+      state.step = 'complexity';
+      addBot("🎯 **پیچیدگی پروژه چقدره؟**", ["ساده ⭐","متوسط ⭐⭐","پیچیده ⭐⭐⭐","بزرگ ⭐⭐⭐⭐"]);
+      break;
+    
+    case 'complexity':
+      state.step = 'timeline';
+      addBot("⏱ **زمان تحویل چقدر باشه؟**", ["معمولی (۷ روز)","فوری (۳ روز)","بسیار فوری (۱ روز)"]);
+      break;
+    
+    case 'timeline':
+      state.step = 'contact_email';
+      addBot("📧 **ایمیلت رو بنویس** تا پیش‌فاکتور و آپدیت‌ها برات بیاد:");
+      break;
+    
+    case 'contact_email':
+      state.data.email = text;
+      state.step = 'contact_phone';
+      addBot("📱 **شماره تماس (اختیاری):**", ["ندارم", "09xxxxxxxxx"]);
+      break;
+    
+    case 'contact_phone':
+      state.data.phone = text === 'ندارم' ? null : text;
+      showOrderSummary();
+      break;
+  }
+}
+
+function showOrderSummary(){
+  document.getElementById('chatInput').style.display='none';
+  const card = document.getElementById('orderCard');
+  const details = document.getElementById('orderDetails');
+  const price = document.getElementById('orderPrice');
+  
+  const prices = {
+    "ربات تلگرام": 8000000,
+    "ربات واتساپ": 12000000,
+    "استخراج داده": 5000000,
+    "وب‌سایت": 20000000,
+    "اتوماسیون": 15000000,
+    "تولید محتوا": 3000000,
+    "ایمیل اتوماسیون": 8000000,
+    "مقایسه قیمت": 7000000,
+    "داشبورد": 18000000,
+    "پروژه سفارشی": 25000000
+  };
+  
+  const complexity = {ساده: 1, متوسط: 1.5, پیچیده: 2.5, بزرگ: 4};
+  const timeline = {معمولی: 1, فوری: 1.5, 'بسیار فوری': 2};
+  
+  let base = prices[state.data.project_type] || 10000000;
+  let comp = complexity[state.data.complexity] || 1.5;
+  let time = timeline[state.data.timeline] || 1;
+  let features = (state.data.features||'').split('\n').filter(f=>f.trim()).length;
+  let total = Math.round(base * comp * time + features * 500000);
+  state.data.price = total;
+  
+  details.innerHTML = `
+    <div class="detail"><span class="label">نوع پروژه</span><span class="value">${state.data.project_type}</span></div>
+    <div class="detail"><span class="label">اسم پروژه</span><span class="value">${state.data.project_title}</span></div>
+    <div class="detail"><span class="label">توضیحات</span><span class="value">${state.data.description}</span></div>
+    <div class="detail"><span class="label">ویژگی‌ها</span><span class="value">${(state.data.features||'').split('\n').length} مورد</span></div>
+    <div class="detail"><span class="label">پیچیدگی</span><span class="value">${state.data.complexity}</span></div>
+    <div class="detail"><span class="label">زمان تحویل</span><span class="value">${state.data.timeline}</span></div>
+    <div class="detail"><span class="label">ایمیل</span><span class="value">${state.data.email}</span></div>
+    <div class="detail"><span class="label">تماس</span><span class="value">${state.data.phone || 'ندارد'}</span></div>
+  `;
+  
+  price.innerHTML = `${total.toLocaleString('fa-IR')} تومان`;
+  card.style.display = 'block';
+  card.scrollIntoView({behavior:'smooth'});
+}
+
+function showPayment(){
+  document.getElementById('orderCard').style.display='none';
+  document.getElementById('paymentSection').style.display='block';
+  document.getElementById('paymentSection').scrollIntoView({behavior:'smooth'});
+}
+
+function selectPayment(method){
+  document.querySelectorAll('.pay-method').forEach(e=>e.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  
+  if(method === 'card'){
+    document.getElementById('paymentResult').innerHTML = `
+      <div style="background:rgba(100,255,218,0.1);padding:30px;border-radius:15px;margin-top:20px;text-align:right">
+        <h4 style="color:var(--accent);margin-bottom:15px">🏧 اطلاعات کارت به کارت</h4>
+        <p>بانک: ملت</p>
+        <p>شماره کارت: <span style="direction:ltr;display:inline-block">6104-3379-4410-xxxx</span></p>
+        <p>به نام: حسین xxx</p>
+        <p style="margin-top:10px;color:var(--muted)">مبلغ: <strong>${state.data.price?.toLocaleString('fa-IR')} تومان</strong></p>
+        <p style="color:var(--muted);margin-top:5px">رسید پرداخت رو به تلگرام بفرست: @hosseinagentcoderbot</p>
+      </div>`;
+  } else {
+    document.getElementById('paymentResult').innerHTML = `
+      <div style="background:rgba(100,255,218,0.1);padding:30px;border-radius:15px;margin-top:20px">
+        <h4 style="color:var(--accent);margin-bottom:15px">💳 درگاه پرداخت</h4>
+        <p style="color:var(--muted);margin-bottom:20px">برای پرداخت آنلاین روی دکمه زیر کلیک کنید:</p>
+        <button class="btn btn-primary" onclick="payOnline()" style="font-size:1.1em;padding:15px 40px">پرداخت ${state.data.price?.toLocaleString('fa-IR')} تومان 💳</button>
+      </div>`;
+  }
+}
+
+function payOnline(){
+  // TODO: Integrate with Zarinpal
+  // For now show success
+  document.getElementById('paymentSection').style.display='none';
+  document.getElementById('successView').style.display='block';
+  document.getElementById('orderNumber').textContent = 'ORD-' + Date.now().toString(36).toUpperCase();
+  document.getElementById('successView').scrollIntoView({behavior:'smooth'});
+}
+
+function resetChat(){
+  state = {step:'welcome', convId:null, orderId:null, data:{}, token:null};
+  document.getElementById('chat').innerHTML = '';
+  document.getElementById('chatInput').style.display='flex';
+  document.getElementById('orderCard').style.display='none';
+  document.getElementById('paymentSection').style.display='none';
+  document.getElementById('successView').style.display='none';
+  window.scrollTo({top:0,behavior:'smooth'});
+  init();
+}
+
+init();
+</script>
+</body>
+</html>
