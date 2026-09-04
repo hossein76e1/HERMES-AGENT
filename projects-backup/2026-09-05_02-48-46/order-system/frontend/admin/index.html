@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📊 پنل ادمین | مدیریت سفارشات</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a1a;--card:rgba(255,255,255,0.05);--accent:#64ffda;--accent2:#7c4dff;--text:#e6f1ff;--muted:#8892b0;--danger:#ff6b6b;--success:#64ffda;--warning:#ffd93d;--border:rgba(100,255,218,0.15)}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+
+/* Login */
+.login{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+.login-box{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:50px 40px;width:100%;max-width:400px;text-align:center}
+.login-box h2{color:var(--accent);margin-bottom:30px;font-size:1.8em}
+.login-box input{width:100%;padding:15px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,0.05);color:var(--text);font-size:1em;margin-bottom:15px;outline:none;font-family:inherit}
+.login-box input:focus{border-color:var(--accent)}
+.login-box button{width:100%;padding:15px;background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;border-radius:12px;color:var(--bg);font-size:1.1em;cursor:pointer;font-weight:bold;font-family:inherit}
+.login-box .error{color:var(--danger);margin-top:10px}
+
+/* Dashboard */
+.dashboard{display:none;padding:20px}
+.header{display:flex;justify-content:space-between;align-items:center;padding:20px;background:var(--card);border-radius:15px;margin-bottom:30px;border:1px solid var(--border)}
+.header h1{color:var(--accent);font-size:1.5em}
+.header button{padding:10px 20px;background:transparent;border:1px solid var(--border);border-radius:10px;color:var(--muted);cursor:pointer;font-family:inherit}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:15px;padding:25px;text-align:center}
+.stat-card .number{font-size:2.5em;color:var(--accent);margin-bottom:10px}
+.stat-card .label{color:var(--muted);font-size:0.95em}
+
+/* Filters */
+.filters{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+.filter-btn{padding:10px 20px;border:1px solid var(--border);border-radius:25px;background:transparent;color:var(--muted);cursor:pointer;transition:all 0.3s;font-family:inherit}
+.filter-btn.active,.filter-btn:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+
+/* Orders Table */
+.orders-table{width:100%;background:var(--card);border:1px solid var(--border);border-radius:15px;overflow:hidden}
+.orders-table table{width:100%;border-collapse:collapse}
+.orders-table th{padding:15px;text-align:right;color:var(--accent);font-weight:600;background:rgba(100,255,218,0.05);border-bottom:1px solid var(--border)}
+.orders-table td{padding:15px;text-align:right;border-bottom:1px solid var(--border);font-size:0.95em}
+.orders-table tr:hover{background:rgba(255,255,255,0.02)}
+
+/* Status badges */
+.badge{padding:5px 12px;border-radius:20px;font-size:0.85em;font-weight:600}
+.badge-pending{background:rgba(255,217,61,0.2);color:var(--warning)}
+.badge-quoted{background:rgba(100,255,218,0.2);color:var(--accent)}
+.badge-paid{background:rgba(100,255,218,0.3);color:var(--accent)}
+.badge-in_progress{background:rgba(124,77,255,0.3);color:var(--accent2)}
+.badge-ready{background:rgba(100,255,218,0.4);color:var(--accent)}
+.badge-delivered{background:rgba(100,255,218,0.5);color:#fff}
+.badge-cancelled{background:rgba(255,107,107,0.2);color:var(--danger)}
+
+/* Action buttons */
+.action-btn{padding:6px 12px;border:none;border-radius:8px;cursor:pointer;font-size:0.85em;font-family:inherit;transition:0.3s}
+.btn-quote{background:rgba(100,255,218,0.2);color:var(--accent)}
+.btn-start{background:rgba(124,77,255,0.2);color:var(--accent2)}
+.btn-ready{background:rgba(255,217,61,0.2);color:var(--warning)}
+.btn-deliver{background:rgba(100,255,218,0.4);color:#fff}
+.btn-view{background:rgba(255,255,255,0.1);color:var(--muted)}
+.btn-chat{background:rgba(100,255,218,0.15);color:var(--accent)}
+
+/* Modal */
+.modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);z-index:100;align-items:center;justify-content:center}
+.modal{background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:30px;max-width:600px;width:90%;max-height:80vh;overflow-y:auto}
+.modal h3{color:var(--accent);margin-bottom:20px;font-size:1.3em}
+.modal .detail-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border)}
+.modal .detail-label{color:var(--muted)}
+.modal .detail-value{color:var(--text);font-weight:600}
+.modal textarea{width:100%;padding:15px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,0.05);color:var(--text);font-size:1em;margin:10px 0;outline:none;min-height:80px;resize:vertical;font-family:inherit}
+.modal input[type=number]{width:100%;padding:15px;border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,0.05);color:var(--text);font-size:1em;margin:10px 0;outline:none;font-family:inherit}
+.modal-actions{display:flex;gap:10px;margin-top:20px;justify-content:flex-end}
+.modal-close{padding:10px 20px;background:transparent;border:1px solid var(--border);border-radius:10px;color:var(--muted);cursor:pointer;font-family:inherit}
+
+/* Messages in modal */
+.chat-messages{max-height:300px;overflow-y:auto;padding:15px;background:rgba(255,255,255,0.02);border-radius:12px;margin-bottom:15px}
+.chat-msg{padding:10px 15px;margin-bottom:8px;border-radius:12px;max-width:80%}
+.chat-msg.user{background:rgba(124,77,255,0.2);margin-left:auto;border-top-left-radius:4px}
+.chat-msg.admin{background:rgba(100,255,218,0.15);margin-right:auto;border-top-right-radius:4px}
+.chat-msg.system{background:rgba(255,217,61,0.15);margin:0 auto;text-align:center;border-radius:8px;max-width:100%}
+.chat-msg .sender{font-size:0.8em;color:var(--muted);margin-bottom:4px}
+.chat-input-admin{display:flex;gap:10px}
+.chat-input-admin input{flex:1;padding:12px;border:1px solid var(--border);border-radius:10px;background:rgba(255,255,255,0.05);color:var(--text);outline:none;font-family:inherit}
+.chat-input-admin button{padding:12px 20px;background:var(--accent);border:none;border-radius:10px;color:var(--bg);cursor:pointer;font-weight:bold;font-family:inherit}
+
+@media(max-width:768px){.orders-table{overflow-x:auto}.orders-table table{min-width:700px}.stats{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<!-- Login View -->
+<div class="login" id="loginView">
+<div class="login-box">
+<h2>📊 پنل ادمین</h2>
+<input type="text" id="loginUser" placeholder="نام کاربری" value="admin">
+<input type="password" id="loginPass" placeholder="رمز عبور" value="admin123">
+<button onclick="doLogin()">ورود</button>
+<div class="error" id="loginError"></div>
+</div>
+</div>
+
+<!-- Dashboard View -->
+<div class="dashboard" id="dashboard">
+<div class="header">
+<h1>📊 داشبورد مدیریت سفارشات</h1>
+<button onclick="doLogout()">خروج ↩️</button>
+</div>
+
+<div class="stats" id="statsCards">
+<div class="stat-card"><div class="number" id="statTotal">0</div><div class="label">کل سفارشات</div></div>
+<div class="stat-card"><div class="number" id="statPending">0</div><div class="label">در انتظار</div></div>
+<div class="stat-card"><div class="number" id="statProgress">0</div><div class="label">در حال انجام</div></div>
+<div class="stat-card"><div class="number" id="statDone">0</div><div class="label">تحویل شده</div></div>
+</div>
+
+<div class="filters" id="filters">
+<button class="filter-btn active" onclick="filterOrders('all',this)">همه</button>
+<button class="filter-btn" onclick="filterOrders('pending',this)">⏳ در انتظار</button>
+<button class="filter-btn" onclick="filterOrders('quoted',this)">💰 قیمت ارسال شده</button>
+<button class="filter-btn" onclick="filterOrders('paid',this)">✅ پرداخت شده</button>
+<button class="filter-btn" onclick="filterOrders('in_progress',this)">🔄 در حال انجام</button>
+<button class="filter-btn" onclick="filterOrders('ready',this)">📦 آماده</button>
+<button class="filter-btn" onclick="filterOrders('delivered',this)">🎉 تحویل شده</button>
+</div>
+
+<div class="orders-table">
+<table>
+<thead><tr>
+<th>کد</th><th>پروژه</th><th>قیمت</th><th>وضعیت</th><th>پرداخت</th><th>تاریخ</th><th>عملیات</th>
+</tr></thead>
+<tbody id="ordersBody"></tbody>
+</table>
+</div>
+</div>
+
+<!-- Order Detail Modal -->
+<div class="modal-overlay" id="detailModal">
+<div class="modal">
+<h3>📋 جزئیات سفارش</h3>
+<div id="detailContent"></div>
+<div class="modal-actions">
+<button class="modal-close" onclick="closeModal()">بستن</button>
+</div>
+</div>
+</div>
+
+<!-- Quote Modal -->
+<div class="modal-overlay" id="quoteModal">
+<div class="modal">
+<h3>💰 ارسال پیش‌فاکتور</h3>
+<label style="color:var(--muted)">قیمت نهایی (تومان):</label>
+<input type="number" id="quotePrice" placeholder="مبلغ به تومان">
+<label style="color:var(--muted)">توضیحات (اختیاری):</label>
+<textarea id="quoteNotes" placeholder="توضیحات اضافه..."></textarea>
+<div class="modal-actions">
+<button class="modal-close" onclick="closeQuoteModal()">لغو</button>
+<button class="action-btn btn-quote" onclick="submitQuote()" style="padding:12px 30px">ارسال پیش‌فاکتور</button>
+</div>
+</div>
+</div>
+
+<!-- Chat Modal -->
+<div class="modal-overlay" id="chatModal">
+<div class="modal">
+<h3>💬 چت با مشتری</h3>
+<div class="chat-messages" id="chatMessages"></div>
+<div class="chat-input-admin">
+<input type="text" id="adminChatInput" placeholder="پیام بنویسید..." onkeypress="if(event.key==='Enter')sendAdminMsg()">
+<button onclick="sendAdminMsg()">ارسال</button>
+</div>
+<div class="modal-actions">
+<button class="modal-close" onclick="closeChatModal()">بستن</button>
+</div>
+</div>
+</div>
+
+<script>
+const API = '';
+let token = localStorage.getItem('admin_token');
+let allOrders = [];
+let currentOrderId = null;
+
+async function apiCall(path, method='GET', body=null){
+  const opts = {method, headers:{'Content-Type':'application/json'}};
+  if(token) opts.headers['Authorization'] = 'Bearer ' + token;
+  if(body) opts.body = JSON.stringify(body);
+  const res = await fetch(API+path, opts);
+  return res.json();
+}
+
+// Auth
+async function doLogin(){
+  const username = document.getElementById('loginUser').value;
+  const password = document.getElementById('loginPass').value;
+  const formData = new URLSearchParams();
+  formData.append('username', username);
+  formData.append('password', password);
+  
+  try{
+    const res = await fetch(API+'/api/admin/login', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:formData});
+    const data = await res.json();
+    if(data.access_token){
+      token = data.access_token;
+      localStorage.setItem('admin_token', token);
+      showDashboard();
+    } else {
+      document.getElementById('loginError').textContent = data.detail || 'خطا در ورود';
+    }
+  }catch(e){
+    document.getElementById('loginError').textContent = 'خطا در اتصال به سرور';
+  }
+}
+
+function doLogout(){
+  token = null;
+  localStorage.removeItem('admin_token');
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('loginView').style.display = 'flex';
+}
+
+// Dashboard
+async function showDashboard(){
+  document.getElementById('loginView').style.display = 'none';
+  document.getElementById('dashboard').style.display = 'block';
+  await loadStats();
+  await loadOrders();
+}
+
+async function loadStats(){
+  try{
+    const stats = await apiCall('/api/admin/stats');
+    document.getElementById('statTotal').textContent = stats.total_orders;
+    document.getElementById('statPending').textContent = stats.pending;
+    document.getElementById('statProgress').textContent = stats.in_progress;
+    document.getElementById('statDone').textContent = stats.completed;
+  }catch(e){console.error(e)}
+}
+
+async function loadOrders(filter='all'){
+  try{
+    const url = filter === 'all' ? '/api/admin/orders' : `/api/admin/orders?status=${filter}`;
+    allOrders = await apiCall(url);
+    renderOrders(allOrders);
+  }catch(e){console.error(e)}
+}
+
+function filterOrders(status, btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  loadOrders(status);
+}
+
+const statusLabels = {
+  pending: 'در انتظار', quoted: 'قیمت ارسال شده', paid: 'پرداخت شده',
+  in_progress: 'در حال انجام', ready: 'آماده تحویل', delivered: 'تحویل شده', cancelled: 'لغو شده'
+};
+
+function getActions(order){
+  let actions = `<button class="action-btn btn-view" onclick="viewOrder(${order.id})">👁️</button>`;
+  actions += `<button class="action-btn btn-chat" onclick="openChat(${order.id})">💬</button>`;
+  
+  switch(order.status){
+    case 'pending': actions += `<button class="action-btn btn-quote" onclick="openQuoteModal(${order.id},${order.final_price})">💰 قیمت</button>`; break;
+    case 'quoted': actions += `<button style="color:var(--muted);font-size:0.85em">منتظر پرداخت</button>`; break;
+    case 'paid': actions += `<button class="action-btn btn-start" onclick="updateStatus(${order.id},'in_progress')">🔄 شروع</button>`; break;
+    case 'in_progress': actions += `<button class="action-btn btn-ready" onclick="updateStatus(${order.id},'ready')">📦 آماده</button>`; break;
+    case 'ready': actions += `<button class="action-btn btn-deliver" onclick="approveDelivery(${order.id})">✅ تحویل</button>`; break;
+  }
+  return actions;
+}
+
+function renderOrders(orders){
+  const tbody = document.getElementById('ordersBody');
+  if(!orders.length){tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--muted)">📭 سفارشی وجود ندارد</td></tr>'; return;}
+  
+  tbody.innerHTML = orders.map(o => `<tr>
+    <td style="color:var(--accent);font-weight:600">${o.order_number}</td>
+    <td>${o.project_title}</td>
+    <td style="color:var(--accent)">${o.final_price?.toLocaleString('fa-IR')} تومان</td>
+    <td><span class="badge badge-${o.status}">${statusLabels[o.status] || o.status}</span></td>
+    <td><span class="badge badge-${o.payment_status}">${o.payment_status === 'paid' ? '✅ پرداخت شده' : '⏳ منتظر'}</span></td>
+    <td>${new Date(o.created_at).toLocaleDateString('fa-IR')}</td>
+    <td>${getActions(o)}</td>
+  </tr>`).join('');
+}
+
+// Order Detail
+async function viewOrder(id){
+  const order = await apiCall(`/api/admin/orders/${id}`);
+  const messages = await apiCall(`/api/admin/orders/${id}/messages`).catch(()=>[]);
+  
+  const reqs = order.requirements ? JSON.parse(order.requirements) : {};
+  
+  document.getElementById('detailContent').innerHTML = `
+    <div class="detail-row"><span class="detail-label">کد سفارش</span><span class="detail-value" style="color:var(--accent)">${order.order_number}</span></div>
+    <div class="detail-row"><span class="detail-label">نوع پروژه</span><span class="detail-value">${order.project_type}</span></div>
+    <div class="detail-row"><span class="detail-label">عنوان</span><span class="detail-value">${order.project_title}</span></div>
+    <div class="detail-row"><span class="detail-label">توضیحات</span><span class="detail-value">${order.description || '-'}</span></div>
+    <div class="detail-row"><span class="detail-label">ویژگی‌ها</span><span class="detail-value">${(reqs.features||[]).join(', ') || '-'}</span></div>
+    <div class="detail-row"><span class="detail-label">پیچیدگی</span><span class="detail-value">${reqs.complexity || '-'}</span></div>
+    <div class="detail-row"><span class="detail-label">زمان تحویل</span><span class="detail-value">${reqs.timeline || '-'}</span></div>
+    <div class="detail-row"><span class="detail-label">قیمت نهایی</span><span class="detail-value" style="color:var(--accent);font-size:1.2em">${order.final_price?.toLocaleString('fa-IR')} تومان</span></div>
+    <div class="detail-row"><span class="detail-label">وضعیت</span><span class="badge badge-${order.status}">${statusLabels[order.status]}</span></div>
+    <div class="detail-row"><span class="detail-label">پرداخت</span><span class="badge badge-${order.payment_status}">${order.payment_status}</span></div>
+    <div class="detail-row"><span class="detail-label">تاریخ ثبت</span><span class="detail-value">${new Date(order.created_at).toLocaleDateString('fa-IR')}</span></div>
+    <div class="detail-row"><span class="detail-label">فروشگاه</span><span class="detail-value">${order.user?.full_name || order.user?.email || '-'}</span></div>
+  `;
+  
+  document.getElementById('detailModal').style.display = 'flex';
+}
+
+function closeModal(){document.getElementById('detailModal').style.display = 'none';}
+
+// Quote
+function openQuoteModal(id, currentPrice){
+  currentOrderId = id;
+  document.getElementById('quotePrice').value = currentPrice || '';
+  document.getElementById('quoteModal').style.display = 'flex';
+}
+
+function closeQuoteModal(){document.getElementById('quoteModal').style.display = 'none';}
+
+async function submitQuote(){
+  const price = parseFloat(document.getElementById('quotePrice').value);
+  const notes = document.getElementById('quoteNotes').value;
+  if(!price || price <= 0){alert('قیمت معتبر وارد کنید'); return;}
+  
+  await apiCall(`/api/admin/orders/${currentOrderId}/quote`, 'POST', {final_price: price, notes: notes});
+  closeQuoteModal();
+  await loadStats();
+  await loadOrders();
+}
+
+// Status update
+async function updateStatus(id, newStatus){
+  await apiCall(`/api/admin/orders/${id}/status`, 'PATCH', {new_status: newStatus});
+  await loadStats();
+  await loadOrders();
+}
+
+async function approveDelivery(id){
+  if(!confirm('آیا از تحویل سفارش اطمینان دارید؟')) return;
+  await apiCall(`/api/admin/orders/${id}/approve-delivery`, 'POST');
+  await loadStats();
+  await loadOrders();
+}
+
+// Chat
+async function openChat(id){
+  currentOrderId = id;
+  const messages = await apiCall(`/api/admin/orders/${id}/messages`).catch(()=>[]);
+  
+  const container = document.getElementById('chatMessages');
+  if(!messages.length){
+    container.innerHTML = '<div style="text-align:center;color:var(--muted);padding:20px">هنوز پیامی رد و بدل نشده</div>';
+  } else {
+    container.innerHTML = messages.map(m => `<div class="chat-msg ${m.sender_type}"><div class="sender">${m.sender_type === 'user' ? '👤 مشتری' : m.sender_type === 'admin' ? '🔧 شما' : '🤖 سیستم'}</div>${m.content}</div>`).join('');
+    container.scrollTop = container.scrollHeight;
+  }
+  
+  document.getElementById('chatModal').style.display = 'flex';
+}
+
+function closeChatModal(){document.getElementById('chatModal').style.display = 'none';}
+
+async function sendAdminMsg(){
+  const input = document.getElementById('adminChatInput');
+  const text = input.value.trim();
+  if(!text) return;
+  input.value = '';
+  
+  await apiCall(`/api/admin/orders/${currentOrderId}/messages`, 'POST', {content: text, message_type: 'text'});
+  
+  // Add to view
+  const container = document.getElementById('chatMessages');
+  container.innerHTML += `<div class="chat-msg admin"><div class="sender">🔧 شما</div>${text}</div>`;
+  container.scrollTop = container.scrollHeight;
+}
+
+// Auto-check login
+if(token) showDashboard();
+</script>
+</body>
+</html>

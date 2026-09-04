@@ -1,0 +1,129 @@
+{
+  "jobs": [
+    {
+      "id": "09bc94629578",
+      "name": "hermes-auto-backup",
+      "prompt": "Hermes automated backup every 12 hours. The script runs the backup and pushes to GitHub.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 720,
+        "display": "every 720m"
+      },
+      "schedule_display": "every 720m",
+      "repeat": {
+        "times": null,
+        "completed": 2
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-03T11:17:05.394455+00:00",
+      "next_run_at": "2026-09-05T14:48:46.876898+03:30",
+      "last_run_at": "2026-09-04T14:47:57.838330+03:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "failure_deliver": "origin",
+      "last_dispatch": {
+        "scheduled_at": "2026-09-05T02:47:57.838330+03:30",
+        "dispatched_at": "2026-09-05T02:48:46.848081+03:30",
+        "lateness_seconds": 49.0,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-09-05T02:48:46.886687+03:30",
+        "by": "4357740fb769:2:2f788ddab22e48a9bb8baf5f29761f57"
+      }
+    },
+    {
+      "id": "projects-backup-12h",
+      "name": "projects-auto-backup",
+      "prompt": "Backup all projects from /data/workspace to GitHub every 12 hours.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup_projects.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 720,
+        "display": "every 720m"
+      },
+      "schedule_display": "every 720m",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-04T15:12:00.000000+03:30",
+      "next_run_at": "2026-09-05T14:48:46.892100+03:30",
+      "last_run_at": null,
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "failure_deliver": "origin",
+      "last_dispatch": {
+        "scheduled_at": "2026-09-05T02:47:57.838330+03:30",
+        "dispatched_at": "2026-09-05T02:48:46.848081+03:30",
+        "lateness_seconds": 49.0,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-09-05T02:48:46.899964+03:30",
+        "by": "4357740fb769:2:54537a0187d54ae0b0e01f2e3d4db547"
+      }
+    }
+  ],
+  "updated_at": "2026-09-05T02:48:46.900163+03:30"
+}
