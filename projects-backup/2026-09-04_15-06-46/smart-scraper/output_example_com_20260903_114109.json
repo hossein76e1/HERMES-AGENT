@@ -1,0 +1,29 @@
+{
+  "page_title": "Example Domain",
+  "url": "https://example.com",
+  "extracted_data": {
+    "links": [
+      {
+        "text": "Learn more",
+        "url": "https://iana.org/domains/example"
+      }
+    ],
+    "tables": [],
+    "lists": [],
+    "headings": [
+      {
+        "level": "h1",
+        "text": "Example Domain"
+      }
+    ],
+    "paragraphs": [
+      "This domain is for use in documentation examples without needing permission. Avoid use in operations."
+    ],
+    "images": []
+  },
+  "data_type": "mixed",
+  "summary": "Found: 1 links, 0 tables, 1 headings, 1 paragraphs, 0 images",
+  "source_url": "https://example.com",
+  "scraped_at": "2026-09-03T11:41:09.200386",
+  "html_size": 559
+}
