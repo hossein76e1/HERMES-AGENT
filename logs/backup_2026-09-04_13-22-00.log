@@ -1,0 +1,53 @@
+[2026-09-04 13:22:00] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:22:00]   Hermes Agent Backup — 2026-09-04_13-22-00
+[2026-09-04 13:22:00] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:22:00] Configuring git...
+[2026-09-04 13:22:00] Backing up critical files...
+[2026-09-04 13:22:00] ── Core Configuration ──
+[2026-09-04 13:22:00]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:22:00]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:22:00]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:22:00]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:22:00]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:22:00]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:22:00] ── Memory & User Data ──
+[2026-09-04 13:22:00]   ✓ memories/ (2325 bytes)
+[2026-09-04 13:22:00] ── Sessions ──
+[2026-09-04 13:22:00]   ✓ sessions/ (903240 bytes)
+[2026-09-04 13:22:00] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:22:00]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:22:00]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:22:00] ── Skills ──
+[2026-09-04 13:22:00]   ✓ skills/ (2909370 bytes)
+[2026-09-04 13:22:00] ── Platform Configurations ──
+[2026-09-04 13:22:00]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:22:00] ── State Data ──
+[2026-09-04 13:22:00]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:22:00]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:22:00]   ✓ state/ (408 bytes)
+[2026-09-04 13:22:00] ── Runtime State ──
+[2026-09-04 13:22:00]   ✓ runtime/ (15 bytes)
+[2026-09-04 13:22:00] ── Hooks ──
+[2026-09-04 13:22:00]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:22:00] ── Logs ──
+[2026-09-04 13:22:00]   ✓ hermes logs (1318241 bytes)
+[2026-09-04 13:22:00] ── Cache/Config Files ──
+[2026-09-04 13:22:00]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:22:00]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:22:00]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:22:00] ── Other Metadata ──
+[2026-09-04 13:22:00]   ✓ .initialized (21 bytes)
+[2026-09-04 13:22:00]   ✓ .update_check (70 bytes)
+[2026-09-04 13:22:00]   ✓ install_id (33 bytes)
+[2026-09-04 13:22:00]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:22:00]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:22:00] Creating manifest...
+Manifest created: 23 items cataloged
+[2026-09-04 13:22:00] Creating compressed archive...
+[2026-09-04 13:22:00] Archive created: 2026-09-04_13-22-00.tar.gz (1.7M)
+[2026-09-04 13:22:00] ── Backup Summary ──
+[2026-09-04 13:22:00]   Backup ID: 2026-09-04_13-22-00
+[2026-09-04 13:22:00]   Files backed up: 23
+[2026-09-04 13:22:00]   Total size: 11M
+[2026-09-04 13:22:00]   Archive: 2026-09-04_13-22-00.tar.gz (1.7M)
+[2026-09-04 13:22:00] Pushing to GitHub...
