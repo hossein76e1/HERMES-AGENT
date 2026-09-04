@@ -4895,3 +4895,2757 @@ Your branch is ahead of 'origin/main' by 5 commits.
 [2026-09-04 13:23:26]   Backup ID: 2026-09-04_13-23-22
 [2026-09-04 13:23:26] Archive created: 2026-09-04_13-23-22.tar.gz (2.9M)
 [2026-09-04 13:23:26]   Files backed up: 4
+[2026-09-04 13:23:26] ── Backup Summary ──
+[2026-09-04 13:23:26]   Total size: 17M
+[2026-09-04 13:23:26] ── Backup Summary ──
+[2026-09-04 13:23:26]   Archive: 2026-09-04_13-23-22.tar.gz (2.9M)
+[2026-09-04 13:23:26]   Backup ID: 2026-09-04_13-23-22
+[2026-09-04 13:23:26]   Backup ID: 2026-09-04_13-23-22
+[2026-09-04 13:23:26] Pushing to GitHub...
+[2026-09-04 13:23:26]   Files backed up: 3
+[2026-09-04 13:23:26]   Files backed up: 3
+[2026-09-04 13:23:26]   Total size: 17M
+[2026-09-04 13:23:26]   Total size: 17M
+[2026-09-04 13:23:26]   Archive: 2026-09-04_13-23-22.tar.gz (2.9M)
+[2026-09-04 13:23:26]   Archive: 2026-09-04_13-23-22.tar.gz (2.9M)
+[2026-09-04 13:23:26] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:23:26] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[main 626b628] 🔄 Auto-backup: 2026-09-04_13-23-22
+ 745 files changed, 167614 insertions(+), 1 deletion(-)
+ create mode 100644 backups/2026-09-04_13-23-22.tar.gz
+ create mode 100644 backups/2026-09-04_13-23-22/cache_files/ollama_cloud_models_cache.json
+ create mode 100644 backups/2026-09-04_13-23-22/cache_files/provider_models_cache.json
+ create mode 100644 backups/2026-09-04_13-23-22/cache_files/skills_prompt_snapshot.json
+ create mode 100644 backups/2026-09-04_13-23-22/config/.env
+ create mode 100644 backups/2026-09-04_13-23-22/config/SOUL.md
+ create mode 100644 backups/2026-09-04_13-23-22/config/channel_directory.json
+ create mode 100644 backups/2026-09-04_13-23-22/config/config.yaml
+ create mode 100644 backups/2026-09-04_13-23-22/cron/executions.db
+ create mode 100644 backups/2026-09-04_13-23-22/cron/jobs.json
+ create mode 100644 backups/2026-09-04_13-23-22/databases/kanban.db
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/agent.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/errors.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/gateway-exit-diag.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/gateway-shutdown-diag.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/gateway.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/gateway_faulthandler.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/logs/agent.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/logs/errors.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/logs/gateway-exit-diag.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/logs/gateway-shutdown-diag.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/logs/gateway.log
+ create mode 100644 backups/2026-09-04_13-23-22/logs/hermes_logs/logs/gateway_faulthandler.log
+ create mode 100644 backups/2026-09-04_13-23-22/manifest.json
+ create mode 100644 backups/2026-09-04_13-23-22/memories/memories/MEMORY.md
+ create mode 100644 backups/2026-09-04_13-23-22/memories/memories/MEMORY.md.lock
+ create mode 100644 backups/2026-09-04_13-23-22/memories/memories/USER.md
+ create mode 100644 backups/2026-09-04_13-23-22/memories/memories/USER.md.lock
+ create mode 100644 backups/2026-09-04_13-23-22/memories/memories/memories/MEMORY.md
+ create mode 100644 backups/2026-09-04_13-23-22/memories/memories/memories/MEMORY.md.lock
+ create mode 100644 backups/2026-09-04_13-23-22/memories/memories/memories/USER.md
+ create mode 100644 backups/2026-09-04_13-23-22/memories/memories/memories/USER.md.lock
+ create mode 100644 backups/2026-09-04_13-23-22/other/.initialized
+ create mode 100644 backups/2026-09-04_13-23-22/other/.update_check
+ create mode 100644 backups/2026-09-04_13-23-22/other/gateway-starts.log
+ create mode 100644 backups/2026-09-04_13-23-22/other/install_id
+ create mode 100644 backups/2026-09-04_13-23-22/other/models_dev_cache.json
+ create mode 100644 backups/2026-09-04_13-23-22/runtime/runtime/active_sessions.json
+ create mode 100644 backups/2026-09-04_13-23-22/runtime/runtime/active_sessions.lock
+ create mode 100644 backups/2026-09-04_13-23-22/runtime/runtime/runtime/active_sessions.json
+ create mode 100644 backups/2026-09-04_13-23-22/runtime/runtime/runtime/active_sessions.lock
+ create mode 100644 backups/2026-09-04_13-23-22/sessions/sessions/request_dump_20260903_104627_5c6861f8_20260903_142527_058806.json
+ create mode 100644 backups/2026-09-04_13-23-22/sessions/sessions/request_dump_20260903_104627_5c6861f8_20260903_144220_503497.json
+ create mode 100644 backups/2026-09-04_13-23-22/sessions/sessions/request_dump_20260903_122942_bd5931_20260903_123556_577456.json
+ create mode 100644 backups/2026-09-04_13-23-22/sessions/sessions/request_dump_20260903_131355_91ce2d_20260903_131837_155997.json
+ create mode 100644 backups/2026-09-04_13-23-22/sessions/sessions/sessions.json
+ create mode 100644 backups/2026-09-04_13-23-22/sessions/sessions/sessions/request_dump_20260903_104627_5c6861f8_20260903_142527_058806.json
+ create mode 100644 backups/2026-09-04_13-23-22/sessions/sessions/sessions/request_dump_20260903_104627_5c6861f8_20260903_144220_503497.json
+ create mode 100644 backups/2026-09-04_13-23-22/sessions/sessions/sessions/request_dump_20260903_122942_bd5931_20260903_123556_577456.json
+ create mode 100644 backups/2026-09-04_13-23-22/sessions/sessions/sessions/request_dump_20260903_131355_91ce2d_20260903_131837_155997.json
+ create mode 100644 backups/2026-09-04_13-23-22/sessions/sessions/sessions/sessions.json
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/.bundled_manifest
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/.curator_ledger.jsonl
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/.curator_state
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/.usage.json
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/.usage.json.lock
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/apple/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/apple/apple-notes/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/apple/apple-reminders/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/apple/findmy/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/apple/imessage/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/claude-code/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/codex/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/computer-use/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/background-systems.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/cli-reference.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/configuration.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/contributor-guide.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/delegate-task-concurrency-diagnosis.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/desktop-plugins.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/native-mcp.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/petdex.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/portal-auth-for-third-party-apps.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/project-context-files.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/providers-and-models.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/security-privacy.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/slash-commands.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/themes.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/tui-widgets.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/webhooks.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/references/windows-quirks.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/templates/clock.mjs
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/templates/plugin.js
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/hermes-agent/templates/skin.yaml
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-ai-agents/opencode/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/autonomous-execution/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/architecture-diagram/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/architecture-diagram/templates/template.html
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/ascii-video/README.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/ascii-video/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/ascii-video/references/architecture.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/ascii-video/references/composition.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/ascii-video/references/effects.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/ascii-video/references/inputs.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/ascii-video/references/optimization.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/ascii-video/references/scenes.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/ascii-video/references/shaders.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/ascii-video/references/troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/PORT_NOTES.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/analysis-framework.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/base-prompt.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/bento-grid.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/binary-comparison.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/bridge.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/circular-flow.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/comic-strip.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/comparison-matrix.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/dashboard.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/dense-modules.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/funnel.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/hierarchical-layers.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/hub-spoke.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/iceberg.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/isometric-map.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/jigsaw.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/linear-progression.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/periodic-table.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/story-mountain.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/structural-breakdown.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/tree-branching.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/venn-diagram.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/layouts/winding-roadmap.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/structured-content-template.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/aged-academia.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/bold-graphic.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/chalkboard.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/claymation.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/corporate-memphis.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/craft-handmade.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/cyberpunk-neon.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/hand-drawn-edu.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/ikea-manual.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/kawaii.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/knolling.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/lego-brick.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/morandi-journal.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/origami.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/pixel-art.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/pop-laboratory.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/retro-pop-grid.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/storybook-watercolor.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/subway-map.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/technical-schematic.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/baoyu-infographic/references/styles/ui-wireframe.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/claude-design/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/design-md/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/design-md/templates/starter.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/humanizer/LICENSE
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/humanizer/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/README.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/animation-design-thinking.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/animations.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/camera-and-3d.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/decorations.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/equations.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/graphs-and-data.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/mobjects.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/paper-explainer.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/production-quality.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/rendering.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/scene-planning.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/updaters-and-trackers.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/references/visual-design.md
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/creative/manim-video/scripts/setup.sh
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/README.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/references/animation.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/references/color-systems.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/references/core-api.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/references/export-pipeline.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/references/interaction.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/references/shapes-and-geometry.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/references/troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/references/typography.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/references/visual-effects.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/references/webgl-and-3d.md
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/scripts/export-frames.js
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/scripts/render.sh
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/scripts/serve.sh
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/scripts/setup.sh
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/p5js/templates/viewer.html
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/airbnb.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/airtable.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/apple.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/bmw.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/cal.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/claude.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/clay.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/clickhouse.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/cohere.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/coinbase.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/composio.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/cursor.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/elevenlabs.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/expo.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/figma.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/framer.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/hashicorp.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/ibm.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/intercom.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/kraken.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/linear.app.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/lovable.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/minimax.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/mintlify.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/miro.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/mistral.ai.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/mongodb.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/notion.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/nvidia.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/ollama.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/opencode.ai.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/pinterest.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/posthog.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/raycast.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/replicate.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/resend.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/revolut.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/runwayml.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/sanity.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/sentry.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/spacex.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/spotify.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/stripe.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/supabase.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/superhuman.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/together.ai.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/uber.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/vercel.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/voltagent.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/warp.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/webflow.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/wise.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/x.ai.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/popular-web-designs/templates/zapier.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/creative/songwriting-and-ai-music/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/devops/hermes-backup-migration/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/devops/hermes-backup-migration/references/github-pages-setup.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/devops/hermes-backup-migration/references/github-push-workaround.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/devops/hermes-backup-migration/references/order-system-architecture.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/devops/hermes-backup-migration/references/telegram-bot-token-conflicts.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/devops/hermes-backup-migration/templates/backup.sh
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/devops/hermes-backup-migration/templates/support_bot.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/devops/hermes-backup-migration/templates/survey_bot.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/devops/sdlc-review/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/email/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/email/email-inbox-triage/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/email/himalaya/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/email/himalaya/references/configuration.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/email/himalaya/references/message-composition.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/media/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/media/gif-search/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/media/songsee/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/media/youtube-content/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/media/youtube-content/references/output-formats.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/media/youtube-content/scripts/fetch_transcript.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/note-taking/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/note-taking/obsidian/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/airtable/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/references/bulk-operations.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/references/cli-guide.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/references/content-workflows.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/references/hubs.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/references/oauth-setup.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/references/rest-api.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/references/sdk-development.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/references/search-and-ai.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/references/troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/box/references/webhooks-and-events.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/document-to-action-items/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/LICENSE
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/references/revisions-and-comments.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/scripts/docx_comments.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/scripts/docx_common.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/scripts/docx_create.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/scripts/docx_edit.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/scripts/docx_read.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/scripts/docx_revisions.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/scripts/docx_template.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/scripts/docx_validate.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/docx/tests/test_docx_skill.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/google-workspace/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/google-workspace/references/daily-brief.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/google-workspace/references/gmail-search-syntax.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/google-workspace/scripts/_hermes_home.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/google-workspace/scripts/google_api.py
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/productivity/google-workspace/scripts/gws_bridge.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/google-workspace/scripts/setup.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/maps/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/maps/scripts/maps_client.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/meeting-action-items/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/notion/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/notion/references/block-types.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/LICENSE
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/references/forms.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/references/nano-pdf-editing.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/references/ocr-extraction.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/_raster.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/extract_marker.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/extract_pymupdf.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_create.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_fill_form.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_form_layout.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_make_form.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_merge.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_meta.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_page_image.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_read.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_secure.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_split.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_stamp.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/scripts/pdf_watermark.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/pdf/tests/test_pdf_skill.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/powerpoint/LICENSE
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/powerpoint/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/powerpoint/scripts/pptx_create.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/powerpoint/scripts/pptx_edit.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/powerpoint/scripts/pptx_from_template.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/powerpoint/scripts/pptx_read.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/powerpoint/scripts/pptx_render.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/powerpoint/tests/test_powerpoint_skill.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/product-price-monitor/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/teams-meeting-pipeline/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/weekly-review-planning/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/LICENSE
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/references/restructuring.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/scripts/csv_to_xlsx.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/scripts/xlsx_create.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/scripts/xlsx_edit.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/scripts/xlsx_read.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/scripts/xlsx_recalc.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/scripts/xlsx_restructure.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/scripts/xlsx_to_csv.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/productivity/xlsx/tests/test_xlsx_skill.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/research/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/research/arxiv/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/research/arxiv/scripts/search_arxiv.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/research/competitor-news-monitor/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/research/grounded-citations/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/research/grounded-citations/references/citation-formats.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/research/grounded-citations/references/grounding-rationale.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/research/grounded-citations/scripts/_hermes_home.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/research/grounded-citations/scripts/sources.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/research/llm-wiki/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/.bundled_manifest
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/.curator_ledger.jsonl
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/.curator_state
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/.usage.json
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/.usage.json.lock
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/apple/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/apple/apple-notes/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/apple/apple-reminders/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/apple/findmy/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/apple/imessage/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/claude-code/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/codex/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/computer-use/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/background-systems.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/cli-reference.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/configuration.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/contributor-guide.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/delegate-task-concurrency-diagnosis.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/desktop-plugins.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/native-mcp.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/petdex.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/portal-auth-for-third-party-apps.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/project-context-files.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/providers-and-models.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/security-privacy.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/slash-commands.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/themes.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/tui-widgets.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/webhooks.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/references/windows-quirks.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/templates/clock.mjs
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/templates/plugin.js
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/hermes-agent/templates/skin.yaml
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-ai-agents/opencode/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/autonomous-execution/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/architecture-diagram/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/architecture-diagram/templates/template.html
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/ascii-video/README.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/ascii-video/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/ascii-video/references/architecture.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/ascii-video/references/composition.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/ascii-video/references/effects.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/ascii-video/references/inputs.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/ascii-video/references/optimization.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/ascii-video/references/scenes.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/ascii-video/references/shaders.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/ascii-video/references/troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/PORT_NOTES.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/analysis-framework.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/base-prompt.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/bento-grid.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/binary-comparison.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/bridge.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/circular-flow.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/comic-strip.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/comparison-matrix.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/dashboard.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/dense-modules.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/funnel.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/hierarchical-layers.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/hub-spoke.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/iceberg.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/isometric-map.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/jigsaw.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/linear-progression.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/periodic-table.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/story-mountain.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/structural-breakdown.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/tree-branching.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/venn-diagram.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/layouts/winding-roadmap.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/structured-content-template.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/aged-academia.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/bold-graphic.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/chalkboard.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/claymation.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/corporate-memphis.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/craft-handmade.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/cyberpunk-neon.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/hand-drawn-edu.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/ikea-manual.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/kawaii.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/knolling.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/lego-brick.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/morandi-journal.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/origami.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/pixel-art.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/pop-laboratory.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/retro-pop-grid.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/storybook-watercolor.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/subway-map.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/technical-schematic.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/baoyu-infographic/references/styles/ui-wireframe.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/claude-design/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/design-md/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/design-md/templates/starter.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/humanizer/LICENSE
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/humanizer/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/README.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/animation-design-thinking.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/animations.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/camera-and-3d.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/decorations.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/equations.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/graphs-and-data.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/mobjects.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/paper-explainer.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/production-quality.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/rendering.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/scene-planning.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/updaters-and-trackers.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/references/visual-design.md
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/skills/creative/manim-video/scripts/setup.sh
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/README.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/references/animation.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/references/color-systems.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/references/core-api.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/references/export-pipeline.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/references/interaction.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/references/shapes-and-geometry.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/references/troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/references/typography.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/references/visual-effects.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/references/webgl-and-3d.md
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/scripts/export-frames.js
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/scripts/render.sh
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/scripts/serve.sh
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/scripts/setup.sh
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/p5js/templates/viewer.html
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/airbnb.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/airtable.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/apple.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/bmw.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/cal.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/claude.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/clay.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/clickhouse.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/cohere.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/coinbase.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/composio.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/cursor.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/elevenlabs.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/expo.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/figma.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/framer.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/hashicorp.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/ibm.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/intercom.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/kraken.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/linear.app.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/lovable.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/minimax.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/mintlify.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/miro.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/mistral.ai.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/mongodb.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/notion.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/nvidia.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/ollama.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/opencode.ai.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/pinterest.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/posthog.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/raycast.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/replicate.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/resend.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/revolut.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/runwayml.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/sanity.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/sentry.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/spacex.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/spotify.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/stripe.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/supabase.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/superhuman.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/together.ai.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/uber.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/vercel.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/voltagent.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/warp.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/webflow.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/wise.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/x.ai.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/popular-web-designs/templates/zapier.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/creative/songwriting-and-ai-music/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/devops/hermes-backup-migration/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/devops/hermes-backup-migration/references/github-pages-setup.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/devops/hermes-backup-migration/references/github-push-workaround.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/devops/hermes-backup-migration/references/order-system-architecture.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/devops/hermes-backup-migration/references/telegram-bot-token-conflicts.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/devops/hermes-backup-migration/templates/backup.sh
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/devops/hermes-backup-migration/templates/support_bot.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/devops/hermes-backup-migration/templates/survey_bot.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/devops/sdlc-review/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/email/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/email/email-inbox-triage/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/email/himalaya/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/email/himalaya/references/configuration.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/email/himalaya/references/message-composition.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/media/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/media/gif-search/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/media/songsee/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/media/youtube-content/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/media/youtube-content/references/output-formats.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/media/youtube-content/scripts/fetch_transcript.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/note-taking/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/note-taking/obsidian/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/airtable/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/references/bulk-operations.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/references/cli-guide.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/references/content-workflows.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/references/hubs.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/references/oauth-setup.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/references/rest-api.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/references/sdk-development.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/references/search-and-ai.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/references/troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/box/references/webhooks-and-events.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/document-to-action-items/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/LICENSE
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/references/revisions-and-comments.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/scripts/docx_comments.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/scripts/docx_common.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/scripts/docx_create.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/scripts/docx_edit.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/scripts/docx_read.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/scripts/docx_revisions.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/scripts/docx_template.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/scripts/docx_validate.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/docx/tests/test_docx_skill.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/google-workspace/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/google-workspace/references/daily-brief.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/google-workspace/references/gmail-search-syntax.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/google-workspace/scripts/_hermes_home.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/google-workspace/scripts/google_api.py
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/google-workspace/scripts/gws_bridge.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/google-workspace/scripts/setup.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/maps/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/maps/scripts/maps_client.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/meeting-action-items/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/notion/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/notion/references/block-types.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/LICENSE
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/references/forms.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/references/nano-pdf-editing.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/references/ocr-extraction.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/_raster.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/extract_marker.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/extract_pymupdf.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_create.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_fill_form.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_form_layout.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_make_form.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_merge.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_meta.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_page_image.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_read.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_secure.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_split.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_stamp.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/scripts/pdf_watermark.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/pdf/tests/test_pdf_skill.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/powerpoint/LICENSE
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/powerpoint/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/powerpoint/scripts/pptx_create.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/powerpoint/scripts/pptx_edit.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/powerpoint/scripts/pptx_from_template.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/powerpoint/scripts/pptx_read.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/powerpoint/scripts/pptx_render.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/powerpoint/tests/test_powerpoint_skill.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/product-price-monitor/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/teams-meeting-pipeline/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/weekly-review-planning/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/LICENSE
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/references/restructuring.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/scripts/csv_to_xlsx.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/scripts/xlsx_create.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/scripts/xlsx_edit.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/scripts/xlsx_read.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/scripts/xlsx_recalc.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/scripts/xlsx_restructure.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/scripts/xlsx_to_csv.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/productivity/xlsx/tests/test_xlsx_skill.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/research/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/research/arxiv/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/research/arxiv/scripts/search_arxiv.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/research/competitor-news-monitor/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/research/grounded-citations/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/research/grounded-citations/references/citation-formats.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/research/grounded-citations/references/grounding-rationale.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/research/grounded-citations/scripts/_hermes_home.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/research/grounded-citations/scripts/sources.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/research/llm-wiki/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/social-media/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/social-media/xurl/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/codebase-inspection/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/dogfood/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/dogfood/references/issue-taxonomy.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/dogfood/templates/dogfood-report-template.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/references/auth.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/references/ci-troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/references/code-review.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/references/conventional-commits.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/references/github-api-cheatsheet.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/references/issue-to-pr.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/references/issues.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/references/pr-workflow.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/references/repo-management.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/references/review-output-template.md
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/scripts/gh-env.sh
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/scripts/git-credential-token.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/templates/bug-report.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/templates/feature-request.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/templates/pr-body-bugfix.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/github/templates/pr-body-feature.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/hermes-agent-skill-authoring/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/inspecting-hermes-desktop-dom/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/node-inspect-debugger/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/python-debugpy/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/python-web-app/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/python-web-app/references/cloudflare-tunnel-rate-limits.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/requesting-code-review/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/simplify-code/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/spike/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/systematic-debugging/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/software-development/test-driven-development/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/web/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/web/blocked-page-recovery/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/skills/web/blocked-page-recovery/scripts/recover_page.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/social-media/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/social-media/xurl/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/codebase-inspection/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/dogfood/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/dogfood/references/issue-taxonomy.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/dogfood/templates/dogfood-report-template.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/references/auth.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/references/ci-troubleshooting.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/references/code-review.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/references/conventional-commits.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/references/github-api-cheatsheet.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/references/issue-to-pr.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/references/issues.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/references/pr-workflow.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/references/repo-management.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/references/review-output-template.md
+ create mode 100755 backups/2026-09-04_13-23-22/skills/skills/software-development/github/scripts/gh-env.sh
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/scripts/git-credential-token.py
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/templates/bug-report.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/templates/feature-request.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/templates/pr-body-bugfix.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/github/templates/pr-body-feature.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/hermes-agent-skill-authoring/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/inspecting-hermes-desktop-dom/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/node-inspect-debugger/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/python-debugpy/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/python-web-app/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/python-web-app/references/cloudflare-tunnel-rate-limits.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/requesting-code-review/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/simplify-code/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/spike/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/systematic-debugging/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/software-development/test-driven-development/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/web/DESCRIPTION.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/web/blocked-page-recovery/SKILL.md
+ create mode 100644 backups/2026-09-04_13-23-22/skills/skills/web/blocked-page-recovery/scripts/recover_page.py
+ create mode 100644 backups/2026-09-04_13-23-22/state/state/gateway.heartbeat
+ create mode 100644 backups/2026-09-04_13-23-22/state/state/gateway.lifecycle.json
+ create mode 100644 backups/2026-09-04_13-23-22/state/state/state/gateway.heartbeat
+ create mode 100644 backups/2026-09-04_13-23-22/state/state/state/gateway.lifecycle.json
+ create mode 100644 logs/backup_2026-09-04_13-23-22.log
+[2026-09-04 13:23:26]   Commit: 626b628
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/hossein76e1/HERMES-AGENT.git/'
+[2026-09-04 13:23:26]   ✗ Push failed!
+[2026-09-04 13:23:26] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:23:26]   Backup Complete: 2026-09-04_13-23-22
+[2026-09-04 13:23:26]   Push Status: failed
+[2026-09-04 13:23:26]   Commit: 626b628
+[2026-09-04 13:23:26] ═══════════════════════════════════════════════════════════════
+
+BACKUP_RESULT: 2026-09-04_13-23-22|8|17M|2.9M|failed|626b628
+[2026-09-04 13:23:53] 📝 Event: MODIFY on /data/.hermes/cron/.tick.lock
+[2026-09-04 13:23:53] 🔴 Change detected: /data/.hermes/cron/.tick.lock — scheduling backup in 30s
+[2026-09-04 13:23:53] 📝 Event: CREATE on /data/.hermes/cron/.hb_szl4ybix.tmp
+[2026-09-04 13:23:53] 🔴 Change detected: /data/.hermes/cron/.hb_szl4ybix.tmp — scheduling backup in 30s
+[2026-09-04 13:23:53] 📝 Event: MODIFY on /data/.hermes/cron/.hb_szl4ybix.tmp
+[2026-09-04 13:23:53] 🔴 Change detected: /data/.hermes/cron/.hb_szl4ybix.tmp — scheduling backup in 30s
+[2026-09-04 13:23:53] 📝 Event: MOVED_FROM on /data/.hermes/cron/.hb_szl4ybix.tmp
+[2026-09-04 13:23:53] 🔴 Change detected: /data/.hermes/cron/.hb_szl4ybix.tmp — scheduling backup in 30s
+[2026-09-04 13:23:53] 📝 Event: MOVED_TO on /data/.hermes/cron/ticker_heartbeat
+[2026-09-04 13:23:53] 🔴 Change detected: /data/.hermes/cron/ticker_heartbeat — scheduling backup in 30s
+[2026-09-04 13:23:53] 📝 Event: CREATE on /data/.hermes/cron/.hb_wlbw_ro1.tmp
+[2026-09-04 13:23:53] 🔴 Change detected: /data/.hermes/cron/.hb_wlbw_ro1.tmp — scheduling backup in 30s
+[2026-09-04 13:23:53] 📝 Event: MODIFY on /data/.hermes/cron/.hb_wlbw_ro1.tmp
+[2026-09-04 13:23:53] 🔴 Change detected: /data/.hermes/cron/.hb_wlbw_ro1.tmp — scheduling backup in 30s
+[2026-09-04 13:23:53] 📝 Event: MOVED_FROM on /data/.hermes/cron/.hb_wlbw_ro1.tmp
+[2026-09-04 13:23:53] 🔴 Change detected: /data/.hermes/cron/.hb_wlbw_ro1.tmp — scheduling backup in 30s
+[2026-09-04 13:23:53] 📝 Event: MOVED_TO on /data/.hermes/cron/ticker_last_success
+[2026-09-04 13:23:53] 🔴 Change detected: /data/.hermes/cron/ticker_last_success — scheduling backup in 30s
+[2026-09-04 13:24:04] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:04] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:04] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:04] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:04] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:04] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:04] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:04] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:04] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:04] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:04] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:04] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:04] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:04] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.tick.lock
+[2026-09-04 13:24:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_szl4ybix.tmp
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_szl4ybix.tmp
+[2026-09-04 13:24:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_szl4ybix.tmp
+[2026-09-04 13:24:23]   Hermes Agent Backup — 2026-09-04_13-24-23
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23]   Hermes Agent Backup — 2026-09-04_13-24-23
+[2026-09-04 13:24:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/ticker_heartbeat
+[2026-09-04 13:24:23] Configuring git...
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_wlbw_ro1.tmp
+[2026-09-04 13:24:23] Configuring git...
+[2026-09-04 13:24:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_wlbw_ro1.tmp
+[2026-09-04 13:24:23]   Hermes Agent Backup — 2026-09-04_13-24-23
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_wlbw_ro1.tmp
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23]   Hermes Agent Backup — 2026-09-04_13-24-23
+[2026-09-04 13:24:23] Configuring git...
+[2026-09-04 13:24:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/ticker_last_success
+[2026-09-04 13:24:23] Backing up critical files...
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23]   Hermes Agent Backup — 2026-09-04_13-24-23
+[2026-09-04 13:24:23] ── Core Configuration ──
+[2026-09-04 13:24:23]   Hermes Agent Backup — 2026-09-04_13-24-23
+[2026-09-04 13:24:23]   Hermes Agent Backup — 2026-09-04_13-24-23
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] Configuring git...
+[2026-09-04 13:24:23] Backing up critical files...
+[2026-09-04 13:24:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] ── Core Configuration ──
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23]   Hermes Agent Backup — 2026-09-04_13-24-23
+[2026-09-04 13:24:23] Backing up critical files...
+[2026-09-04 13:24:23] Configuring git...
+[2026-09-04 13:24:23]   Hermes Agent Backup — 2026-09-04_13-24-23
+[2026-09-04 13:24:23] Configuring git...
+[2026-09-04 13:24:23] Configuring git...
+[2026-09-04 13:24:23] ── Core Configuration ──
+[2026-09-04 13:24:23] Backing up critical files...
+[2026-09-04 13:24:23] ── Core Configuration ──
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:23] Configuring git...
+[2026-09-04 13:24:23] Configuring git...
+[2026-09-04 13:24:23] Backing up critical files...
+[2026-09-04 13:24:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:23] Backing up critical files...
+[2026-09-04 13:24:23] ── Core Configuration ──
+[2026-09-04 13:24:23] Backing up critical files...
+[2026-09-04 13:24:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:23] ── Core Configuration ──
+[2026-09-04 13:24:23] ── Core Configuration ──
+[2026-09-04 13:24:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:23] Backing up critical files...
+[2026-09-04 13:24:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:23] Backing up critical files...
+[2026-09-04 13:24:23] ── Core Configuration ──
+[2026-09-04 13:24:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:23] ── Core Configuration ──
+[2026-09-04 13:24:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:23] ── Memory & User Data ──
+[2026-09-04 13:24:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:23] ── Memory & User Data ──
+[2026-09-04 13:24:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23] ── Memory & User Data ──
+[2026-09-04 13:24:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:23] ── Memory & User Data ──
+[2026-09-04 13:24:23] ── Sessions ──
+[2026-09-04 13:24:23] ── Sessions ──
+[2026-09-04 13:24:23]   ✓ channel_directory.json (0 bytes)
+[2026-09-04 13:24:23] ── Memory & User Data ──
+[2026-09-04 13:24:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:23] ── Sessions ──
+[2026-09-04 13:24:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:23]   ✓ sessions/ (982410 bytes)
+[2026-09-04 13:24:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:23] ── Memory & User Data ──
+[2026-09-04 13:24:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:23] ── Memory & User Data ──
+[2026-09-04 13:24:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23] ── Sessions ──
+[2026-09-04 13:24:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:23] ── Memory & User Data ──
+[2026-09-04 13:24:23] ── Memory & User Data ──
+[2026-09-04 13:24:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:23] ── Sessions ──
+[2026-09-04 13:24:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:23] ── Sessions ──
+[2026-09-04 13:24:23]   ✓ memories/ (3293 bytes)
+[2026-09-04 13:24:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:23] ── Sessions ──
+[2026-09-04 13:24:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:23] ── Sessions ──
+[2026-09-04 13:24:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:23] ── Sessions ──
+[2026-09-04 13:24:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:23] ── Skills ──
+[2026-09-04 13:24:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:23] ── Skills ──
+[2026-09-04 13:24:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:23] ── Skills ──
+[2026-09-04 13:24:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:23] ── Skills ──
+[2026-09-04 13:24:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:23]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:23] ── Skills ──
+[2026-09-04 13:24:23] ── Skills ──
+[2026-09-04 13:24:23] ── Skills ──
+[2026-09-04 13:24:23]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:23] ── Skills ──
+[2026-09-04 13:24:23] ── Platform Configurations ──
+[2026-09-04 13:24:23]   ✓ skills/ (5804111 bytes)
+[2026-09-04 13:24:23] ── Platform Configurations ──
+[2026-09-04 13:24:23] ── Platform Configurations ──
+[2026-09-04 13:24:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:23]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:23]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:23]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:23] ── State Data ──
+[2026-09-04 13:24:23] ── State Data ──
+[2026-09-04 13:24:23] ── State Data ──
+[2026-09-04 13:24:23]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:23]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:23]   ✓ state/ (408 bytes)
+[2026-09-04 13:24:23] ── Runtime State ──
+[2026-09-04 13:24:23]   ✓ runtime/ (404 bytes)
+[2026-09-04 13:24:23] ── Hooks ──
+[2026-09-04 13:24:23]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:23] ── Logs ──
+[2026-09-04 13:24:23]   ✓ hermes logs (1323894 bytes)
+[2026-09-04 13:24:23] ── Cache/Config Files ──
+[2026-09-04 13:24:23]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:23]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:23]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:23]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:23]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:23] ── Skills ──
+[2026-09-04 13:24:23] ── Other Metadata ──
+[2026-09-04 13:24:23]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:23] ── Runtime State ──
+[2026-09-04 13:24:23]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:23]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:23] ── Hooks ──
+[2026-09-04 13:24:23]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:23]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:23] ── Logs ──
+[2026-09-04 13:24:23]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:23]   ✓ hermes logs (2647788 bytes)
+[2026-09-04 13:24:23]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:23] ── Cache/Config Files ──
+[2026-09-04 13:24:23]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:23] Creating manifest...
+Manifest created: 90 items cataloged
+[2026-09-04 13:24:23] Creating compressed archive...
+[2026-09-04 13:24:23]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:23]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:23] ── Runtime State ──
+[2026-09-04 13:24:23]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:23]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:23] ── Hooks ──
+[2026-09-04 13:24:23]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:23]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:23]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:23] ── Other Metadata ──
+[2026-09-04 13:24:23] ── Platform Configurations ──
+[2026-09-04 13:24:23] ── Logs ──
+[2026-09-04 13:24:23]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:23] ── State Data ──
+[2026-09-04 13:24:23]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:24]   ✓ hermes logs (2647788 bytes)
+[2026-09-04 13:24:24] ── Cache/Config Files ──
+[2026-09-04 13:24:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:24]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:24] ── Runtime State ──
+[2026-09-04 13:24:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:24] ── Hooks ──
+[2026-09-04 13:24:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:24]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:24] ── Logs ──
+[2026-09-04 13:24:24] ── Platform Configurations ──
+[2026-09-04 13:24:24]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:24] ── State Data ──
+[2026-09-04 13:24:24]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:24] ── Other Metadata ──
+[2026-09-04 13:24:24]   ✓ hermes logs (2647788 bytes)
+[2026-09-04 13:24:24] Creating manifest...
+[2026-09-04 13:24:24] ── Cache/Config Files ──
+[2026-09-04 13:24:24]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:24] ── Platform Configurations ──
+[2026-09-04 13:24:24]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:24] ── State Data ──
+[2026-09-04 13:24:24]   ⊘ state.db — skipped for GitHub (contains secrets)
+Manifest created: 27 items cataloged
+[2026-09-04 13:24:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:24]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:24] Creating compressed archive...
+[2026-09-04 13:24:24] ── Runtime State ──
+[2026-09-04 13:24:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:24]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:24] ── Runtime State ──
+[2026-09-04 13:24:24] ── Hooks ──
+[2026-09-04 13:24:24]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:24] ── Platform Configurations ──
+[2026-09-04 13:24:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:24]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:24] ── Other Metadata ──
+[2026-09-04 13:24:24] ── Platform Configurations ──
+[2026-09-04 13:24:24] ── Hooks ──
+[2026-09-04 13:24:24] ── Logs ──
+[2026-09-04 13:24:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:24]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:24] ── State Data ──
+[2026-09-04 13:24:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:24] ── Logs ──
+[2026-09-04 13:24:24]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:24]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:24] ── Platform Configurations ──
+[2026-09-04 13:24:24]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:24] ── State Data ──
+[2026-09-04 13:24:24]   ✓ hermes logs (2647788 bytes)
+[2026-09-04 13:24:24]   ✓ hermes logs (2647788 bytes)
+[2026-09-04 13:24:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:24]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:24]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:24] ── Cache/Config Files ──
+[2026-09-04 13:24:24] ── State Data ──
+[2026-09-04 13:24:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:24] ── Cache/Config Files ──
+[2026-09-04 13:24:24] Creating manifest...
+[2026-09-04 13:24:24]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:24]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:24] ── Runtime State ──
+[2026-09-04 13:24:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:24]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:24] ── Runtime State ──
+[2026-09-04 13:24:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:24] ── Other Metadata ──
+Manifest created: 37 items cataloged
+[2026-09-04 13:24:24] ── Hooks ──
+[2026-09-04 13:24:24]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:24] Creating manifest...
+/data/.hermes/scripts/backup.sh: line 198: /data/hermes-backup-repo/backups/2026-09-04_13-24-23/.file_list.tmp: No such file or directory
+[2026-09-04 13:24:24] ── Runtime State ──
+[2026-09-04 13:24:24] Creating compressed archive...
+[2026-09-04 13:24:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:24] ── Hooks ──
+[2026-09-04 13:24:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:24] ── Other Metadata ──
+[2026-09-04 13:24:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:24] ── Hooks ──
+[2026-09-04 13:24:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:24] ── Logs ──
+[2026-09-04 13:24:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:24] ── Logs ──
+[2026-09-04 13:24:24] ── Logs ──
+[2026-09-04 13:24:24] Archive created: 2026-09-04_13-24-23.tar.gz (136K)
+Manifest created: 9 items cataloged
+[2026-09-04 13:24:24]   ✓ hermes logs (2647788 bytes)
+[2026-09-04 13:24:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:24] ── Backup Summary ──
+[2026-09-04 13:24:24] ── Cache/Config Files ──
+[2026-09-04 13:24:24] Creating compressed archive...
+[2026-09-04 13:24:24]   Backup ID: 2026-09-04_13-24-23
+[2026-09-04 13:24:24]   ✓ hermes logs (2647788 bytes)
+[2026-09-04 13:24:24]   Files backed up: 90
+[2026-09-04 13:24:24]   Total size: 17M
+[2026-09-04 13:24:24] ── Cache/Config Files ──
+[2026-09-04 13:24:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:24]   ✓ hermes logs (2647788 bytes)
+[2026-09-04 13:24:24]   Archive: 2026-09-04_13-24-23.tar.gz (136K)
+[2026-09-04 13:24:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:24] Pushing to GitHub...
+[2026-09-04 13:24:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:24] ── Cache/Config Files ──
+[2026-09-04 13:24:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:24] Creating manifest...
+[2026-09-04 13:24:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:24] ── Other Metadata ──
+M	backups/latest
+M	logs/backup_2026-09-04_13-23-22.log
+M	logs/watch_2026-09-04.log
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+[2026-09-04 13:24:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:24] ── Other Metadata ──
+[2026-09-04 13:24:24] ── Other Metadata ──
+[2026-09-04 13:24:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:24] Creating manifest...
+[2026-09-04 13:24:24]   ✓ .update_check (70 bytes)
+Manifest created: 18 items cataloged
+[2026-09-04 13:24:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:24] Creating compressed archive...
+[2026-09-04 13:24:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:25]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:25]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:25]   ✓ models_dev_cache.json (4465832 bytes)
+Manifest created: 5 items cataloged
+[2026-09-04 13:24:25]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:25]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:25] Creating compressed archive...
+[2026-09-04 13:24:25]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:25]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:25] Creating manifest...
+/data/.hermes/scripts/backup.sh: line 290: 32420 Bus error               git add -A
+[2026-09-04 13:24:25]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:25] Creating manifest...
+[2026-09-04 13:24:25]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:25]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:25] Creating manifest...
+Manifest created: 6 items cataloged
+[2026-09-04 13:24:25] Creating compressed archive...
+Manifest created: 0 items cataloged
+[2026-09-04 13:24:25] Creating compressed archive...
+Manifest created: 0 items cataloged
+[2026-09-04 13:24:25] Creating compressed archive...
+[2026-09-04 13:24:25] Archive created: 2026-09-04_13-24-23.tar.gz (2.6M)
+[2026-09-04 13:24:25] ── Backup Summary ──
+[2026-09-04 13:24:25]   Backup ID: 2026-09-04_13-24-23
+[2026-09-04 13:24:25]   Files backed up: 25
+[2026-09-04 13:24:25]   Total size: 17M
+[2026-09-04 13:24:25]   Archive: 2026-09-04_13-24-23.tar.gz (2.6M)
+[2026-09-04 13:24:25] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:25] Archive created: 2026-09-04_13-24-23.tar.gz (2.7M)
+[2026-09-04 13:24:25] ── Backup Summary ──
+[2026-09-04 13:24:25]   Backup ID: 2026-09-04_13-24-23
+[2026-09-04 13:24:25]   Files backed up: 27
+[2026-09-04 13:24:26]   Total size: 14M
+[2026-09-04 13:24:26]   Archive: 2026-09-04_13-24-23.tar.gz (2.7M)
+[2026-09-04 13:24:26] Archive created: 2026-09-04_13-24-23.tar.gz (2.7M)
+[2026-09-04 13:24:26] Pushing to GitHub...
+[2026-09-04 13:24:26] ── Backup Summary ──
+[2026-09-04 13:24:26]   Backup ID: 2026-09-04_13-24-23
+[2026-09-04 13:24:26]   Files backed up: 0
+[2026-09-04 13:24:26]   Total size: 17M
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:26]   Archive: 2026-09-04_13-24-23.tar.gz (2.7M)
+[2026-09-04 13:24:26] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:26] Archive created: 2026-09-04_13-24-23.tar.gz (2.7M)
+[2026-09-04 13:24:26] Archive created: 2026-09-04_13-24-23.tar.gz (2.7M)
+[2026-09-04 13:24:26] ── Backup Summary ──
+[2026-09-04 13:24:26]   Backup ID: 2026-09-04_13-24-23
+[2026-09-04 13:24:26]   Files backed up: 10
+[2026-09-04 13:24:26] ── Backup Summary ──
+[2026-09-04 13:24:26]   Backup ID: 2026-09-04_13-24-23
+[2026-09-04 13:24:26]   Total size: 17M
+[2026-09-04 13:24:26]   Files backed up: 19
+[2026-09-04 13:24:26]   Archive: 2026-09-04_13-24-23.tar.gz (2.7M)
+[2026-09-04 13:24:26]   Total size: 17M
+[2026-09-04 13:24:26] Pushing to GitHub...
+[2026-09-04 13:24:26]   Archive: 2026-09-04_13-24-23.tar.gz (2.7M)
+[2026-09-04 13:24:26] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:26] Archive created: 2026-09-04_13-24-23.tar.gz (2.9M)
+[2026-09-04 13:24:26] ── Backup Summary ──
+[2026-09-04 13:24:26]   Backup ID: 2026-09-04_13-24-23
+[2026-09-04 13:24:26]   Files backed up: 5
+[2026-09-04 13:24:26]   Total size: 17M
+[2026-09-04 13:24:26]   Archive: 2026-09-04_13-24-23.tar.gz (2.9M)
+[2026-09-04 13:24:26] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:26] Archive created: 2026-09-04_13-24-23.tar.gz (2.9M)
+[2026-09-04 13:24:26] Archive created: 2026-09-04_13-24-23.tar.gz (2.9M)
+[2026-09-04 13:24:26] ── Backup Summary ──
+[2026-09-04 13:24:26] ── Backup Summary ──
+[2026-09-04 13:24:26]   Backup ID: 2026-09-04_13-24-23
+[2026-09-04 13:24:26]   Backup ID: 2026-09-04_13-24-23
+[2026-09-04 13:24:26]   Files backed up: 6
+[2026-09-04 13:24:26]   Files backed up: 3
+[2026-09-04 13:24:26]   Total size: 17M
+[2026-09-04 13:24:26]   Total size: 17M
+[2026-09-04 13:24:26]   Archive: 2026-09-04_13-24-23.tar.gz (2.9M)
+[2026-09-04 13:24:26]   Archive: 2026-09-04_13-24-23.tar.gz (2.9M)
+[2026-09-04 13:24:26] Pushing to GitHub...
+[2026-09-04 13:24:26] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:28] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:28] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:28] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:28] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:28] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:28] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:28] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:28] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:28] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:24:28] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:24:34] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34]   Hermes Agent Backup — 2026-09-04_13-24-34
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:34] Configuring git...
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34]   Hermes Agent Backup — 2026-09-04_13-24-34
+[2026-09-04 13:24:34] Backing up critical files...
+[2026-09-04 13:24:34] ── Core Configuration ──
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] Configuring git...
+[2026-09-04 13:24:34]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:34] Backing up critical files...
+[2026-09-04 13:24:34] ── Core Configuration ──
+[2026-09-04 13:24:34]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:34]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:34]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:34]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:34]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:34]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:34]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34] ── Memory & User Data ──
+[2026-09-04 13:24:34]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34]   ✓ memories/ (2325 bytes)
+[2026-09-04 13:24:34]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:34] ── Sessions ──
+[2026-09-04 13:24:34]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34] ── Memory & User Data ──
+[2026-09-04 13:24:34]   ✓ sessions/ (903240 bytes)
+[2026-09-04 13:24:34]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:34] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:34] ── Sessions ──
+[2026-09-04 13:24:34]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:34]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:34] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:34]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:34] ── Skills ──
+[2026-09-04 13:24:34]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:34]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:34] ── Skills ──
+[2026-09-04 13:24:34]   ✓ skills/ (2909370 bytes)
+[2026-09-04 13:24:34] ── Platform Configurations ──
+[2026-09-04 13:24:34]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:34] ── State Data ──
+[2026-09-04 13:24:34]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:34] ── Platform Configurations ──
+[2026-09-04 13:24:34]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:34]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:34] ── State Data ──
+[2026-09-04 13:24:34]   ✓ state/ (408 bytes)
+[2026-09-04 13:24:34]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34] ── Runtime State ──
+[2026-09-04 13:24:34]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:34]   ✓ runtime/ (404 bytes)
+[2026-09-04 13:24:34] ── Hooks ──
+[2026-09-04 13:24:34]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:34]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:34] ── Runtime State ──
+[2026-09-04 13:24:34] ── Logs ──
+[2026-09-04 13:24:34]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:34] ── Hooks ──
+[2026-09-04 13:24:34]   ✓ hermes logs (1324015 bytes)
+[2026-09-04 13:24:34] ── Cache/Config Files ──
+[2026-09-04 13:24:34]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:34] ── Logs ──
+[2026-09-04 13:24:34]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:34]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:34]   ✓ hermes logs (2648030 bytes)
+[2026-09-04 13:24:34] ── Cache/Config Files ──
+[2026-09-04 13:24:34]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:34] ── Other Metadata ──
+[2026-09-04 13:24:34]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:34]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:34]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:34]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:34]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:34] ── Other Metadata ──
+[2026-09-04 13:24:34]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:34]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:34]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:34]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:34]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:34]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:34] Creating manifest...
+[2026-09-04 13:24:34]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:34]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:34] Creating manifest...
+Manifest created: 45 items cataloged
+[2026-09-04 13:24:34] Creating compressed archive...
+Manifest created: 0 items cataloged
+[2026-09-04 13:24:34] Creating compressed archive...
+[2026-09-04 13:24:34] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:34]   Hermes Agent Backup — 2026-09-04_13-24-34
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] Configuring git...
+[2026-09-04 13:24:34] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:34]   Hermes Agent Backup — 2026-09-04_13-24-34
+[2026-09-04 13:24:34] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] Configuring git...
+[2026-09-04 13:24:34] Backing up critical files...
+[2026-09-04 13:24:34] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:34]   Hermes Agent Backup — 2026-09-04_13-24-34
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] ── Core Configuration ──
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34]   Hermes Agent Backup — 2026-09-04_13-24-34
+[2026-09-04 13:24:34] Configuring git...
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] Backing up critical files...
+[2026-09-04 13:24:34]   Hermes Agent Backup — 2026-09-04_13-24-34
+[2026-09-04 13:24:34] ── Core Configuration ──
+[2026-09-04 13:24:34]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:34] Backing up critical files...
+[2026-09-04 13:24:34] Configuring git...
+[2026-09-04 13:24:34] Configuring git...
+[2026-09-04 13:24:34] ── Core Configuration ──
+[2026-09-04 13:24:34]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:34]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:34] Backing up critical files...
+[2026-09-04 13:24:34]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:34] Backing up critical files...
+[2026-09-04 13:24:34] ── Core Configuration ──
+[2026-09-04 13:24:34] ── Core Configuration ──
+[2026-09-04 13:24:34]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:34]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:34]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:34]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:34]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:34]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:34]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:34]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:34]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:34]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34] ── Memory & User Data ──
+[2026-09-04 13:24:34]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:34]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:34]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:34]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:34]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34] ── Sessions ──
+[2026-09-04 13:24:34]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:34]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:34]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34] ── Memory & User Data ──
+[2026-09-04 13:24:34]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:34] ── Memory & User Data ──
+[2026-09-04 13:24:34]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:34] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:34]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:34] ── Memory & User Data ──
+[2026-09-04 13:24:34]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:34]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:34] ── Sessions ──
+[2026-09-04 13:24:34]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34] ── Sessions ──
+[2026-09-04 13:24:34]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:34] ── Memory & User Data ──
+[2026-09-04 13:24:34]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:34]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:34] ── Sessions ──
+[2026-09-04 13:24:34] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:34]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:34]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:34] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:34]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:34] ── Skills ──
+[2026-09-04 13:24:34]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:34] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:34]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:34]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:34]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:34] ── Sessions ──
+[2026-09-04 13:24:34]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:34] ── Skills ──
+[2026-09-04 13:24:34]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:34] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:34]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:34]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:34] ── Platform Configurations ──
+[2026-09-04 13:24:34] ── Skills ──
+[2026-09-04 13:24:34]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:34]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:34] ── Skills ──
+[2026-09-04 13:24:34]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:34] ── State Data ──
+[2026-09-04 13:24:34]   ✓ skills/ (5818626 bytes)
+[2026-09-04 13:24:34]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:34]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:34] ── Platform Configurations ──
+[2026-09-04 13:24:34] ── Skills ──
+[2026-09-04 13:24:34]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:34]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:34] ── State Data ──
+[2026-09-04 13:24:35]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:35]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:35]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:35]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:35] ── Runtime State ──
+[2026-09-04 13:24:35] ── Platform Configurations ──
+[2026-09-04 13:24:35] ── Platform Configurations ──
+[2026-09-04 13:24:35]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:35]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:35]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:35]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:35] ── Hooks ──
+[2026-09-04 13:24:35]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:35] ── State Data ──
+[2026-09-04 13:24:35]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:35] ── State Data ──
+[2026-09-04 13:24:35] ── Runtime State ──
+[2026-09-04 13:24:35] ── Platform Configurations ──
+[2026-09-04 13:24:35]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:35]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:35]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:35]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:35] ── Logs ──
+[2026-09-04 13:24:35]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:35]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:35]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:35] ── Hooks ──
+[2026-09-04 13:24:35] ── State Data ──
+[2026-09-04 13:24:35]   ✓ hermes logs (2648030 bytes)
+[2026-09-04 13:24:35]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:35]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:35]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:35] ── Cache/Config Files ──
+[2026-09-04 13:24:35] ── Runtime State ──
+[2026-09-04 13:24:35] ── Runtime State ──
+[2026-09-04 13:24:35]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:35]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:35] ── Hooks ──
+[2026-09-04 13:24:35]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:35]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:35]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:35] ── Hooks ──
+[2026-09-04 13:24:35]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:35] ── Logs ──
+[2026-09-04 13:24:35]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:35]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:35] ── Runtime State ──
+[2026-09-04 13:24:35] ── Logs ──
+[2026-09-04 13:24:35]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:35]   ✓ hermes logs (2648030 bytes)
+[2026-09-04 13:24:35] ── Logs ──
+[2026-09-04 13:24:35] ── Cache/Config Files ──
+[2026-09-04 13:24:35]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:35]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:35] ── Other Metadata ──
+[2026-09-04 13:24:35] ── Hooks ──
+[2026-09-04 13:24:35]   ✓ hermes logs (2648030 bytes)
+[2026-09-04 13:24:35]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:35]   ✓ hermes logs (2648030 bytes)
+[2026-09-04 13:24:35]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:35] ── Cache/Config Files ──
+[2026-09-04 13:24:35] ── Cache/Config Files ──
+[2026-09-04 13:24:35]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:35]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:35] ── Logs ──
+[2026-09-04 13:24:35]   ✓ .skills_prompt_snapshot.json (24576 bytes)
+[2026-09-04 13:24:35]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:35]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:35]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:35]   ✓ hermes logs (2648030 bytes)
+[2026-09-04 13:24:35] ── Other Metadata ──
+[2026-09-04 13:24:35]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:35] ── Cache/Config Files ──
+[2026-09-04 13:24:35]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:35]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:35]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:35]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:35]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:35]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:35]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:35] ── Other Metadata ──
+[2026-09-04 13:24:35]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:35]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:35] ── Other Metadata ──
+[2026-09-04 13:24:35]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:35] Creating manifest...
+[2026-09-04 13:24:35]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:35]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:35]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:35]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:35] ── Other Metadata ──
+[2026-09-04 13:24:35]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:35]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:35]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:35]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:35]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:35]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:35]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:35] Creating manifest...
+[2026-09-04 13:24:35]   ✓ .update_check (70 bytes)
+Manifest created: 103 items cataloged
+[2026-09-04 13:24:35]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:35]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:35] Creating compressed archive...
+[2026-09-04 13:24:35]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:35]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:35] Creating manifest...
+[2026-09-04 13:24:35] Archive created: 2026-09-04_13-24-34.tar.gz (136K)
+[2026-09-04 13:24:35]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:35]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:35] Archive created: 2026-09-04_13-24-34.tar.gz (136K)
+[2026-09-04 13:24:35] ── Backup Summary ──
+[2026-09-04 13:24:35] Creating manifest...
+[2026-09-04 13:24:35]   Backup ID: 2026-09-04_13-24-34
+[2026-09-04 13:24:35] ── Backup Summary ──
+[2026-09-04 13:24:35]   Files backed up: 45
+Manifest created: 6 items cataloged
+[2026-09-04 13:24:35]   Total size: 17M
+[2026-09-04 13:24:35]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:35]   Archive: 2026-09-04_13-24-34.tar.gz (136K)
+[2026-09-04 13:24:35] Creating manifest...
+[2026-09-04 13:24:35] Pushing to GitHub...
+/data/.hermes/scripts/backup.sh: line 198: /data/hermes-backup-repo/backups/2026-09-04_13-24-34/.file_list.tmp: No such file or directory
+[2026-09-04 13:24:35] Creating compressed archive...
+[2026-09-04 13:24:35]   Backup ID: 2026-09-04_13-24-34
+[2026-09-04 13:24:35]   Files backed up: 43
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Manifest created: 0 items cataloged
+[2026-09-04 13:24:35]   Total size: 16M
+[2026-09-04 13:24:35]   Archive: 2026-09-04_13-24-34.tar.gz (136K)
+Manifest created: 0 items cataloged
+[2026-09-04 13:24:35] Creating compressed archive...
+[2026-09-04 13:24:35] Creating compressed archive...
+[2026-09-04 13:24:35] Pushing to GitHub...
+Manifest created: 0 items cataloged
+[2026-09-04 13:24:35] Creating compressed archive...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:36] Archive created: 2026-09-04_13-24-34.tar.gz (2.6M)
+[2026-09-04 13:24:36] ── Backup Summary ──
+[2026-09-04 13:24:36]   Backup ID: 2026-09-04_13-24-34
+[2026-09-04 13:24:36]   Files backed up: 93
+[2026-09-04 13:24:36]   Total size: 17M
+[2026-09-04 13:24:36]   Archive: 2026-09-04_13-24-34.tar.gz (2.6M)
+[2026-09-04 13:24:36] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:36] Archive created: 2026-09-04_13-24-34.tar.gz (2.9M)
+[2026-09-04 13:24:36] Archive created: 2026-09-04_13-24-34.tar.gz (2.9M)
+[2026-09-04 13:24:36] ── Backup Summary ──
+[2026-09-04 13:24:36] ── Backup Summary ──
+[2026-09-04 13:24:36]   Backup ID: 2026-09-04_13-24-34
+[2026-09-04 13:24:36]   Backup ID: 2026-09-04_13-24-34
+[2026-09-04 13:24:36]   Files backed up: 6
+[2026-09-04 13:24:36]   Files backed up: 103
+[2026-09-04 13:24:36]   Total size: 17M
+[2026-09-04 13:24:36]   Total size: 15M
+[2026-09-04 13:24:36]   Archive: 2026-09-04_13-24-34.tar.gz (2.9M)
+[2026-09-04 13:24:36] Pushing to GitHub...
+[2026-09-04 13:24:36]   Archive: 2026-09-04_13-24-34.tar.gz (2.9M)
+[2026-09-04 13:24:36] Archive created: 2026-09-04_13-24-34.tar.gz (2.9M)
+[2026-09-04 13:24:36] Pushing to GitHub...
+[2026-09-04 13:24:36] Archive created: 2026-09-04_13-24-34.tar.gz (2.9M)
+[2026-09-04 13:24:36] ── Backup Summary ──
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:36] ── Backup Summary ──
+[2026-09-04 13:24:36]   Backup ID: 2026-09-04_13-24-34
+[2026-09-04 13:24:36]   Backup ID: 2026-09-04_13-24-34
+[2026-09-04 13:24:36]   Files backed up: 4
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:36]   Files backed up: 0
+[2026-09-04 13:24:36]   Total size: 17M
+[2026-09-04 13:24:36]   Total size: 17M
+[2026-09-04 13:24:36]   Archive: 2026-09-04_13-24-34.tar.gz (2.9M)
+[2026-09-04 13:24:36]   Archive: 2026-09-04_13-24-34.tar.gz (2.9M)
+[2026-09-04 13:24:36] Pushing to GitHub...
+[2026-09-04 13:24:36] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:53] 📝 Event: MODIFY on /data/.hermes/cron/.tick.lock
+[2026-09-04 13:24:53] 🔴 Change detected: /data/.hermes/cron/.tick.lock — scheduling backup in 30s
+[2026-09-04 13:24:53] 📝 Event: CREATE on /data/.hermes/cron/.hb_rb1r_xuw.tmp
+[2026-09-04 13:24:53] 🔴 Change detected: /data/.hermes/cron/.hb_rb1r_xuw.tmp — scheduling backup in 30s
+[2026-09-04 13:24:53] 📝 Event: MODIFY on /data/.hermes/cron/.hb_rb1r_xuw.tmp
+[2026-09-04 13:24:53] 🔴 Change detected: /data/.hermes/cron/.hb_rb1r_xuw.tmp — scheduling backup in 30s
+[2026-09-04 13:24:53] 📝 Event: MOVED_FROM on /data/.hermes/cron/.hb_rb1r_xuw.tmp
+[2026-09-04 13:24:53] 🔴 Change detected: /data/.hermes/cron/.hb_rb1r_xuw.tmp — scheduling backup in 30s
+[2026-09-04 13:24:53] 📝 Event: MOVED_TO on /data/.hermes/cron/ticker_heartbeat
+[2026-09-04 13:24:53] 🔴 Change detected: /data/.hermes/cron/ticker_heartbeat — scheduling backup in 30s
+[2026-09-04 13:24:53] 📝 Event: CREATE on /data/.hermes/cron/.hb_z65_7c9s.tmp
+[2026-09-04 13:24:53] 🔴 Change detected: /data/.hermes/cron/.hb_z65_7c9s.tmp — scheduling backup in 30s
+[2026-09-04 13:24:53] 📝 Event: MODIFY on /data/.hermes/cron/.hb_z65_7c9s.tmp
+[2026-09-04 13:24:53] 🔴 Change detected: /data/.hermes/cron/.hb_z65_7c9s.tmp — scheduling backup in 30s
+[2026-09-04 13:24:53] 📝 Event: MOVED_FROM on /data/.hermes/cron/.hb_z65_7c9s.tmp
+[2026-09-04 13:24:53] 🔴 Change detected: /data/.hermes/cron/.hb_z65_7c9s.tmp — scheduling backup in 30s
+[2026-09-04 13:24:53] 📝 Event: MOVED_TO on /data/.hermes/cron/ticker_last_success
+[2026-09-04 13:24:53] 🔴 Change detected: /data/.hermes/cron/ticker_last_success — scheduling backup in 30s
+[2026-09-04 13:24:58] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:58] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:58] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:58]   Hermes Agent Backup — 2026-09-04_13-24-58
+[2026-09-04 13:24:58] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:58] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:58]   Hermes Agent Backup — 2026-09-04_13-24-58
+[2026-09-04 13:24:58] Configuring git...
+[2026-09-04 13:24:58] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:58] Configuring git...
+[2026-09-04 13:24:58] Backing up critical files...
+[2026-09-04 13:24:58] ── Core Configuration ──
+[2026-09-04 13:24:58] Backing up critical files...
+[2026-09-04 13:24:58] ── Core Configuration ──
+[2026-09-04 13:24:58]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:58]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:58]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:58]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:58]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:58]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:58]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:58]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:58]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58] ── Memory & User Data ──
+[2026-09-04 13:24:58] ── Memory & User Data ──
+[2026-09-04 13:24:58]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:58]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:58] ── Sessions ──
+[2026-09-04 13:24:58] ── Sessions ──
+[2026-09-04 13:24:58]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:58]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:58] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:58] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:58]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:58]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:58]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:58] ── Skills ──
+[2026-09-04 13:24:58]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:58] ── Skills ──
+[2026-09-04 13:24:58]   ✓ skills/ (4227765 bytes)
+[2026-09-04 13:24:58] ── Platform Configurations ──
+[2026-09-04 13:24:58]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:58] ── State Data ──
+[2026-09-04 13:24:58]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:58] ── Platform Configurations ──
+[2026-09-04 13:24:58]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:58]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:58] ── State Data ──
+[2026-09-04 13:24:58]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ✓ state/ (408 bytes)
+[2026-09-04 13:24:58] ── Runtime State ──
+[2026-09-04 13:24:58]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:58]   ✓ runtime/ (404 bytes)
+[2026-09-04 13:24:58]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:58] ── Hooks ──
+[2026-09-04 13:24:58] ── Runtime State ──
+[2026-09-04 13:24:58]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:58]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:58] ── Hooks ──
+[2026-09-04 13:24:58] ── Logs ──
+[2026-09-04 13:24:58]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:58]   ✓ hermes logs (1325024 bytes)
+[2026-09-04 13:24:58] ── Logs ──
+[2026-09-04 13:24:58] ── Cache/Config Files ──
+[2026-09-04 13:24:58]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:24:58]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:58] ── Cache/Config Files ──
+[2026-09-04 13:24:58]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:58]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:58]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:58]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:58] ── Other Metadata ──
+[2026-09-04 13:24:58]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:58]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:58] ── Other Metadata ──
+[2026-09-04 13:24:58]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:58]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:58]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:58]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:58] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:58]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:58] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:58] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:58] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:24:58]   Hermes Agent Backup — 2026-09-04_13-24-58
+[2026-09-04 13:24:58]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:58] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:58]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:58] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:58] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:58]   Hermes Agent Backup — 2026-09-04_13-24-58
+[2026-09-04 13:24:58]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:58] Configuring git...
+[2026-09-04 13:24:58] Creating manifest...
+[2026-09-04 13:24:58]   Hermes Agent Backup — 2026-09-04_13-24-58
+[2026-09-04 13:24:58] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:58]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:58] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:24:58] Creating manifest...
+[2026-09-04 13:24:58] Configuring git...
+[2026-09-04 13:24:58] Backing up critical files...
+[2026-09-04 13:24:58] Configuring git...
+[2026-09-04 13:24:58] ── Core Configuration ──
+[2026-09-04 13:24:58] Backing up critical files...
+[2026-09-04 13:24:58] ── Core Configuration ──
+[2026-09-04 13:24:58] Backing up critical files...
+[2026-09-04 13:24:58]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:58] ── Core Configuration ──
+[2026-09-04 13:24:58]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:58]   ✓ SOUL.md (667 bytes)
+Manifest created: 3 items cataloged
+[2026-09-04 13:24:58] Creating compressed archive...
+[2026-09-04 13:24:58]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:24:58]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:58]   ✓ .env (environment variables) (187 bytes)
+Manifest created: 3 items cataloged
+[2026-09-04 13:24:58]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:24:58]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58] Creating compressed archive...
+[2026-09-04 13:24:58]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:58]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:24:58]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:58]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:58]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:24:58] ── Memory & User Data ──
+[2026-09-04 13:24:58]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58] ── Memory & User Data ──
+[2026-09-04 13:24:58] ── Memory & User Data ──
+[2026-09-04 13:24:58]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:58] ── Sessions ──
+[2026-09-04 13:24:58]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:58]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:24:58] ── Sessions ──
+[2026-09-04 13:24:58] ── Sessions ──
+[2026-09-04 13:24:58]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:58] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:58]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:58] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:58]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:24:58] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:24:58]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:58]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:58]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:24:58]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:58] ── Skills ──
+[2026-09-04 13:24:58]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:58] ── Skills ──
+[2026-09-04 13:24:58]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:24:58] ── Skills ──
+[2026-09-04 13:24:58]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:58] ── Platform Configurations ──
+[2026-09-04 13:24:58]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:58]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:58]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:24:58] ── State Data ──
+[2026-09-04 13:24:58] ── Platform Configurations ──
+[2026-09-04 13:24:58] ── Platform Configurations ──
+[2026-09-04 13:24:58]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:58] ── State Data ──
+[2026-09-04 13:24:58]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:24:58]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58] ── State Data ──
+[2026-09-04 13:24:58]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:58]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:58]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:24:58]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:58] ── Runtime State ──
+[2026-09-04 13:24:58]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:58]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:24:58] ── Runtime State ──
+[2026-09-04 13:24:58]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:58]   ✓ state/ (816 bytes)
+[2026-09-04 13:24:58] ── Runtime State ──
+[2026-09-04 13:24:58] ── Hooks ──
+[2026-09-04 13:24:58]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:59] ── Hooks ──
+[2026-09-04 13:24:59]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:59]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:24:59] ── Logs ──
+[2026-09-04 13:24:59] ── Hooks ──
+[2026-09-04 13:24:59]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:59] ── Logs ──
+[2026-09-04 13:24:59]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:24:59]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:24:59] ── Cache/Config Files ──
+[2026-09-04 13:24:59] ── Logs ──
+[2026-09-04 13:24:59]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:24:59] ── Cache/Config Files ──
+[2026-09-04 13:24:59]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:24:59] ── Cache/Config Files ──
+[2026-09-04 13:24:59]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:59]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:59]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:24:59]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:59]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:59]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:24:59]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:59]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:59] ── Other Metadata ──
+[2026-09-04 13:24:59] ── Other Metadata ──
+[2026-09-04 13:24:59]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:24:59]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:59]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:59] ── Other Metadata ──
+[2026-09-04 13:24:59]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:59]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:59]   ✓ .initialized (21 bytes)
+[2026-09-04 13:24:59]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:59]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:59]   ✓ .update_check (70 bytes)
+[2026-09-04 13:24:59]   ✓ install_id (33 bytes)
+[2026-09-04 13:24:59]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:59]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:59]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:59]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:24:59]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:59] Creating manifest...
+[2026-09-04 13:24:59] Creating manifest...
+[2026-09-04 13:24:59]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:24:59] Creating manifest...
+Manifest created: 63 items cataloged
+Manifest created: 63 items cataloged
+[2026-09-04 13:24:59] Creating compressed archive...
+Manifest created: 0 items cataloged
+[2026-09-04 13:24:59] Creating compressed archive...
+[2026-09-04 13:24:59] Creating compressed archive...
+[2026-09-04 13:24:59] Archive created: 2026-09-04_13-24-58.tar.gz (648K)
+[2026-09-04 13:24:59] Archive created: 2026-09-04_13-24-58.tar.gz (648K)
+[2026-09-04 13:24:59] ── Backup Summary ──
+[2026-09-04 13:24:59] ── Backup Summary ──
+[2026-09-04 13:24:59]   Backup ID: 2026-09-04_13-24-58
+[2026-09-04 13:24:59]   Backup ID: 2026-09-04_13-24-58
+[2026-09-04 13:24:59]   Files backed up: 46
+[2026-09-04 13:24:59]   Files backed up: 45
+[2026-09-04 13:24:59]   Total size: 17M
+[2026-09-04 13:24:59]   Total size: 17M
+[2026-09-04 13:24:59]   Archive: 2026-09-04_13-24-58.tar.gz (648K)
+[2026-09-04 13:24:59]   Archive: 2026-09-04_13-24-58.tar.gz (648K)
+[2026-09-04 13:24:59] Pushing to GitHub...
+[2026-09-04 13:24:59] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:59] Archive created: 2026-09-04_13-24-58.tar.gz (2.9M)
+[2026-09-04 13:24:59] ── Backup Summary ──
+[2026-09-04 13:24:59] Archive created: 2026-09-04_13-24-58.tar.gz (2.9M)
+[2026-09-04 13:24:59] ── Backup Summary ──
+[2026-09-04 13:24:59]   Backup ID: 2026-09-04_13-24-58
+[2026-09-04 13:24:59]   Backup ID: 2026-09-04_13-24-58
+[2026-09-04 13:24:59]   Files backed up: 63
+[2026-09-04 13:24:59]   Files backed up: 62
+[2026-09-04 13:24:59]   Total size: 17M
+[2026-09-04 13:24:59]   Total size: 17M
+[2026-09-04 13:24:59]   Archive: 2026-09-04_13-24-58.tar.gz (2.9M)
+[2026-09-04 13:24:59]   Archive: 2026-09-04_13-24-58.tar.gz (2.9M)
+[2026-09-04 13:24:59] Archive created: 2026-09-04_13-24-58.tar.gz (2.9M)
+[2026-09-04 13:24:59] Pushing to GitHub...
+[2026-09-04 13:24:59] Pushing to GitHub...
+[2026-09-04 13:24:59] ── Backup Summary ──
+[2026-09-04 13:24:59]   Backup ID: 2026-09-04_13-24-58
+[2026-09-04 13:24:59]   Files backed up: 62
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:24:59]   Total size: 17M
+[2026-09-04 13:24:59]   Archive: 2026-09-04_13-24-58.tar.gz (2.9M)
+[2026-09-04 13:24:59] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:25:04] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:25:04] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:25:21] 📝 Event: MODIFY on /data/.hermes/state.db
+[2026-09-04 13:25:21] 🔴 Change detected: /data/.hermes/state.db — scheduling backup in 30s
+[2026-09-04 13:25:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.tick.lock
+[2026-09-04 13:25:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_rb1r_xuw.tmp
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_rb1r_xuw.tmp
+[2026-09-04 13:25:23]   Hermes Agent Backup — 2026-09-04_13-25-23
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23]   Hermes Agent Backup — 2026-09-04_13-25-23
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] Configuring git...
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23]   Hermes Agent Backup — 2026-09-04_13-25-23
+[2026-09-04 13:25:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_rb1r_xuw.tmp
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] Configuring git...
+[2026-09-04 13:25:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/ticker_heartbeat
+[2026-09-04 13:25:23] Configuring git...
+[2026-09-04 13:25:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_z65_7c9s.tmp
+[2026-09-04 13:25:23] Backing up critical files...
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] ── Core Configuration ──
+[2026-09-04 13:25:23]   Hermes Agent Backup — 2026-09-04_13-25-23
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_z65_7c9s.tmp
+[2026-09-04 13:25:23] Backing up critical files...
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23]   Hermes Agent Backup — 2026-09-04_13-25-23
+[2026-09-04 13:25:23] ── Core Configuration ──
+[2026-09-04 13:25:23] Backing up critical files...
+[2026-09-04 13:25:23]   Hermes Agent Backup — 2026-09-04_13-25-23
+[2026-09-04 13:25:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/.hb_z65_7c9s.tmp
+[2026-09-04 13:25:23] ── Core Configuration ──
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] Configuring git...
+[2026-09-04 13:25:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] 🚀 Triggering immediate backup for: /data/.hermes/cron/ticker_last_success
+[2026-09-04 13:25:23] Configuring git...
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:25:23]   Hermes Agent Backup — 2026-09-04_13-25-23
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:25:23]   Hermes Agent Backup — 2026-09-04_13-25-23
+[2026-09-04 13:25:23] Configuring git...
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] Backing up critical files...
+[2026-09-04 13:25:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:25:23] Configuring git...
+[2026-09-04 13:25:23] Backing up critical files...
+[2026-09-04 13:25:23] Configuring git...
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:25:23] ── Core Configuration ──
+[2026-09-04 13:25:23] ── Core Configuration ──
+[2026-09-04 13:25:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:25:23]   Hermes Agent Backup — 2026-09-04_13-25-23
+[2026-09-04 13:25:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:25:23] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:23] Backing up critical files...
+[2026-09-04 13:25:23] Backing up critical files...
+[2026-09-04 13:25:23] Backing up critical files...
+[2026-09-04 13:25:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:25:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:25:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:25:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:25:23] ── Core Configuration ──
+[2026-09-04 13:25:23] ── Core Configuration ──
+[2026-09-04 13:25:23] ── Core Configuration ──
+[2026-09-04 13:25:23] Configuring git...
+[2026-09-04 13:25:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:25:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:25:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:25:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:25:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:25:23] ── Memory & User Data ──
+[2026-09-04 13:25:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:25:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:25:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:25:23] Backing up critical files...
+[2026-09-04 13:25:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:25:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:25:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23] ── Memory & User Data ──
+[2026-09-04 13:25:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:25:23] ── Core Configuration ──
+[2026-09-04 13:25:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:25:23]   ✓ memories/ (2325 bytes)
+[2026-09-04 13:25:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:25:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23] ── Sessions ──
+[2026-09-04 13:25:23] ── Memory & User Data ──
+[2026-09-04 13:25:23]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:25:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:25:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:25:23]   ✓ .env (environment variables) (0 bytes)
+[2026-09-04 13:25:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:25:23] ── Sessions ──
+[2026-09-04 13:25:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:25:23]   ✓ sessions/ (903240 bytes)
+[2026-09-04 13:25:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:25:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:25:23] ── Memory & User Data ──
+[2026-09-04 13:25:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:25:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:25:23] ── Sessions ──
+[2026-09-04 13:25:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23] ── Memory & User Data ──
+[2026-09-04 13:25:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:25:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:25:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:25:23] ── Sessions ──
+[2026-09-04 13:25:23]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:25:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:25:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:25:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:25:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:25:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:25:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23] ── Sessions ──
+[2026-09-04 13:25:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:25:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:25:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:25:23] ── Memory & User Data ──
+[2026-09-04 13:25:23]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:25:23] ── Memory & User Data ──
+[2026-09-04 13:25:23] ── Memory & User Data ──
+[2026-09-04 13:25:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:25:23]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:25:23] ── Memory & User Data ──
+[2026-09-04 13:25:23] ── Skills ──
+[2026-09-04 13:25:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:25:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:25:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:25:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:25:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:25:23] ── Skills ──
+[2026-09-04 13:25:23] ── Sessions ──
+[2026-09-04 13:25:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:25:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:25:23] ── Sessions ──
+[2026-09-04 13:25:23] ── Sessions ──
+[2026-09-04 13:25:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:25:23]   ✓ memories/ (4650 bytes)
+[2026-09-04 13:25:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:25:23] ── Sessions ──
+[2026-09-04 13:25:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:25:23]   ✓ sessions/ (1456593 bytes)
+[2026-09-04 13:25:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:25:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:25:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:25:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:25:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:25:23]   ✓ sessions/ (1806480 bytes)
+[2026-09-04 13:25:23] ── Skills ──
+[2026-09-04 13:25:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:25:23] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:25:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:25:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:25:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:25:23] ── Skills ──
+[2026-09-04 13:25:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:25:23] ── Skills ──
+[2026-09-04 13:25:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:25:23]   ✓ cron/executions.db (36864 bytes)
+[2026-09-04 13:25:23]   ✓ skills/ (5706296 bytes)
+[2026-09-04 13:25:23]   ✓ skills/ (5818603 bytes)
+[2026-09-04 13:25:23] ── Platform Configurations ──
+[2026-09-04 13:25:23] ── Platform Configurations ──
+[2026-09-04 13:25:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:25:23]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:25:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:25:23] ── Skills ──
+[2026-09-04 13:25:23] ── Skills ──
+[2026-09-04 13:25:23]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:25:23] ── State Data ──
+[2026-09-04 13:25:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:25:23] ── Platform Configurations ──
+[2026-09-04 13:25:23]   ✓ cron/jobs.json (4082 bytes)
+[2026-09-04 13:25:23] ── Skills ──
+[2026-09-04 13:25:23]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:25:23] ── Skills ──
+[2026-09-04 13:25:23] ── State Data ──
+[2026-09-04 13:25:23]   ✓ skills/ (5793881 bytes)
+[2026-09-04 13:25:23]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:25:23] ── Platform Configurations ──
+[2026-09-04 13:25:23]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:25:23]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23] ── State Data ──
+[2026-09-04 13:25:23] ── Platform Configurations ──
+[2026-09-04 13:25:23]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:25:23] ── State Data ──
+[2026-09-04 13:25:23]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:25:23]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:23]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:25:23]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:25:23]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:25:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:25:23] ── State Data ──
+[2026-09-04 13:25:24]   ✓ skills/ (5803729 bytes)
+[2026-09-04 13:25:24]   ✓ state/ (812 bytes)
+[2026-09-04 13:25:24]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:24]   ✓ skills/ (5811321 bytes)
+[2026-09-04 13:25:24]   ✓ state/ (812 bytes)
+[2026-09-04 13:25:24]   ✓ state/ (812 bytes)
+[2026-09-04 13:25:24] ── Runtime State ──
+[2026-09-04 13:25:24] ── Platform Configurations ──
+[2026-09-04 13:25:24] ── Runtime State ──
+[2026-09-04 13:25:24]   ✓ state/ (812 bytes)
+[2026-09-04 13:25:24] ── Platform Configurations ──
+[2026-09-04 13:25:24] ── Runtime State ──
+[2026-09-04 13:25:24] ── Runtime State ──
+[2026-09-04 13:25:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:25:24]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:25:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:25:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:25:24]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:25:24] ── Platform Configurations ──
+[2026-09-04 13:25:24]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:25:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:25:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:25:24] ── Hooks ──
+[2026-09-04 13:25:24] ── State Data ──
+[2026-09-04 13:25:24] ── Hooks ──
+[2026-09-04 13:25:24] ── State Data ──
+[2026-09-04 13:25:24] ── Hooks ──
+[2026-09-04 13:25:24]   ✓ skills/ (5818740 bytes)
+[2026-09-04 13:25:24] ── Hooks ──
+[2026-09-04 13:25:24] ── Platform Configurations ──
+[2026-09-04 13:25:24]   ✓ state/ (812 bytes)
+[2026-09-04 13:25:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:25:24]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:24]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:24] ── Runtime State ──
+[2026-09-04 13:25:24] ── Logs ──
+[2026-09-04 13:25:24]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:25:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:25:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:25:24] ── State Data ──
+[2026-09-04 13:25:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:25:24] ── Logs ──
+[2026-09-04 13:25:24] ── Logs ──
+[2026-09-04 13:25:24] ── Logs ──
+[2026-09-04 13:25:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:25:24]   ✓ platforms/ (0 bytes)
+[2026-09-04 13:25:24]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:25:24] ── State Data ──
+[2026-09-04 13:25:24]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:24]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:25:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:25:24] ── Hooks ──
+[2026-09-04 13:25:24] ── Cache/Config Files ──
+[2026-09-04 13:25:24]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:25:24]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:25:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:25:24] ── Cache/Config Files ──
+[2026-09-04 13:25:24]   ✓ state/ (812 bytes)
+[2026-09-04 13:25:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:25:24] ── Cache/Config Files ──
+[2026-09-04 13:25:24]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:25:24]   ✓ kanban.db (118784 bytes)
+[2026-09-04 13:25:24]   ✓ state/ (812 bytes)
+[2026-09-04 13:25:24] ── Cache/Config Files ──
+[2026-09-04 13:25:24] ── Runtime State ──
+[2026-09-04 13:25:24] ── Runtime State ──
+[2026-09-04 13:25:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:25:24]   ✓ state/ (812 bytes)
+[2026-09-04 13:25:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:25:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:25:24] ── Logs ──
+[2026-09-04 13:25:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:25:24] ── Runtime State ──
+[2026-09-04 13:25:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:25:24]   ✓ state/ (812 bytes)
+[2026-09-04 13:25:24] ── Runtime State ──
+[2026-09-04 13:25:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:25:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:25:24] ── Hooks ──
+[2026-09-04 13:25:24] ── Hooks ──
+[2026-09-04 13:25:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:25:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:25:24]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:25:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:25:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:25:24]   ✓ runtime/ (808 bytes)
+[2026-09-04 13:25:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:25:24] ── Cache/Config Files ──
+[2026-09-04 13:25:24] ── Hooks ──
+[2026-09-04 13:25:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:25:24] ── Other Metadata ──
+[2026-09-04 13:25:24] ── Hooks ──
+[2026-09-04 13:25:24] ── Logs ──
+[2026-09-04 13:25:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:25:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:25:24] ── Other Metadata ──
+[2026-09-04 13:25:24] ── Logs ──
+[2026-09-04 13:25:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:25:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:25:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:25:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:25:24] ── Other Metadata ──
+[2026-09-04 13:25:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:25:24] ── Other Metadata ──
+[2026-09-04 13:25:24]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:25:24] ── Logs ──
+[2026-09-04 13:25:24] ── Cache/Config Files ──
+[2026-09-04 13:25:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:25:24]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:25:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:25:24]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:25:24] ── Cache/Config Files ──
+[2026-09-04 13:25:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:25:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:25:24] ── Cache/Config Files ──
+[2026-09-04 13:25:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:25:24]   ✓ hooks/ (0 bytes)
+[2026-09-04 13:25:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:25:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:25:24] ── Logs ──
+[2026-09-04 13:25:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:25:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:25:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:25:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:25:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:25:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:25:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:25:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:25:24] ── Other Metadata ──
+[2026-09-04 13:25:24]   ✓ hermes logs (2650048 bytes)
+[2026-09-04 13:25:24] ── Cache/Config Files ──
+[2026-09-04 13:25:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:25:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:25:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:25:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:25:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:25:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:25:24]   ✓ models_dev_cache.json (0 bytes)
+[2026-09-04 13:25:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:25:24]   ✓ .skills_prompt_snapshot.json (36763 bytes)
+[2026-09-04 13:25:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:25:24] ── Other Metadata ──
+[2026-09-04 13:25:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:25:24] ── Other Metadata ──
+[2026-09-04 13:25:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:25:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-04 13:25:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:25:24] ── Other Metadata ──
+[2026-09-04 13:25:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:25:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:25:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:25:24] Creating manifest...
+[2026-09-04 13:25:24]   ✓ provider_models_cache.json (17994 bytes)
+[2026-09-04 13:25:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:25:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:25:24] Creating manifest...
+[2026-09-04 13:25:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:25:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:25:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:25:24] Creating manifest...
+[2026-09-04 13:25:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:25:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:25:24]   ✓ .update_check (70 bytes)
+[2026-09-04 13:25:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:25:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:25:24] Creating manifest...
+[2026-09-04 13:25:24]   ✓ ollama_cloud_models_cache.json (410 bytes)
+Manifest created: 176 items cataloged
+[2026-09-04 13:25:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:25:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:25:24] ── Other Metadata ──
+Manifest created: 176 items cataloged
+[2026-09-04 13:25:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:25:24] Creating manifest...
+[2026-09-04 13:25:24] Creating compressed archive...
+[2026-09-04 13:25:24] Creating compressed archive...
+Manifest created: 0 items cataloged
+/data/.hermes/scripts/backup.sh: line 198: /data/hermes-backup-repo/backups/2026-09-04_13-25-23/.file_list.tmp: No such file or directory
+[2026-09-04 13:25:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:25:24]   ✓ .initialized (21 bytes)
+[2026-09-04 13:25:24]   ✓ models_dev_cache.json (409600 bytes)
+[2026-09-04 13:25:24] Creating compressed archive...
+[2026-09-04 13:25:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:25:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:25:24] Creating manifest...
+[2026-09-04 13:25:24]   ✓ gateway-starts.log (54 bytes)
+Manifest created: 5 items cataloged
+[2026-09-04 13:25:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:25:24] Creating manifest...
+[2026-09-04 13:25:24] Creating compressed archive...
+[2026-09-04 13:25:24] Creating manifest...
+/data/.hermes/scripts/backup.sh: line 198: /data/hermes-backup-repo/backups/2026-09-04_13-25-23/.file_list.tmp: No such file or directory
+[2026-09-04 13:25:24]   ✓ .update_check (70 bytes)
+Manifest created: 1 items cataloged
+[2026-09-04 13:25:24]   ✓ install_id (33 bytes)
+[2026-09-04 13:25:24] Creating compressed archive...
+Manifest created: 0 items cataloged
+Manifest created: 0 items cataloged
+[2026-09-04 13:25:24] Creating compressed archive...
+[2026-09-04 13:25:24] Creating compressed archive...
+Manifest created: 0 items cataloged
+[2026-09-04 13:25:24]   ✓ models_dev_cache.json (4465832 bytes)
+[2026-09-04 13:25:24] Creating compressed archive...
+[2026-09-04 13:25:24]   ✓ gateway-starts.log (54 bytes)
+[2026-09-04 13:25:24] Creating manifest...
+Manifest created: 1 items cataloged
+[2026-09-04 13:25:25] Creating compressed archive...
+[2026-09-04 13:25:26] Archive created: 2026-09-04_13-25-23.tar.gz (2.6M)
+[2026-09-04 13:25:26] ── Backup Summary ──
+[2026-09-04 13:25:26]   Backup ID: 2026-09-04_13-25-23
+[2026-09-04 13:25:26]   Files backed up: 167
+[2026-09-04 13:25:26]   Total size: 17M
+[2026-09-04 13:25:26]   Archive: 2026-09-04_13-25-23.tar.gz (2.6M)
+[2026-09-04 13:25:26] Pushing to GitHub...
+[2026-09-04 13:25:26] Archive created: 2026-09-04_13-25-23.tar.gz (2.8M)
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:25:26] ── Backup Summary ──
+[2026-09-04 13:25:26]   Backup ID: 2026-09-04_13-25-23
+[2026-09-04 13:25:26]   Files backed up: 168
+[2026-09-04 13:25:26]   Total size: 17M
+[2026-09-04 13:25:26]   Archive: 2026-09-04_13-25-23.tar.gz (2.8M)
+[2026-09-04 13:25:26] Archive created: 2026-09-04_13-25-23.tar.gz (2.8M)
+[2026-09-04 13:25:26] Pushing to GitHub...
+[2026-09-04 13:25:26] ── Backup Summary ──
+[2026-09-04 13:25:26]   Backup ID: 2026-09-04_13-25-23
+[2026-09-04 13:25:26]   Files backed up: 176
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:25:26]   Total size: 16M
+[2026-09-04 13:25:26]   Archive: 2026-09-04_13-25-23.tar.gz (2.8M)
+[2026-09-04 13:25:26] Pushing to GitHub...
+[2026-09-04 13:25:26] Archive created: 2026-09-04_13-25-23.tar.gz (2.9M)
+[2026-09-04 13:25:26] Archive created: 2026-09-04_13-25-23.tar.gz (2.9M)
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:25:26] ── Backup Summary ──
+[2026-09-04 13:25:26]   Backup ID: 2026-09-04_13-25-23
+[2026-09-04 13:25:26] ── Backup Summary ──
+[2026-09-04 13:25:26]   Files backed up: 170
+[2026-09-04 13:25:26]   Backup ID: 2026-09-04_13-25-23
+[2026-09-04 13:25:26]   Total size: 14M
+[2026-09-04 13:25:26]   Files backed up: 0
+[2026-09-04 13:25:26]   Archive: 2026-09-04_13-25-23.tar.gz (2.9M)
+[2026-09-04 13:25:26]   Total size: 15M
+[2026-09-04 13:25:26] Pushing to GitHub...
+[2026-09-04 13:25:26] Archive created: 2026-09-04_13-25-23.tar.gz (2.9M)
+[2026-09-04 13:25:26] ── Backup Summary ──
+[2026-09-04 13:25:26]   Backup ID: 2026-09-04_13-25-23
+[2026-09-04 13:25:26]   Archive: 2026-09-04_13-25-23.tar.gz (2.9M)
+[2026-09-04 13:25:26]   Files backed up: 1
+[2026-09-04 13:25:26] Pushing to GitHub...
+[2026-09-04 13:25:26]   Total size: 17M
+[2026-09-04 13:25:26] Archive created: 2026-09-04_13-25-23.tar.gz (2.9M)
+[2026-09-04 13:25:26]   Archive: 2026-09-04_13-25-23.tar.gz (2.9M)
+[2026-09-04 13:25:26] Archive created: 2026-09-04_13-25-23.tar.gz (2.9M)
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:25:26] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:25:26] ── Backup Summary ──
+[2026-09-04 13:25:26] ── Backup Summary ──
+[2026-09-04 13:25:26]   Backup ID: 2026-09-04_13-25-23
+[2026-09-04 13:25:26]   Backup ID: 2026-09-04_13-25-23
+[2026-09-04 13:25:26]   Files backed up: 4
+[2026-09-04 13:25:26]   Files backed up: 1
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:25:26]   Total size: 17M
+[2026-09-04 13:25:26] Archive created: 2026-09-04_13-25-23.tar.gz (2.9M)
+[2026-09-04 13:25:26]   Total size: 17M
+[2026-09-04 13:25:26]   Archive: 2026-09-04_13-25-23.tar.gz (2.9M)
+[2026-09-04 13:25:26]   Archive: 2026-09-04_13-25-23.tar.gz (2.9M)
+[2026-09-04 13:25:26] Pushing to GitHub...
+[2026-09-04 13:25:26] Pushing to GitHub...
+[2026-09-04 13:25:26] ── Backup Summary ──
+[2026-09-04 13:25:26]   Backup ID: 2026-09-04_13-25-23
+[2026-09-04 13:25:26]   Files backed up: 0
+[2026-09-04 13:25:26]   Total size: 17M
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:25:26]   Archive: 2026-09-04_13-25-23.tar.gz (2.9M)
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:25:26] Pushing to GitHub...
+fatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+[2026-09-04 13:25:34] 🚀 Triggering immediate backup for: /data/.hermes/state.db
+[2026-09-04 13:25:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:34]   Hermes Agent Backup — 2026-09-04_13-25-34
+[2026-09-04 13:25:34] ═══════════════════════════════════════════════════════════════
+[2026-09-04 13:25:34] Configuring git...
+[2026-09-04 13:25:34] Backing up critical files...
+[2026-09-04 13:25:34] ── Core Configuration ──
+[2026-09-04 13:25:34]   ✓ config.yaml (2288 bytes)
+[2026-09-04 13:25:34]   ✓ SOUL.md (667 bytes)
+[2026-09-04 13:25:34]   ✓ .env (environment variables) (187 bytes)
+[2026-09-04 13:25:34]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:34]   ✓ channel_directory.json (229 bytes)
+[2026-09-04 13:25:34]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:34] ── Memory & User Data ──
+[2026-09-04 13:25:34]   ✓ memories/ (2325 bytes)
+[2026-09-04 13:25:34] ── Sessions ──
+[2026-09-04 13:25:34]   ✓ sessions/ (514717 bytes)
+[2026-09-04 13:25:34] ── Cron & Scheduled Jobs ──
+[2026-09-04 13:25:34]   ✓ cron/executions.db (0 bytes)
+[2026-09-04 13:25:34]   ✓ cron/jobs.json (0 bytes)
+[2026-09-04 13:25:34] ── Skills ──
+[2026-09-04 13:25:34]   ✗ skills/ — not found, skipping
+[2026-09-04 13:25:34] ── Platform Configurations ──
+[2026-09-04 13:25:34]   ✗ platforms/ — not found, skipping
+[2026-09-04 13:25:34] ── State Data ──
+[2026-09-04 13:25:34]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-04 13:25:34]   ✓ kanban.db (0 bytes)
+[2026-09-04 13:25:34]   ✗ state/ — not found, skipping
+[2026-09-04 13:25:34] ── Runtime State ──
+[2026-09-04 13:25:34]   ✗ runtime/ — not found, skipping
+[2026-09-04 13:25:34] ── Hooks ──
+[2026-09-04 13:25:34]   ✗ hooks/ — not found, skipping
+[2026-09-04 13:25:34] ── Logs ──
+[2026-09-04 13:25:34]   ✗ hermes logs — not found, skipping
+[2026-09-04 13:25:34] ── Cache/Config Files ──
+[2026-09-04 13:25:34]   ✓ .skills_prompt_snapshot.json (0 bytes)
+[2026-09-04 13:25:34]   ✓ provider_models_cache.json (0 bytes)
+[2026-09-04 13:25:34]   ✓ ollama_cloud_models_cache.json (0 bytes)
+[2026-09-04 13:25:34] ── Other Metadata ──
+[2026-09-04 13:25:34]   ✓ .initialized (0 bytes)
+[2026-09-04 13:25:34]   ✓ .update_check (0 bytes)
+[2026-09-04 13:25:34]   ✓ install_id (0 bytes)
+[2026-09-04 13:25:34]   ✓ models_dev_cache.json (0 bytes)
+[2026-09-04 13:25:34]   ✓ gateway-starts.log (0 bytes)
+[2026-09-04 13:25:34] Creating manifest...
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 48, in <module>
+OSError: [Errno 28] No space left on device
+[2026-09-04 13:25:40] 📝 Event: CREATE on /data/.hermes/sessions/.sessions_8e6cbrj2.tmp
+[2026-09-04 13:25:40] 🔴 Change detected: /data/.hermes/sessions/.sessions_8e6cbrj2.tmp — scheduling backup in 30s
+[2026-09-04 13:25:40] 📝 Event: DELETE on /data/.hermes/sessions/.sessions_8e6cbrj2.tmp
+[2026-09-04 13:25:40] 🔴 Change detected: /data/.hermes/sessions/.sessions_8e6cbrj2.tmp — scheduling backup in 30s
+[2026-09-04 13:25:40] 📝 Event: CREATE on /data/.hermes/sessions/.sessions_m1vio667.tmp
+[2026-09-04 13:25:40] 🔴 Change detected: /data/.hermes/sessions/.sessions_m1vio667.tmp — scheduling backup in 30s
+[2026-09-04 13:25:40] 📝 Event: DELETE on /data/.hermes/sessions/.sessions_m1vio667.tmp
+[2026-09-04 13:25:40] 🔴 Change detected: /data/.hermes/sessions/.sessions_m1vio667.tmp — scheduling backup in 30s
+[2026-09-04 13:25:40] 📝 Event: CREATE on /data/.hermes/sessions/.sessions_48guwiwu.tmp
+[2026-09-04 13:25:40] 🔴 Change detected: /data/.hermes/sessions/.sessions_48guwiwu.tmp — scheduling backup in 30s
+[2026-09-04 13:25:40] 📝 Event: DELETE on /data/.hermes/sessions/.sessions_48guwiwu.tmp
+[2026-09-04 13:25:40] 🔴 Change detected: /data/.hermes/sessions/.sessions_48guwiwu.tmp — scheduling backup in 30s
+[2026-09-04 13:25:40] 📝 Event: CREATE on /data/.hermes/sessions/.sessions_z5qf_6vh.tmp
+[2026-09-04 13:25:40] �
