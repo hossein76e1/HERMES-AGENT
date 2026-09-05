@@ -52,3 +52,25 @@ Manifest created: 23 items cataloged
 [2026-09-05 14:49:20]   Total size: 13M
 [2026-09-05 14:49:20]   Archive: 2026-09-05_14-49-19.tar.gz (1.9M)
 [2026-09-05 14:49:20] Pushing to GitHub...
+[main b505cb9] 🔄 Auto-backup: 2026-09-05_14-49-19
+ 13 files changed, 673 insertions(+), 16 deletions(-)
+ create mode 100644 backups/2026-09-05_14-49-19.tar.gz
+ delete mode 100644 backups/2026-09-05_14-49-19/.file_list.tmp
+ create mode 100644 backups/2026-09-05_14-49-19/cache_files/ollama_cloud_models_cache.json
+ create mode 100644 backups/2026-09-05_14-49-19/cache_files/provider_models_cache.json
+ create mode 100644 backups/2026-09-05_14-49-19/manifest.json
+ create mode 100644 backups/2026-09-05_14-49-19/other/.initialized
+ create mode 100644 backups/2026-09-05_14-49-19/other/.update_check
+ create mode 100644 backups/2026-09-05_14-49-19/other/gateway-starts.log
+ create mode 100644 backups/2026-09-05_14-49-19/other/install_id
+ create mode 100644 backups/2026-09-05_14-49-19/other/models_dev_cache.json
+[2026-09-05 14:49:20]   Commit: b505cb9
+To https://github.com/hossein76e1/HERMES-AGENT.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at b505cb91a9df94518e061d181d3b65627b2f5515 but expected 37837a025a61c1c16b6826c7945900ebe3057f2e)
+error: failed to push some refs to 'https://github.com/hossein76e1/HERMES-AGENT.git'
+[2026-09-05 14:49:23]   ✗ Push failed!
+[2026-09-05 14:49:23] ═══════════════════════════════════════════════════════════════
+[2026-09-05 14:49:23]   Backup Complete: 2026-09-05_14-49-19
+[2026-09-05 14:49:23]   Push Status: failed
+[2026-09-05 14:49:23]   Commit: b505cb9
+[2026-09-05 14:49:23] ═══════════════════════════════════════════════════════════════

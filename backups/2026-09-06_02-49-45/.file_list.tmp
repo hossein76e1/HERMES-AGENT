@@ -1,0 +1,14 @@
+config.yaml|||/data/.hermes/config.yaml|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/config/config.yaml|||2379
+SOUL.md|||/data/.hermes/SOUL.md|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/config/SOUL.md|||667
+.env (environment variables)|||/data/.hermes/.env|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/config/.env|||187
+channel_directory.json|||/data/.hermes/channel_directory.json|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/config/channel_directory.json|||229
+memories/|||/data/.hermes/memories|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/memories/memories|||3572
+sessions/|||/data/.hermes/sessions|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/sessions/sessions|||5669056
+cron/executions.db|||/data/.hermes/cron/executions.db|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/cron/executions.db|||49152
+cron/jobs.json|||/data/.hermes/cron/jobs.json|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/cron/jobs.json|||5490
+skills/|||/data/.hermes/skills|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/skills/skills|||3007485
+platforms/|||/data/.hermes/platforms|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/platforms/platforms|||0
+kanban.db|||/data/.hermes/kanban.db|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/databases/kanban.db|||118784
+state/|||/data/.hermes/state|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/state/state|||434
+runtime/|||/data/.hermes/runtime|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/runtime/runtime|||15
+hooks/|||/data/.hermes/hooks|||/data/hermes-backup-repo/backups/2026-09-06_02-49-45/hooks/hooks|||0

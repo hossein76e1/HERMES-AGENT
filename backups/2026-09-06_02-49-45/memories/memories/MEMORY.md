@@ -1,0 +1,11 @@
+Hossein expects autonomous work: execute tasks without waiting for permission on each step. Work independently in background, give occasional status updates so he knows progress. Don't wait to be told to do obvious next steps. Respond in Persian when they write in Persian. Technical terms in English, translate unfamiliar ones in parentheses.
+§
+Order system: support_bot=@ShahbotSupportbot (8823286946) AI intake+outbox worker; survey_bot=@ShahbotSurveyBot (8681968795) admin panel+admin_inbox worker. Post-delivery: delivered order w/ active window → support flow not AI intake; admin→customer sends via send_customer_chat (direct→outbox fallback). image_service.py: image/logo/graphic orders → Pollinations.ai (free). auto_builder.py daemon: file-by-file GLM + fallback → zip; started by restart_bots.sh + bots_keeper.sh (if missing, paid orders never build). Tokens from state.db LIMIT 500 (survey token row old). ALWAYS md_escape usernames (@x_y underscore breaks Telegram Markdown → receipt failed once). 7-day support: support_until col; minor free, major→adm:squote; payment refreshes. Restart: kill ALL /proc matches FIRST (orphans→409). Payment: order_flow.py (ملت 6104…/USDT TRC20).
+§
+Hossein once ordered deletion of all his projects except the order system, then retracted («پشیمون شدم») — confirm destructive deletions right before executing. Inventory: main = order system (/data/workspace/projects + order-system); side modules: competitor_monitor, content_generator, email_automation, price_comparison, dashboard, appointment_bot, auto_reply_bot; smart-scraper.
+§
+File watcher: ~/.hermes/scripts/watch-backup.sh monitors config, secrets, state files. @reboot cron.
+§
+FastAPI ASGI module: always check which file has `app = FastAPI(...)` before running uvicorn. Project structure: main.py (models/DB) → api.py (endpoints/app). Command: `uvicorn api:app` not `uvicorn main:app`.
+§
+Disk monitor: cron 7150ce92fb65 runs every 6h, cleans pip/npm caches + __pycache__ if /data > 80%. Script: ~/.hermes/scripts/disk_monitor.sh. Log: ~/.hermes/logs/disk_monitor.log. Never deletes: .hermes, workspace, hermes-backup-repo, .config, .local. Current /data: 69% (290M).
