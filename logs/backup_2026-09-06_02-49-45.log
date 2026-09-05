@@ -40,3 +40,15 @@
 [2026-09-06 02:49:46]   ✓ .initialized (21 bytes)
 [2026-09-06 02:49:46]   ✓ .update_check (72 bytes)
 [2026-09-06 02:49:46]   ✓ install_id (33 bytes)
+[2026-09-06 02:49:46]   ✓ models_dev_cache.json (4491788 bytes)
+[2026-09-06 02:49:46]   ✓ gateway-starts.log (90 bytes)
+[2026-09-06 02:49:46] Creating manifest...
+Manifest created: 22 items cataloged
+[2026-09-06 02:49:46] Creating compressed archive...
+[2026-09-06 02:49:47] Archive created: 2026-09-06_02-49-45.tar.gz (3.2M)
+[2026-09-06 02:49:47] ── Backup Summary ──
+[2026-09-06 02:49:47]   Backup ID: 2026-09-06_02-49-45
+[2026-09-06 02:49:47]   Files backed up: 22
+[2026-09-06 02:49:47]   Total size: 23M
+[2026-09-06 02:49:47]   Archive: 2026-09-06_02-49-45.tar.gz (3.2M)
+[2026-09-06 02:49:47] Pushing to GitHub...

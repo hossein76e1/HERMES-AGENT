@@ -1,0 +1,58 @@
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-09-03T10:45:21Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+--- /proc/loadavg ---
+7.11 7.99 8.85 6/40181 174
+--- recent dmesg (oom/killed) ---
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-09-05T08:46:33Z
+--- ps auxf (top 60 by cpu) ---
+--- pstree of self ---
+hermes,2 /opt/venv/bin/hermes gateway
+  |-bash,637 -lic set +m; cd /data/workspace/projects && export $(grep -v '^#' /data/.hermes/.env | xargs) 2>/dev/null && export SURVEY_BOT_TOKEN="8681968795:AAE8wDfxnMMeGVk0jU-ISAnxkzuSHppe4Zo" && python survey_bot.py
+  |   `-python,646 survey_bot.py
+  |       `-{python},648
+  |-bash,1122 -lic set +m; cd /data/workspace/projects && export $(grep -v '^#' /data/.hermes/.env | xargs) 2>/dev/null; export SURVEY_BOT_TOKEN=8681968795:AAE8wDfxnMMeGVk0jU-ISAnxkzuSHppe4Zo; python survey_bot.py 2>&1
+  |   `-python,1131 survey_bot.py
+  |       `-{python},1133
+  |-bash,47674 -lic set +m; cd /data/workspace/order-system/backend && python -m uvicorn api:app --host 0.0.0.0 --port 8000
+  |   `-python,47678 -m uvicorn api:app --host 0.0.0.0 --port 8000
+  |       `-{python},47706
+  |-bash,48625 -c source /data/.hermes/cache/terminal/hermes-snap-be9f8dca8bd1.sh >/dev/null 2>&1 || true\012export AI_AGENT="${AI_AGENT:-hermes-agent}" HERMES_AGENT="${HERMES_AGENT:-true}"\012export GIT_PAGER="${GIT_PAGER:-cat}" PAGER="${PAGER:-cat}"\012builtin cd -- /data/workspace/projects || exit 126\012eval 'hermes gateway restart 2>&1'\012__hermes_ec=$?\012umask 077\012__hermes_snap_tmp=$(mktemp /data/.hermes/cache/terminal/hermes-snap-be9f8dca8bd1.sh.tmp.XXXXXXXXXX) && { { ( unset ${!HERMES_SESSION_*} ${!HERMES_CRON_AUTO_DELIVER_*} ${!HERMES_BROWSER_CONTROL_*} AI_AGENT HERMES_AGENT HERMES_UI_SESSION_ID 2>/dev/null; export -p; ) || true; } > "$__hermes_snap_tmp" && mv -f "$__hermes_snap_tmp" /data/.hermes/cache/terminal/hermes-snap-be9f8dca8bd1.sh; } 2>/dev/null || rm -f "$__hermes_snap_tmp" 2>/dev/null || true\012printf '\\n__HERMES_CWD_be9f8dca8bd1__%s__HERMES_CWD_be9f8dca8bd1__\\n' "$(pwd -P)"\012exit $__hermes_ec
+  |   `-hermes,48627 /opt/venv/bin/hermes gateway restart
+  |       `-{hermes},48629
+  |-node,12206 /usr/local/bin/lt --port 8000
+  |   |-{node},12211
+  |   |-{node},12212
+  |   |-{node},12213
+  |   |-{node},12214
+  |   |-{node},12215
+  |   |-{node},12217
+  |   |-{node},12218
+  |   |-{node},12219
+  |   |-{node},12220
+  |   `-{node},12221
+  |-python,46719 /tmp/hermes_kernel_mpr1w2d1/hermes_kernel_runner.py
+  |   `-{python},46723
+  |-timeout,48636 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 2 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,48638 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 2 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,48643 -40
+  |       `-pstree,48642 -plau 2
+  |-{hermes},11
+  |-{hermes},12
+  |-{hermes},13
+  |-{hermes},14
+  |-{hermes},18
+  |-{hermes},19
+  |-{hermes},152
+  |-{hermes},169
+  |-{hermes},170
+  |-{hermes},172
+--- /proc/loadavg ---
+14.86 12.71 12.62 8/40116 48644
+--- recent dmesg (oom/killed) ---
+=== end ===

@@ -1,0 +1,31 @@
+🏗 auto_builder running (poll every 60s)...
+🏗 auto_builder running (poll every 60s)...
+🏗 auto_builder running (poll every 60s)...
+🏗 auto_builder running (poll every 60s)...
+🏗 auto_builder running (poll every 60s)...
+[21:51:21] building order #21...
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    SKIP README.md (failed after retries)
+    built requirements.txt (87 chars)
+    SKIP main.py (failed after retries)
+[21:59:00] building order #23...
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    SKIP README.md (failed after retries)
+    built requirements.txt (905 chars)
+    SKIP main.py (failed after retries)
+[22:04:10] building order #24...
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    built README.md (4395 chars)
+    built requirements.txt (78 chars)
+    SKIP main.py (failed after retries)
+[22:36:01] building order #25...
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    built README.md (3899 chars)
+    built requirements.txt (565 chars)
+    SKIP main.py (failed after retries)
