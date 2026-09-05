@@ -1,0 +1,36 @@
+[2026-09-05 14:49:19] ═══════════════════════════════════════════════════════════════
+[2026-09-05 14:49:19]   Hermes Agent Backup — 2026-09-05_14-49-19
+[2026-09-05 14:49:19] ═══════════════════════════════════════════════════════════════
+[2026-09-05 14:49:19] Configuring git...
+[2026-09-05 14:49:19] Cleaning up old backups (keeping last 10)...
+[2026-09-05 14:49:19] Backing up critical files...
+[2026-09-05 14:49:19] ── Core Configuration ──
+[2026-09-05 14:49:19]   ✓ config.yaml (2379 bytes)
+[2026-09-05 14:49:19]   ✓ SOUL.md (667 bytes)
+[2026-09-05 14:49:19]   ✓ .env (environment variables) (187 bytes)
+[2026-09-05 14:49:19]   ⊘ auth.json — skipped for GitHub (contains secrets)
+[2026-09-05 14:49:19]   ✓ channel_directory.json (229 bytes)
+[2026-09-05 14:49:19]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)
+[2026-09-05 14:49:19] ── Memory & User Data ──
+[2026-09-05 14:49:19]   ✓ memories/ (3544 bytes)
+[2026-09-05 14:49:19] ── Sessions ──
+[2026-09-05 14:49:19]   ✓ sessions/ (1095381 bytes)
+[2026-09-05 14:49:19] ── Cron & Scheduled Jobs ──
+[2026-09-05 14:49:19]   ✓ cron/executions.db (49152 bytes)
+[2026-09-05 14:49:19]   ✓ cron/jobs.json (9042 bytes)
+[2026-09-05 14:49:19] ── Skills ──
+[2026-09-05 14:49:19]   ✓ skills/ (2968241 bytes)
+[2026-09-05 14:49:19] ── Platform Configurations ──
+[2026-09-05 14:49:19]   ✓ platforms/ (0 bytes)
+[2026-09-05 14:49:19] ── State Data ──
+[2026-09-05 14:49:19]   ⊘ state.db — skipped for GitHub (contains secrets)
+[2026-09-05 14:49:19]   ✓ kanban.db (118784 bytes)
+[2026-09-05 14:49:19]   ✓ state/ (407 bytes)
+[2026-09-05 14:49:19] ── Runtime State ──
+[2026-09-05 14:49:19]   ✓ runtime/ (15 bytes)
+[2026-09-05 14:49:19] ── Hooks ──
+[2026-09-05 14:49:19]   ✓ hooks/ (0 bytes)
+[2026-09-05 14:49:19] ── Logs ──
+[2026-09-05 14:49:19]   ✓ hermes logs (2954304 bytes)
+[2026-09-05 14:49:19] ── Cache/Config Files ──
+[2026-09-05 14:49:20]   ✓ .skills_prompt_snapshot.json (36764 bytes)

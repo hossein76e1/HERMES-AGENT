@@ -1,0 +1,6 @@
+[2026-09-05 13:15:12] ═══════════════════════════════════════════════════════════════
+[2026-09-05 13:15:12]   Hermes File Watcher Started
+[2026-09-05 13:15:12]   Watching: /root/.hermes
+[2026-09-05 13:15:12]   Critical files: config.yaml SOUL.md .env auth.json state.db kanban.db channel_directory.json gateway_state.json
+[2026-09-05 13:15:12]   Debounce: 30s
+[2026-09-05 13:15:12] ═══════════════════════════════════════════════════════════════

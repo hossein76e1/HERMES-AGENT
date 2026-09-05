@@ -1,0 +1,181 @@
+{
+  "jobs": [
+    {
+      "id": "09bc94629578",
+      "name": "hermes-auto-backup",
+      "prompt": "Hermes automated backup every 12 hours. The script runs the backup and pushes to GitHub.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 720,
+        "display": "every 720m"
+      },
+      "schedule_display": "every 720m",
+      "repeat": {
+        "times": null,
+        "completed": 3
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-03T11:17:05.394455+00:00",
+      "next_run_at": "2026-09-06T02:49:19.573516+03:30",
+      "last_run_at": "2026-09-05T02:48:48.564462+03:30",
+      "last_status": "error",
+      "last_error": "Script exited with code 128\nstderr:\nfatal: Unable to create '/data/hermes-backup-repo/.git/index.lock': File exists.\n\nAnother git process seems to be running in this repository, e.g.\nan editor opened by 'git commit'. Please make sure all processes\nare terminated then try again. If it still fails, a git process\nmay have crashed in this repository earlier:\nremove the file manually to continue.\nstdout:\n[2026-09-05 02:48:46] ═══════════════════════════════════════════════════════════════\n[2026-09-05 02:48:46]   Hermes Agent Backup — 2026-09-05_02-48-46\n[2026-09-05 02:48:46] ═══════════════════════════════════════════════════════════════\n[2026-09-05 02:48:46] Configuring git...\n[2026-09-05 02:48:46] Cleaning up old backups (keeping last 10)...\n[2026-09-05 02:48:46] Backing up critical files...\n[2026-09-05 02:48:46] ── Core Configuration ──\n[2026-09-05 02:48:46]   ✓ config.yaml (2346 bytes)\n[2026-09-05 02:48:46]   ✓ SOUL.md (667 bytes)\n[2026-09-05 02:48:46]   ✓ .env (environment variables) (187 bytes)\n[2026-09-05 02:48:46]   ⊘ auth.json — skipped for GitHub (contains secrets)\n[2026-09-05 02:48:46]   ✓ channel_directory.json (229 bytes)\n[2026-09-05 02:48:46]   ⊘ gateway_state.json — skipped for GitHub (contains secrets)\n[2026-09-05 02:48:47] ── Memory & User Data ──\n[2026-09-05 02:48:47]   ✓ memories/ (3363 bytes)\n[2026-09-05 02:48:47] ── Sessions ──\n[2026-09-05 02:48:47]   ✓ sessions/ (903201 bytes)\n[2026-09-05 02:48:47] ── Cron & Scheduled Jobs ──\n[2026-09-05 02:48:47]   ✓ cron/executions.db (36864 bytes)\n[2026-09-05 02:48:47]   ✓ cron/jobs.json (3798 bytes)\n[2026-09-05 02:48:47] ── Skills ──\n[2026-09-05 02:48:47]   ✓ skills/ (2960283 bytes)\n[2026-09-05 02:48:47] ── Platform Configurations ──\n[2026-09-05 02:48:47]   ✓ platforms/ (0 bytes)\n[2026-09-05 02:48:47] ── State Data ──\n[2026-09-05 02:48:47]   ⊘ state.db — skipped for GitHub (contains secrets)\n[2026-09-05 02:48:47]   ✓ kanban.db (118784 bytes)\n[2026-09-05 02:48:47]   ✓ state/ (406 bytes)\n[2026-09-05 02:48:47] ── Runtime State ──\n[2026-09-05 02:48:47]   ✓ runtime/ (15 bytes)\n[2026-09-05 02:48:47] ── Hooks ──\n[2026-09-05 02:48:47]   ✓ hooks/ (0 bytes)\n[2026-09-05 02:48:47] ── Logs ──\n[2026-09-05 02:48:47]   ✓ hermes logs (1814482 bytes)\n[2026-09-05 02:48:47] ── Cache/Config Files ──\n[2026-09-05 02:48:47]   ✓ .skills_prompt_snapshot.json (36764 bytes)\n[2026-09-05 02:48:47]   ✓ provider_models_cache.json (17994 bytes)\n[2026-09-05 02:48:47]   ✓ ollama_cloud_models_cache.json (410 bytes)\n[2026-09-05 02:48:47] ── Other Metadata ──\n[2026-09-05 02:48:47]   ✓ .initialized (21 bytes)\n[2026-09-05 02:48:47]   ✓ .update_check (70 bytes)\n[2026-09-05 02:48:47]   ✓ install_id (33 bytes)\n[2026-09-05 02:48:47]   ✓ models_dev_cache.json (4466325 bytes)\n[2026-09-05 02:48:47]   ✓ gateway-starts.log (54 bytes)\n[2026-09-05 02:48:47] Creating manifest...\nManifest created: 23 items cataloged\n[2026-09-05 02:48:47] Creating compressed archive...\n[2026-09-05 02:48:47] Archive created: 2026-09-05_02-48-46.tar.gz (1.8M)\n[2026-09-05 02:48:47] ── Backup Summary ──\n[2026-09-05 02:48:47]   Backup ID: 2026-09-05_02-48-46\n[2026-09-05 02:48:47]   Files backed up: 23\n[2026-09-05 02:48:47]   Total size: 12M\n[2026-09-05 02:48:47]   Archive: 2026-09-05_02-48-46.tar.gz (1.8M)\n[2026-09-05 02:48:47] Pushing to GitHub...",
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 1,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "failure_deliver": "origin",
+      "last_dispatch": {
+        "scheduled_at": "2026-09-05T14:48:48.564462+03:30",
+        "dispatched_at": "2026-09-05T14:49:19.541601+03:30",
+        "lateness_seconds": 31.0,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-09-05T14:49:19.579871+03:30",
+        "by": "4357740fb769:2:b0f67ce7ed9740009daab5fa1246ecdc"
+      }
+    },
+    {
+      "id": "projects-backup-12h",
+      "name": "projects-auto-backup",
+      "prompt": "Backup all projects from /data/workspace to GitHub every 12 hours.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup_projects.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 720,
+        "display": "every 720m"
+      },
+      "schedule_display": "every 720m",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-04T15:12:00.000000+03:30",
+      "next_run_at": "2026-09-06T02:49:19.588209+03:30",
+      "last_run_at": "2026-09-05T02:48:51.291452+03:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "failure_deliver": "origin",
+      "last_dispatch": {
+        "scheduled_at": "2026-09-05T14:48:51.291452+03:30",
+        "dispatched_at": "2026-09-05T14:49:19.541601+03:30",
+        "lateness_seconds": 28.3,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-09-05T14:49:19.594546+03:30",
+        "by": "4357740fb769:2:1099439e33bf442998251a3a590d193e"
+      }
+    },
+    {
+      "id": "7150ce92fb65",
+      "name": "disk-monitor",
+      "prompt": "Run disk monitor script",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "disk_monitor.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 360,
+        "display": "every 360m"
+      },
+      "schedule_display": "every 360m",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-05T12:05:57.260625+03:30",
+      "next_run_at": "2026-09-05T18:06:15.874567+03:30",
+      "last_run_at": "2026-09-05T12:06:15.874567+03:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-09-05T14:49:19.594712+03:30"
+}

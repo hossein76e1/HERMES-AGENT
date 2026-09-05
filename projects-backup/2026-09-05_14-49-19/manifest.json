@@ -1,0 +1,33 @@
+{
+  "backup_timestamp": "2026/09/05 14-49-19",
+  "backup_id": "2026-09-05_14-49-19",
+  "total_projects": 3,
+  "total_files": 3,
+  "total_size": "528K",
+  "backup_root": "/data/hermes-backup-repo/projects-backup/2026-09-05_14-49-19",
+  "projects": [
+    "order-system",
+    "smart-scraper",
+    "projects"
+  ],
+  "files": [
+    {
+      "project": "projects",
+      "source": "/data/workspace/projects",
+      "backup_path": "projects",
+      "size_bytes": 164618
+    },
+    {
+      "project": "order-system",
+      "source": "/data/workspace/order-system",
+      "backup_path": "order-system",
+      "size_bytes": 104913
+    },
+    {
+      "project": "smart-scraper",
+      "source": "/data/workspace/smart-scraper",
+      "backup_path": "smart-scraper",
+      "size_bytes": 84352
+    }
+  ]
+}
