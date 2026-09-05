@@ -34,3 +34,21 @@
 [2026-09-05 14:49:19]   ✓ hermes logs (2954304 bytes)
 [2026-09-05 14:49:19] ── Cache/Config Files ──
 [2026-09-05 14:49:20]   ✓ .skills_prompt_snapshot.json (36764 bytes)
+[2026-09-05 14:49:20]   ✓ provider_models_cache.json (2771 bytes)
+[2026-09-05 14:49:20]   ✓ ollama_cloud_models_cache.json (410 bytes)
+[2026-09-05 14:49:20] ── Other Metadata ──
+[2026-09-05 14:49:20]   ✓ .initialized (21 bytes)
+[2026-09-05 14:49:20]   ✓ .update_check (72 bytes)
+[2026-09-05 14:49:20]   ✓ install_id (33 bytes)
+[2026-09-05 14:49:20]   ✓ models_dev_cache.json (4490012 bytes)
+[2026-09-05 14:49:20]   ✓ gateway-starts.log (72 bytes)
+[2026-09-05 14:49:20] Creating manifest...
+Manifest created: 23 items cataloged
+[2026-09-05 14:49:20] Creating compressed archive...
+[2026-09-05 14:49:20] Archive created: 2026-09-05_14-49-19.tar.gz (1.9M)
+[2026-09-05 14:49:20] ── Backup Summary ──
+[2026-09-05 14:49:20]   Backup ID: 2026-09-05_14-49-19
+[2026-09-05 14:49:20]   Files backed up: 23
+[2026-09-05 14:49:20]   Total size: 13M
+[2026-09-05 14:49:20]   Archive: 2026-09-05_14-49-19.tar.gz (1.9M)
+[2026-09-05 14:49:20] Pushing to GitHub...
