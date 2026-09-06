@@ -1,0 +1,6 @@
+{
+  "error": "AI extraction failed: Unterminated string starting at: line 8 column 33 (char 504)",
+  "source_url": "https://news.ycombinator.com",
+  "scraped_at": "2026-09-03T12:13:49.511057",
+  "html_size": 34512
+}
