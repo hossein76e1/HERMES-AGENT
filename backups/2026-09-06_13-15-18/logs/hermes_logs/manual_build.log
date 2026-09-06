@@ -1,0 +1,23 @@
+building #21...
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    built README.md (4905 chars)
+    built requirements.txt (96 chars)
+    SKIP main.py (failed after retries)
+#21 → ok=False
+building #23...
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    SKIP README.md (failed after retries)
+    built requirements.txt (142 chars)
+    SKIP main.py (failed after retries)
+#23 → ok=False
+building #24...
+    ⚠️ AI plan failed — using default minimal project
+    ⚠️ AI plan failed — using default minimal project
+    built README.md (4371 chars)
+    built requirements.txt (708 chars)
+    SKIP main.py (failed after retries)
+#24 → ok=False

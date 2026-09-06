@@ -18,3 +18,53 @@ Manifest created: 3 items cataloged
 [2026-09-06 13:15:09]   Total size: 364K
 [2026-09-06 13:15:09]   Archive: 2026-09-06_13-15-08.tar.gz (60K)
 [2026-09-06 13:15:09] Pushing to GitHub...
+[main 665b656] 📦 Projects backup: 2026-09-06_13-15-08
+ 42 files changed, 5953 insertions(+), 2 deletions(-)
+ create mode 100644 backups/secrets-encrypted-2026-09-06.tar.gz.enc
+ create mode 100644 logs/projects_backup_2026-09-06_13-15-08.log
+ create mode 100644 projects-backup/2026-09-06_13-15-08.tar.gz
+ create mode 100644 projects-backup/2026-09-06_13-15-08/manifest.json
+ create mode 100644 projects-backup/2026-09-06_13-15-08/order-system/README.md
+ create mode 100644 projects-backup/2026-09-06_13-15-08/order-system/admin/index.html
+ create mode 100644 projects-backup/2026-09-06_13-15-08/order-system/backend/api.py
+ create mode 100644 projects-backup/2026-09-06_13-15-08/order-system/backend/main.py
+ create mode 100644 projects-backup/2026-09-06_13-15-08/order-system/backend/requirements.txt
+ create mode 100644 projects-backup/2026-09-06_13-15-08/order-system/backend/test_api.py
+ create mode 100644 projects-backup/2026-09-06_13-15-08/order-system/backend/test_register.py
+ create mode 100644 projects-backup/2026-09-06_13-15-08/order-system/frontend/admin/index.html
+ create mode 100644 projects-backup/2026-09-06_13-15-08/order-system/frontend/index.html
+ create mode 100755 projects-backup/2026-09-06_13-15-08/order-system/start.sh
+ create mode 100644 projects-backup/2026-09-06_13-15-08/projects/.last_seen_order_id
+ create mode 100644 projects-backup/2026-09-06_13-15-08/projects/order_flow.py
+ create mode 100644 projects-backup/2026-09-06_13-15-08/projects/support_bot.py
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/README.md
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/bot.py
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/hackernews.csv
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/hackernews.json
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/hn_ai_final.csv
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/hn_ai_final.json
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/hn_ai_test.json
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/output_digikala_com_20260903_173143.csv
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/output_digikala_com_20260903_173143.json
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/output_digikala_com_20260903_175508.json
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/output_example_com_20260903_114109.csv
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/output_example_com_20260903_114109.json
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/output_iranintl_com_20260903_172816.json
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/output_iranintl_com_20260903_173656.csv
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/output_iranintl_com_20260903_173656.json
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/output_news_ycombinator_com_20260903_172341.csv
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/output_news_ycombinator_com_20260903_172341.json
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/portfolio/index.html
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/requirements.txt
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/restore.sh
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/scraper.py
+ create mode 100644 projects-backup/2026-09-06_13-15-08/smart-scraper/telegram_bot.py
+[2026-09-06 13:15:09]   Commit: 665b656
+To https://github.com/hossein76e1/HERMES-AGENT.git
+   8f05700..665b656  main -> main
+[2026-09-06 13:15:12]   ✓ Push successful!
+[2026-09-06 13:15:12] ═══════════════════════════════════════════════════════════════
+[2026-09-06 13:15:12]   Projects Backup Complete: 2026-09-06_13-15-08
+[2026-09-06 13:15:12]   Push Status: success
+[2026-09-06 13:15:12]   Commit: 665b656
+[2026-09-06 13:15:12] ═══════════════════════════════════════════════════════════════
