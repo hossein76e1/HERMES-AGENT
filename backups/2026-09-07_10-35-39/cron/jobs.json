@@ -1,0 +1,187 @@
+{
+  "jobs": [
+    {
+      "id": "09bc94629578",
+      "name": "hermes-auto-backup",
+      "prompt": "Hermes automated backup every 12 hours. The script runs the backup and pushes to GitHub.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 720,
+        "display": "every 720m"
+      },
+      "schedule_display": "every 720m",
+      "repeat": {
+        "times": null,
+        "completed": 5
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-03T11:17:05.394455+00:00",
+      "next_run_at": "2026-09-07T22:35:39.668321+03:30",
+      "last_run_at": "2026-09-06T02:49:50.074998+03:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "failure_deliver": "origin",
+      "last_dispatch": {
+        "scheduled_at": "2026-09-06T14:49:50.074998+03:30",
+        "dispatched_at": "2026-09-07T10:35:39.634660+03:30",
+        "lateness_seconds": 71149.6,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-09-07T10:35:39.674981+03:30",
+        "by": "4357740fb769:2:8a2c9d2ebae44ee7bc9af97a771cd4b1"
+      }
+    },
+    {
+      "id": "projects-backup-12h",
+      "name": "projects-auto-backup",
+      "prompt": "Backup all projects from /data/workspace to GitHub every 12 hours.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup_projects.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 720,
+        "display": "every 720m"
+      },
+      "schedule_display": "every 720m",
+      "repeat": {
+        "times": null,
+        "completed": 3
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-04T15:12:00.000000+03:30",
+      "next_run_at": "2026-09-07T22:35:39.678874+03:30",
+      "last_run_at": "2026-09-06T02:49:51.559109+03:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "failure_deliver": "origin",
+      "last_dispatch": {
+        "scheduled_at": "2026-09-06T14:49:51.559109+03:30",
+        "dispatched_at": "2026-09-07T10:35:39.634660+03:30",
+        "lateness_seconds": 71148.1,
+        "kind": "catch_up"
+      },
+      "fire_claim": {
+        "at": "2026-09-07T10:35:39.688872+03:30",
+        "by": "4357740fb769:2:48466ab34e82486d852eaad2c65c9fc0"
+      }
+    },
+    {
+      "id": "7150ce92fb65",
+      "name": "disk-monitor",
+      "prompt": "Run disk monitor script",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "disk_monitor.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 360,
+        "display": "every 360m"
+      },
+      "schedule_display": "every 360m",
+      "repeat": {
+        "times": null,
+        "completed": 6
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-05T12:05:57.260625+03:30",
+      "next_run_at": "2026-09-07T16:35:39.780875+03:30",
+      "last_run_at": "2026-09-07T10:35:39.780875+03:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-09-06T18:55:53.248246+03:30",
+        "dispatched_at": "2026-09-07T10:35:39.634660+03:30",
+        "lateness_seconds": 56386.4,
+        "kind": "catch_up"
+      }
+    }
+  ],
+  "updated_at": "2026-09-07T10:35:39.781047+03:30"
+}
