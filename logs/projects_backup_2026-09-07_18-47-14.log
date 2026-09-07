@@ -19,3 +19,66 @@ Manifest created: 3 items cataloged
 [2026-09-07 18:47:14]   Total size: 992K
 [2026-09-07 18:47:14]   Archive: 2026-09-07_18-47-14.tar.gz (456K)
 [2026-09-07 18:47:14] Pushing to GitHub...
+[main cebfc8e] 📦 Projects backup: 2026-09-07_18-47-14
+ 55 files changed, 5410 insertions(+), 11 deletions(-)
+ create mode 100644 logs/projects_backup_2026-09-07_18-47-14.log
+ delete mode 100644 projects-backup/2026-09-07_11-06-08.tar.gz
+ delete mode 100644 projects-backup/2026-09-07_11-06-08/projects/.last_seen_order_id
+ create mode 100644 projects-backup/2026-09-07_18-47-14.tar.gz
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/manifest.json (80%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/order-system/README.md (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/order-system/admin/index.html (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/order-system/backend/api.py (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/order-system/backend/main.py (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/order-system/backend/requirements.txt (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/order-system/backend/test_api.py (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/order-system/backend/test_register.py (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/order-system/frontend/admin/index.html (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/order-system/frontend/index.html (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/order-system/start.sh (100%)
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/.last_seen_order_id
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/projects/auto_builder.py (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/projects/order_flow.py (100%)
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/receipts/26_1788768192.jpg
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/receipts/26_1788768354.jpg
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/receipts/26_1788769797.jpg
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/projects/support_bot.py (99%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/projects/survey_bot.py (98%)
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/whatsapp_assistant/data.backup.1788791400013.json
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/whatsapp_assistant/data.json
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/whatsapp_assistant/index.js
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/whatsapp_assistant/package-lock.json
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/whatsapp_assistant/package.json
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/whatsapp_assistant/start.sh
+ create mode 100644 projects-backup/2026-09-07_18-47-14/projects/whatsapp_assistant/wa_login_qr.png
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/README.md (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/bot.py (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/hackernews.csv (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/hackernews.json (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/hn_ai_final.csv (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/hn_ai_final.json (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/hn_ai_test.json (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/output_digikala_com_20260903_173143.csv (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/output_digikala_com_20260903_173143.json (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/output_digikala_com_20260903_175508.json (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/output_example_com_20260903_114109.csv (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/output_example_com_20260903_114109.json (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/output_iranintl_com_20260903_172816.json (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/output_iranintl_com_20260903_173656.csv (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/output_iranintl_com_20260903_173656.json (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/output_news_ycombinator_com_20260903_172341.csv (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/output_news_ycombinator_com_20260903_172341.json (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/portfolio/index.html (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/requirements.txt (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/restore.sh (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/scraper.py (100%)
+ rename projects-backup/{2026-09-07_11-06-08 => 2026-09-07_18-47-14}/smart-scraper/telegram_bot.py (100%)
+[2026-09-07 18:47:14]   Commit: cebfc8e
+To https://github.com/hossein76e1/HERMES-AGENT.git
+   7567ed5..cebfc8e  main -> main
+[2026-09-07 18:47:16]   ✓ Push successful!
+[2026-09-07 18:47:16] ═══════════════════════════════════════════════════════════════
+[2026-09-07 18:47:16]   Projects Backup Complete: 2026-09-07_18-47-14
+[2026-09-07 18:47:16]   Push Status: success
+[2026-09-07 18:47:16]   Commit: cebfc8e
+[2026-09-07 18:47:16] ═══════════════════════════════════════════════════════════════

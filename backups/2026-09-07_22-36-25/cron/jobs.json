@@ -1,0 +1,239 @@
+{
+  "jobs": [
+    {
+      "id": "09bc94629578",
+      "name": "hermes-auto-backup",
+      "prompt": "Hermes automated backup every 12 hours. The script runs the backup and pushes to GitHub.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 720,
+        "display": "every 720m"
+      },
+      "schedule_display": "every 720m",
+      "repeat": {
+        "times": null,
+        "completed": 5
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-03T11:17:05.394455+00:00",
+      "next_run_at": "2026-09-08T10:36:25.922082+03:30",
+      "last_run_at": "2026-09-06T02:49:50.074998+03:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "failure_deliver": "origin",
+      "last_dispatch": {
+        "scheduled_at": "2026-09-07T22:35:39.668321+03:30",
+        "dispatched_at": "2026-09-07T22:36:25.902697+03:30",
+        "lateness_seconds": 46.2,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-09-07T22:36:25.927937+03:30",
+        "by": "4357740fb769:2:a461c1e9c0d64821a5b8c9c1138d71a4"
+      }
+    },
+    {
+      "id": "projects-backup-12h",
+      "name": "projects-auto-backup",
+      "prompt": "Backup all projects from /data/workspace to GitHub every 12 hours.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "backup_projects.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 720,
+        "display": "every 720m"
+      },
+      "schedule_display": "every 720m",
+      "repeat": {
+        "times": null,
+        "completed": 3
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-04T15:12:00.000000+03:30",
+      "next_run_at": "2026-09-08T10:36:25.933766+03:30",
+      "last_run_at": "2026-09-06T02:49:51.559109+03:30",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "failure_deliver": "origin",
+      "last_dispatch": {
+        "scheduled_at": "2026-09-07T22:35:39.678874+03:30",
+        "dispatched_at": "2026-09-07T22:36:25.902697+03:30",
+        "lateness_seconds": 46.2,
+        "kind": "on_time"
+      },
+      "fire_claim": {
+        "at": "2026-09-07T22:36:25.943466+03:30",
+        "by": "4357740fb769:2:423280038b82449cb9008c87273caf69"
+      }
+    },
+    {
+      "id": "3238f8dd6c13",
+      "name": "Disk usage monitor (80% threshold)",
+      "prompt": "Disk monitor check",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "disk_monitor.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 5,
+        "display": "every 5m"
+      },
+      "schedule_display": "every 5m",
+      "repeat": {
+        "times": null,
+        "completed": 106
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-07T10:42:21.059297+03:30",
+      "next_run_at": "2026-09-07T22:38:25.316863+03:30",
+      "last_run_at": "2026-09-07T22:33:25.316863+03:30",
+      "last_status": "error",
+      "last_error": "Script exited with code 2",
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 57,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "last_dispatch": {
+        "scheduled_at": "2026-09-07T22:33:24.244694+03:30",
+        "dispatched_at": "2026-09-07T22:33:25.214690+03:30",
+        "lateness_seconds": 1.0,
+        "kind": "on_time"
+      },
+      "fire_claim": null
+    },
+    {
+      "id": "6ad9b2f3dd2b",
+      "name": "reminder-revert-compression-threshold",
+      "prompt": "Reminder for Hossein: Yesterday we lowered Hermes context compression threshold from 0.85 to 0.6 (in /data/.hermes/config.yaml, compression.threshold). Hossein was supposed to test it by today and if OK we revert it. Ask him in Persian: do you approve keeping threshold at 0.6, or should I revert to 0.85? If he says revert, change the file back to 0.85 and confirm. This is only a reminder - if Hossein does not answer or approves, do nothing, just wait.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openai-api",
+      "model_snapshot": "coder",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "every day at 9:00"
+      },
+      "schedule_display": "every day at 9:00",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-07T13:58:18.425103+03:30",
+      "next_run_at": "2026-09-08T09:00:00+03:30",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "failure_streak": 0,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1030173067",
+        "chat_name": "'ꫝꪮડડꫀⅈꪀ'",
+        "thread_id": null,
+        "user_id": "1030173067",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "attach_to_session": true
+    }
+  ],
+  "updated_at": "2026-09-07T22:36:25.943714+03:30"
+}
