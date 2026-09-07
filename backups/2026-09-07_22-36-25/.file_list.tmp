@@ -1,8 +1,0 @@
-config.yaml|||/data/.hermes/config.yaml|||/data/hermes-backup-repo/backups/2026-09-07_22-36-25/config/config.yaml|||495
-SOUL.md|||/data/.hermes/SOUL.md|||/data/hermes-backup-repo/backups/2026-09-07_22-36-25/config/SOUL.md|||667
-.env (environment variables)|||/data/.hermes/.env|||/data/hermes-backup-repo/backups/2026-09-07_22-36-25/config/.env|||187
-channel_directory.json|||/data/.hermes/channel_directory.json|||/data/hermes-backup-repo/backups/2026-09-07_22-36-25/config/channel_directory.json|||229
-memories/|||/data/.hermes/memories|||/data/hermes-backup-repo/backups/2026-09-07_22-36-25/memories/memories|||3488
-sessions/|||/data/.hermes/sessions|||/data/hermes-backup-repo/backups/2026-09-07_22-36-25/sessions/sessions|||13552556
-cron/executions.db|||/data/.hermes/cron/executions.db|||/data/hermes-backup-repo/backups/2026-09-07_22-36-25/cron/executions.db|||106496
-cron/jobs.json|||/data/.hermes/cron/jobs.json|||/data/hermes-backup-repo/backups/2026-09-07_22-36-25/cron/jobs.json|||7418

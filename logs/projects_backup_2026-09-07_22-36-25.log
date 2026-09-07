@@ -19,3 +19,275 @@ Manifest created: 3 items cataloged
 [2026-09-07 22:36:26]   Total size: 992K
 [2026-09-07 22:36:26]   Archive: 2026-09-07_22-36-25.tar.gz (456K)
 [2026-09-07 22:36:26] Pushing to GitHub...
+[main 9dd3575] 📦 Projects backup: 2026-09-07_22-36-25
+ 273 files changed, 128110 insertions(+), 11 deletions(-)
+ create mode 100644 backups/2026-09-07_22-36-25/.file_list.tmp
+ create mode 100644 backups/2026-09-07_22-36-25/config/.env
+ create mode 100644 backups/2026-09-07_22-36-25/config/SOUL.md
+ create mode 100644 backups/2026-09-07_22-36-25/config/channel_directory.json
+ create mode 100644 backups/2026-09-07_22-36-25/config/config.yaml
+ create mode 100644 backups/2026-09-07_22-36-25/cron/executions.db
+ create mode 100644 backups/2026-09-07_22-36-25/cron/jobs.json
+ create mode 100644 backups/2026-09-07_22-36-25/memories/memories/MEMORY.md
+ create mode 100644 backups/2026-09-07_22-36-25/memories/memories/MEMORY.md.lock
+ create mode 100644 backups/2026-09-07_22-36-25/memories/memories/USER.md
+ create mode 100644 backups/2026-09-07_22-36-25/memories/memories/USER.md.lock
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260903_104627_5c6861f8_20260903_142527_058806.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260903_104627_5c6861f8_20260903_144220_503497.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260903_122942_bd5931_20260903_123556_577456.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260903_131355_91ce2d_20260903_131837_155997.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_144907_597839.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_152906_656404.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_152921_871644.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_153035_657682.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_153313_498430.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_153840_449452.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_154015_469905.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_163108_848214.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_163114_623035.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_163153_875706.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_163424_531360.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_185535_713256.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_204604_470445.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260905_224801_976715.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260906_113225_054253.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260906_113240_310475.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260906_113832_738307.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260904_191449_ab9f7d3f_20260906_113841_281241.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_125217_181567.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_131858_308319.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_132600_747039.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_141944_563179.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_143956_335629.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_144232_987845.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_145131_324266.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_164138_393656.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_172520_950870.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_172837_227484.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_173242_761843.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_175018_624068.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/request_dump_20260906_120452_9a930807_20260907_181356_397415.json
+ create mode 100644 backups/2026-09-07_22-36-25/sessions/sessions/sessions.json
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/DESCRIPTION.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/claude-code/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/codex/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/computer-use/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/background-systems.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/cli-reference.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/configuration.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/contributor-guide.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/delegate-task-concurrency-diagnosis.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/desktop-plugins.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/native-mcp.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/petdex.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/portal-auth-for-third-party-apps.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/project-context-files.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/providers-and-models.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/security-privacy.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/slash-commands.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/themes.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/troubleshooting.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/tui-widgets.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/webhooks.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/references/windows-quirks.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/templates/clock.mjs
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/templates/plugin.js
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/hermes-agent/templates/skin.yaml
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/autonomous-ai-agents/opencode/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/devops/hermes-backup-migration/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/devops/hermes-backup-migration/templates/survey_bot.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/devops/sdlc-review/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/email/DESCRIPTION.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/email/email-inbox-triage/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/email/himalaya/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/email/himalaya/references/configuration.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/email/himalaya/references/message-composition.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/note-taking/DESCRIPTION.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/note-taking/obsidian/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/DESCRIPTION.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/airtable/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/references/bulk-operations.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/references/cli-guide.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/references/content-workflows.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/references/hubs.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/references/oauth-setup.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/references/rest-api.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/references/sdk-development.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/references/search-and-ai.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/references/troubleshooting.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/box/references/webhooks-and-events.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/document-to-action-items/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/LICENSE
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/references/revisions-and-comments.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/scripts/docx_comments.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/scripts/docx_common.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/scripts/docx_create.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/scripts/docx_edit.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/scripts/docx_read.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/scripts/docx_revisions.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/scripts/docx_template.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/scripts/docx_validate.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/docx/tests/test_docx_skill.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/google-workspace/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/google-workspace/references/daily-brief.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/google-workspace/references/gmail-search-syntax.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/google-workspace/scripts/_hermes_home.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/google-workspace/scripts/google_api.py
+ create mode 100755 backups/2026-09-07_22-36-25/skills/skills/productivity/google-workspace/scripts/gws_bridge.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/google-workspace/scripts/setup.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/maps/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/maps/scripts/maps_client.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/meeting-action-items/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/notion/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/notion/references/block-types.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/LICENSE
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/references/forms.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/references/nano-pdf-editing.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/references/ocr-extraction.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/_raster.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/extract_marker.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/extract_pymupdf.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_create.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_fill_form.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_form_layout.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_make_form.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_merge.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_meta.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_page_image.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_read.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_secure.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_split.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_stamp.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/scripts/pdf_watermark.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/pdf/tests/test_pdf_skill.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/powerpoint/LICENSE
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/powerpoint/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/powerpoint/scripts/pptx_create.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/powerpoint/scripts/pptx_edit.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/powerpoint/scripts/pptx_from_template.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/powerpoint/scripts/pptx_read.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/powerpoint/scripts/pptx_render.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/powerpoint/tests/test_powerpoint_skill.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/product-price-monitor/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/teams-meeting-pipeline/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/weekly-review-planning/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/LICENSE
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/references/restructuring.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/scripts/csv_to_xlsx.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/scripts/xlsx_create.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/scripts/xlsx_edit.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/scripts/xlsx_read.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/scripts/xlsx_recalc.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/scripts/xlsx_restructure.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/scripts/xlsx_to_csv.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/productivity/xlsx/tests/test_xlsx_skill.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/research/DESCRIPTION.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/research/arxiv/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/research/arxiv/scripts/search_arxiv.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/research/competitor-news-monitor/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/research/grounded-citations/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/research/grounded-citations/references/citation-formats.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/research/grounded-citations/references/grounding-rationale.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/research/grounded-citations/scripts/_hermes_home.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/research/grounded-citations/scripts/sources.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/research/llm-wiki/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/codebase-inspection/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/dogfood/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/dogfood/references/issue-taxonomy.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/dogfood/templates/dogfood-report-template.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/references/auth.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/references/ci-troubleshooting.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/references/code-review.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/references/conventional-commits.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/references/github-api-cheatsheet.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/references/issue-to-pr.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/references/issues.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/references/pr-workflow.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/references/repo-management.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/references/review-output-template.md
+ create mode 100755 backups/2026-09-07_22-36-25/skills/skills/software-development/github/scripts/gh-env.sh
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/scripts/git-credential-token.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/templates/bug-report.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/templates/feature-request.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/templates/pr-body-bugfix.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/github/templates/pr-body-feature.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/hermes-agent-skill-authoring/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/inspecting-hermes-desktop-dom/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/node-inspect-debugger/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/python-debugpy/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/python-web-app/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/python-web-app/references/cloudflare-tunnel-rate-limits.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/python-web-app/references/order-system-api-test-template.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/requesting-code-review/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/simplify-code/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/spike/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/systematic-debugging/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/telegram-bot-auto-builder/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/telegram-bot-auto-builder/references/glm-rate-limit-notes.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/telegram-bot-auto-builder/templates/telegram-bot-skeleton.py
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/telegram-bot-systems/SKILL.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/telegram-bot-systems/references/free-ai-providers.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/telegram-bot-systems/references/order-system.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/telegram-bot-systems/references/project-cleanup.md
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/telegram-bot-systems/scripts/kill_bot_instances.sh
+ create mode 100644 backups/2026-09-07_22-36-25/skills/skills/software-development/test-driven-development/SKILL.md
+ create mode 100644 logs/backup_2026-09-07_22-36-25.log
+ create mode 100644 logs/projects_backup_2026-09-07_22-36-25.log
+ delete mode 100644 projects-backup/2026-09-07_11-32-06.tar.gz
+ delete mode 100644 projects-backup/2026-09-07_11-32-06/projects/.last_seen_order_id
+ create mode 100644 projects-backup/2026-09-07_22-36-25.tar.gz
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/manifest.json (75%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/order-system/README.md (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/order-system/admin/index.html (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/order-system/backend/api.py (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/order-system/backend/main.py (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/order-system/backend/requirements.txt (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/order-system/backend/test_api.py (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/order-system/backend/test_register.py (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/order-system/frontend/admin/index.html (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/order-system/frontend/index.html (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/order-system/start.sh (100%)
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/.last_seen_order_id
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/projects/auto_builder.py (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/projects/order_flow.py (100%)
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/receipts/26_1788768192.jpg
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/receipts/26_1788768354.jpg
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/receipts/26_1788769797.jpg
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/projects/support_bot.py (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/projects/survey_bot.py (100%)
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/whatsapp_assistant/data.backup.1788791400013.json
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/whatsapp_assistant/data.json
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/whatsapp_assistant/index.js
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/whatsapp_assistant/package-lock.json
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/whatsapp_assistant/package.json
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/whatsapp_assistant/start.sh
+ create mode 100644 projects-backup/2026-09-07_22-36-25/projects/whatsapp_assistant/wa_login_qr.png
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/README.md (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/bot.py (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/hackernews.csv (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/hackernews.json (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/hn_ai_final.csv (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/hn_ai_final.json (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/hn_ai_test.json (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/output_digikala_com_20260903_173143.csv (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/output_digikala_com_20260903_173143.json (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/output_digikala_com_20260903_175508.json (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/output_example_com_20260903_114109.csv (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/output_example_com_20260903_114109.json (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/output_iranintl_com_20260903_172816.json (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/output_iranintl_com_20260903_173656.csv (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/output_iranintl_com_20260903_173656.json (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/output_news_ycombinator_com_20260903_172341.csv (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/output_news_ycombinator_com_20260903_172341.json (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/portfolio/index.html (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/requirements.txt (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/restore.sh (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/scraper.py (100%)
+ rename projects-backup/{2026-09-07_11-32-06 => 2026-09-07_22-36-25}/smart-scraper/telegram_bot.py (100%)
+[2026-09-07 22:36:27]   Commit: 9dd3575
