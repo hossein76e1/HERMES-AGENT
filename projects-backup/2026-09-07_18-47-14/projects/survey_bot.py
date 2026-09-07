@@ -522,7 +522,20 @@ async def handle_admin_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("✅ ارسال شد.")
         return
 
-    await update.message.reply_text("برای شروع: /start")
+    # ── fallback: plain text → AI assistant (same as /ai) ──
+    thinking = await update.message.reply_text("🤖 دارم بررسی می‌کنم...")
+    decision = ai_decide(text)
+    try:
+        result_text = await ai_execute(context, decision)
+    except Exception as e:
+        logger.error(f"ai_execute failed: {e}")
+        result_text = f"⚠️ اجرای دستور شکست خورد: {md_escape(str(e))[:200]}"
+    reply = decision.get("reply") or ""
+    body = (f"{reply}\n\n" if reply and reply != result_text else "") + result_text
+    try:
+        await thinking.edit_text(body[:4000], parse_mode="Markdown", disable_web_page_preview=True)
+    except Exception:
+        await update.message.reply_text(body[:4000], parse_mode="Markdown")
 
 
 async def send_customer_chat(context: ContextTypes.DEFAULT_TYPE, chat_id: int | str, text: str, kb=None) -> bool:
