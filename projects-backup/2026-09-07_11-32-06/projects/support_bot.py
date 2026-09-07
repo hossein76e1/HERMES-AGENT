@@ -652,12 +652,14 @@ def ai_faq(history: list) -> str:
     if not ai_client:
         return "برای پاسخ دقیق‌تر لطفاً بعداً تلاش کن یا از دکمه «صحبت با پشتیبانی» استفاده کن."
     try:
+        # cache-friendly: stable prefix (system + earliest msgs), cap tail growth
+        capped = history[:1] + history[-7:] if len(history) > 8 else history
         resp = ai_client.chat.completions.create(
             model=AI_MODEL,
             messages=[{"role": "system", "content":
                        "تو پشتیبانی فروش پروژه هستی. فقط فارسی، کوتاه و مفید جواب بده. "
                        "روش پرداخت: کارت به کارت یا کریپتو USDT. قیمت‌گذاری خودکاره. "
-                       "اگه سوال فنی پیچیده بود بگو تیم فنی بررسی کنه و جواب میدن."}] + history[-8:],
+                       "اگه سوال فنی پیچیده بود بگو تیم فنی بررسی کنه و جواب میدن."}] + capped,
             temperature=0.5, max_tokens=2000,
         )
         return (resp.choices[0].message.content or "").strip() or "چیزی نگفتم — دوباره بپرس 🙂"
