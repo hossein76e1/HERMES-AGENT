@@ -1,0 +1,886 @@
+[2026-09-07 14:13:29] Disk usage: 100%
+[2026-09-07 14:13:29] ⚠️ Usage 100% >= 80% — cleaning temporary caches...
+[2026-09-07 14:13:29]   Cleaned npm cache: 50M
+[2026-09-07 14:21:31] Disk usage: 87%
+[2026-09-07 14:21:31] ⚠️ Usage 87% >= 80% — cleaning temporary caches...
+[2026-09-07 14:21:31]   Cleaned npm cache: 48M
+[2026-09-07 14:23:49] Disk usage: 74%
+[2026-09-07 14:23:49] ✅ Usage 74% — below 80%, no action needed
+[2026-09-07 14:25:04] Disk usage: 74%
+[2026-09-07 14:25:04] ✅ Usage 74% — below 80%, no action needed
+[2026-09-07 14:25:18] Disk usage: 74%
+[2026-09-07 14:25:18] ✅ Usage 74% — below 80%, no action needed
+[2026-09-07 14:25:35] Disk usage: 74%
+[2026-09-07 14:25:35] ✅ Usage 74% — below 80%, no action needed
+[2026-09-07 14:26:32] Disk usage: 74%
+[2026-09-07 14:26:32] ✅ Usage 74% — below 80%, no action needed
+[2026-09-07 14:31:33] Disk usage: 74%
+[2026-09-07 14:31:33] ✅ Usage 74% — below 80%, no action needed
+[2026-09-07 14:36:34] Disk usage: 74%
+[2026-09-07 14:36:34] ✅ Usage 74% — below 80%, no action needed
+[2026-09-07 14:41:35] Disk usage: 74%
+[2026-09-07 14:41:35] ✅ Usage 74% — below 80%, no action needed
+[2026-09-07 14:46:37] Disk usage: 74%
+[2026-09-07 14:46:37] ✅ Usage 74% — below 80%, no action needed
+[2026-09-07 14:51:38] Disk usage: 75%
+[2026-09-07 14:51:38] ✅ Usage 75% — below 80%, no action needed
+[2026-09-07 14:56:39] Disk usage: 76%
+[2026-09-07 14:56:39] ✅ Usage 76% — below 80%, no action needed
+[2026-09-07 15:01:40] Disk usage: 76%
+[2026-09-07 15:01:40] ✅ Usage 76% — below 80%, no action needed
+[2026-09-07 15:06:41] Disk usage: 77%
+[2026-09-07 15:06:41] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 15:11:42] Disk usage: 77%
+[2026-09-07 15:11:42] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 15:16:44] Disk usage: 76%
+[2026-09-07 15:16:44] ✅ Usage 76% — below 80%, no action needed
+[2026-09-07 15:21:45] Disk usage: 77%
+[2026-09-07 15:21:45] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 15:26:46] Disk usage: 77%
+[2026-09-07 15:26:46] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 15:31:47] Disk usage: 77%
+[2026-09-07 15:31:47] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 15:36:48] Disk usage: 77%
+[2026-09-07 15:36:48] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 15:41:49] Disk usage: 77%
+[2026-09-07 15:41:49] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 15:46:51] Disk usage: 77%
+[2026-09-07 15:46:51] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 15:51:52] Disk usage: 77%
+[2026-09-07 15:51:52] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 15:56:53] Disk usage: 77%
+[2026-09-07 15:56:53] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:01:54] Disk usage: 77%
+[2026-09-07 16:01:54] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:06:55] Disk usage: 77%
+[2026-09-07 16:06:55] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:11:56] Disk usage: 77%
+[2026-09-07 16:11:56] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:16:57] Disk usage: 77%
+[2026-09-07 16:16:57] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:21:59] Disk usage: 77%
+[2026-09-07 16:21:59] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:27:00] Disk usage: 77%
+[2026-09-07 16:27:00] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:32:01] Disk usage: 77%
+[2026-09-07 16:32:01] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:37:02] Disk usage: 77%
+[2026-09-07 16:37:02] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:42:03] Disk usage: 77%
+[2026-09-07 16:42:03] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:47:05] Disk usage: 77%
+[2026-09-07 16:47:05] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:52:06] Disk usage: 77%
+[2026-09-07 16:52:06] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 16:57:07] Disk usage: 77%
+[2026-09-07 16:57:07] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 17:02:08] Disk usage: 77%
+[2026-09-07 17:02:08] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 17:07:09] Disk usage: 77%
+[2026-09-07 17:07:09] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 17:12:11] Disk usage: 77%
+[2026-09-07 17:12:11] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 17:17:12] Disk usage: 77%
+[2026-09-07 17:17:12] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 17:22:13] Disk usage: 77%
+[2026-09-07 17:22:13] ✅ Usage 77% — below 80%, no action needed
+[2026-09-07 17:27:14] Disk usage: 78%
+[2026-09-07 17:27:14] ✅ Usage 78% — below 80%, no action needed
+[2026-09-07 17:32:15] Disk usage: 78%
+[2026-09-07 17:32:15] ✅ Usage 78% — below 80%, no action needed
+[2026-09-07 17:37:16] Disk usage: 78%
+[2026-09-07 17:37:16] ✅ Usage 78% — below 80%, no action needed
+[2026-09-07 17:42:17] Disk usage: 78%
+[2026-09-07 17:42:17] ✅ Usage 78% — below 80%, no action needed
+[2026-09-07 17:47:19] Disk usage: 78%
+[2026-09-07 17:47:19] ✅ Usage 78% — below 80%, no action needed
+[2026-09-07 17:52:20]   pruned projects-backup 2026-09-07_11-06-08
+[2026-09-07 17:52:20] Disk usage: 81%
+[2026-09-07 17:52:20] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 17:52:20]   Cleaned npm cache: 1M
+[2026-09-07 17:57:21] Disk usage: 81%
+[2026-09-07 17:57:21] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:02:22] Disk usage: 81%
+[2026-09-07 18:02:22] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:07:23] Disk usage: 81%
+[2026-09-07 18:07:23] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:12:24] Disk usage: 81%
+[2026-09-07 18:12:24] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:17:26] Disk usage: 81%
+[2026-09-07 18:17:26] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:22:27] Disk usage: 81%
+[2026-09-07 18:22:27] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:27:28] Disk usage: 81%
+[2026-09-07 18:27:28] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:32:29] Disk usage: 81%
+[2026-09-07 18:32:29] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:37:30] Disk usage: 81%
+[2026-09-07 18:37:30] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:42:31] Disk usage: 81%
+[2026-09-07 18:42:31] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:47:33]   pruned projects-backup 2026-09-07_11-32-06
+[2026-09-07 18:47:33] Disk usage: 81%
+[2026-09-07 18:47:33] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:52:34] Disk usage: 81%
+[2026-09-07 18:52:34] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 18:57:35] Disk usage: 81%
+[2026-09-07 18:57:35] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:02:36] Disk usage: 81%
+[2026-09-07 19:02:36] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:07:37] Disk usage: 81%
+[2026-09-07 19:07:37] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:12:38] Disk usage: 81%
+[2026-09-07 19:12:38] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:17:40] Disk usage: 81%
+[2026-09-07 19:17:40] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:22:41] Disk usage: 81%
+[2026-09-07 19:22:41] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:27:42] Disk usage: 81%
+[2026-09-07 19:27:42] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:32:43] Disk usage: 81%
+[2026-09-07 19:32:43] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:37:44] Disk usage: 81%
+[2026-09-07 19:37:44] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:42:45] Disk usage: 81%
+[2026-09-07 19:42:45] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:47:47] Disk usage: 81%
+[2026-09-07 19:47:47] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:52:48] Disk usage: 81%
+[2026-09-07 19:52:48] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 19:57:49] Disk usage: 81%
+[2026-09-07 19:57:49] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:02:50] Disk usage: 81%
+[2026-09-07 20:02:50] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:07:51] Disk usage: 81%
+[2026-09-07 20:07:51] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:12:52] Disk usage: 81%
+[2026-09-07 20:12:52] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:17:53] Disk usage: 81%
+[2026-09-07 20:17:53] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:22:55] Disk usage: 81%
+[2026-09-07 20:22:55] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:27:56] Disk usage: 81%
+[2026-09-07 20:27:56] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:32:57] Disk usage: 81%
+[2026-09-07 20:32:57] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:37:58] Disk usage: 81%
+[2026-09-07 20:37:58] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:42:59] Disk usage: 81%
+[2026-09-07 20:42:59] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:48:00] Disk usage: 81%
+[2026-09-07 20:48:00] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:53:02] Disk usage: 81%
+[2026-09-07 20:53:02] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 20:58:03] Disk usage: 81%
+[2026-09-07 20:58:03] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:03:04] Disk usage: 81%
+[2026-09-07 21:03:04] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:08:05] Disk usage: 81%
+[2026-09-07 21:08:05] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:13:06] Disk usage: 81%
+[2026-09-07 21:13:06] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:18:08] Disk usage: 81%
+[2026-09-07 21:18:08] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:23:09] Disk usage: 81%
+[2026-09-07 21:23:09] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:28:10] Disk usage: 81%
+[2026-09-07 21:28:10] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:33:11] Disk usage: 81%
+[2026-09-07 21:33:11] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:38:12] Disk usage: 81%
+[2026-09-07 21:38:12] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:43:13] Disk usage: 81%
+[2026-09-07 21:43:13] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:48:14] Disk usage: 81%
+[2026-09-07 21:48:14] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:53:16] Disk usage: 81%
+[2026-09-07 21:53:16] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 21:58:17] Disk usage: 81%
+[2026-09-07 21:58:17] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 22:03:18] Disk usage: 81%
+[2026-09-07 22:03:18] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 22:08:19] Disk usage: 81%
+[2026-09-07 22:08:19] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 22:13:20] Disk usage: 81%
+[2026-09-07 22:13:20] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 22:18:21] Disk usage: 81%
+[2026-09-07 22:18:21] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 22:23:23] Disk usage: 81%
+[2026-09-07 22:23:23] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 22:28:24] Disk usage: 81%
+[2026-09-07 22:28:24] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 22:33:25] Disk usage: 81%
+[2026-09-07 22:33:25] ⚠️ Usage 81% >= 80% — cleaning temporary caches...
+[2026-09-07 22:38:26]   pruned projects-backup 2026-09-07_11-43-59
+[2026-09-07 22:38:26] Disk usage: 90%
+[2026-09-07 22:38:26] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 22:43:27] Disk usage: 90%
+[2026-09-07 22:43:27] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 22:48:28] Disk usage: 90%
+[2026-09-07 22:48:28] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 22:53:30] Disk usage: 90%
+[2026-09-07 22:53:30] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 22:58:31] Disk usage: 90%
+[2026-09-07 22:58:31] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:03:32] Disk usage: 90%
+[2026-09-07 23:03:32] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:08:33] Disk usage: 90%
+[2026-09-07 23:08:33] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:13:34] Disk usage: 90%
+[2026-09-07 23:13:34] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:18:35] Disk usage: 90%
+[2026-09-07 23:18:35] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:23:36] Disk usage: 90%
+[2026-09-07 23:23:36] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:28:37] Disk usage: 90%
+[2026-09-07 23:28:37] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:33:38] Disk usage: 90%
+[2026-09-07 23:33:38] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:38:40] Disk usage: 90%
+[2026-09-07 23:38:40] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:43:41] Disk usage: 90%
+[2026-09-07 23:43:41] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:48:42] Disk usage: 90%
+[2026-09-07 23:48:42] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:53:43] Disk usage: 90%
+[2026-09-07 23:53:43] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-07 23:58:44] Disk usage: 90%
+[2026-09-07 23:58:44] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:03:45] Disk usage: 90%
+[2026-09-08 00:03:45] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:08:46] Disk usage: 90%
+[2026-09-08 00:08:46] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:13:48] Disk usage: 90%
+[2026-09-08 00:13:48] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:18:49] Disk usage: 90%
+[2026-09-08 00:18:49] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:23:50] Disk usage: 90%
+[2026-09-08 00:23:50] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:28:51] Disk usage: 90%
+[2026-09-08 00:28:51] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:33:52] Disk usage: 90%
+[2026-09-08 00:33:52] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:38:53] Disk usage: 90%
+[2026-09-08 00:38:53] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:43:54] Disk usage: 90%
+[2026-09-08 00:43:54] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:48:55] Disk usage: 90%
+[2026-09-08 00:48:55] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:53:56] Disk usage: 90%
+[2026-09-08 00:53:56] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 00:58:57] Disk usage: 90%
+[2026-09-08 00:58:57] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:03:58] Disk usage: 90%
+[2026-09-08 01:03:58] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:09:00] Disk usage: 90%
+[2026-09-08 01:09:00] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:14:01] Disk usage: 90%
+[2026-09-08 01:14:01] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:19:02] Disk usage: 90%
+[2026-09-08 01:19:02] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:24:03] Disk usage: 90%
+[2026-09-08 01:24:03] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:29:04] Disk usage: 90%
+[2026-09-08 01:29:04] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:34:05] Disk usage: 90%
+[2026-09-08 01:34:05] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:39:06] Disk usage: 90%
+[2026-09-08 01:39:06] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:44:07] Disk usage: 90%
+[2026-09-08 01:44:07] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:49:09] Disk usage: 90%
+[2026-09-08 01:49:09] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:54:10] Disk usage: 90%
+[2026-09-08 01:54:10] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 01:59:11] Disk usage: 90%
+[2026-09-08 01:59:11] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:04:12] Disk usage: 90%
+[2026-09-08 02:04:12] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:09:13] Disk usage: 90%
+[2026-09-08 02:09:13] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:14:14] Disk usage: 90%
+[2026-09-08 02:14:14] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:19:15] Disk usage: 90%
+[2026-09-08 02:19:15] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:24:16] Disk usage: 90%
+[2026-09-08 02:24:16] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:29:18] Disk usage: 90%
+[2026-09-08 02:29:18] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:34:19] Disk usage: 90%
+[2026-09-08 02:34:19] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:39:20] Disk usage: 90%
+[2026-09-08 02:39:20] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:44:21] Disk usage: 90%
+[2026-09-08 02:44:21] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:49:22] Disk usage: 90%
+[2026-09-08 02:49:22] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:54:23] Disk usage: 90%
+[2026-09-08 02:54:23] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 02:59:24] Disk usage: 90%
+[2026-09-08 02:59:24] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:04:25] Disk usage: 90%
+[2026-09-08 03:04:25] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:09:27] Disk usage: 90%
+[2026-09-08 03:09:27] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:14:28] Disk usage: 90%
+[2026-09-08 03:14:28] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:19:29] Disk usage: 90%
+[2026-09-08 03:19:29] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:24:30] Disk usage: 90%
+[2026-09-08 03:24:30] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:29:31] Disk usage: 90%
+[2026-09-08 03:29:31] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:34:32] Disk usage: 90%
+[2026-09-08 03:34:32] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:39:33] Disk usage: 90%
+[2026-09-08 03:39:33] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:44:35] Disk usage: 90%
+[2026-09-08 03:44:35] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:49:37] Disk usage: 90%
+[2026-09-08 03:49:37] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:54:38] Disk usage: 90%
+[2026-09-08 03:54:38] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 03:59:39] Disk usage: 90%
+[2026-09-08 03:59:39] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:04:40] Disk usage: 90%
+[2026-09-08 04:04:40] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:09:41] Disk usage: 90%
+[2026-09-08 04:09:41] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:14:42] Disk usage: 90%
+[2026-09-08 04:14:42] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:19:44] Disk usage: 90%
+[2026-09-08 04:19:44] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:24:45] Disk usage: 90%
+[2026-09-08 04:24:45] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:29:46] Disk usage: 90%
+[2026-09-08 04:29:46] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:34:47] Disk usage: 90%
+[2026-09-08 04:34:47] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:39:48] Disk usage: 90%
+[2026-09-08 04:39:48] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:44:49] Disk usage: 90%
+[2026-09-08 04:44:49] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:49:51] Disk usage: 90%
+[2026-09-08 04:49:51] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:54:52] Disk usage: 90%
+[2026-09-08 04:54:52] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 04:59:53] Disk usage: 90%
+[2026-09-08 04:59:53] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:04:54] Disk usage: 90%
+[2026-09-08 05:04:54] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:09:55] Disk usage: 90%
+[2026-09-08 05:09:55] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:14:56] Disk usage: 90%
+[2026-09-08 05:14:56] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:19:57] Disk usage: 90%
+[2026-09-08 05:19:57] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:24:59] Disk usage: 90%
+[2026-09-08 05:24:59] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:30:00] Disk usage: 90%
+[2026-09-08 05:30:00] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:35:01] Disk usage: 90%
+[2026-09-08 05:35:01] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:40:02] Disk usage: 90%
+[2026-09-08 05:40:02] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:45:03] Disk usage: 90%
+[2026-09-08 05:45:03] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:50:04] Disk usage: 90%
+[2026-09-08 05:50:04] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 05:55:05] Disk usage: 90%
+[2026-09-08 05:55:05] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:00:06] Disk usage: 90%
+[2026-09-08 06:00:06] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:05:07] Disk usage: 90%
+[2026-09-08 06:05:07] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:10:09] Disk usage: 90%
+[2026-09-08 06:10:09] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:15:10] Disk usage: 90%
+[2026-09-08 06:15:10] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:20:11] Disk usage: 90%
+[2026-09-08 06:20:11] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:25:12] Disk usage: 90%
+[2026-09-08 06:25:12] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:30:13] Disk usage: 90%
+[2026-09-08 06:30:13] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:35:14] Disk usage: 90%
+[2026-09-08 06:35:14] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:40:15] Disk usage: 90%
+[2026-09-08 06:40:15] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:45:16] Disk usage: 90%
+[2026-09-08 06:45:16] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:50:18] Disk usage: 90%
+[2026-09-08 06:50:18] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 06:55:19] Disk usage: 90%
+[2026-09-08 06:55:19] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:00:20] Disk usage: 90%
+[2026-09-08 07:00:20] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:05:21] Disk usage: 90%
+[2026-09-08 07:05:21] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:10:22] Disk usage: 90%
+[2026-09-08 07:10:22] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:15:23] Disk usage: 90%
+[2026-09-08 07:15:23] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:20:24] Disk usage: 90%
+[2026-09-08 07:20:24] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:25:26] Disk usage: 90%
+[2026-09-08 07:25:26] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:30:27] Disk usage: 90%
+[2026-09-08 07:30:27] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:35:28] Disk usage: 90%
+[2026-09-08 07:35:28] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:40:29] Disk usage: 90%
+[2026-09-08 07:40:29] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:45:30] Disk usage: 90%
+[2026-09-08 07:45:30] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:50:31] Disk usage: 90%
+[2026-09-08 07:50:31] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 07:55:33] Disk usage: 90%
+[2026-09-08 07:55:33] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:00:34] Disk usage: 90%
+[2026-09-08 08:00:34] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:05:35] Disk usage: 90%
+[2026-09-08 08:05:35] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:10:36] Disk usage: 90%
+[2026-09-08 08:10:36] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:15:37] Disk usage: 90%
+[2026-09-08 08:15:37] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:20:38] Disk usage: 90%
+[2026-09-08 08:20:38] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:25:39] Disk usage: 90%
+[2026-09-08 08:25:39] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:30:41] Disk usage: 90%
+[2026-09-08 08:30:41] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:35:42] Disk usage: 90%
+[2026-09-08 08:35:42] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:40:43] Disk usage: 90%
+[2026-09-08 08:40:43] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:45:45] Disk usage: 90%
+[2026-09-08 08:45:45] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:50:46] Disk usage: 90%
+[2026-09-08 08:50:46] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 08:55:47] Disk usage: 90%
+[2026-09-08 08:55:47] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:00:48] Disk usage: 90%
+[2026-09-08 09:00:48] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:05:49] Disk usage: 90%
+[2026-09-08 09:05:49] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:10:50] Disk usage: 90%
+[2026-09-08 09:10:50] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:15:51] Disk usage: 90%
+[2026-09-08 09:15:51] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:20:52] Disk usage: 90%
+[2026-09-08 09:20:52] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:25:54] Disk usage: 90%
+[2026-09-08 09:25:54] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:30:55] Disk usage: 90%
+[2026-09-08 09:30:55] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:35:56] Disk usage: 90%
+[2026-09-08 09:35:56] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:40:57] Disk usage: 90%
+[2026-09-08 09:40:57] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:45:58] Disk usage: 90%
+[2026-09-08 09:45:58] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:50:59] Disk usage: 90%
+[2026-09-08 09:50:59] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 09:56:00] Disk usage: 90%
+[2026-09-08 09:56:00] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 10:01:01] Disk usage: 90%
+[2026-09-08 10:01:01] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 10:06:02] Disk usage: 90%
+[2026-09-08 10:06:02] ⚠️ Usage 90% >= 80% — cleaning temporary caches...
+[2026-09-08 10:11:52] Disk usage: 88%
+[2026-09-08 10:11:52] ⚠️ Usage 88% >= 80% — cleaning temporary caches...
+[2026-09-08 10:11:53]   Skipped git gc: not enough free space to repack
+[2026-09-08 10:11:53] After cleanup: 88% (was 88%)
+[2026-09-08 10:16:53] Disk usage: 88%
+[2026-09-08 10:16:53] ⚠️ Usage 88% >= 80% — cleaning temporary caches...
+[2026-09-08 10:16:53]   Skipped git gc: not enough free space to repack
+[2026-09-08 10:16:53] After cleanup: 88% (was 88%)
+[2026-09-08 10:21:54] Disk usage: 93%
+[2026-09-08 10:21:54] ⚠️ Usage 93% >= 80% — cleaning temporary caches...
+[2026-09-08 10:21:54]   Cleaned npm cache: 27M
+[2026-09-08 10:21:54]   Skipped git gc: not enough free space to repack
+[2026-09-08 10:21:54] After cleanup: 86% (was 93%)
+[2026-09-08 10:26:55] Disk usage: 86%
+[2026-09-08 10:26:55] ⚠️ Usage 86% >= 80% — cleaning temporary caches...
+[2026-09-08 10:26:55]   Skipped git gc: not enough free space to repack
+[2026-09-08 10:26:55] After cleanup: 86% (was 86%)
+[2026-09-08 10:31:56] Disk usage: 86%
+[2026-09-08 10:31:56] ⚠️ Usage 86% >= 80% — cleaning temporary caches...
+[2026-09-08 10:31:56]   Skipped git gc: not enough free space to repack
+[2026-09-08 10:31:56] After cleanup: 86% (was 86%)
+[2026-09-08 10:36:58] Disk usage: 86%
+[2026-09-08 10:36:58] ⚠️ Usage 86% >= 80% — cleaning temporary caches...
+[2026-09-08 10:36:58]   Skipped git gc: not enough free space to repack
+[2026-09-08 10:36:58] After cleanup: 86% (was 86%)
+[2026-09-08 10:41:59] Disk usage: 95%
+[2026-09-08 10:41:59] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 10:41:59]   Skipped git gc: not enough free space to repack
+[2026-09-08 10:41:59] After cleanup: 95% (was 95%)
+[2026-09-08 10:47:00] Disk usage: 95%
+[2026-09-08 10:47:00] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 10:47:00]   Skipped git gc: not enough free space to repack
+[2026-09-08 10:47:00] After cleanup: 95% (was 95%)
+[2026-09-08 10:52:01] Disk usage: 95%
+[2026-09-08 10:52:01] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 10:52:01]   Skipped git gc: not enough free space to repack
+[2026-09-08 10:52:01] After cleanup: 95% (was 95%)
+[2026-09-08 10:57:02] Disk usage: 95%
+[2026-09-08 10:57:02] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 10:57:02]   Skipped git gc: not enough free space to repack
+[2026-09-08 10:57:02] After cleanup: 95% (was 95%)
+[2026-09-08 11:02:03] Disk usage: 95%
+[2026-09-08 11:02:03] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:02:03]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:02:03] After cleanup: 95% (was 95%)
+[2026-09-08 11:07:04] Disk usage: 95%
+[2026-09-08 11:07:04] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:07:04]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:07:04] After cleanup: 95% (was 95%)
+[2026-09-08 11:12:05] Disk usage: 95%
+[2026-09-08 11:12:05] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:12:05]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:12:05] After cleanup: 95% (was 95%)
+[2026-09-08 11:17:06] Disk usage: 95%
+[2026-09-08 11:17:06] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:17:06]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:17:06] After cleanup: 95% (was 95%)
+[2026-09-08 11:22:07] Disk usage: 95%
+[2026-09-08 11:22:07] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:22:07]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:22:07] After cleanup: 95% (was 95%)
+[2026-09-08 11:27:08] Disk usage: 95%
+[2026-09-08 11:27:08] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:27:08]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:27:08] After cleanup: 95% (was 95%)
+[2026-09-08 11:32:09] Disk usage: 95%
+[2026-09-08 11:32:09] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:32:09]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:32:09] After cleanup: 95% (was 95%)
+[2026-09-08 11:37:11] Disk usage: 95%
+[2026-09-08 11:37:11] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:37:11]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:37:11] After cleanup: 95% (was 95%)
+[2026-09-08 11:42:12] Disk usage: 95%
+[2026-09-08 11:42:12] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:42:12]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:42:12] After cleanup: 95% (was 95%)
+[2026-09-08 11:47:13] Disk usage: 95%
+[2026-09-08 11:47:13] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:47:13]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:47:13] After cleanup: 95% (was 95%)
+[2026-09-08 11:52:14] Disk usage: 95%
+[2026-09-08 11:52:14] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:52:14]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:52:14] After cleanup: 95% (was 95%)
+[2026-09-08 11:57:15] Disk usage: 95%
+[2026-09-08 11:57:15] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 11:57:15]   Skipped git gc: not enough free space to repack
+[2026-09-08 11:57:15] After cleanup: 95% (was 95%)
+[2026-09-08 12:02:16] Disk usage: 95%
+[2026-09-08 12:02:16] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 12:02:16]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:02:16] After cleanup: 95% (was 95%)
+[2026-09-08 12:07:17] Disk usage: 95%
+[2026-09-08 12:07:17] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 12:07:17]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:07:17] After cleanup: 95% (was 95%)
+[2026-09-08 12:12:18] Disk usage: 95%
+[2026-09-08 12:12:18] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 12:12:18]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:12:18] After cleanup: 95% (was 95%)
+[2026-09-08 12:17:19] Disk usage: 95%
+[2026-09-08 12:17:19] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 12:17:19]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:17:19] After cleanup: 95% (was 95%)
+[2026-09-08 12:22:20] Disk usage: 95%
+[2026-09-08 12:22:20] ⚠️ Usage 95% >= 80% — cleaning temporary caches...
+[2026-09-08 12:22:20]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:22:20] After cleanup: 95% (was 95%)
+[2026-09-08 12:27:21] Disk usage: 96%
+[2026-09-08 12:27:21] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 12:27:21]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:27:21] After cleanup: 96% (was 96%)
+[2026-09-08 12:32:22] Disk usage: 96%
+[2026-09-08 12:32:22] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 12:32:22]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:32:22] After cleanup: 96% (was 96%)
+[2026-09-08 12:37:23] Disk usage: 96%
+[2026-09-08 12:37:23] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 12:37:23]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:37:23] After cleanup: 96% (was 96%)
+[2026-09-08 12:42:24] Disk usage: 96%
+[2026-09-08 12:42:24] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 12:42:24]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:42:24] After cleanup: 96% (was 96%)
+[2026-09-08 12:47:27] Disk usage: 96%
+[2026-09-08 12:47:27] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 12:47:27]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:47:27] After cleanup: 96% (was 96%)
+[2026-09-08 12:52:28] Disk usage: 96%
+[2026-09-08 12:52:28] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 12:52:28]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:52:28] After cleanup: 96% (was 96%)
+[2026-09-08 12:58:28] Disk usage: 96%
+[2026-09-08 12:58:28] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 12:58:28]   Skipped git gc: not enough free space to repack
+[2026-09-08 12:58:28] After cleanup: 96% (was 96%)
+[2026-09-08 13:03:29] Disk usage: 96%
+[2026-09-08 13:03:29] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 13:03:29]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:03:29] After cleanup: 96% (was 96%)
+[2026-09-08 13:08:30] Disk usage: 96%
+[2026-09-08 13:08:30] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 13:08:30]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:08:30] After cleanup: 96% (was 96%)
+[2026-09-08 13:13:31] Disk usage: 96%
+[2026-09-08 13:13:31] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 13:13:31]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:13:31] After cleanup: 96% (was 96%)
+[2026-09-08 13:18:32] Disk usage: 96%
+[2026-09-08 13:18:32] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 13:18:32]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:18:32] After cleanup: 96% (was 96%)
+[2026-09-08 13:23:33] Disk usage: 96%
+[2026-09-08 13:23:33] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 13:23:33]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:23:33] After cleanup: 96% (was 96%)
+[2026-09-08 13:28:34] Disk usage: 96%
+[2026-09-08 13:28:34] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 13:28:34]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:28:34] After cleanup: 96% (was 96%)
+[2026-09-08 13:33:35] Disk usage: 96%
+[2026-09-08 13:33:35] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 13:33:35]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:33:35] After cleanup: 96% (was 96%)
+[2026-09-08 13:38:36] Disk usage: 96%
+[2026-09-08 13:38:36] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 13:38:36]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:38:36] After cleanup: 96% (was 96%)
+[2026-09-08 13:43:38] Disk usage: 96%
+[2026-09-08 13:43:38] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 13:43:38]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:43:38] After cleanup: 96% (was 96%)
+[2026-09-08 13:48:39] Disk usage: 96%
+[2026-09-08 13:48:39] ⚠️ Usage 96% >= 80% — cleaning temporary caches...
+[2026-09-08 13:48:39]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:48:39] After cleanup: 96% (was 96%)
+[2026-09-08 13:53:40] Disk usage: 97%
+[2026-09-08 13:53:40] ⚠️ Usage 97% >= 80% — cleaning temporary caches...
+[2026-09-08 13:53:40]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:53:40] After cleanup: 97% (was 97%)
+[2026-09-08 13:58:41] Disk usage: 97%
+[2026-09-08 13:58:41] ⚠️ Usage 97% >= 80% — cleaning temporary caches...
+[2026-09-08 13:58:41]   Skipped git gc: not enough free space to repack
+[2026-09-08 13:58:41] After cleanup: 97% (was 97%)
+[2026-09-08 14:03:42] Disk usage: 97%
+[2026-09-08 14:03:42] ⚠️ Usage 97% >= 80% — cleaning temporary caches...
+[2026-09-08 14:03:42]   Skipped git gc: not enough free space to repack
+[2026-09-08 14:03:42] After cleanup: 97% (was 97%)
+[2026-09-08 14:08:43] Disk usage: 76%
+[2026-09-08 14:08:43] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 14:13:44] Disk usage: 76%
+[2026-09-08 14:13:44] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 14:18:45] Disk usage: 76%
+[2026-09-08 14:18:45] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 14:23:46] Disk usage: 76%
+[2026-09-08 14:23:46] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 14:28:47] Disk usage: 76%
+[2026-09-08 14:28:47] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 14:33:48] Disk usage: 76%
+[2026-09-08 14:33:48] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 14:38:50] Disk usage: 77%
+[2026-09-08 14:38:50] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 14:43:51] Disk usage: 77%
+[2026-09-08 14:43:51] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 14:48:52] Disk usage: 77%
+[2026-09-08 14:48:52] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 14:53:53] Disk usage: 77%
+[2026-09-08 14:53:53] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 14:58:54] Disk usage: 77%
+[2026-09-08 14:58:54] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:03:55] Disk usage: 77%
+[2026-09-08 15:03:55] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:08:56] Disk usage: 77%
+[2026-09-08 15:08:56] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:13:57] Disk usage: 77%
+[2026-09-08 15:13:57] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:18:58] Disk usage: 77%
+[2026-09-08 15:18:58] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:23:59] Disk usage: 77%
+[2026-09-08 15:23:59] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:29:00] Disk usage: 77%
+[2026-09-08 15:29:00] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:34:02] Disk usage: 77%
+[2026-09-08 15:34:02] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:39:03] Disk usage: 77%
+[2026-09-08 15:39:03] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:44:04] Disk usage: 77%
+[2026-09-08 15:44:04] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:49:05] Disk usage: 77%
+[2026-09-08 15:49:05] ✅ Usage 77% — below 80%, no action needed
+[2026-09-08 15:54:07] Disk usage: 74%
+[2026-09-08 15:54:07] ✅ Usage 74% — below 80%, no action needed
+[2026-09-08 15:59:07] Disk usage: 75%
+[2026-09-08 15:59:07] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:04:08] Disk usage: 75%
+[2026-09-08 16:04:08] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:09:09] Disk usage: 75%
+[2026-09-08 16:09:09] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:14:11] Disk usage: 75%
+[2026-09-08 16:14:11] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:19:12] Disk usage: 75%
+[2026-09-08 16:19:12] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:24:13] Disk usage: 75%
+[2026-09-08 16:24:13] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:29:14] Disk usage: 75%
+[2026-09-08 16:29:14] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:34:15] Disk usage: 75%
+[2026-09-08 16:34:15] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:39:16] Disk usage: 75%
+[2026-09-08 16:39:16] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:44:17] Disk usage: 75%
+[2026-09-08 16:44:17] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:49:18]   rotated survey_bot.log (2M -> gz)
+[2026-09-08 16:49:18] Disk usage: 75%
+[2026-09-08 16:49:18] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:54:19] Disk usage: 75%
+[2026-09-08 16:54:19] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 16:59:20] Disk usage: 75%
+[2026-09-08 16:59:20] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 17:04:21] Disk usage: 75%
+[2026-09-08 17:04:21] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 17:09:22] Disk usage: 75%
+[2026-09-08 17:09:22] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 17:14:24] Disk usage: 75%
+[2026-09-08 17:14:24] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 17:19:25] Disk usage: 75%
+[2026-09-08 17:19:25] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 17:24:26] Disk usage: 75%
+[2026-09-08 17:24:26] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 17:29:27]   rotated support_bot.log (2M -> gz)
+[2026-09-08 17:29:27] Disk usage: 74%
+[2026-09-08 17:29:27] ✅ Usage 74% — below 80%, no action needed
+[2026-09-08 17:34:28] Disk usage: 74%
+[2026-09-08 17:34:28] ✅ Usage 74% — below 80%, no action needed
+[2026-09-08 17:39:29] Disk usage: 74%
+[2026-09-08 17:39:29] ✅ Usage 74% — below 80%, no action needed
+[2026-09-08 17:44:30] Disk usage: 75%
+[2026-09-08 17:44:30] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 17:49:31] Disk usage: 75%
+[2026-09-08 17:49:31] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 17:54:33] Disk usage: 75%
+[2026-09-08 17:54:33] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 17:59:34] Disk usage: 75%
+[2026-09-08 17:59:34] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:04:35] Disk usage: 75%
+[2026-09-08 18:04:35] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:09:36] Disk usage: 75%
+[2026-09-08 18:09:36] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:14:37] Disk usage: 75%
+[2026-09-08 18:14:37] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:19:38] Disk usage: 75%
+[2026-09-08 18:19:38] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:24:39] Disk usage: 75%
+[2026-09-08 18:24:39] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:29:40] Disk usage: 75%
+[2026-09-08 18:29:40] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:34:41] Disk usage: 75%
+[2026-09-08 18:34:41] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:39:42] Disk usage: 75%
+[2026-09-08 18:39:42] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:44:44] Disk usage: 75%
+[2026-09-08 18:44:44] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:49:45] Disk usage: 75%
+[2026-09-08 18:49:45] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:54:46] Disk usage: 75%
+[2026-09-08 18:54:46] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 18:59:47] Disk usage: 75%
+[2026-09-08 18:59:47] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 19:04:48] Disk usage: 75%
+[2026-09-08 19:04:48] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 19:09:49] Disk usage: 75%
+[2026-09-08 19:09:49] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 19:14:50] Disk usage: 75%
+[2026-09-08 19:14:50] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 19:19:51] Disk usage: 75%
+[2026-09-08 19:19:51] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 19:24:52] Disk usage: 75%
+[2026-09-08 19:24:52] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 19:29:53] Disk usage: 75%
+[2026-09-08 19:29:53] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 19:34:54] Disk usage: 75%
+[2026-09-08 19:34:54] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 19:39:55] Disk usage: 75%
+[2026-09-08 19:39:55] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 19:44:57] Disk usage: 75%
+[2026-09-08 19:44:57] ✅ Usage 75% — below 80%, no action needed
+[2026-09-08 19:49:59] Disk usage: 76%
+[2026-09-08 19:49:59] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 19:55:00] Disk usage: 76%
+[2026-09-08 19:55:00] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:00:01] Disk usage: 76%
+[2026-09-08 20:00:01] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:05:02] Disk usage: 76%
+[2026-09-08 20:05:02] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:10:03] Disk usage: 76%
+[2026-09-08 20:10:03] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:15:04] Disk usage: 76%
+[2026-09-08 20:15:04] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:20:05] Disk usage: 76%
+[2026-09-08 20:20:05] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:25:06] Disk usage: 76%
+[2026-09-08 20:25:06] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:30:07] Disk usage: 76%
+[2026-09-08 20:30:07] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:35:08] Disk usage: 76%
+[2026-09-08 20:35:08] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:40:09] Disk usage: 76%
+[2026-09-08 20:40:09] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:45:11] Disk usage: 76%
+[2026-09-08 20:45:11] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:50:12] Disk usage: 76%
+[2026-09-08 20:50:12] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 20:55:13] Disk usage: 76%
+[2026-09-08 20:55:13] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 21:00:14] Disk usage: 76%
+[2026-09-08 21:00:14] ✅ Usage 76% — below 80%, no action needed
+[2026-09-08 21:05:15] Disk usage: 50%
+[2026-09-08 21:05:15] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 21:10:16] Disk usage: 50%
+[2026-09-08 21:10:16] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 21:15:17] Disk usage: 50%
+[2026-09-08 21:15:17] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 21:20:18] Disk usage: 50%
+[2026-09-08 21:20:18] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 21:25:19] Disk usage: 50%
+[2026-09-08 21:25:19] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 21:30:20] Disk usage: 50%
+[2026-09-08 21:30:20] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 21:35:21] Disk usage: 50%
+[2026-09-08 21:35:21] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 21:40:22] Disk usage: 50%
+[2026-09-08 21:40:22] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 21:45:23] Disk usage: 50%
+[2026-09-08 21:45:23] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 21:50:24] Disk usage: 50%
+[2026-09-08 21:50:24] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 21:55:25] Disk usage: 50%
+[2026-09-08 21:55:25] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 22:00:27] Disk usage: 50%
+[2026-09-08 22:00:27] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 22:05:28] Disk usage: 51%
+[2026-09-08 22:05:28] ✅ Usage 51% — below 80%, no action needed
+[2026-09-08 22:10:29] Disk usage: 51%
+[2026-09-08 22:10:29] ✅ Usage 51% — below 80%, no action needed
+[2026-09-08 22:15:30] Disk usage: 51%
+[2026-09-08 22:15:30] ✅ Usage 51% — below 80%, no action needed
+[2026-09-08 22:20:31] Disk usage: 51%
+[2026-09-08 22:20:31] ✅ Usage 51% — below 80%, no action needed
+[2026-09-08 22:25:32] Disk usage: 51%
+[2026-09-08 22:25:32] ✅ Usage 51% — below 80%, no action needed
+[2026-09-08 22:30:33]   rotated survey_bot.log (2M -> gz)
+[2026-09-08 22:30:33] Disk usage: 50%
+[2026-09-08 22:30:33] ✅ Usage 50% — below 80%, no action needed
+[2026-09-08 22:35:34] Disk usage: 50%
+[2026-09-08 22:35:34] ✅ Usage 50% — below 80%, no action needed
