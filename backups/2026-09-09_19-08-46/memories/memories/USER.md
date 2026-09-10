@@ -1,7 +1,0 @@
-User prefers Persian (Farsi) for conversation. Respond in Persian when they write in Persian.
-§
-Hossein (حسین) — AI automation freelancer, beginner. Farsi native, mixed Farsi+English (translate terms). Asia/Tehran. Telegram only (1030173067). Legion laptop. Railway blocked (needs VPN). GitHub: hossein76e1/HERMES-AGENT. Bots: @Hosseinagentcoderbot, @ShahbotSupportbot, @ShahbotSurveyBot. Has Telegram bot creation limits. Building 10 projects to sell. All bots in Farsi. Work style: autonomous execution, never ask permission, say "دارم روش کار میکنم" not "دارم شروع میکنم", auto-report per stage per project, keep background tasks running, finish one project then next, brief status updates, don't over-explain, be honest on failures. Gets frustrated when I say I'll start but don't actually do the work.
-§
-Autonomous execution: do tasks without asking permission; say "دارم روش کار میکنم". Brief updates, honest on failures, auto-progress per stage per project. For simple questions: answer quickly and directly without narrating process ('وقتی سوال ساده میپرسم سریع جواب بده'). Reserve detail for debugging/building.
-§
-Always keep background tasks running even when user sends a message. Never stop work for chat — use delegate_task and background processes to continue work while responding to user. Multitask constantly.

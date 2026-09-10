@@ -1,0 +1,7 @@
+Hossein: Persian chat (tech terms English). Autonomous — no per-step permission, background, brief status, 'دارم روش کار میکنم'. Simple Q → short answer; deep work → detail. Never silently drop; explicit failures. Confirm destructive deletions (he retracted once). Security: never store secrets in chat/memory; leaked creds → revoke + redact state.db.
+§
+Bots: /usr/local/bin/python3 ONLY (apscheduler for PTB JobQueue; /opt/venv lacks → silent dead inbox). Restart: kill ALL /proc matches, wait 5s. telegram_assistant @Hosseinagentcoderbot (reminder bot; token TELEGRAM_ASSISTANT_TOKEN in /data/.hermes/.env; start ONLY via bots_launcher.sh — terminal/nohup die at session end; guarded by bots_keeper_once.sh 5m; reminders/shopping no AI JobQueue+03:30, chat GLM, survey /msg admin). Inventory: order system (support_bot/order_flow/survey_bot/order-system/).
+§
+Cron/monitoring: system crontab dead in container; Hermes cron BLOCKS process-launching scripts (#30719) → piggyback watchdogs onto disk_monitor.sh (3238f8dd6c13, every 5m; /data >80% → clean caches + prune backup repo keep 3 local dirs; still >80% → warn Hossein, never delete essentials). Backups ONLY GitHub hossein76e1/HERMES-AGENT.
+§
+9router/GLM: prompt caching ~52% (byte-identical prefix). 503/429 intermittent → retry loops essential. AI-down msg: '⚠️ سرویس هوش مصنوعی در دسترس نیست'.
