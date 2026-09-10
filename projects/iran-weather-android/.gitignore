@@ -1,0 +1,5 @@
+build/
+*.jar
+*.keystore
+flats/
+__pycache__/

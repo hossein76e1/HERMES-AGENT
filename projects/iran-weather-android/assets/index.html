@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>هواشناسی ایران — وضعیت آب‌وهوای همه شهرها</title>
+<meta name="description" content="پیش‌بینی زنده آب‌وهوای ۹۹۳ شهر ایران تا ۷ روز آینده، ساعت‌به‌ساعت با جزئیات کامل">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@33.003/Vazirmatn-font-face.css">
+<style>
+:root{
+  --bg1:#0b3a6b; --bg2:#123a5f; --ink:#f2f6fb; --muted:rgba(235,242,250,.72);
+  --card:rgba(255,255,255,.07); --card2:rgba(255,255,255,.11);
+  --line:rgba(255,255,255,.14); --accent:#ffd166; --r:20px;
+  --shadow:0 18px 50px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Vazirmatn',system-ui,'Segoe UI',Tahoma,sans-serif;
+  color:var(--ink); min-height:100vh; line-height:1.7;
+  background:linear-gradient(165deg,var(--bg1) 0%,var(--bg2) 55%,#06070f 130%);
+  background-attachment:fixed; transition:background 1.2s ease; overflow-x:hidden;
+}
+body[data-epoch="night"]{--accent:#a5b4fc}
+.sky{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.55;animation:tw 4s ease-in-out infinite}
+@keyframes tw{50%{opacity:.1}}
+.wrap{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:18px 18px 80px}
+
+header.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:6px 2px 20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem;letter-spacing:-.3px;cursor:pointer;user-select:none}
+.logo svg{width:34px;height:34px;filter:drop-shadow(0 3px 8px rgba(0,0,0,.4))}
+.top .spacer{flex:1}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);font-family:inherit;
+  padding:9px 18px;border-radius:14px;cursor:pointer;font-size:.92rem;font-weight:600;transition:.2s;min-height:44px}
+.btn:hover{background:var(--card2);transform:translateY(-1px)}
+
+.searchbox{position:relative;flex:1;min-width:240px;max-width:520px}
+.searchbox input{
+  width:100%;padding:13px 46px 13px 16px;border-radius:16px;border:1px solid var(--line);
+  background:rgba(0,0,0,.22);color:var(--ink);font-family:inherit;font-size:1rem;outline:none;transition:.2s;
+}
+.searchbox input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,209,102,.18)}
+.searchbox .sicon{position:absolute;right:14px;top:50%;transform:translateY(-50%);opacity:.7;pointer-events:none}
+.suggest{position:absolute;top:calc(100% + 6px);left:0;right:0;background:rgba(13,20,33,.95);backdrop-filter:blur(14px);
+  border:1px solid var(--line);border-radius:16px;overflow:hidden;z-index:60;box-shadow:var(--shadow);display:none}
+.suggest.show{display:block}
+.suggest .row{display:flex;justify-content:space-between;align-items:center;padding:11px 16px;cursor:pointer;gap:10px}
+.suggest .row:hover,.suggest .row.hl{background:rgba(255,255,255,.08)}
+.suggest .row b{font-weight:700}
+.suggest .row small{color:var(--muted);font-size:.78rem}
+.suggest .none{padding:14px 16px;color:var(--muted);font-size:.9rem}
+
+.view{display:none;animation:rise .45s ease}
+.view.on{display:block}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+.heroq{margin:10px 0 26px}
+.heroq h1{font-size:clamp(1.5rem,4.2vw,2.3rem);font-weight:900;letter-spacing:-.5px;line-height:1.45}
+.heroq h1 .hl{color:var(--accent)}
+.heroq p{color:var(--muted);font-size:.98rem;margin-top:6px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 26px}
+.chip{border:1px solid var(--line);background:var(--card);padding:8px 16px;border-radius:999px;cursor:pointer;font-size:.9rem;font-weight:600;transition:.2s;min-height:40px;color:var(--ink);font-family:inherit}
+.chip:hover{background:var(--card2);border-color:var(--accent);transform:translateY(-2px)}
+.chip.sel{background:var(--accent);color:#20242e;border-color:transparent}
+h2.sec{font-size:1.08rem;font-weight:800;margin:26px 0 4px;display:flex;align-items:center;gap:10px}
+h2.sec::after{content:"";flex:1;height:1px;background:var(--line)}
+.hint{color:var(--muted);font-size:.82rem;margin-bottom:14px}
+
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.cel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;cursor:pointer;transition:.22s;position:relative;overflow:hidden;text-align:right}
+.cel:hover{background:var(--card2);transform:translateY(-3px);box-shadow:var(--shadow)}
+.cel .nm{font-weight:800;font-size:.95rem}
+.cel .pv{color:var(--muted);font-size:.72rem;margin-bottom:8px}
+.cel .wx{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.cel .tp{font-size:1.55rem;font-weight:900;letter-spacing:-1px;line-height:1.2}
+.cel .wx svg{width:36px;height:36px;opacity:.95;flex:0 0 auto}
+.cel .ds{font-size:.72rem;color:var(--muted);margin-top:2px}
+
+.provrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+select.prov{font-family:inherit;background:rgba(0,0,0,.25);color:var(--ink);border:1px solid var(--line);
+  border-radius:14px;padding:10px 14px;font-size:.92rem;outline:none;cursor:pointer;min-height:44px}
+select.prov option{background:#101826}
+
+.backbar{display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.hero{background:linear-gradient(140deg,rgba(255,255,255,.10),rgba(255,255,255,.03));
+  border:1px solid var(--line);border-radius:var(--r);padding:26px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset-inline-start:-80px;top:-110px;width:340px;height:340px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,209,102,.16),transparent 70%);pointer-events:none}
+.hero .grid{display:grid;grid-template-columns:minmax(210px,auto) 1fr;gap:24px;align-items:center}
+.bigT{font-size:clamp(3.6rem,10vw,5.2rem);font-weight:900;letter-spacing:-3px;line-height:1;text-shadow:0 6px 30px rgba(0,0,0,.3)}
+.bigT sup{font-size:.32em;font-weight:700;vertical-align:top;letter-spacing:0}
+.nowmeta .cn{font-size:1.5rem;font-weight:900}
+.nowmeta .cn small{font-size:.62em;font-weight:600;color:var(--muted)}
+.nowmeta .desc{font-size:1.1rem;font-weight:800;color:var(--accent)}
+.nowmeta .sub{color:var(--muted);font-size:.86rem}
+.bigIco{width:96px;height:96px;margin-bottom:8px;filter:drop-shadow(0 8px 22px rgba(0,0,0,.35));animation:floaty 7s ease-in-out infinite}
+@keyframes floaty{50%{transform:translateY(-7px)}}
+.hstat{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:16px}
+.hs{background:rgba(0,0,0,.18);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.hs .k{font-size:.72rem;color:var(--muted)}
+.hs .v{font-size:1.02rem;font-weight:800;margin-top:1px}
+.hs .v small{font-weight:500;font-size:.72rem;color:var(--muted)}
+
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px;margin-top:14px}
+.mt{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;transition:.2s}
+.mt:hover{background:var(--card2)}
+.mt .ic{margin-bottom:6px;opacity:.9;display:flex;align-items:center;gap:8px;color:var(--muted);font-weight:700;font-size:.78rem}
+.mt .ic svg{width:17px;height:17px}
+.mt .v{font-size:1.25rem;font-weight:900}
+.mt .v small{font-size:.72rem;font-weight:600;color:var(--muted)}
+.mt .n{font-size:.75rem;color:var(--muted);margin-top:2px}
+.bar{height:6px;border-radius:4px;background:rgba(255,255,255,.12);margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,#7dd3fc,var(--accent));transition:width .8s ease}
+.sunarc{width:100%;height:64px;margin-top:6px}
+
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:10px}
+.dyc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px 8px;text-align:center;cursor:pointer;transition:.2s}
+.dyc:hover{background:var(--card2);transform:translateY(-3px)}
+.dyc.sel{border-color:var(--accent);background:rgba(255,209,102,.10)}
+.dyc .d{font-size:.8rem;font-weight:800}
+.dyc .dt{font-size:.68rem;color:var(--muted)}
+.dyc svg{width:42px;height:42px;margin:6px 0}
+.dyc .hi{font-weight:900;font-size:.95rem}
+.dyc .lo{color:var(--muted);font-size:.8rem}
+.rangebar{height:4px;border-radius:2px;background:rgba(255,255,255,.12);margin:7px 6px 0;position:relative}
+.rangebar i{position:absolute;height:100%;border-radius:2px;background:linear-gradient(90deg,#7dd3fc,#ffd166)}
+
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-top:4px;scrollbar-width:thin}
+.tab{white-space:nowrap;border:1px solid var(--line);background:var(--card);color:var(--ink);font-family:inherit;
+  padding:8px 16px;border-radius:12px;cursor:pointer;font-size:.86rem;font-weight:700;min-height:42px}
+.tab.sel{background:var(--accent);color:#20242e;border-color:transparent}
+.hours{display:flex;gap:10px;overflow-x:auto;padding:12px 2px 16px;scrollbar-width:thin}
+.hc{min-width:100px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 8px;text-align:center;flex:0 0 auto;transition:.2s}
+.hc:hover{background:var(--card2)}
+.hc.now{border-color:var(--accent)}
+.hc .h{font-size:.78rem;color:var(--muted);font-weight:700}
+.hc svg{width:36px;height:36px;margin:4px 0}
+.hc .t{font-weight:900;font-size:1.08rem}
+.hc .f{font-size:.7rem;color:var(--muted)}
+.hc .pop{font-size:.72rem;color:#7dd3fc;font-weight:800;margin-top:2px}
+.hc .w{font-size:.68rem;color:var(--muted);margin-top:2px}
+
+.chartwrap{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 10px 6px;margin-top:8px;overflow-x:auto}
+table.htab{width:100%;border-collapse:collapse;margin-top:10px;font-size:.84rem}
+table.htab th{color:var(--muted);font-weight:700;font-size:.74rem;padding:8px 6px;border-bottom:1px solid var(--line);white-space:nowrap}
+table.htab td{padding:9px 6px;border-bottom:1px solid rgba(255,255,255,.06);text-align:center;white-space:nowrap}
+table.htab tr:hover td{background:rgba(255,255,255,.05)}
+table.htab td:first-child{font-weight:800}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--card);margin-top:10px}
+
+.banner{display:none;gap:10px;align-items:center;background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.4);
+  color:#ffe3a3;padding:10px 16px;border-radius:14px;margin-bottom:14px;font-size:.86rem}
+.banner.show{display:flex}
+footer{margin-top:44px;text-align:center;color:var(--muted);font-size:.76rem}
+footer a{color:#9fc3e8}
+.skel{background:linear-gradient(90deg,var(--card) 25%,var(--card2) 50%,var(--card) 75%);background-size:200% 100%;
+  animation:sh 1.3s infinite;border-radius:16px;min-height:120px}
+@keyframes sh{to{background-position:-200% 0}}
+.err{background:rgba(248,113,113,.12);border:1px solid rgba(248,113,113,.4);color:#ffcaca;padding:16px 20px;border-radius:16px}
+.spin{display:inline-block;width:16px;height:16px;border:2.5px solid rgba(255,255,255,.25);border-top-color:var(--accent);border-radius:50%;animation:sp .7s linear infinite;vertical-align:middle}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+@media (max-width:860px){
+  .hero .grid{grid-template-columns:1fr}
+  .days{grid-template-columns:repeat(auto-fit,minmax(92px,1fr))}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="sky" id="sky"></div>
+<div class="wrap">
+
+<header class="top">
+  <div class="logo" onclick="goHome()">
+    <svg viewBox="0 0 64 64"><circle cx="26" cy="24" r="11" fill="#ffd166"/><g stroke="#ffd166" stroke-width="3" stroke-linecap="round"><line x1="26" y1="6" x2="26" y2="10"/><line x1="26" y1="38" x2="26" y2="42"/><line x1="8" y1="24" x2="12" y2="24"/><line x1="40" y1="24" x2="44" y2="24"/><line x1="13" y1="11" x2="16" y2="14"/><line x1="36" y1="34" x2="39" y2="37"/><line x1="39" y1="11" x2="36" y2="14"/><line x1="16" y1="34" x2="13" y2="37"/></g><path d="M30 50a9 9 0 0 1 1.7-17.8A13 13 0 0 1 56 36a7.5 7.5 0 0 1-1 15z" fill="#e8f1fb"/></svg>
+    هواشناسی ایران
+  </div>
+  <div class="searchbox">
+    <span class="sicon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg></span>
+    <input id="q" type="text" placeholder="جستجوی شهر… مثلاً شیراز، مشهد، آبادان" autocomplete="off">
+    <div class="suggest" id="sug"></div>
+  </div>
+  <div class="spacer"></div>
+  <button class="btn" id="btnRefresh" onclick="refreshNow()">⟳ به‌روزرسانی</button>
+</header>
+
+<section class="view on" id="viewHome">
+  <div class="heroq">
+    <h1>وضعیت لحظه‌ای و پیش‌بینی ۷ روزه‌ی <span class="hl">۹۹۳ شهر ایران</span></h1>
+    <p>داده‌ی زنده هر ۱۵ دقیقه • جزئیات کامل ساعت‌به‌ساعت • تاریخ شمسی</p>
+  </div>
+  <div class="chips" id="chips"></div>
+  <h2 class="sec">🔥 شهرهای پرجمعیت — الان</h2>
+  <div class="hint">روی هر شهر بزنید تا جزئیات ۷ روز آینده را ببینید</div>
+  <div class="board" id="board"><div class="skel" style="grid-column:1/-1;min-height:220px"></div></div>
+  <h2 class="sec">🗂 مرور بر اساس استان</h2>
+  <div class="provrow">
+    <select class="prov" id="provSel"></select>
+    <span class="hint" id="provCount" style="margin:0"></span>
+  </div>
+  <div class="board" id="provBoard"></div>
+</section>
+
+<section class="view" id="viewCity">
+  <div class="backbar">
+    <button class="btn" onclick="goHome()">→ همه شهرها</button>
+    <span id="updInfo" class="hint" style="margin:0"></span>
+  </div>
+  <div class="banner" id="warnBanner">⚠️ <span id="warnTxt"></span></div>
+  <div id="cityBody"><div class="skel" style="min-height:340px"></div></div>
+</section>
+
+<footer>
+  داده: <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a> •
+  شهرها: <a href="https://www.geonames.org" target="_blank" rel="noopener">GeoNames</a> (CC BY 4.0)
+</footer>
+</div>
+
+<script>
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const FA_D='۰۱۲۳۴۵۶۷۸۹';
+const faN=v=>String(v).replace(/\d/g,d=>FA_D[d]);
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function tempStr(t){if(t==null)return'—';const n=Math.round(t);return(n>0?faN(n):'−'+faN(-n))+'°';}
+function num1(v,unit){return v==null?'—':faN(Math.round(v*10)/10)+(unit?' '+unit:'')}
+function timeHM(s){return (s||'').slice(11,16)}
+
+/* ─── آیکون‌های SVG وضع هوا ─── */
+function ico(code,isDay,kind,size){
+  size=size||44;
+  const sun=code===0||code===1;
+  const part=code===2;
+  const clouds=code===3,fog=code===45||code===48;
+  const drizzle=code>=51&&code<=57,rain=(code>=61&&code<=67)||(code>=80&&code<=82);
+  const snow=(code>=71&&code<=77)||code===85||code===86;
+  const storm=code>=95;
+  let g='';
+  const sunBody=`<circle cx="22" cy="20" r="9" fill="#ffd166"/><g stroke="#ffd166" stroke-width="2.4" stroke-linecap="round">
+    <line x1="22" y1="5" x2="22" y2="8.5"/><line x1="22" y1="31.5" x2="22" y2="35"/><line x1="7" y1="20" x2="10.5" y2="20"/>
+    <line x1="33.5" y1="20" x2="37" y2="20"/><line x1="11.4" y1="9.4" x2="13.9" y2="11.9"/><line x1="30.1" y1="28.1" x2="32.6" y2="30.6"/>
+    <line x1="32.6" y1="9.4" x2="30.1" y2="11.9"/><line x1="13.9" y1="28.1" x2="11.4" y2="30.6"/></g>`;
+  const moonBody=`<path d="M27 9a12.5 12.5 0 1 0 10 18A13.6 13.6 0 0 1 27 9z" fill="#dbe7f5" stroke="#b9cbe0" stroke-width="1.2"/>`;
+  const cloudBody=(x,y,s,fill)=>`<g transform="translate(${x},${y}) scale(${s})"><path d="M10 22a6 6 0 0 1 1-11.9A9 9 0 0 1 28.5 13 6.5 6.5 0 0 1 27 26z" fill="${fill||'#e8f1fb'}"/></g>`;
+  const drops=(col)=>`<g stroke="${col}" stroke-width="2.6" stroke-linecap="round"><line x1="16" y1="30" x2="14" y2="36"/><line x1="23" y1="30" x2="21" y2="36"/><line x1="30" y1="30" x2="28" y2="36"/></g>`;
+  const flakes=`<g fill="#e8f1fb"><circle cx="15" cy="33" r="1.8"/><circle cx="22" cy="35.5" r="1.8"/><circle cx="29" cy="33" r="1.8"/><circle cx="18.5" cy="30" r="1.6"/><circle cx="25.5" cy="30" r="1.6"/></g>`;
+  const bolt=`<path d="M22 27l-5 8h4l-2 7 7-9h-4l3-6z" fill="#ffd166"/>`;
+  const fogl=`<g stroke="#cfdcec" stroke-width="2.4" stroke-linecap="round"><line x1="8" y1="30" x2="34" y2="30"/><line x1="12" y1="35" x2="37" y2="35"/></g>`;
+
+  let inner='';
+  if(isDay&&!part&&!clouds&&!fog&&drizzle===false&&rain===false&&snow===false&&storm===false&&code===0)inner=sunBody;
+  else if((isDay&&!part)||(isDay&&code===0))inner=sunBody;
+  if(sun&&isDay===0&&(code===0||code===1))inner=moonBody;
+  if(part){inner=(isDay?sunBody:moonBody)+cloudBody(8,8,1.05,'rgba(222,233,245,.92)');}
+  if(clouds||fog){inner=cloudBody(4,4,1.25)+ (fog?fogl:'');}
+  if(rain||drizzle){inner=cloudBody(4,2,1.25)+drops(kind==='rain'?'#7dd3fc':'#a5d8ff');}
+  if(snow){inner=cloudBody(4,2,1.25)+flakes;}
+  if(storm){inner=cloudBody(4,1,1.25)+bolt+drops('#7dd3fc');}
+  return `<svg width="${size}" height="${size}" viewBox="0 0 44 44" aria-hidden="true">${inner}</svg>`;
+}
+
+/* ─── تم داینامیک ─── */
+const THEMES={
+  day_clear:['#2f80c4','#1b5c8f'], day_partly:['#3d7ea8','#26577e'], day_cloudy:['#5b7186','#3a4b5c'],
+  day_rain:['#40586e','#26374a'], day_storm:['#33404f','#1c242f'], day_snow:['#7d95ad','#57708a'], day_fog:['#6f7f8d','#4d5b66'],
+  night_clear:['#0c2246','#15335e'], night_partly:['#13274a','#1b3a63'], night_cloudy:['#1c2940','#26374f'],
+  night_rain:['#131f33','#1d2d47'], night_storm:['#10161f','#1a2534'], night_snow:['#233348','#324659'], night_fog:['#202835','#2e3947']
+};
+function applyTheme(cur){
+  const kind=cur.kind||'clear';
+  const day=cur.is_day!==0;
+  const key=(day?'day_':'night_')+ (['clear','partly','cloudy','rain','storm','snow','sleet','fog'].includes(kind)?kind:'cloudy');
+  const c=THEMES[key]||THEMES.day_clear;
+  document.documentElement.style.setProperty('--bg1',c[0]);
+  document.documentElement.style.setProperty('--bg2',c[1]);
+  document.body.dataset.epoch=day?'day':'night';
+  const sky=$('#sky');
+  sky.innerHTML='';
+  if(!day){
+    for(let i=0;i<90;i++){
+      const s=document.createElement('span');s.className='star';
+      s.style.left=Math.random()*100+'%';s.style.top=Math.random()*70+'%';
+      s.style.animationDelay=(Math.random()*4)+'s';
+      const z=1+Math.random()*1.6;s.style.width=s.style.height=z+'px';
+      sky.appendChild(s);
+    }
+  }
+}
+
+/* ─── وضعیت عمومی ─── */
+let state={view:'home',cityId:null,data:null,selDay:0};
+const CACHE_KEY='iranw_recent_v2';
+function getRecent(){try{return JSON.parse(localStorage.getItem(CACHE_KEY))||[]}catch(e){return[]}}
+function pushRecent(c){let r=getRecent().filter(x=>x.id!==c.id);r.unshift({id:c.id,fa:c.fa,prov:c.prov});r=r.slice(0,10);localStorage.setItem(CACHE_KEY,JSON.stringify(r));renderChips();}
+
+async function api(path){
+  const r=await fetch(path);
+  if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.detail||('خطای '+r.status));}
+  return r.json();
+}
+
+/* ─── چیپ‌ها (اخیر + محبوب) ─── */
+function renderChips(){
+  const rec=getRecent();
+  const pops=[['تهران',0],['مشهد',1],['اصفهان',2],['شیراز',5],['تبریز',4],['کرج',3],['اهواز',7],['رشت',9],['بندرعباس',19],['یزد',15]];
+  let h='';
+  rec.forEach(r=>{h+=`<button class="chip" onclick="openCity(${r.id})">🕘 ${esc(r.fa)}</button>`});
+  if(rec.length)h+='<span style="width:1px;height:26px;background:var(--line);margin:0 4px"></span>';
+  pops.forEach(([nm,id])=>{h+=`<button class="chip" onclick="openCity(${id})">${esc(nm)}</button>`});
+  $('#chips').innerHTML=h;
+}
+
+/* ─── خانه ─── */
+async function loadHome(refresh){
+  $('#board').innerHTML='<div class="skel" style="grid-column:1/-1;min-height:220px"></div>';
+  try{
+    const d=await api('/api/home?keep=30'+(refresh?'&refresh=true':''));
+    $('#board').innerHTML=d.cells.map(cellHtml).join('');
+  }catch(e){$('#board').innerHTML=`<div class="err" style="grid-column:1/-1">خطا در بارگذاری: ${esc(e.message)}</div>`;}
+}
+function cellHtml(c){
+  return `<div class="cel" onclick="openCity(${c.id})">
+    <div class="nm">${esc(c.fa)}</div><div class="pv">${esc(c.prov)}</div>
+    <div class="wx"><div class="tp">${tempStr(c.temp)}</div>${ico(c.code,c.is_day,c.kind,36)}</div>
+    <div class="ds">${esc(c.desc||'')}</div></div>`;
+}
+
+let provinces=[];
+async function loadProvinces(){
+  const d=await api('/api/provinces');
+  provinces=d.provinces;
+  const sel=$('#provSel');
+  sel.innerHTML=provinces.map(p=>`<option value="${esc(p)}">${esc(p)}</option>`).join('');
+  loadProv(provinces[0]);
+}
+async function loadProv(p){
+  $('#provBoard').innerHTML='<div class="skel" style="grid-column:1/-1;min-height:160px"></div>';
+  try{
+    const d=await api('/api/cities?prov='+encodeURIComponent(p)+'&limit=60');
+    $('#provCount').textContent=faN(d.cities.length)+' شهر';
+    $('#provBoard').innerHTML=d.cities.map((c,i)=>`<div class="cel" onclick="openCity(${c.id})">
+      <div class="nm">${esc(c.fa)}</div><div class="pv">${esc(c.en)}</div>
+      <div class="wx"><div class="ds">برای دیدن هوا →</div></div></div>`).join('');
+  }catch(e){$('#provBoard').innerHTML=`<div class="err">${esc(e.message)}</div>`;}
+}
+
+/* ─── صفحه شهر ─── */
+async function openCity(id,refresh){
+  state.cityId=id; state.data=null; state.selDay=0;
+  location.hash='#/c/'+id;
+  $('#viewHome').classList.remove('on');
+  $('#viewCity').classList.add('on');
+  $('#cityBody').innerHTML='<div class="skel" style="min-height:340px"></div>';
+  window.scrollTo({top:0,behavior:'instant'});
+  try{
+    const d=await api('/api/weather/'+id+(refresh?'?refresh=true':''));
+    state.data=d;
+    pushRecent({id:id,fa:d.city.fa,prov:d.city.prov});
+    applyTheme(d.current);
+    renderCity();
+  }catch(e){
+    $('#cityBody').innerHTML=`<div class="err">❌ ${esc(e.message)}<br><button class="btn" style="margin-top:10px" onclick="openCity(${id},true)">تلاش دوباره</button></div>`;
+  }
+}
+
+function renderCity(){
+  const d=state.data,c=d.current,city=d.city;
+  $('#updInfo').innerHTML = (d.stale?'⚠️ داده کهنه (سرویس موقتاً در دسترس نبود) — آخرین: ':(d.cached?'✅ کش ۱۵ دقیقه‌ای — ':'🔄 تازه دریافت شد — '))
+    +'به‌روزرسانی: '+esc(faN((d.fetched_at||'').replace('T',' ')));
+  const b=$('#warnBanner');
+  if(c.heat_note){b.classList.add('show');$('#warnTxt').textContent='هشدار دما: '+c.heat_note+' ('+tempStr(c.temp)+')';}
+  else b.classList.remove('show');
+
+  // ساعت‌های امروز برای نمودار
+  const hoursToday=d.hourly.filter(h=>h.time.slice(0,10)===d.daily[0].date);
+  document.title=c.desc+' '+tempStr(c.temp)+' — '+city.fa+' | هواشناسی ایران';
+
+  let h='';
+  h+=`<div class="hero">
+    <div class="grid">
+      <div>${ico(c.code,c.is_day,c.kind,96).replace('width="96" height="96"','class="bigIco" width="96" height="96"')}</div>
+      <div class="nowmeta">
+        <div class="cn">${esc(city.fa)} <small>استان ${esc(city.prov)}</small></div>
+        <div class="desc">${esc(c.desc)}</div>
+        <div class="sub">${esc((d.daily[0].jal||{}).wd||'')} ${esc((d.daily[0].jal||{}).label||'')} • ساعت ${esc(faN(timeHM(c.time)))} محلی • ارتفاع ${faN(Math.round(d.elevation||0))} متر</div>
+        <div class="bigT" style="margin-top:6px">${tempStr(c.temp)}<sup>C</sup></div>
+        <div class="sub">احتمال بارش ${faN((d.daily[0].pop_max==null?0:d.daily[0].pop_max))}٪ • محسوس ${tempStr(c.feels)}</div>
+      </div>
+    </div>
+    <div class="hstat">
+      ${hs('باد',num1(c.wind,'km/h'),(c.wdir_fa||'')+' • '+(c.wind_label||''))}
+      ${hs('رطوبت',c.humidity==null?'—':faN(c.humidity)+'٪','نقطه شبنم '+tempStr(c.dew))}
+      ${hs('فشار',faN(Math.round(c.pressure||0)),'hPa دریا')}
+      ${hs('ابرنستگی',c.cloud==null?'—':faN(c.cloud)+'٪',null)}
+    </div>
+  </div>`;
+
+  h+=`<h2 class="sec">📅 پیش‌بینی ۷ روز آینده</h2>
+  <div class="hint">روی هر روز بزنید تا جزئیات همان روز را ببینید</div>
+  <div class="days">${d.daily.map((dy,i)=>dayCard(dy,i,d)).join('')}</div>
+  <div id="dayDetail">${dayDetail(state.selDay)}</div>`;
+
+  h+=`<h2 class="sec">⏱ ساعت‌به‌ساعت — هفت روز آینده</h2>
+  <div class="tabs" id="hTab">${d.daily.map((dy,i)=>`<button class="tab ${i===state.selDay?'sel':''}" onclick="selectDay(${i})">${esc((dy.jal||{}).wd||'')} ${esc((dy.jal||{}).label||'')}</button>`).join('')}</div>
+  <div class="chartwrap" id="chartWrap"></div>
+  <div class="tablewrap" id="hourTable"></div>`;
+
+  $('#cityBody').innerHTML=h;
+  drawChart(state.selDay);
+  drawTable(state.selDay);
+}
+
+function hs(k,v,s){return `<div class="hs"><div class="k">${k}</div><div class="v">${v}${s?` <small>${esc(s)}</small>`:''}</div></div>`}
+
+function dayCard(dy,i,d){
+  const lo=Math.min(...d.daily.map(x=>x.tmin)), hi=Math.max(...d.daily.map(x=>x.tmax));
+  const span=hi-lo||1;
+  const off=(dy.tmin-lo)/span*100, w=(dy.tmax-dy.tmin)/span*100;
+  const isToday=i===0;
+  return `<div class="dyc ${i===state.selDay?'sel':''}" onclick="selectDay(${i})">
+    <div class="d">${isToday?'امروز':esc((dy.jal||{}).wd||'')}</div>
+    <div class="dt">${esc((dy.jal||{}).label||'')}</div>
+    ${ico(dy.code,1,dy.kind,42)}
+    <div class="hi">${tempStr(dy.tmax)} <span class="lo">${tempStr(dy.tmin)}</span></div>
+    <div class="rangebar"><i style="right:${off}%;width:${w}%"></i></div>
+    <div class="dt" style="margin-top:4px">${dy.pop_max>=20?'🌂'+faN(dy.pop_max)+'٪':''}</div>
+  </div>`;
+}
+
+function dayDetail(i){
+  const d=state.data,dy=d.daily[i];
+  const hrs=d.hourly.filter(h=>h.time.slice(0,10)===dy.date);
+  const wet=hrs.filter(h=>h.precip>0.05).sort((a,b)=>b.precip-a.precip)[0];
+  return `<div class="metrics">
+    ${mt('🌅','طلوع آفتاب',faN(timeHM(dy.sunrise)),'تا غروب '+faN(timeHM(dy.sunset)))}
+    ${mt('🌇','غروب آفتاب',faN(timeHM(dy.sunset)),'')}
+    ${mt('🌙','ماه',esc(dy.moon||'—'),'')}
+    ${mt('☀️','بیشترین UV',faN(dy.uvmax),uvLbl(dy.uvmax))}
+    ${mt('🌡','کمینه/بیشینه',tempStr(dy.tmin)+' / '+tempStr(dy.tmax),'محسوس '+tempStr(dy.feels_min)+' تا '+tempStr(dy.feels_max))}
+    ${mt('🌧','مجموع بارش',(dy.precip_sum==null?'—':faN(dy.precip_sum))+' mm',(dy.pop_max>=20?'شانس بارش '+faN(dy.pop_max)+'٪ • ':'')+faN(dy.precip_hours||0)+' ساعت بارانی')
+      +`<div class="bar"><i style="width:${dy.pop_max||0}%"></i></div>`}
+    ${mt('💨','بیشینه باد',num1(dy.wind_max,'km/h'),'وزش تا '+num1(dy.gust_max,'km/h'))}
+  </div>`;
+}
+function mt(ic,k,v,n){return `<div class="mt"><div class="ic"><span>${ic}</span> ${k}</div><div class="v">${v}</div>${n?`<div class="n">${esc(n)}</div>`:''}</div>`}
+function uvLbl(u){if(u==null)return'';u=+u;return u<3?'کم':u<6?'متوسط':u<8?'زیاد':u<11?'خیلی زیاد':'خطرناک'}
+
+function selectDay(i){
+  state.selDay=i;
+  $$('.dyc').forEach((el,j)=>el.classList.toggle('sel',j===i));
+  $$('#hTab .tab').forEach((el,j)=>el.classList.toggle('sel',j===i));
+  const dd=$('#dayDetail'); if(dd) dd.innerHTML=dayDetail(i);
+  drawChart(i); drawTable(i);
+}
+
+function drawChart(i){
+  const d=state.data, day=d.daily[i];
+  let hrs=d.hourly.filter(h=>h.time.slice(0,10)===day.date);
+  if(i===0&&hrs.length<24){
+    const nxt=d.hourly.filter(h=>h.time.slice(0,10)===d.daily[1].date).slice(0,24-hrs.length);
+    hrs=hrs.concat(nxt);
+  }
+  const W=Math.max(hrs.length*30+50,340),H=190,pad={t:26,b:30};
+  if(!hrs.length){$('#chartWrap').innerHTML='<div class="hint" style="padding:20px">داده‌ای موجود نیست</div>';return;}
+  const temps=hrs.map(h=>h.temp),mn=Math.min(...temps),mx=Math.max(...temps),rg=mx-mn||1;
+  const y=t=>pad.t+(H-pad.t-pad.b)*(1-(t-mn)/rg);
+  const x=k=>20+k*((W-50)/(hrs.length-1||1));
+  let pts=hrs.map((h,k)=>`${x(k)},${y(h.temp)}`).join(' ');
+  let area=x(0)+','+(H-pad.b)+' '+pts+' '+x(hrs.length-1)+','+(H-pad.b);
+  let g='';
+  hrs.forEach((h,k)=>{
+    if(h.pop>=30||h.is_day===0){g+=`<rect x="${x(k)-13}" y="${pad.t-8}" width="26" height="${H-pad.t-pad.b+8}" fill="${h.is_day===0?'rgba(10,14,26,.28)':'none'}" rx="4"/>`}
+  });
+  g+=`<defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd166" stop-opacity=".32"/><stop offset="1" stop-color="#ffd166" stop-opacity="0"/></linearGradient></defs>`;
+  g+=`<polygon points="${area}" fill="url(#ag)"/>`;
+  g+=`<polyline points="${pts}" fill="none" stroke="#ffd166" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>`;
+  hrs.forEach((h,k)=>{
+    g+=`<circle cx="${x(k)}" cy="${y(h.temp)}" r="3" fill="#fff" opacity=".9"><title>${esc(h.time.slice(11,16))} — ${tempStr(h.temp)} • ${esc(h.desc)}</title></circle>`;
+    if(k%2===0||hrs.length<=24){
+      g+=`<text x="${x(k)}" y="${y(h.temp)-9}" fill="#eef4fb" font-size="10.5" text-anchor="middle" font-weight="700">${tempStr(h.temp)}</text>`;
+      g+=`<text x="${x(k)}" y="${H-10}" fill="rgba(235,242,250,.6)" font-size="9.5" text-anchor="middle">${faN(timeHM(h.time).slice(0,2))}</text>`;
+      if(h.pop>=20)g+=`<text x="${x(k)}" y="${H-22}" fill="#7dd3fc" font-size="9" text-anchor="middle" font-weight="700">${faN(h.pop)}٪</text>`;
+    }
+  });
+  $('#chartWrap').innerHTML=`<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}" style="min-width:${W*.6}px;direction:ltr">${g}</svg>`;
+}
+
+function drawTable(i){
+  const d=state.data, day=d.daily[i];
+  let hrs=d.hourly.filter(h=>h.time.slice(0,10)===day.date);
+  if(i===0&&hrs.length<24){
+    const nxt=d.hourly.filter(h=>h.time.slice(0,10)===d.daily[1].date).slice(0,24-hrs.length);
+    hrs=hrs.concat(nxt);
+  }
+  let rows=hrs.map(h=>`<tr>
+    <td dir="ltr">${faN(timeHM(h.time))}</td>
+    <td>${ico(h.code,h.is_day,h.kind,26)}</td>
+    <td>${esc(h.desc)}</td>
+    <td><b>${tempStr(h.temp)}</b></td>
+    <td>${tempStr(h.feels)}</td>
+    <td>${h.humidity==null?'—':faN(h.humidity)+'٪'}</td>
+    <td>${tempStr(h.dew)}</td>
+    <td>${h.pop==null?'—':faN(h.pop)+'٪'}</td>
+    <td>${h.precip?faN(Math.round(h.precip*10)/10):'—'}</td>
+    <td>${h.cloud==null?'—':faN(h.cloud)+'٪'}</td>
+    <td>${num1(h.wind,'')}<br><small style="color:var(--muted)">${esc(windArrow(h))}</small></td>
+    <td>${h.gust?faN(Math.round(h.gust)):'—'}</td>
+    <td>${faN(Math.round(h.pressure||0))}</td>
+    <td>${h.uv==null?'—':faN(Math.round(h.uv*10)/10)}</td>
+    <td>${visStr(h.vis)}</td>
+  </tr>`).join('');
+  $('#hourTable').innerHTML=`<table class="htab"><thead><tr>
+    <th>ساعت</th><th></th><th>وضع</th><th>دما</th><th>محسوس</th><th>رطوبت</th><th>شبنم</th>
+    <th>احتمال بارش</th><th>بارش mm</th><th>ابر ٪</th><th>باد km/h</th><th>وزش</th><th>فشار</th><th>UV</th><th>دید</th>
+  </tr></thead><tbody>${rows}</tbody></table>`;
+}
+function windArrow(h){
+  const dirs=['↑','↗','→','↘','↓','↙','←','↖'];
+  const idx=Math.round((((h.wdir||0)+180)%360)/45)%8;
+  return `<span title="باد ${faN(Math.round(h.wdir||0))} درجه">${dirs[idx]}</span> ${esc(h.wdir_fa||windFa(h.wdir))}`;
+}
+function windFa(deg){const d=['شمالی','شمال‌شرقی','شرقی','جنوب‌شرقی','جنوبی','جنوب‌غربی','غربی','شمال‌غربی'];return d[Math.round(((deg||0)%360)/45)%8]}
+function visStr(v){if(v==null)return'—';const km=v/1000;return km>=10?'بیش از ۱۰ کا.م':faN(Math.round(km*10)/10)+' کا.م'}
+
+/* ─── جستجو ─── */
+let sTimer=null,sResults=[],hlIdx=-1;
+$('#q').addEventListener('input',e=>{
+  clearTimeout(sTimer);
+  const q=e.target.value.trim();
+  if(!q){$('#sug').classList.remove('show');return;}
+  sTimer=setTimeout(async()=>{
+    try{
+      const d=await api('/api/cities?q='+encodeURIComponent(q)+'&limit=10');
+      sResults=d.cities;hlIdx=-1;
+      if(!d.cities.length){$('#sug').innerHTML='<div class="none">شهری یافت نشد — املای فارسی یا لاتین را امتحان کنید</div>';$('#sug').classList.add('show');return;}
+      $('#sug').innerHTML=d.cities.map((c,i)=>`<div class="row" data-i="${i}" onclick="pick(${i})">
+        <b>${esc(c.fa)}</b><small>${esc(c.prov)} • ${esc(c.en)}</small></div>`).join('');
+      $('#sug').classList.add('show');
+    }catch(err){}
+  },220);
+});
+$('#q').addEventListener('keydown',e=>{
+  if(!$('#sug').classList.contains('show'))return;
+  if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+    e.preventDefault();
+    hlIdx=(hlIdx+(e.key==='ArrowDown'?1:-1)+sResults.length)%sResults.length;
+    $$('#sug .row').forEach((r,i)=>r.classList.toggle('hl',i===hlIdx));
+  }else if(e.key==='Enter'){e.preventDefault();pick(hlIdx>=0?hlIdx:0);}
+  else if(e.key==='Escape'){$('#sug').classList.remove('show');}
+});
+document.addEventListener('click',e=>{if(!e.target.closest('.searchbox'))$('#sug').classList.remove('show')});
+function pick(i){const c=sResults[i];if(!c)return;$('#sug').classList.remove('show');$('#q').value='';openCity(c.id);}
+
+/* ─── مسیریابی و ناوبری ─── */
+function goHome(){
+  state.view='home';state.cityId=null;
+  location.hash='';
+  $('#viewCity').classList.remove('on');
+  $('#viewHome').classList.add('on');
+  applyTheme({kind:'clear',is_day:1});
+}
+function route(){
+  const m=location.hash.match(/^#\/c\/(\d+)/);
+  if(m)openCity(+m[1]);
+  else if(state.cityId!=null)goHome();
+}
+window.addEventListener('hashchange',route);
+
+function refreshNow(){
+  if(state.cityId!=null){openCity(state.cityId,true);}
+  else{loadHome(true);}
+}
+
+/* ─── شروع ─── */
+renderChips();
+loadHome(false);
+loadProvinces();
+if(location.hash)route();
+</script>
+</body>
+</html>
