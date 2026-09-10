@@ -1,3 +1,0 @@
-python-telegram-bot==21.6
-instagrapi==2.1.2
-python-dotenv==1.0.1

@@ -1,0 +1,15 @@
+{
+  "id": "proc_c72fdf38c359",
+  "command": "cd /data/workspace/iran-weather && /usr/local/bin/python3 -m uvicorn app.server:app --host 127.0.0.1 --port 8734 --log-level warning",
+  "cwd": "/data/workspace/iran-weather",
+  "task_id": "session:agent:main:telegram:dm:1030173067",
+  "owner_task_id": "20260909_123617_823a5d10",
+  "session_key": "agent:main:telegram:dm:1030173067",
+  "parent_session_id": "20260909_123617_823a5d10",
+  "started_at": 1789018673.9353817,
+  "exit_code": 143,
+  "completion_reason": "exited",
+  "termination_source": "",
+  "notify_on_complete": false,
+  "output": "bash: [34687: 1 (255)] tcsetattr: Inappropriate ioctl for device\n"
+}

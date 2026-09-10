@@ -1,0 +1,15 @@
+{
+  "id": "proc_a8357c8bbc07",
+  "command": "cd /data/workspace/iran-weather && /usr/local/bin/python3 -m uvicorn app.server:app --host 127.0.0.1 --port 8734 --log-level info",
+  "cwd": "/tmp",
+  "task_id": "session:agent:main:telegram:dm:1030173067",
+  "owner_task_id": "20260909_123617_823a5d10",
+  "session_key": "agent:main:telegram:dm:1030173067",
+  "parent_session_id": "",
+  "started_at": 1788960134.2298992,
+  "exit_code": 143,
+  "completion_reason": "exited",
+  "termination_source": "",
+  "notify_on_complete": false,
+  "output": "INFO:     Started server process [12889]\nINFO:     Waiting for application startup.\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://127.0.0.1:8734 (Press CTRL+C to quit)\nINFO:     127.0.0.1:36366 - \"GET /api/health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:36382 - \"GET /api/cities/search?q=%D8%A2%D8%A8%D8%A7%D8%AF%D8%A7%D9%86 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:36396 - \"GET /api/weather/0 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:37766 - \"GET /api/health HTTP/1.1\" 200 OK\nINFO:     Shutting down\nINFO:     Waiting for application shutdown.\nINFO:     Application shutdown complete.\nINFO:     Finished server process [12889]\nbash: [12885: 1 (255)] tcsetattr: Inappropriate ioctl for device\n"
+}
