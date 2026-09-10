@@ -1,0 +1,12 @@
+# cache & runtime
+data/cache/
+*.pyc
+__pycache__/
+*.log
+tunnel_url.txt
+watchdog.log
+cloudflared.log
+
+# env / secrets
+.env
+*.env
